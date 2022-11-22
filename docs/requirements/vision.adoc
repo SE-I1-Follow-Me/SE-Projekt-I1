@@ -89,9 +89,9 @@ Beispiel Produkt:
 | [Kurze Beschreibung des Stakeholders.]
 | [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 
-|
-|
-|
+| Gesetzgeber
+| Legt Rahmenbedingungen und Vorschriften fest
+| Ein Robotor darf nicht überall fahren und muss sich an gegebene Vorschriften halten bzw. in einem Gebiet eingesetzt werden in dem eventuelle Vorschriften nicht gelten.
 
 |===
 
