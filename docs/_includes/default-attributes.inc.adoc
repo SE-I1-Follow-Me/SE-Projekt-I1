@@ -1,5 +1,5 @@
 // Meta
-:project-name: <Projektname (T00)>
+:project-name: <Entwicklung einer Follow-ME APP für Android>
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
