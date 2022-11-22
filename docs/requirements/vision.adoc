@@ -12,7 +12,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das <Projektthema-System>, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, das vom Tema I1 entwickelt wird. Die Android-App wird es der Firma Sciota Robotics und dessen Kunden, welche vorerst aus Förster und Bauern bestehen, erlauben soll einen Fahrroboter für Fahrten auf Basis einer Follow-ME Funktion zu nutzen. Die Zielsetzung resultiert darin, das Bewegen von verschiedenen Gütern dem Menschen abzunehmen und so z.B. das Transportieren von Baumstämmen zu erleichtern.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
