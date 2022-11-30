@@ -145,8 +145,14 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 |===
 
 
+//Notiz: Karte + Anzeige, Follow-me, Hilfe, About, Daten mit Server synchronisieren
+
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+
+//Notiz: Verbindung zum Roboter herstellen, Robotor aus Menge geziehlt auswählen, Aufgaben an Verbundene Roboter verteilen
+
+
 Hinweise:
 
 . Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
