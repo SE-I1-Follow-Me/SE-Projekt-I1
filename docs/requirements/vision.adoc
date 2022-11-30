@@ -6,13 +6,13 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des <Projektname-Systems> zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <Projektname-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten der Follow-Me Android-App zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die Details, wie die Follow-Me Android-App diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, das vom Tema I1 entwickelt wird. Die Android-App wird es der Firma Sciota Robotics und dessen Kunden, welche vorerst aus Förster und Bauern bestehen, erlauben soll einen Fahrroboter für Fahrten auf Basis einer Follow-ME Funktion zu nutzen. Die Zielsetzung resultiert darin, das Bewegen von verschiedenen Gütern dem Menschen abzunehmen und so z.B. das Transportieren von Baumstämmen zu erleichtern.
+Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, welche von Team I1 entwickelt wird. Die Android-App wird ein Prototyp sein, um eine App zu entwickeln, welches es Kunden, zum Beispiel Förstern oder Bauern, ermöglichen wird, einem Fahrroboter zu befehlen ihnen zu folgen und auf dem absolvierten Pfad selbstständig verschiedenste Fahrtkomandos durchzuführen. Ziel des Projektes ist es, eine funktionierende App, welche Daten über den Aufenthalt sammelt, an einen Server schickt und von selbigen auch Daten empfangen und auslesen kann, zu entwickeln.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -21,20 +21,25 @@ Siehe <<#glossary, Glossar>>.
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
+Für Teile der Implementierung greift das Team I1 auf die GPS-Tracking-Android-App zurück, welche im vorangegangenen Projektzyklus vom Team I5 entwickelt wurde. Diese App ermöglicht GPS-Tracks zu erstellen und ist wie dieses Projekt ein Prototyp für die eigentliche Follow-me Funktions-App. 
+
 
 == Positionierung
 
 === Fachliche Motivation
 Der Auftraggeber sucht nach einer Funktion um die Fahrroboter wirtschaftlich nutzbar zu machen, da diese zum jetzigen Standpunkt noch kein Use-Case  als Verkaufsargument bieten. Zu bedenken ist jedoch, dass sich das autonome Fahren des Roboters, zur Zeit ebenfalls in der Entwicklung befindet.
+
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
 |===
-| Das Problem | [beschreiben Sie das Problem]
-| betrifft | [die Stakeholder, die vom Problem betroffen sind]
-| die Auswirkung davon ist | [welche Auswirkungen hat das Problem?]
-| eine erfolgreiche Lösung wäre | Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+| Das Problem | Die Fahrroboter können noch nicht bedient werden.
+| betrifft | die Kunden, allem voran Förster und Bauern.
+| die Auswirkung davon ist | *•* Fahrroboter haben noch keinen praktischen nutzen
+
+*•* den Kunden kann noch nicht schwere, körperliche Arbeit erleichtert werden
+| eine erfolgreiche Lösung wäre | Eine voll funktionsfähige App, welche es ermöglicht, die Fahrroboter zu bedienen. Dadurch könnten Arbeiten, wie zum Beispiel das Tragen von schweren Gegenständen durch den Fahrroboter abgenommen werden
 |===
 
 ////
@@ -55,12 +60,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | [Zielkunde / Nutzer]
-| der / die | [Angabe des Bedarfs oder Chance]
-| Das Produkt / die Lösung ist ein | [Produktkategorie]
-| Die / Das | [Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-| Im Gegensatz zu | [wesentliche Lösungsalternative]
-| Unser Produkt | [Aussage zum Hauptunterschied]
+| Für | Kunden, primär Förster und / oder Bauern
+| die | schwere Gegenstände bzw. Ladungen transpotieren müssen
+| Das Produkt / die Lösung ist ein | App, welche die Steuerung eines Fahrroboters ermöglicht
+| Die | es möglich macht, schwere Lasten an den Fahrroboter zu geben und diese über ihn transpotieren zu lassen
+| Im Gegensatz zu | die Last selber tragen oder von Mitarbeitern tragen zu lassen
+| Unser Produkt | ermöglicht es, Kraft und Zeit zu sparen
 |===
 
 ////
@@ -88,34 +93,30 @@ Beispiel Produkt:
 | [Kurze Beschreibung des Stakeholders.]
 | [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 
-| Entwickler Team (APP)
-|
-|
+| Entwickler Team der App I1
+| Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925), welche für das Projekt zuständig sind
+| Erstellen der App und Server dem Bedarf anpassen
 
-| Entwickler Team (Roboter)
-|
-|
+| Firma Sciota Robotics (Entwickler der Fahrroboter)
+| Entwickler der Fahrroboter
+| Bereitstellen der Roboter
 
 
-| Kunde
-|
-|
+| Kunde (Förster, Bauern)
+| Kunden, welche die Fahrroboter im Berufsalltag nutzen möchten
+| Nutzen der App nach Anleitung
 
-| Auftraggeber 
-|
-|
+| Auftraggeber Prof. Dr.-Ing. Mario Neugebauer
+| Auftraggeber des Projektes
+| Ansprechpartner für das Projekt; legt die Anforderungen fest
 
 | Server
-| (gemietet oder aufgesetzt)
-|
-
-| Kapitalgeber
-|
-|
+| Server, auf dem die Daten zwischengespeichert werden
+| Bereitstellung des benötigten Speichers; Zuverlässigkeit
 
 | Gesetzgeber
 | Legt Rahmenbedingungen und Vorschriften fest
-| Ein Robotor darf nicht überall fahren und muss sich an gegebene Vorschriften halten bzw. in einem Gebiet eingesetzt werden in dem eventuelle Vorschriften nicht gelten.
+| Lizensen und gesetzliche Vorschriften müssen zwingend beachtet werden
 
 |===
 
@@ -123,11 +124,11 @@ Beispiel Produkt:
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
-. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
-. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+. Anzahl der Kunden entspricht der Anzahl der Kunden, welche sich einen Fahrroboter zugelegt haben und die App nutzen. Dies kann sich über Zeit stark verändern.
+. Die Bearbeitungsdauer hängt von den Wünschen des Kunden ab. Je länger der absolvierte Pfad, desto länger benötigt der Roboter, um ihn erneut zu absolvieren. 
+. Die App ist für den Outdoor Einsatz gedacht und benötigt GPS Signal sowie eine Internetverbindung.
+. Die App wird auf der aktuell gängigen Android Version 11 entwickelt. Bei viel älteren oder zukünftigen Versionen kann es zu Kompatibilitätsproblemen kommen.
+. Die Daten über den absolvierten Pfad sollen auf einem Server gespeichert werden. Die App muss daher auf diesen zugreifen. 
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
