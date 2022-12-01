@@ -12,7 +12,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, welche von Team I1 entwickelt wird. Die Android-App wird ein Prototyp sein, um eine App zu entwickeln, welches es Kunden, zum Beispiel Förstern oder Bauern, ermöglichen wird, einem Fahrroboter zu befehlen ihnen zu folgen und auf dem absolvierten Pfad selbstständig verschiedenste Fahrtkomandos durchzuführen. Ziel des Projektes ist es, eine funktionierende App, welche Daten über den Aufenthalt sammelt, an einen Server schickt und von selbigen auch Daten empfangen und auslesen kann, zu entwickeln.
+Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, welche von Team I1 entwickelt wird. Ziel des Projektes ist es, eine funktionierende App, welche via GPS Daten über eine absolvierte Route sammelt, an einen Server zum Speichern sendet und von selbigen auch Daten empfangen und auslesen kann, zu entwickeln.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -21,13 +21,13 @@ Siehe <<#glossary, Glossar>>.
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
-Für Teile der Implementierung greift das Team I1 auf die GPS-Tracking-Android-App zurück, welche im vorangegangenen Projektzyklus vom Team I5 entwickelt wurde. Diese App ermöglicht GPS-Tracks zu erstellen und ist wie dieses Projekt ein Prototyp für die eigentliche Follow-me Funktions-App. 
+Für Teile der Implementierung greift das Team I1 auf die GPS-Tracking-Android-App zurück, welche im vorangegangenen Projektzyklus vom Team I5 entwickelt wurde. Diese App ermöglicht GPS-Tracks zu erstellen.
 
 
 == Positionierung
 
 === Fachliche Motivation
-Der Auftraggeber sucht nach einer Funktion um die Fahrroboter wirtschaftlich nutzbar zu machen, da diese zum jetzigen Standpunkt noch kein Use-Case  als Verkaufsargument bieten. Zu bedenken ist jedoch, dass sich das autonome Fahren des Roboters, zur Zeit ebenfalls in der Entwicklung befindet.
+Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nutzbar zu machen, da diese zum jetzigen Standpunkt noch kein Use-Case als Verkaufsargument bieten. Zu bedenken ist jedoch, dass sich das autonome Fahren des Roboters zur Zeit ebenfalls in der Entwicklung befindet.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
@@ -35,7 +35,7 @@ Der Auftraggeber sucht nach einer Funktion um die Fahrroboter wirtschaftlich nut
 [cols="1,3"]
 |===
 | Das Problem | Die Fahrroboter können noch nicht bedient werden.
-| betrifft | die Kunden, allem voran Förster und Bauern.
+| betrifft | die Kunden, allem voran Förster und Bauern
 | die Auswirkung davon ist | *•* Fahrroboter haben noch keinen praktischen nutzen
 
 *•* den Kunden kann noch nicht schwere, körperliche Arbeit erleichtert werden
@@ -99,7 +99,7 @@ Beispiel Produkt:
 
 | Firma Sciota Robotics (Entwickler der Fahrroboter)
 | Entwickler der Fahrroboter
-| Bereitstellen der Roboter
+| Bereitstellen der Roboter und Implementierung des autonomen Fahrens
 
 
 | Kunde (Förster, Bauern)
@@ -112,7 +112,7 @@ Beispiel Produkt:
 
 | Server
 | Server, auf dem die Daten zwischengespeichert werden
-| Bereitstellung des benötigten Speichers; Zuverlässigkeit
+| Bereitstellung des benötigten Speichers; Zuverlässigkeit der Server sichern
 
 | Gesetzgeber
 | Legt Rahmenbedingungen und Vorschriften fest
