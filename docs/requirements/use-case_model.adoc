@@ -11,8 +11,11 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: ...
-* *UC02*: ...
+* *UC01*: Route erstellen
+* *UC02*: Route bearbeiten
+* *UC03*: Route löschen
+* *UC04*: Transport von Holz
+
 
 
 == Use Case Diagramm
