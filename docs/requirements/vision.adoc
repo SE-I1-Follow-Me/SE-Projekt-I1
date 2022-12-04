@@ -21,7 +21,7 @@ Siehe <<#glossary, Glossar>>.
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
-Für Teile der Implementierung greift das Team I1 auf die GPS-Tracking-Android-App zurück, welche im vorangegangenen Projektzyklus vom Team I5 entwickelt wurde. Diese App ermöglicht GPS-Tracks zu erstellen.
+Für Teile der Implementierung greift das Team I1 auf die [GPS-Tracking-Android-App](https://github.com/MarioNeugebauer/GpsTrackingAndroid) zurück, welche im vorangegangenen Projektzyklus vom Team I5 entwickelt wurde. Diese App ermöglicht GPS-Tracks zu erstellen. 
 
 
 == Positionierung
@@ -110,7 +110,7 @@ Beispiel Produkt:
 | Auftraggeber des Projektes
 | Ansprechpartner für das Projekt; legt die Anforderungen fest
 
-| Server
+| HTW Dresden Rechenzentrum
 | Server, auf dem die Daten zwischengespeichert werden
 | Bereitstellung des benötigten Speichers; Zuverlässigkeit der Server sichern
 
