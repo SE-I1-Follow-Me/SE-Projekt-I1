@@ -1,0 +1,72 @@
+= Protokoll: Cycle Meeting KW 46
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 16.11.22 17.00 Uhr - 17.50
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+
+
+== Agenda
+. Erfahrungen/ Fähigkeiten im Bereich SE austauschen
+. Erste Idee für Verantwortlichkeit
+. Ersten Termin mit Themenersteller finden -> Prof. Dr.-Ing. Mario Neugebauer
+. Kick-Off-Meeting mit Robert Ringel
+. Regeltermin 1x wöchentlich finden
+
+
+=== Erfahrungen/ Fähigkeiten im Bereich SE austauschen
+
+Ergebnis:: 
+****
+-	Magnus: überdurchschnittliche Fähigkeiten in der Android-App-Entwicklung
+-	Manuel: Vorkenntnisse in der Projektorganisation
+****
+
+=== Erste Idee für Verantwortlichkeit
+
+Ergebnis:: 
+****
+-	PL -> Uli
+-	PL SV -> Leon
+-	Analyst -> Manuel, Marcel 
+-	Architect- > Magnus
+-	Developer -> Leon, Jonas
+-	Tester -> Marcel, Michael
+****
+
+=== Ersten Termin mit Prof. Dr.-Ing. Mario Neugebauer finden
+
+Ergebnis:: 
+****
+-	Uli schreibt Mail an Prof. Neugebauer und fragt nach Termin
+****
+
+=== Kick-Off-Meeting mit Robert Ringel
+
+Ergebnis:: 
+****
+-	Leon hat angerufen -> Termin am 24.11 um 12:50 Uhr
+-	Uli schreibt Erinnerungsmail
+****
+
+=== Regeltermin 1x wöchentlich finden
+
+Ergebnis:: 
+****
+-   Jeden Montag 18:30 Uhr
+****
+
+

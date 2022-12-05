@@ -1,0 +1,59 @@
+= Protokoll: Cycle Meeting KW 47
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 22.11.22 19.00 Uhr - 19.30
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+
+
+== Agenda
+. Fragen sammeln für Meeting mit Herrn Neugebauer
+
+
+=== Fragen sammeln für Meeting mit Herrn Neugebauer
+
+Ergebnis:: 
+****
+Roboter::
+-	Wie sieht der Roboter aus (welche Sensorik, welche Ansteuerungsmöglichkeiten)
+-	Technisches Datenblatt vom Roboter?
+-	Was bedeutet "bisher absolvierter Pfad"?
+-	Welche Fahrkommandos?
+-	Wird Fahrtelemetrie gespeichert?
+-	Sensorik für Straßenverkehr -> Gefahr?
+-	Rechtliche Besonderheiten?
+-	Wie viele Nutzer pro Roboter?
+
+App::
+•	Welche Programmiersprache
+•	Was ist minimale Funktionalität?
+•	Schon Framework im Kopf, mit ähnlichen Funktionen?
+•	Können wir Kotlin benutzen?
+•	Welche Android Version?
+•	Werden Logdaten gesammelt?
+•	App im Hoch- und/oder Querformat?
+•	Soll bereits absolvierter Weg visualisiert werden?
+•	Opensource?
+
+Vision::
+•	Nur auf Android oder später auch auf IOS?
+•	Was ist Ziel der Software?
+•	Wer wird die App nutzen?
+•	App weiterentwickelbar?
+•	User Stories bereits vorhanden?
+
+
+****

@@ -1,0 +1,94 @@
+= Protokoll: Kick-Off-Meeting mit Prof. Neugebauer
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 23.11.22 9.20 Uhr - 10.20
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+
+
+== Agenda
+.	Gesammelte Fragen an Prof. Neugebauer
+
+
+=== Fragen sammeln für Meeting mit Herrn Neugebauer
+
+Ergebnis:: 
+****
+Roboter::
+-	Wie sieht der Roboter aus (welche Sensorik, welche Ansteuerungsmöglichkeiten)
+-	Technisches Datenblatt vom Roboter?
+-	Was bedeutet "bisher absolvierter Pfad"?
+-	Welche Fahrkommandos?
+-	Wird Fahrtelemetrie gespeichert?
+-	Sensorik für Straßenverkehr -> Gefahr?
+-	Rechtliche Besonderheiten?
+-	Wie viele Nutzer pro Roboter?
+
+----
+- Roboter ist mit Cloud verbunden -> Forstwirt sammelt Zeug (Baumstämme etc.), Roboter soll zurückbringen, abladen und dann selbstständig zurück zum Forstwirt
+- Anforderungsanalyse aus Sicht des Bauers -> Roboter beladen und entladen und zurückkommen/ oder Roboter wird woanders hingeschickt und wird an dem neuen Ort gesteuert
+
+- irrelevant ob etwas im Weg liegt
+- kein Straßenverkehr
+
+----
+
+App::
+•	Welche Programmiersprache
+•	Was ist minimale Funktionalität?
+•	Schon Framework im Kopf, mit ähnlichen Funktionen?
+•	Können wir Kotlin benutzen?
+•	Welche Android Version?
+•	Werden Logdaten gesammelt?
+•	App im Hoch- und/oder Querformat?
+•	Soll bereits absolvierter Weg visualisiert werden?
+•	Opensource?
+
+----
+- dauerhafte Serververbindung benötigt, da nicht dauerhaft Verbindung über Bluetooth möglich sein wird
+- Server mit Springboot und Kotlin
+- Zusätzliche Funktionalitäten können noch ausgedacht werden
+- Pfad aufzeichnen oder direkt an Server senden
+- Kotlin ist erlaubt
+- Android Version, welche momentan prozentual am meisten verbreitet ist (mind. 10 /11)
+- App optional mit Supportbutton/Impressum/About
+- Bibliothekslizenzen müssen beachtet werden -> mind. Nennung der Bib.
+- Logdaten auf Server speichern -> Sentry Bibliothek??
+- im Hoch- und Querformat nutzbar
+- Weg soll visualisiert werden
+- Bei GPL-Lizenz muss Sode veröffentlicht werden, für Projekt aber egal ob open- oder closedsource
+- Framework mit ähnlichen Funktionen: App aus vorherigen SE Zyklus -> Route wird aufgezeichnet, wenn man mit Gerät durch die Gegend läuft -> Routen festlegen und editierbar (wird von Neugebauer zur Verfügung gestellt)
+
+----
+
+Vision::
+•	Nur auf Android oder später auch auf IOS?
+•	Was ist Ziel der Software?
+•	Wer wird die App nutzen?
+•	App weiterentwickelbar?
+•	User Stories bereits vorhanden?
+
+----
+- erstmal auf Android lassen
+- Nutzer: Bauer, Forstwirt
+- Weiterentwickelbar: 
+    Ja: Teil einer größeren App /Appsammlung. Soll Teil der Funktionalität abbilden.
+    Später vielleicht Flottenansteuerung
+    Überwachung? Nutzer läuft ab, Roboter fährt hinterher
+
+----
+
+****
