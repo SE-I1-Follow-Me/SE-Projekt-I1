@@ -1,0 +1,89 @@
+= Protokoll: Cycle Meeting KW 49
+Leon Lowa <leon.lowa@htw-dresden.de>
+v1.0, 05.12.22 18.30 Uhr - 19.30
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+
+== Abwesende
+* Magnus Andreas Böhne
+
+
+
+== Agenda
+.	Vorstellung Ausarbeitungen 
+.	Meeting Agenda f. 06.12.2022
+.	Anstehende Aufgaben verteilen
+.	Organisation
+
+
+
+
+=== Vorstellung Ausarbeitungen
+
+Ergebnis:: 
+
+****
+
+Leon, Jonas -> Use-Cases: ::
+* 8 Identifiziert und ausgearbeitet
+* *Offen*: Use-Case-Diagramm, Verfeinerung der UC nach Rücksprache mit Coach, in Github einpflegen
+
+Manuel, Michael -> Vision: ::
+* GPS-Android App verlinkt, fachliche Motivation, Scope ausgearbeitet, Problem-Statement, Stakeholder ausgearbeitet.
+* In Github bereits eingepflegt.
+* *Offen*: Bedarfe und Hauptfunktion, zusätzliche Produktanforderungen, Produktlösungsüberblick
+
+Marcel -> App von vorheriger Gruppe analysiert: ::
+* Vieles in Java programmiert
+* Server mit Python
+* App sehr simpel gehalten
+* Routen können gespeichert werden
+* *Wiederverwendbare Funktionen*: eventuell Karte, GPS-tracking mit einbinden
+
+Magnus -> Springboot analysiert: ::
+* kein Update, da fehlend
+
+****
+
+=== Meeting Agenda für Coachmeeting 06.12.2022
+
+Ergebnis:: 
+****
+erledigt
+****
+
+=== Anstehende Aufgaben verteilen
+
+Ergebnis:: 
+****
+Leon, Jonas::
+Use-Case-Diagramm
+Manuel::
+Vision weiter ausarbeiten
+Michael, Uli::
+Usability
+Marcel, Magnus::
+Reliability, Performance, Supportability
+
+
+****
+
+=== Organisation
+
+Ergebnis:: 
+****
+erledigt
+
+****
