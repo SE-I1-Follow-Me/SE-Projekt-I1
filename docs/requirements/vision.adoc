@@ -35,11 +35,9 @@ Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nu
 [cols="1,3"]
 |===
 | Das Problem | Die Fahrroboter können noch nicht bedient werden.
-| betrifft | die Kunden, allem voran Förster und Bauern
-| die Auswirkung davon ist | *•* Fahrroboter haben noch keinen praktischen nutzen
-
-*•* den Kunden kann noch nicht schwere, körperliche Arbeit erleichtert werden
-| eine erfolgreiche Lösung wäre | Eine voll funktionsfähige App, welche es ermöglicht, die Fahrroboter zu bedienen. Dadurch könnten Arbeiten, wie zum Beispiel das Tragen von schweren Gegenständen durch den Fahrroboter abgenommen werden
+| betrifft | Kunden die einen Fahrroboter besitzen.
+| die Auswirkung davon ist | Fahrrobotern können keine Aufgaben übertragen werden.
+| eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, die Fahrroboter zu bedienen.
 |===
 
 ////
@@ -60,12 +58,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | Kunden, primär Förster und / oder Bauern
-| die | schwere Gegenstände bzw. Ladungen transpotieren müssen
-| Das Produkt / die Lösung ist ein | App, welche die Steuerung eines Fahrroboters ermöglicht
-| Die | es möglich macht, schwere Lasten an den Fahrroboter zu geben und diese über ihn transpotieren zu lassen
-| Im Gegensatz zu | die Last selber tragen oder von Mitarbeitern tragen zu lassen
-| Unser Produkt | ermöglicht es, Kraft und Zeit zu sparen
+| Für | Kunden
+| die | die einen Fahrroboter besitzen
+| Das Produkt ist eine | mobile Android-App
+| Die | es dem Kunden ermöglicht, die Fahrroboter zu bedienen
+| Im Gegensatz zu | Lasten selbstständig tragen
+| Unser Produkt | ermöglicht es, diese Aufgaben an den Fahrroboter zu geben
 |===
 
 ////
