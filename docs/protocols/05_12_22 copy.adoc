@@ -53,7 +53,18 @@ Marcel -> App von vorheriger Gruppe analysiert: ::
 * *Wiederverwendbare Funktionen*: eventuell Karte, GPS-tracking mit einbinden
 
 Magnus -> Springboot analysiert: ::
-* kein Update, da fehlend
+* einfache und schlanke Syntax
+* modern
+* vereinfachte Maven-Konfiguration
+* viele Einstellungen können in Properties-Dateien festgelegt werden (Setup wird erleichtert)
+* vieles wird von Haus automatisch Konfiguriert
+* sehr flexibel, es sieht unwahrscheinlich aus, dass die Implmentierung aufgrund des Framework sich als schwierig erweist
+* man kann es sehr unkompliziert aufsetzen
+* hat eine große Community (Fehler können schneller behoben werden)
+* der "Kunde" hat es empfohlen 
+
+Das Framework ist für Large- Scale Projekte aufgrund der einfachen Struktur sehr schwierig in der Anwendung. Jedoch ist es ideal für kleine bis mittlere Projekte, da man sich schneller in Springboot einarbeiten kann und die Entwicklung von kleineren Software- Projekten deutlicher weniger Zeit in Anspruch nimmt.
+-> Schlussfolgerung: Das Framework wäre geeignet.
 
 ****
 
