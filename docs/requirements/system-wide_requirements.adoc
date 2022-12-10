@@ -23,6 +23,25 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
+
+NFAU-1: ::
+* Auf Anglizismen und oder technische und informatische Fachbegriffe soll verzichtet werden. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
+
+NFAU-2: ::
+* Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
+
+NFAU-3: ::
+* Zur Minimierung der Interaktionsauswahl, der Konfusion und zur Steigerung der Übersichtlichkeit werden Auswahlmöglichkeiten durch Ausgrauen reduziert, wenn sie zum Zeitpunkt der Auswahl technisch oder anderweitig nicht verfügbar sind. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
+
+NFAU-4: ::
+* Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein. Dafür werden die Kernfunktionalitäten auf der Startseite auswählbar sein. Zur Überprüfung soll die Kernfunktionalität mit weniger als fünf Klicks erfüllbar sein.
+
+NFAU-5: ::
+* Fehler werden dem Nutzer offensichtlich, schnell und verständlich angezeigt. Dafür werden dem Nutzer Pop-Ups zur Bestätigung angezeigt. Zur Überprüfung wird ein Fehler simuliert und einem Fachfremden Nutzer vorgeführt.
+
+
+
+
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
 === Zuverlässigkeit (Reliability)
