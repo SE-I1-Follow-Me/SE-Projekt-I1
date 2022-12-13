@@ -16,6 +16,15 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 
 == Systemweite funktionale Anforderungen
+
+SWFA-1: ::
+* Die GPS-Tracks müssen dauerhaft gespeichert und bei Bedarf aktualisiert sein
+Wenn ein aufgenommenener GPS-Track hochgeladen wird, ist dieser dann dauerhaft verfügbar.
+SWFA-2: ::
+* Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen.
+Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis darauf die Verbindung herzustellen.
+
+
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
 
@@ -45,12 +54,41 @@ NFAU-5: ::
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 
 === Zuverlässigkeit (Reliability)
+
+NFAR-1: :: 
+* Bei instabiler Verbundung zum Server sollen nur vollständig und korrekt gesendete Befehle/Operationen ausgeführt werden.
+Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind. 
+
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 === Effizienz (Performance)
+
+NFAP-1: ::
+* Die App soll ein Wechsel von Seite zu Seite und die Benutzung bestimmter Aktionen innerhalb der App in maximal 3 Sekunden* ermöglichen.
+Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
+
+NFAP-2: ::
+* Gewählte Aktionenen der App sollen innerhalb von 1000 Millisekunden* an den Server gesendet, verarbeitet und verifiziert werden.
+Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+
+NFAP-3: ::
+* Die Speicherung der Daten soll nicht länger als 5 Sekunden dauern
+Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+
+
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
 === Wartbarkeit (Supportability)
+
+NFAS-1: ::
+* Die App soll entwicklungsrelevante Systemfehler loggen können und an die Entwickler weiterleiten
+Zur Überprüfung wird ein solcher Fehler simuliert und überprüft ob die Entwickler über diesen Informiert wurden.
+
+NFAS-2: ::
+* Die App soll zu jederzeit einfach erweiterbar sein, damit fehlende Funktionen hinzugefügt und auftretende Fehler beseitigt werden können.
+Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App zum späteren Zeitpunkt universell für unterschiedliche Roboter einsetzbar ist.
+
+
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 
