@@ -23,6 +23,9 @@ Wenn ein aufgenommenener GPS-Track hochgeladen wird, ist dieser dann dauerhaft v
 SWFA-2: ::
 * Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen.
 Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis darauf die Verbindung herzustellen.
+SWFA-3: ::
+* Bei Nichtbestehen einer GPS Verbindung soll der Roboter stehen bleiben 
+Sollte während einer Aktion keine GPS Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen
 
 
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
@@ -59,6 +62,10 @@ NFAR-1: ::
 * Bei instabiler Verbundung zum Server sollen nur vollständig und korrekt gesendete Befehle/Operationen ausgeführt werden.
 Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind. 
 
+NFAR-2: ::
+* Nur Roboter der eigenen Flotte sollen genutzt werden können.
+Zur Überprüfung sollen ein Key angelegt werden um den Roboter nutzen zu können.
+
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 
 === Effizienz (Performance)
@@ -75,6 +82,15 @@ NFAP-3: ::
 * Die Speicherung der Daten soll nicht länger als 5 Sekunden dauern
 Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
 
+NFAP-4: ::
+* Die Routen sollen möglichst gleich absolviert werden
+Zur Überprüfung wird das Intervall der GPS Aufzeichnung möglichst kurz gehalten und automatisch überprüft, ob die aktuellen GPS Daten mit denen der Route übereinstimmen
+
+NFAP-5: ::
+* Gesendete Kommandos an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden.
+Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+
+*ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
 
