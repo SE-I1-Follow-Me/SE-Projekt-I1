@@ -1,0 +1,83 @@
+= Protokoll: Cycle Meeting KW 49
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 12.12.22 18.30 Uhr - 19.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+== Abwesende
+
+
+
+
+== Agenda
+.	Recap/Neue Fragen
+.	Anstehende Aufgaben verteilen
+.	Organisation
+
+
+
+
+=== Recap/Neue Fragen
+
+Ergebnis:: 
+
+****
+
+Leon, Jonas -> Use-Cases: ::
+*	A u. D verzweigung möglich? -> Fragen zum Neugebauer
+*	Noch nicht im github eingetragen, erst nach neugebauer meeting
+
+Magnus, Marcel -> Performance: ::
+*   Fragen an Neugebauer
+
+Michael, Uli -> Usability: ::
+*   Abgrenzung der UI u. Usability
+*   welche App-Sprache?
+
+Magnus -> Springboot analysiert: ::
+Framework (Wiederholung von letztem Meeting):
+*	Gut nutzbar
+*	Schnell konfiguerirbar
+*	Große community
+
+
+****
+
+=== Anstehende Aufgaben verteilen
+
+Ergebnis:: 
+****
+* Inception Plan Iterationsplan:
+-	Leon u. Uli
+* Use-Cases:
+-	Jonas
+* Functional und Reliability, Performance u. Supportability updaten:
+-	Magnus, Marcel
+* Review alles:
+-	Manuel und Michael
+* Review Vision:
+- Jonas
+
+
+****
+
+=== Organisation
+
+Ergebnis:: 
+****
+* Termin mit Neugebauer finden: erledigt (16.12.22)
+* GitHub Issues wird nun zur Aufgabenverwaltung genutzt
+****

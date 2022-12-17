@@ -1,6 +1,6 @@
 = Protokoll: Cycle Meeting KW 49
 Leon Lowa <leon.lowa@htw-dresden.de>
-v1.0, 05.12.22 18.30 Uhr - 19.30
+v1.0, 05.12.22 18.30 Uhr - 19.30 Uhr
 include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}
 
