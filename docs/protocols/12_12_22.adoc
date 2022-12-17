@@ -1,4 +1,4 @@
-= Protokoll: Cycle Meeting KW 49
+= Protokoll: Cycle Meeting KW 50
 Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
 v1.0, 12.12.22 18.30 Uhr - 19.00 Uhr
 include::../_includes/default-attributes.inc.adoc[]

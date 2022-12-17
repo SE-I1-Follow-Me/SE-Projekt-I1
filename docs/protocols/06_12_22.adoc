@@ -1,0 +1,97 @@
+= Protokoll: Meeting mit Herrn Ringel 
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 06.12.22 15.30 Uhr - 16.30 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Leon Lowa
+* Michael Novak
+
+== Abwesende
+* Magnus Andreas Böhne
+* Jonas Pfeiffer
+
+
+
+== Agenda
+.	Allgemein 
+.	Projektsteckbrief
+.	Fragen
+
+
+
+
+=== Allgemein
+
+Ergebnis:: 
+
+****
+
+Weiterer Ablauf: ::
+- Proof of Concept f. das feature als erstes machen
+- Welche Features will der Kd. was/ wann haben
+- Danach Kernfunktionalität machen
+
+
+
+****
+
+=== Projektsteckbrief
+
+Ergebnis:: 
+****
+* Risiken:
+- Welches Know-How könnte fehlen (Java , Server)
+- Welche Frameworks geben Lizenzprobleme
+- Verbindungsabbruch
+- Kein GPS Signal
+- Verhalten bei leeren Akku von Roboter/Endgerät
+- Wie kann das getestet werden
+
+
+* Ressourcen
+- Welchen Server 
+- wie ist der Server angebunden.
+- Was brauchen wir
+- was nicht direkt bereitgestellt werden kann.
+
+****
+
+=== Fragen
+
+Ergebnis:: 
+****
+
+- Technische Fragen zu UC nicht an Herr Ringel, sondern an Vorelsung /Prof. Anke
+
+- Dokumente sollen bei der Arbeit helfen.
+Zum ausprobieren der Werkzeuge geeignet.
+
+- Hauptfunktionsgruppe (z.B. Roboter-liste, Kommandos zum folgen, etc. …) -> Dafür planen wir Features XY, und ZA
+- Zusätzliche Anforderungen -> Vorlesung abwarten, ggf. Neugebauer
+- Problem Statement: -> Deutsche Sprache , schwere Sprache, daran arbeiten
+- Ende Januar
+Grundfunktionale App/ Grundfunktionaler Server(der Log-file abspeichert)
+Zu zeigen, das Grundlegende Dummyfunktionalitäten funktionieren(Button wird gedrückt, am Server kommt was an, dieser logt das)
+Inception-phase Dokument
+
+
+
+- Fragen an Neuggebauer:
+Wie wird er Server angebunden, wie ist der zugänglich?
+Wie wird eventuell getestet?
+Wie wird der Roboter angesprochen?
+Wie kann ein Roboter angesprochen werden?
+Wie funktional soll der Server sein, auch Bestandteil des Projekts?
+Worin besteht der Nutzen der App, gibt es eine fertige Schnittstelle, sollen wir eine Testschnittstelle programmieren?
+
+
+****
+
