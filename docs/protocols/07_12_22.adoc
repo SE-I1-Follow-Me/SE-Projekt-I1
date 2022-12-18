@@ -1,0 +1,50 @@
+= Protokoll: Meeting mit Herrn Neugebauer
+Leon Lowa <leon.lowa@htw-dresden.de>
+v1.0, 06.12.22 +11:00 - 12:00
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Leon Lowa
+* Michael Novak
+* Magnus Andreas Böhne
+
+== Abwesende
+* Jonas Pfeiffer
+
+
+== Agenda
+.	Use-Cases vorstellen
+.	Fragen geklärt
+
+
+
+
+=== Use-Cases vorstellen
+
+Ergebnis:: 
+****
+
+* Use-Cases mit den Vorstellungen des Kunden übereinstimmend
+
+****
+
+=== Fragen geklärt
+
+Ergebnis:: 
+****
+- Server kann im Laborbereich stehen, sollte aber von überall zugänglich sein.
+- Testablauf: Man gibt eseine Anfrage über den Server an eine Testanwendung, da simmuliert man Fahraktivitäten und diese Daten werden zurückgegeben und dann verarbeitet.
+- Die Roboter können nicht direkt angesprochen werden, kann sein das es eine NAT gibt, denn der Roboter hat im Mobilfunknetz eine Adresse, diese wird kontinuirlich offen gelassen, so dass man eine Antwort in Form von Infos zuzückgegeben kann.
+- Die App sollte mehrer Nutzer anbieten können, z.B. eine Roboter Flotte bei einem Unternehmen, dieses kann nur auf die zugreifen
+- Server soll komplett erstellt werden, als erster Schritt sollen die Funktionalitäten impementiert werden und anschließend von der App bis zum Server bis zur Simulation umgesetzt werden.Funktionalitäten werden sukzessiv hinzufügt.
+- Der Server als auch die App haben für den Kunden den gleichen Stellenwert.
+
+****
+
