@@ -139,11 +139,20 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| xx | xx | xx | xx
+| Route aufzeichnen | hoch | Route abgehen und dabei aufzeichnen | xx
+|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern |
+|Route laden |hoch |Zuvor aufgenommene Route anzeigen |
+|Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen |
+|Route löschen |hoch |Löschen einer zuvor aufgenommenen Route |
+|Roboter hinzufügen |hoch |Speichern eines neuen Roboters |
+|Roboter bearbeiten |niedrig |Namen des Roboters ändern | 
+|Roboter Fahrkommandos |niedrig |Befehle auf aufgezeichneten Routen an den Roboter geben |
+|Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen |
+|Roboter in Wartungsmodus setzen |sehr niedrig |Roboter wird in Warungsmodus gesetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung |
 |===
 
 
-//Notiz: Karte + Anzeige, Follow-me, Hilfe, About, Daten mit Server synchronisieren
+
 
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
@@ -162,5 +171,10 @@ Hinweise:
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| xx | xx | xx
+| App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | xx
+|Im Falle eines Absturzes werden die vollständigen, aufgenommenen Daten gespeichert |hoch | 
+|Da die App auch nach Fertigstellung weiter entwickelt werden soll muss im Code möglichst auf hartcodierung verzichtet werden |hoch |
+|Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |mittel |
+|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |mittel |
+|In der Sprachauswahl soll neben Deutsch auch Englisch vergügbar sein |niedrig |
 |===
