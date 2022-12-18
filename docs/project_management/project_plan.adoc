@@ -1,46 +1,152 @@
 = Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>; Leon Lowa <leon.lowa@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-//Briefly describe the content of the project plan.
+Im Folgenden werden die Arbeitsweisen für das Projekt I1 beschrieben und erklärt. Dabei ist der Projektplan ein Anhaltspunkt zur Erfüllung der Projektziele. Das Team orientiert sich bei diesem Projekt am Vorgehensmodell „Open Unified Process“. 
+Das Projekt umfasst die vier Phasen:
+
+*  Inception (2 Iterationen)
+*  Elaboration (3 Iterationen)
+*  Construction (5 Iterationen)
+*  Transition (2 Iterationen)
+
+Der Projektplan wird während der Projektlaufzeit ergänzt und verfeinert. Verantwortlich dafür sind die Projektleiter.
+
 
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist eine ausführliche Auflistung der einzelnen Stakeholder und deren Rolle innerhalb des Teams zu finden.
+
+[%header, cols="1,3a,2,1,1"]
+|===
+| Name
+| Rolle
+| Studium
+| Vorkenntnisse
+| Aufgaben
+
+| Carl Ulrich Brinker
+| Project Manager
+| Wirtschaftsingenieurwesen
+| Projectmanagement
+| Protokoll, Organisation, Schriftverkehr
+
+| Leon Lowa
+| Project Manager, Developer
+| Wirtschaftsinformatik
+| Java, Python, C
+| Protokoll
+
+| Marcel Axmann
+| Tester, Analyst
+| Informatik
+| Java, C/C++
+|
+
+| Jonas Pfeiffer
+| Developer
+| Wirtschaftsinformatik
+| Java, C, SQL
+| 
+
+| Manuel Scheer
+| Analyst
+| Wirtschaftsinformatik
+| Projektmanagement, Java, C
+|
+
+| Magnus Böhne
+| Architect
+| Wirtschaftsinformatik
+| 
+|
+
+| Michael Novak
+| Tester
+| Wirtschaftsinformatik
+| Java, C, SQL
+|
+
+|===
+
+
+
+=== Arbeitsweise
+
+Die Kommunikation lief sowohl simultan über die Anwendungen WhatsApp und Discord als auch in Präsenz. Die Aufgabenverteilung wurde anfangs nur über Discord besprochen und später zudem über GitHub-Issues verwaltet.
+
+Wöchentlich wurden Aufgaben am Montags-Meeting verteilt, die Project Manager haben diese am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Am Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Problem oder zukünftige Fragestellungen im Team diskutiert anschließen wird das zugehörige Protokoll in das Ascii-Format übertragen und im GitHub-Repository hinzugefügt. Zusätzlich wird jede Aufgabe eines anderen Teams reviewed. 
+Zur Bearbeitung der Aufgaben wurden den Teammitgliedern Zuständigkeitsrollen zugeteilt, wobei sich jedoch darauf verständigt wurde, dass die Aufgabenverteilung nicht den festgelegten Rollen entsprechen müssen, was eine agile Aufgabenverteilung ermöglicht. Dieses Konzept ermöglicht den Teammitgliedern eine vollständige Transparenz über das Projekt, dessen Aufgaben und deren Arbeitsstand.
+
+Die Aufgaben werden, so weit wie möglich, in Zweierteams aufgeteilt, um eine differenziertere Sichtweise zu erreichen. In GitHub-Issues wird der aktuelle Bearbeitungsstand festgehalten, um eine Übersicht zu erhalten und die weitere Aufgabenverteilung agil zu halten.
+
 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+=== Management Practices
+https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/management_practice_list_8D917129.html?nodeId=770581c6[Management Practices OpenUP]
+
+Nach Vorgabe der Lehrveranstaltung wurde als Managementmethode der Open Unified Process verwendet. Hierbei werden Meilensteine in Iterationen erreicht. Diese Meilensteine werden in kleinere Aufgaben/Teilschritte unterteilt, durchgeführt und gegebenenfalls erweitert. Resultierend können etwaig auftretende Probleme schnell erkannt und gelöst und falsche Entscheidungen rechtzeitig identifiziert und gegengesteuert werden.
+
+Unser Team führt Iterationen in 14-tägigen Zyklen durch, wobei wir jedoch jede Woche ein Meeting durchführen. In unseren Montags-Meetings werden vorherige Aufgaben besprochen, neue Aufgaben zugeteilt und neu aufgekommene Fragen besprochen oder zur Absprache mit dem Kunden notiert. Es gibt einen Meetingsleiter, welcher das Team durch die Agenda führt und einen Protokollführer. Der Projektmanager und sein Stellvertreter besprechen am Vortag alle anstehenden Aufgaben und erstellen eine Agenda. Diese wird vor dem Montags-Meeting an alle Mitglieder verteilt, damit das Meeting vorbereitet werden kann.
+
+Die Iterative Komponente wird nach dem OpenUP Framework umgesetzt: Plan Iteration -> manage Iteration -> Assess Results. In der Iterationsplanung werden die fälligen Aufgaben priorisiert. Die einzelnen Aufgaben werden in den Iterationsmeetings zugeteilt. In der Planung der Iteration ist der Ausgang der vorherigen Iteration maßgebend und dient als Ausgangspunkt für die Darauffolgende. Die aktualisierte Risikobewertung findet hierbei ebenso Berücksichtigung. Gegebenenfalls wird anhand dessen Scope und Projektziel angepasst. Bestandteil des Montagsmeetings ist ebenfalls eine Bewertung und Ergänzung der bekannten Risiken. Bei Veränderung werden diese neu evaluiert. 
+
+In dem Meeting in der darauffolgenden Woche, können die Zuständigkeiten agil an den Bearbeitungsstand angepasst werden. Als Messkriterium des Iterationszyklus-Erfolges dient der prozentuale Anteil absolvierter und durch Teammitglieder überprüfter Aufgaben.
+
+Zur besseren Übersicht werden die zugeteilten Aufgaben in GitHub-Issues eingepflegt und den Teammitgliedern zugewiesen. Die jeweilig verantwortlichen Teammitglieder werden daraufhin per Mail an ihre Aufgabe erinnert. Durch unterschiedliche Labels können die Aufgaben klassifiziert und priorisiert werden. In den Kommentaren unter den jeweiligen Issues können Unteraufgaben oder Arbeitsstände protokolliert werden. 
+
+=== Technical Practices
+
+
+https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/technical_practice_list_E425C20F.html?nodeId=cd065eb4[Technical Practices OpenUP]
+
+Im Rahmen des Projektes werden die technischen Praktiken Shared Vision und Use Case Driven Development einbezogen.
+
+Shared Vision bezieht sich im Allgemeinen auf eine einheitliche und durch den Kunden geteilte Ansicht auf die genauen Anforderungen und Erwartungen an das System. Konkret wurde dies durch eine frühzeitige Anfertigung der Vision und deren Besprechung im gesamten Team erreicht. Des Weiteren wurden mehrere Use-Cases angefertigt, um diese den Kunden vorzulegen und so seine Vorstellungen, auf die zu implementierenden Anforderungen, mit der unserer abzugleichen. Damit konnte das Aufgabengebiet in einem Scope eingegrenzt werden und so eine zeiteffektivere und genauere Priorisierung der einzelnen Aufgaben erreicht werden.
+
+Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentation des zu erreichenden Systemverhaltens, als auch zur Sicherstellung, dass die angefertigte Software testbar ist und einen funktionalen Mehrwert besitzt. Um das zu erreichen haben wir Use-Cases und funktionale als auch nicht funktionale Requirements ausgearbeitet. Anhand des Use-Case-Models können wir im Laufe des Projektes unseren Fortschritt validieren und haben einen Anhaltspunkt für die Architektur. Mit den Requirements wird die Bedienbarkeit und ein tatsächlicher Nutzen der Software sichergestellt. Dies dient als Leitfaden während der Implementierung, so dass eine qualitative Software entsteht und auch die Zufriedenstellung des Kunden gesichert werden kann.
 
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 
-[%header, cols="1,3a,2,1"]
+[%header, cols="1,3a,2"]
 |===
+
 | Iteration
-| Primary objectives +
-(risks and use case scenarios)
+| Primary objectives (risks and use case scenarios)
 | Scheduled start or milestone
-| Target velocity
 
 | I1
-|
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
-| 15
+|* Rollenzuweisung
+* Kick-off Meeting Auftraggeber
+* Coach Meeting
+* Erarbeitung der Zielstellung
+* Zentrale Risikoanalyse
+
+| From 21.11.2022 to 04.12.2022
 
 | I2
-|
-* Mitigate Risk 2
-* Develop Use Case 1, Scenario 2
-| Date from/Date to
-| 16
+|* Ausarbeitung von Vision, Use-Cases, Qualitätsanforderungen
+* 2. Meeting Auftraggeber 
+* Auswahl des Frameworks
+* Erarbeitung eines Projektplans
+* Entwurf einer Architektur
+* Review bisheriger Ausarbeitungen
+* Risiken neu bewerten
+| From 05.12.2022 to 18.12.2022
+
+| I3
+| <<Iteration Plan 03: {project-name}, Iterationsplan I03>>
+| From 19.12.2022 to 09.01.2023
+
 |===
 
 
