@@ -14,7 +14,11 @@ include::../_includes/default-attributes.inc.adoc[]
 * *UC01*: Speichern der Roboter
 * *UC02*: Verwalten der Roboter
 * *UC03*: Auswahl der Roboter
-* *UC04*: Beender der Follow-Me Funktion
+* *UC04*: Beenden der Follow-Me Funktion
+* *UC05*: Senden des Folge Befehls
+* *UC06*: Senden des Zurückkehren Befehls
+* *UC07*: Senden des Warte Befehls
+* *UC08*: Speichern der Route
 
 
 
@@ -30,17 +34,24 @@ Zwischen `include::...` und dem darauf folgenden `<<<` muss sich eine Leerzeile 
 Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombination mit `<<<` zu Fehlern führen kann.
 ////
 
+
 <<<
 include::use_case_01.inc.adoc[]
 
 <<<
-include::use_case_02.inc.adoc[]
+include::Use Case 08 - Speichern der Route.adoc[]
 
-<<<
-include::use_case_03.inc.adoc[]
+//<<<
+//include::use_case_01.inc.adoc[]
 
-<<<
-include::use_case_04.inc.adoc[]
+//<<<
+//include::use_case_02.inc.adoc[]
+
+//<<<
+//include::use_case_03.inc.adoc[]
+
+//<<<
+//include::use_case_04.inc.adoc[]
 
 //<<<
 //include::use_case_05.inc.adoc[]
