@@ -7,7 +7,7 @@
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 
-Dieser Use Case beschreibt das Versenden des Folge Befehls in der Follow-Me-App
+Dieser Use Case beschreibt das Versenden des Warte Befehls in der Follow-Me-App
 
 === Kurzbeschreibung der Akteure
 
@@ -33,18 +33,18 @@ Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötig
 ==== <Roboter existent>
 Es wurden bereits Roboter gespeichert.
 
-==== <Roboter verfügbar>
-Ein Roboter ist verfügbar (führt keine anderen Befehle aus).
+==== <Roboter ist aktiv>
+Ein Roboter hat momentan einen aktiven Folge oder Zurückkehren Befehl.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 
-. Der Use Case beginnt, wenn der Nutzer im Hauptmenü der App auswählt, dass er einen Roboter Folgen lassen will.
+. Der Use Case beginnt, wenn der Nutzer im Hauptmenü der App auswählt, dass er einen Roboter warten lassen will.
 . Die App zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
 . Der Nutzer wählt einen Roboter aus der zuvor angezeigten Liste aus.
 . Die Anwendung zeigt dem Nutzer eine Bestätigung an.
-. Das Use Case endet wenn der Roboter beginnt, dem Nutzer zu folgen.
+. Das Use Case endet wenn der Roboter seinen momentanen Befehl pausiert und an seinem momentanen Standort wartet.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
@@ -52,15 +52,15 @@ Ein Roboter ist verfügbar (führt keine anderen Befehle aus).
 ==== Keine verfügbaren Roboter
 
 Falls in Schritt 2 kein verfügbarer Roboter gefunden wurde.
-    . Die Anwendung zeigt dem Nutzer an, dass keine Roboter verfügbar sind, denen der Folge Befehl gegeben werden kann.
+    . Die Anwendung zeigt dem Nutzer an, dass keine Roboter verfügbar sind, denen der Warte Befehl gegeben werden kann.
     . Das Use Case endet erfolglos, die Anwendung zeigt dem Nutzer den Startbildschirm.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Der Nutzer will einen Roboter den Folge Befehl geben>
+==== <Der Nutzer will einem Roboter den Warte Befehl geben>
 
-. Die Anwendung fragt eine Liste aller für den Nutzer verfügbaren Roboter vom Server ab.
+. Die Anwendung fragt eine Liste aller Roboter ab, die zuvor den Folge oder Zurückkehren Befehl erhalten haben vom Server ab.
 . Der Server sendet eine Liste aller verfügbaren Roboter an die Anwendung.
 
 
@@ -80,17 +80,19 @@ Falls in Schritt 2 kein verfügbarer Roboter gefunden wurde.
 
 ==== Der Nutzer bricht das Use Case ab
 Der Roboter führt den Folge Befehl nicht aus.
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 ==== Erfolgreiches Beenden
-Der Roboter folgt dem Nutzer, bis dieser ihm befiehlt, ihm nicht länger zu folgen.
+Der Roboter hat seinen aktuellen Befehl pausiert und wartet nun auf seiner aktuellen Position auf weitere Befehle.
+
+==== Erfolgloses Beenden
+Wird das Use Case erfolglos beendet, wird dem Nutzer das Hauptmenü gezeigt, der zuvor ausgewählte Roboter behält seinen aktuellen Zustand bei.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+==== Reliability
+Verfügbarkeit: Der Server sollte dauerhaft ansprechbar sein.
