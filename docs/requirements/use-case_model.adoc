@@ -11,10 +11,10 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: 
-* *UC02*: 
-* *UC03*: 
-* *UC04*: 
+* *UC01*: Speichern der Roboter
+* *UC02*: Verwalten der Roboter
+* *UC03*: Auswahl der Roboter
+* *UC04*: Beender der Follow-Me Funktion
 
 
 
@@ -34,13 +34,13 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 include::use_case_01.inc.adoc[]
 
 <<<
-include::use_case_01.inc.adoc[]
+include::use_case_02.inc.adoc[]
 
-//<<<
-//include::use_case_03.inc.adoc[]
+<<<
+include::use_case_03.inc.adoc[]
 
-//<<<
-//include::use_case_04.inc.adoc[]
+<<<
+include::use_case_04.inc.adoc[]
 
 //<<<
 //include::use_case_05.inc.adoc[]

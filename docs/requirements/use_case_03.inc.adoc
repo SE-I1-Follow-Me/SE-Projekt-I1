@@ -2,10 +2,10 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: <use-case name>
+== Use-Case UC03:  Auswahl des zu steuernden Roboters
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt die Auswahl des zu steuernden Roboters. Der ausgewählte Roboter wird in späteren Use Cases (siehe z.B. UC04) genutzt. 
 
 === Kurzbeschreibung der Akteure
 

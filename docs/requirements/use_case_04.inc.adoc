@@ -2,10 +2,10 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: <use-case name>
+== Use-Case UC04: Follow-Me Funktion
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt den Ablauf der Follow-Me Funktion. In dieser wird einem zuvor ausgewählten Roboter (Siehe UC3) der Befehl gegeben dem Nutzer der App zu folgen.
 
 === Kurzbeschreibung der Akteure
 
