@@ -2,21 +2,38 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case UC02: Verwalten der Roboter
+== Use-Case: Verwalten der Roboter
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt Menüpunkt "Roboter verwalten" und seine Funktionen. Dieser ist wichtig, um einen Überblick über die gespeicherten Roboter zu behalten sowie diese neu zu organisieren. 
+Dieses Use Case beschreibt den Menüpunkt "Roboter verwalten" und seine Funktionen. 
 
 === Kurzbeschreibung der Akteure
 
-==== Nutzer: Nutzer der App, welche neue Roboter hinzufügen möchten
+==== Nutzer (User)
 
-==== Server: Server, auf dem die Daten des Nutzers gespeichert werden
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+
+==== Anwendung
+
+    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+
+==== Server
+
+    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+
+==== Roboter
+
+    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+
 
 === Vorbedingungen
-. Es befinden sich bereits Roboter in der Liste der gespeicherten Roboter.
-. Der Nutzer hat eine stabile GPS Verbindung sowie eine stabile Verbindung zum Server.
 
+
+==== Internetverbindung
+Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+
+==== Verfügbare Roboter
+Es befinden sich bereits Roboter in der Liste der gespeicherten Roboter.
 
 
 === Standardablauf (Basic Flow)
@@ -25,32 +42,41 @@ Dieser Use Case beschreibt Menüpunkt "Roboter verwalten" und seine Funktionen. 
 . Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter verwalten" betätigt.
 . Das System ruft die Liste aller gespeicherten Roboter auf und zeigt diese dem Nutzer an.
 . Der Nutzer kann durch gedrückthalten einen Roboter auswählen, um diesen entweder zu bearbeiten oder zu löschen.
-. Der Nutzer wählt einen Roboter und "bearbeiten" aus.
-. Das System öffnet ein Fenster mit den Informationen des Roboters wie Namen und Adresse.
+. Der Nutzer wählt einen Roboter aus.
+. Der Nutzer wählt Bearbeiten aus.
+. Das System öffnet ein Fenster mit den Informationen des Roboters.
 . Der Nutzer wählt nun den Namen aus.
 . Das System öffnet ein Eingabefenster, damit der Nutzer den Namen ändern kann.
 . Der Nutzer gibt einen neuen Namen ein und bestätigt diesen.
 . Das System prüft, ob der neue Name bereits vergeben ist.
 . Da der Name noch nicht vergeben ist, wird dieser gespeichert.
 . Das System überträgt die Namensänderung an den Server.
-. Das System lädt erneut das Menü "Roboter verwalten" und zeigt die Liste an.  
+. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Roboter verwalten" anzeigt.
 
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Nutzer wählt "löschen" aus
-Wenn der Nutzer im Schritt 4 des Standardablauf "löschen" anstelle von "bearbeiten" auswählt, dann
-. fragt das System, ob der Nutzer sich sicher ist, diesen Roboter zu löschen.
-. Nutzer kann dies bestätigen oder abbrechen, wenn er es abbricht springt das System zurück in das Menü "Roboter verwalten". Bestätigt der Nutzer die Löschung entfernt das System diesen Eintrag aus der Liste der gespeicherten Roboter.
-. System gibt diese Information an den Server weiter.
-. System lädt erneut das Menü "Roboter verwalten" und zeigt die Liste an.
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+
+. Das System fragt den Nutzer, ob er sich sicher ist, diesen Roboter zu löschen.
+. IF Nutzer bestätigt Löschung des Roboters
+.. Das System entfernt den Roboter aus der Liste der gespeicherten Roboter
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+. ELSE
+..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
+
 
 ==== Neuer Name ist bereits vergeben
-Wenn der Nutzer im Schritt 8 einen bereits vergebenen Namen eingibt, dann
+Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
 
-. zeigt das System dem Nutzer eine Fehlermeldung an und fragt, ob er einen neuen Namen eingeben oder den Vorgang abbrechen möchte.
-. Wenn der Nutzer einen neuen Namen eingeben möchte, springt das System zu Schritt 7 des Standardablaufs, wenn der Nutzer den Vorgang abbrechen möchte springt das System in das Menü "Roboter verwalten" und zeigt die Liste der gespeicherten Roboter an. Der Name des gewählten Roboters wird auf die vorherige Eingabe zurückgesetzt.
+. Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
+. Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
+. IF Nutzer möchte neuen Namen vergeben
+.. Das Use Case wird bei Schritt 7 fortgesetzt.
+. ELSE 
+. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern

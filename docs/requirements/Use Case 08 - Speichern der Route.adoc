@@ -29,7 +29,7 @@ Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-==== <Internetverbindung>
+==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
 
 ==== <Abgeschlossene Aktivität>

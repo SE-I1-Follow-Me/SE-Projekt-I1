@@ -63,7 +63,7 @@ Der Nutzer kennt die HashKombination des zu speichernden Roboters.
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== System findet keinen Roboter zu diesem Token
-Wenn das System in Schritt 4 keinen Roboter findet, dann
+Falls das System in Schritt 4 keinen Roboter findet, dann
 
 
 . Das System gibt dem Nutzer eine Fehlermeldung zurück.
@@ -74,7 +74,7 @@ Wenn das System in Schritt 4 keinen Roboter findet, dann
 .. Das Use Case wird bei Schritt 2 fortgesetzt.
 
 ==== Token des Roboters befindet sich bereits in der Liste der gespeicherten Roboter
-Wenn sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeicherten Roboter befindet, dann
+Falls sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeicherten Roboter befindet, dann
 
 . Das System sagt dem Nutzer, dass sich der Roboter bereits in der Liste befindet.
 . Das System fragt den Nutzer, ob er ein anderes Token eingeben möchte oder ob er das Speichern eines Roboters abbrechen möchte.
@@ -84,7 +84,7 @@ Wenn sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeiche
 . Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 ==== Name des Roboters ist bereits vergeben
-Wenn das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 bereits vergeben ist, dann
+Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 bereits vergeben ist, dann
 
 . Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
 . Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.

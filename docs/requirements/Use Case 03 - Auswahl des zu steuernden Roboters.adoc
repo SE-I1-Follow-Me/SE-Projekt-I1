@@ -2,14 +2,28 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case UC03:  Auswahl des zu steuernden Roboters
+== Use-Case: Auswahl des zu steuernden Roboters
 
 === Kurzbeschreibung
 Dieser Use Case beschreibt die Auswahl des zu steuernden Roboters. Der ausgewählte Roboter wird in späteren Use Cases (siehe z.B. UC04) genutzt. 
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+==== Nutzer (User)
+
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+
+==== Anwendung
+
+    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+
+==== Server
+
+    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+
+==== Roboter
+
+    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
