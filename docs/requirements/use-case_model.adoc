@@ -19,6 +19,8 @@ include::../_includes/default-attributes.inc.adoc[]
 * *UC06*: Senden des Zurückkehren Befehls
 * *UC07*: Senden des Warte Befehls
 * *UC08*: Speichern der Route
+* *UC09*: Warten der Roboter
+* *UC10*: Verwalten der Routen
 
 
 
