@@ -19,7 +19,7 @@ Dieses Use Case beschreibt den Menüpunkt "Roboter verwalten" und seine Funktion
 
 ==== Server
 
-    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== Roboter
 

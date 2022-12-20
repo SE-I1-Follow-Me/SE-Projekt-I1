@@ -2,19 +2,37 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: <use-case name>
+== Use-Case: Verwalten der Route
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 
+Dieses Use Case beschreibt den Menüpunkt "Routen verwalten" und seine Funktionen.
+
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+==== Nutzer (User)
+
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+
+==== Anwendung
+
+    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+
+==== Server
+
+    Der Server empfängt die Daten durch die Anwendung und speichert diese. Er dient außerdem als Schnittstelle der Akteure.
+
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+==== Internetverbindung
+Die untereinander kommunizierenden Akteure (Anwendung, Server) benötigen eine stabile Internetverbindung.
+
+==== Verfügbare Routen
+Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
+
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")

@@ -18,7 +18,7 @@ Dieser Use Case beschreibt das Versenden des Folge Befehls in der Follow-Me-App
     Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
 
 ==== <Server>
-    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== <Roboter>
     Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.

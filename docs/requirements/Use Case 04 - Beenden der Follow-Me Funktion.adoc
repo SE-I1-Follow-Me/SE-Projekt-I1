@@ -19,7 +19,7 @@ Dieser Use Case beschreibt den Ablauf der Follow-Me Funktion. In dieser wird ein
 
 ==== Server
 
-    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== Roboter
 

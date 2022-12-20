@@ -20,7 +20,7 @@ Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me 
 
 ==== Server
 
-    Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== Roboter
 
@@ -54,7 +54,7 @@ Damit dieses Use Case beginnen kann, muss das Use Case "Beenden der Follow-Me Fu
 
 Falls in Schritt 3 ausgewählt wird, dass die Route nicht abgespeichert werden soll:
 
-    . Die Anwendung zeigt dem Nutzer an, dass die Route nicht      gespeichert wird.
+    . Die Anwendung zeigt dem Nutzer an, dass die Route nicht gespeichert wird.
     . Das Use Case endet erfolgreich, die Anwendung zeigt dem Nutzer den Startbildschirm an.
 
 ==== Speicher des Servers ist vollständig belegt.
