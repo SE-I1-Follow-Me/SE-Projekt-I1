@@ -138,7 +138,7 @@ Die Route wurde erfolgreich auf dem Server gespeichert, sie hat einen Namen und 
 Die Route wurde nicht gespeichert, da der Nutzer sich dagegen entschieden hat.
 
 ==== Erfolgsloses Speichern der Route
-Die Route konnte nicht gespeichert werden, da es zu Fehlern im Ablauf gekommen ist. 
+Die Route konnte nicht abgespeichert werden, da es zu Fehlern im Ablauf gekommen ist. 
 
 
 
