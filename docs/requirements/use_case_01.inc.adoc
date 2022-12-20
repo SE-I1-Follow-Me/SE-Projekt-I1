@@ -16,7 +16,7 @@ Dieser Use Case beschreibt, wie die verschiedenen Roboter abgespeichert werden, 
 === Vorbedingungen
 . Der zu speichernde Roboter ist erreichbar und kompatibel.
 . Der Nutzer hat eine stabile GPS Verbindung sowie eine stabile Verbindung zum Server.
-
+. Der Nutzer kennt das benötigte Token.
 
 
 === Standardablauf (Basic Flow)
@@ -25,12 +25,13 @@ Dieser Use Case beschreibt, wie die verschiedenen Roboter abgespeichert werden, 
 . Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter verwalten" betätigt.
 . Das System öffnet eine Liste aller gespeicherten Roboter.
 . Der Nutzer wählt nun "Roboter hinzufügen" aus der Menüleiste aus.
-. Das System sucht nun nach Robotern in der Nähe.
-. Das System findet den Roboter und vergleicht, ob seine Adresse sich bereits in der Liste der gespeicherten Roboter befindet.
-. Die Adresse des Roboters befindet sich noch nicht in der Liste, daher speichert das System diese und fragt den Nutzer nach einem Namen für den Roboter.
+. Das System fragt nach einem Token.
+. Der Nutzer gibt das passende Token ein.
+. Das System findet den Roboter und vergleicht, ob dieses Token sich bereits in der Liste der gespeicherten Roboter befindet.
+. Das Token des Roboters befindet sich noch nicht in der Liste, daher speichert das System dieses und fragt den Nutzer nach einem Namen für den Roboter.
 . Der Nutzer vergibt einen Namen und bestätigt diesen.
 . Das System überprüft, ob der Name bereits vergeben ist.
-. Der Name ist noch nicht vergeben, daher speichert das System den neuen Roboter unter dem eingegebenen Namen und der gefundenen Adresse in die Liste der gespeicherten Roboter.
+. Der Name ist noch nicht vergeben, daher speichert das System den neuen Roboter unter dem eingegebenen Namen samt dem Token in die Liste der gespeicherten Roboter.
 . Das System gibt diese Information an den Server weiter. 
 . Das System lädt erneut das Menü "Roboter verwalten" und zeigt die Liste an.  
 
@@ -38,19 +39,19 @@ Dieser Use Case beschreibt, wie die verschiedenen Roboter abgespeichert werden, 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== System findet keinen Roboter
+==== System findet keinen Roboter zu diesem Token
 Wenn das System in Schritt 4 keinen Roboter findet, dann
 
 . gibt das System den Nutzer eine Fehlermeldung zurück.
 . System springt in das Menü "Roboter verwalten" zurück, wo der Nutzer erneut versuchen kann, den Roboter hinzuzufügen (Siehe Schritt 3).
 
-==== Adresse des Roboters befindet sich bereits in der Liste der gespeicherten Roboter
-Wenn sich die gefundene Adresse des Roboters in Schritt 5 bereits in der Liste der gespeicherten Roboter befindet, dann
+==== Token des Roboters befindet sich bereits in der Liste der gespeicherten Roboter
+Wenn sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeicherten Roboter befindet, dann
 
-. sagt das System dem Nutzer, dass sich der gefundene Roboter bereits in der Liste befindet.
-. Das System fragt den Nutzer, ob die Suche neu gestarten oder abgebrochen werden soll.
-. Wenn die Suche neu gestartet werden soll, springt das System zu Schritt 4 des Standardablaufs
-. Wenn die Suche abgebrochen werden soll, springt das System zurück in das Menü "Roboter verwalten".
+. sagt das System dem Nutzer, dass sich der Roboter bereits in der Liste befindet.
+. Das System fragt den Nutzer, ob er ein anderes Token eingeben möchte oder ob er das Hinzufügen eines Roboters abbrechen möchte.
+. Wenn der Nutzer ein anderes Token eingeben möchte, springt das System zu Schritt 4 des Standardablaufs.
+. Wenn das Hinzufügen eines Roboters abgebrochen werden soll, springt das System zurück in das Menü "Roboter verwalten".
 
 ==== Name des Roboters ist bereits vergeben
 Wenn das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 bereits vergeben ist, dann
@@ -58,7 +59,7 @@ Wenn das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 be
 . System gibt dem Nutzer Fehlermeldung zurück, dass dieser Name bereits genutzt wird.
 . Das System leert die Eingabe des Nutzers und fragt erneut nach einem Namen.
 . Der Nutzer vergibt entweder einen neuen Namen oder bricht den Vorgang ab.
-. Wenn der Nutzer einen neuen Namen vergibt springt das System zu Schritt 8 des Standardablaufs.
+. Wenn der Nutzer einen neuen Namen vergeben möchte springt das System zu Schritt 8 des Standardablaufs.
 . Wenn der Nutzer den Vorgang abbricht springt das System zurück in das Menü "Roboter verwalten".
 
 === Unterabläufe (subflows)
@@ -80,7 +81,7 @@ Wenn das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 be
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+==== Der Roboter befindet sich nun in der Liste der gespeicherten Roboter und kann für Aktionen der App (siehe andere Use Cases) verwendet werden.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
