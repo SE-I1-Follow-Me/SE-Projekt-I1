@@ -10,16 +10,20 @@ Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me 
 
 === Kurzbeschreibung der Akteure
 
-==== <Nutzer (User)>
+==== Nutzer (User)
+
     Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
 
-==== <Anwendung>
+==== Anwendung
+
     Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
 
-==== <Server>
+==== Server
+
     Der Server empfängt die Daten durch die App und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
-==== <Roboter>
+==== Roboter
+
     Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 === Vorbedingungen
@@ -54,7 +58,7 @@ Falls in Schritt 3 ausgewählt wird, dass die Route nicht abgespeichert werden s
 
 ==== Speicher des Servers ist vollständig belegt.
 
-Falls in Schritt 6 die Daten nicht gespeichert werden können, da der Server keine weiteren Speichermöglichkeiten zur Verfügung hat.
+Falls in Schritt 3 die Daten nicht gespeichert werden können, da der Server keine weiteren Speichermöglichkeiten zur Verfügung hat.
 
     . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
     . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der Speicher des Servers vollständig belegt wurde.
@@ -68,13 +72,13 @@ Falls in Schritt 6 die Daten nicht gespeichert werden können, da der Server kei
     .. ELSE 
     ... Die Anwendung zeigt dem Nutzer, dass die Route aufgrund von unzureichendem Speicher nicht gespeichert werden konnte.
     ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
-    . Das Use Case wird bei Schritt 6 fortgesetzt.
+    . Das Use Case wird bei Schritt 4 fortgesetzt.
 
 
 
 ==== Reservierter Speicher für den Nutzer ist vollständig belegt.
 
-Falls in Schritt 6 die Daten nicht gespeichert werden können, da der reservierte Speicher für den Nutzer vollständig belegt ist.
+Falls in Schritt 3 die Daten nicht gespeichert werden können, da der reservierte Speicher für den Nutzer vollständig belegt ist.
 
     . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
     . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der reservierte Speicher des Nutzers vollständig belegt wurde.
@@ -88,19 +92,19 @@ Falls in Schritt 6 die Daten nicht gespeichert werden können, da der reserviert
     .. ELSE 
     ... Die Anwendung zeigt dem Nutzer, dass die Route aufgrund von unzureichendem Speicher nicht gespeichert werden konnte.
     ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
-    . Das Use Case wird bei Schritt 6 fortgesetzt.
+    . Das Use Case wird bei Schritt 4 fortgesetzt.
 
 
 ==== Daten konnten nicht vollständig übermittelt werden.
 
-Falls in Schritt 4 die Daten nicht erfolgreich übermittelt werden konnten.
+Falls in Schritt 3 die Daten nicht erfolgreich übermittelt werden konnten.
 
         . WHILE Keine Antwort vom Server
         .. Die Anwendung teilt dem Nutzer mit, dass die Daten nicht übermittelt werden konnten.
         .. Die Anwendung teilt dem Nutzer mit, dass er seine Verbindung überprüfen soll.
         .. Die Anwendung fragt den Nutzer, ob er es erneut versuchen möchte.
         .. IF Nutzer möchte erneut versuchen, die Daten an den Server zu übermitteln.
-        ... Das Use Case wird bei Schritt 4 fortgesetzt.
+        ... Das Use Case wird bei Schritt 3 fortgesetzt.
         .. ELSE
         ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
 
