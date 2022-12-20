@@ -2,7 +2,7 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: <Speichern der Route>
+== Use-Case: Speichern der Route
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -161,9 +161,8 @@ Die Route wird verworfen, das Use Case endet erfolglos.
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Erfolgreiches S>
-
 Route und den zugehörigen Nutzer gespeichert.
+
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
