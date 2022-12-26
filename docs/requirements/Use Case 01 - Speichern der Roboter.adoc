@@ -118,6 +118,7 @@ Bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben um gegeb
 
 Der Roboter ist eindeutig identifizierbar eingespeichert.
 Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
 === Besondere Anforderungen
