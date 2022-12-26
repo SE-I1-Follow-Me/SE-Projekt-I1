@@ -1,0 +1,35 @@
+User Stories:
+
+========================
+Card:
+Story:
+Als ein Förster, möchte ich Roboter fahren lassen, um Holz von A nach B zu transportieren.
+==============
+Kriterien:
+Angesichts dessen, dass Holz von einem Ort zum anderen transportiert werden soll, müssen transportierender Roboter und zu fahrende Route gegeben sein.
+Angesichts dessen, dass ein Roboter diese Aufgabe erledigt, sollte der Status des Roboters geändert werden 
+und dementsprechend sein Aufgabenspektrum angepasst werden (zb neue Befehle warten, abbrechen)
+Angesichts dessen, dass die Aufgabe automatisiert verrichtet werden soll, sollte der Nutzer bei besonderen Ereignissen (Fehler, Abschluss) benachrichtigt werden.
+==============
+Conversation: 
+Gibt es ein zeitliche Anforderung? Muss der Roboter in so und so viel Zeit diese Aufgabe erledigen?
+
+
+Sollen mehrere Roboter diese Aufgabe gleichzeitig übernehmen? 
+
+
+
+Soll die Aufgabe automatisch wiederholt werden?
+
+
+
+==============
+Confirmation:
+
+
+
+==============
+Requirements:	Functionality:	Authentifizierung: Die User Story benötigt einen angemeldeten Nutzer mit verifiziertem Roboter und Route.
+				Auditierung:	   Die User Story enthält Aktionen die protokolliert werden sollten.
+		Usability:			   Die User Story wird von einem Nutzer gestellt, der wahrscheinlich kaum Erfahrung hat, sie benötigt Einfachheit und Interaktivität.  
+========================

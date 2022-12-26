@@ -112,18 +112,31 @@ Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App
 
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+
+* Die Verwaltung der Dokumentation und des Sourcecodes muss mittles gitHub erfolgen
+* Das Framework Spring Boot soll verwendet werden
+* Die App soll auf handelsüblichen Android Smartphones laufen
+* Der Benutzer muss über alle benötigten Berechtigungen informiert werden und diese akzeptieren
+
+
+=== Interfance Requirements
+NFAI-1: ::
+* Text sollte auf dem Smartphone noch auf 50cm lesbar sein. Zur Überprüfung laden sich Teammitglieder die App herunter und testen die Lesbarkeit.
+
+NAFI-2: ::
+* Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
+
+NAFI-3: ::
+* Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können. 
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+
+* Die speicherung der Daten soll nicht auf dem Smartphone erfolgen
+
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+
+* Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
+* Die App darf nur notwendige Daten an den Server schicken um den Datenschutz der Nutzer zu gewährleisten.
