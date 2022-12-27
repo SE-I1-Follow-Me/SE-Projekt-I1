@@ -32,7 +32,8 @@ Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me 
 ==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
 
-==== <Abgeschlossene Aktivität>
+
+==== Abgeschlossene Aktivität
 Damit dieses Use Case beginnen kann, muss das Use Case "Beenden der Follow-Me Funktion" vorausgegangen sein.
 
 
@@ -162,6 +163,8 @@ Die Route wird verworfen, das Use Case endet erfolglos.
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 Route und den zugehörigen Nutzer gespeichert.
+Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
 === Besondere Anforderungen

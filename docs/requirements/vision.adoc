@@ -34,9 +34,9 @@ Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nu
 
 [cols="1,3"]
 |===
-| Das Problem | Die Fahrroboter können noch nicht bedient werden.
-| betrifft | Kunden die einen Fahrroboter besitzen.
-| die Auswirkung davon ist | Fahrrobotern können keine Aufgaben übertragen werden.
+| Das Problem | Routen können aufgezeichnet, aber nicht verwaltet, gelöscht oder an einen Fahrroboter übergeben werden.
+| betrifft | Kunden, welche Aufgaben an die Fahrroboter deligieren möchten.
+| die Auswirkung davon ist | Automatisierte Steuerung der Fahrroboter ist nicht möglich
 | eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, die Fahrroboter zu bedienen.
 |===
 
@@ -59,11 +59,11 @@ Beispiel:
 [cols="1,3"]
 |===
 | Für | Kunden
-| die | die einen Fahrroboter besitzen
-| Das Produkt ist eine | mobile Android-App
+| die | mit den Fahrrobotern arbeiten
+| Das Produkt ist eine | mobile Android-App für den Outdoorbereich
 | Die | es dem Kunden ermöglicht, die Fahrroboter zu bedienen
-| Im Gegensatz zu | Lasten selbstständig tragen
-| Unser Produkt | ermöglicht es, diese Aufgaben an den Fahrroboter zu geben
+| Im Gegensatz zu | 
+| Unser Produkt | unterstützt eine präzise Aufnahme sowie schnelle Speicherung von GPS-Tracks und eine benutzerfreundliche Aufgabenverteilung an die Roboter
 |===
 
 ////
@@ -122,11 +122,11 @@ Beispiel Produkt:
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Anzahl der Kunden entspricht der Anzahl der Kunden, welche sich einen Fahrroboter zugelegt haben und die App nutzen. Dies kann sich über Zeit stark verändern.
-. Die Bearbeitungsdauer hängt von den Wünschen des Kunden ab. Je länger der absolvierte Pfad, desto länger benötigt der Roboter, um ihn erneut zu absolvieren. 
+. Ein Kunde kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Kunden gehören, jedoch kann er nur von einem auf einmal benutzt werden bzw. Aufgaben erhalten.
+. Die Roboter werden während ihrer Arbeit gespeer, das heißt, dass andere Kunden, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Kunde seine Sitzung beendet hat. 
 . Die App ist für den Outdoor Einsatz gedacht und benötigt GPS Signal sowie eine Internetverbindung.
 . Die App wird auf der aktuell gängigen Android Version 11 entwickelt. Bei viel älteren oder zukünftigen Versionen kann es zu Kompatibilitätsproblemen kommen.
-. Die Daten über den absolvierten Pfad sollen auf einem Server gespeichert werden. Die App muss daher auf diesen zugreifen. 
+. Die Daten über den absolvierten Pfad sollen auf einem Server gespeichert werden. Die App muss daher auf diesen zugreifen. Hierbei wird es einen Server mit X Instanzen geben, damit gewährleistet ist, dass möglichst auch Kunden gleichzeitig auf den Server zugreifen können.
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -144,6 +144,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 |Route laden |hoch |Zuvor aufgenommene Route anzeigen |
 |Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen |
 |Route löschen |hoch |Löschen einer zuvor aufgenommenen Route |
+|Follow-Me Funktion |hoch |bei der Follow-Me Funktion handelt es sich um eine erweiterung der "Route aufzeichnen" Funktion, bei der die Route aufgezeichnet wird, während ein oder mehrere Roboter dem Kunden folgen
 |Roboter hinzufügen |hoch |Speichern eines neuen Roboters |
 |Roboter bearbeiten |niedrig |Namen des Roboters ändern | 
 |Roboter Fahrkommandos |niedrig |Befehle auf aufgezeichneten Routen an den Roboter geben |
@@ -172,9 +173,9 @@ Hinweise:
 |===
 | Anforderung | Priorität | Geplantes Release
 | App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | xx
-|Im Falle eines Absturzes werden die vollständigen, aufgenommenen Daten gespeichert |hoch | 
+|Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |hoch | 
 |Da die App auch nach Fertigstellung weiter entwickelt werden soll muss im Code möglichst auf hartcodierung verzichtet werden |hoch |
 |Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |mittel |
 |Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |mittel |
-|In der Sprachauswahl soll neben Deutsch auch Englisch vergügbar sein |niedrig |
+|In der Sprachauswahl soll neben Deutsch auch Englisch verfügbar sein |niedrig |
 |===

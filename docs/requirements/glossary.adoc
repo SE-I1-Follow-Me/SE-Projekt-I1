@@ -13,7 +13,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Begriff | Definition und Erläuterung | Synonyme
 //| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
-| xx | xx | xx
+| xx | xx | xx 
+|Roboterroute |Bei einer "Roboterroute" handelt es sich um aufgenommene Routen, welche an einen oder mehrere Roboter gesendet werden können |
+|Fahrroboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier] 
+gefunden werden  |
 |===
 
 
