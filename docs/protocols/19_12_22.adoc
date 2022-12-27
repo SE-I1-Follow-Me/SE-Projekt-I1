@@ -1,0 +1,79 @@
+= Protokoll: Meeting mit Herrn Neugebauer
+Leon Lowa <leon.lowa@htw-dresden.de>
+v1.0, 06.12.22 +11:00 - 12:00
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Leon Lowa
+* Michael Novak
+* Magnus Andreas Böhne
+* Jonas Pfeiffer
+== Abwesende
+
+
+
+== Agenda
+. Vorstellung Ausarbeitungen 
+. Anstehende Aufgaben verteilen
+. Organisation
+
+
+
+=== Vorstellung Ausarbeitungen
+
+Ergebnis: :: 
+****
+
+* Architektur C4-Modell grundlegend fertiggestellt.
+
+** Für eine detailliertere Ausarbeitung wird Unterstützung benötigt.
+
+* Use Cases auf gleichen Stand, für Ausarbeitung wird eine Unterstützung benötigt.
+
+* Reviews abgeschlossen, bis auf die Vision.
+
+* System Wide Requirements müssen noch verfeinert werden
+****
+
+=== Anstehende Aufgaben verteilen
+
+Ergebnis: :: 
+****
+
+Neue Aufgaben:
+
+* Architektur: Magnus, Marcel
+* Use-Cases: Jonas, Manuel
+* Furps: Michael
+* Korrektur Vision: Manuel
+* Testsystem finden: Leon
+* Wireframes: Uli
+* Prototyp: Jonas, Leon, ggf. Magnus
+* Architectur-Notebook in Github einpflegen: Marcel
+* Testfälle für Architektur: Michael
+
+Reviews erledigter Aufgaben:
+
+* Architektur: Leon
+* Risikoliste: Leon
+* Use-Cases : Uli
+* Wireframes: Manuel
+* Architektur-Notebook: Jonas
+* Furps: Uli
+****
+
+=== Organisation
+
+Ergebnis: :: 
+****
+
+* Einführung in die korrekte Benutzung des erarbeiteten Issue-Systems
+* Vorstellung des Projektplans und der aktualisierten Arbeitsweise in einer Iteration
+****
