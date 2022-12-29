@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item android:title="Route"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:id="@+id/route"/>
+    <item android:title="Add"
+        android:icon="@drawable/ic_baseline_control_point_24"
+        android:id="@+id/add"/>
+    <item android:title="Alerts"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:id="@+id/alerts"/>
+    <item android:title="Account"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/account"/>
+</menu>
