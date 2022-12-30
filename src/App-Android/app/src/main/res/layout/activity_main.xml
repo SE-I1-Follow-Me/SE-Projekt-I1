@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A8F6F"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/Frame_Layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bottom_Navigation_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/Bottom_Navigation_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A8E6F"
+        android:backgroundTint="#4A8E6F"
+        android:backgroundTintMode="add"
+        android:longClickable="false"
+        app:itemIconTint="@drawable/icon_tinit_selector"
+        app:itemTextColor="@drawable/icon_tinit_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</android.support.constraint.ConstraintLayout>
