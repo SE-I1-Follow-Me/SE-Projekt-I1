@@ -40,10 +40,10 @@ Ein Roboter hat momentan einen aktiven Folge oder Zurückkehren Befehl.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 
-. Der Use Case beginnt, wenn der Nutzer im Hauptmenü der App auswählt, dass er einen Roboter warten lassen will.
-. Die App zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
+. Der Use Case beginnt, wenn der Nutzer im Hauptmenü der Anwendung auswählt, dass er einen Roboter warten lassen will.
+. Das System zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
 . Der Nutzer wählt einen Roboter aus der zuvor angezeigten Liste aus.
-. Die Anwendung zeigt dem Nutzer eine Bestätigung an.
+. Das System zeigt dem Nutzer eine Bestätigung an.
 . Das Use Case endet wenn der Roboter seinen momentanen Befehl pausiert und an seinem momentanen Standort wartet.
 
 === Alternative Abläufe
@@ -51,9 +51,21 @@ Ein Roboter hat momentan einen aktiven Folge oder Zurückkehren Befehl.
 
 ==== Keine verfügbaren Roboter
 
-Falls in Schritt 2 kein verfügbarer Roboter gefunden wurde.
+Falls in Schritt 2 kein verfügbarer Roboter gefunden wurde, dann
+
     . Die Anwendung zeigt dem Nutzer an, dass keine Roboter verfügbar sind, denen der Warte Befehl gegeben werden kann.
-    . Das Use Case endet erfolglos, die Anwendung zeigt dem Nutzer den Startbildschirm.
+    . Das Use Case endet erfolglos, die Anwendung zeigt dem Nutzer das Hauptmenü. 
+
+
+==== Der Nutzer bricht das Use Case ab
+
+Falls der Nutzer, in einem der Schritte die Zurück Funktion seines Gerätes nutzt, dann
+
+    . Das System fragt den Nutzer, ob er den aktuellen Vorgang beendet will.
+    . IF Der Nutzer wählt "Ja" aus.
+        .. Das Use Case endet erfolglos, die Anwendung zeigt dem Nutzer das Hauptmenü. 
+    . ELSE 
+        .. Der Use Case wird in dem Schritt fortgesetzt, in dem der Nutzer die Zurück Funktion betätigt hat.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern

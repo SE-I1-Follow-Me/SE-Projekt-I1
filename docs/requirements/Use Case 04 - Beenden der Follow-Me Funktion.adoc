@@ -28,24 +28,32 @@ Dieser Use Case beschreibt den Ablauf der Follow-Me Funktion. In dieser wird ein
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+==== <Internetverbindung>
+Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+
+==== <Roboter verfügbar>
+Es existiert ein Roboter, der die Follow me Funktion (Folgen, Warten, Zurücksenden) ausführt.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Follow me beenden" betätigt.
+. Das System zeigt dem Nutzer ein Fenster und fragt, ob er wirklich die Follow Me Funktion Beenden möchte.
+// Frage: Ist das beenden abhängig vom Roboter, heißt, wird erst ein Roboter gewählt und dann kann, wenn möglich (Roboter führt follow me aus) diese Funktion für diesen Roboter beendet werden oder:
+// Follow me beenden zeigt eine liste von Robotern die momentan follow me ausführen und die beendet werden können.
+. Der Nutzer wählt "Ja, Follow Me Beenden" aus.
+. Das System bestätigt das erfolgreiche Beenden der Follow me Funktion.
+. Das Use Case endet, wenn das System dem Nutzer das Hauptmenü anzeigt.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Nutzer möchte Follow Me Funktion doch nicht beenden
+Falls der Nutzer in Schritt 3 "Nein, Follow Me nicht Beenden" auswählt, dann
+
+. Das Systen zeigt dem Nutzer an, dass die Follow Me Funktion nicht beendet wurde.
+. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Hauptmenü an.
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern

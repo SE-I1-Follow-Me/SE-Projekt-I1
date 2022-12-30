@@ -2,58 +2,47 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Warten der Roboter
-
-=== Kurzbeschreibung
-Dieses Use Case beschreibt, wie der Nutzer einem Roboter den "wird gewartet" Status vergibt.
+== Use-Case: <use-case name>
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me Funktion der Follow-Me-App.
 
 === Kurzbeschreibung der Akteure
 
-==== Nutzer (User)
-
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
-
-==== Anwendung
-
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
-
-==== Server
-
-    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
-
-==== Roboter
-
-    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+==== <Akteur 1 Name>
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
-
-==== Verfügbare Roboter
-Es befinden sich bereits Roboter in der Liste der gespeicherten Roboter.
+<Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter verwalten" betätigt.
+. Das System ruft die Liste aller gespeicherten Roboter auf und zeigt diese dem Nutzer an.
+. Der Nutzer wählt einen Roboter aus der Liste aus.
+. Der Nutzer wählt "Roboter warten" aus.
+. Das System bestätigt dem Nutzer, dass der Roboter nun erfolgreich gewartet wird.
+. Das System zeigt dem Nutzer, wielange der ausgewählte Roboter gewartet wird.
+. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Roboter verwalten" anzeigt.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Der ausgewählte Roboter führt eine Aktivität aus
+Falls der in Schritt 3 ausgewählte Roboter aktuell einen anderen Befehl ausführt, dann 
+
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter bereits einen Befehl ausführt.
+. Das System fragt den Nutzer, ob der aktuelle Befehl des Roboters abgebrochen werden soll um ihn zu warten.
+. IF Der Nutzer wählt "Ja, der aktuelle Befehl soll abgebrochen werden"
+.. Das System bricht den aktuellen Befehl des Roboters ab.
+.. Das System ändert den aktuellen Status des Roboters auf "wird gewartet"
+.. Das System bestätigt dem Nutzer, dass der Roboter nun erfolgreich gewartet wird.
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+. ELSE
+.. Das System zeigt dem Nutzer, dass der Roboter nicht gewartet wird.
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern

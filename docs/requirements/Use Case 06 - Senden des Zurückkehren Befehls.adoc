@@ -41,9 +41,9 @@ Ein Roboter hat bereits den Folgen Befehl erhalten und dementsprechend eine Rout
 
 
 . Der Use Case beginnt, wenn der Nutzer im Hauptmenü der App auswählt, dass er einen Roboter Zurückkehren lassen will.
-. Die App zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
+. Das System zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
 . Der Nutzer wählt einen Roboter aus der zuvor angezeigten Liste aus.
-. Die Anwendung zeigt dem Nutzer eine Bestätigung an.
+. Das System zeigt dem Nutzer eine Bestätigung an.
 . Das Use Case endet wenn der Roboter beginnt, die Route zurückzukehren.
 
 === Alternative Abläufe
