@@ -1,0 +1,71 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+
+//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+== Use-Case: <use-case name>
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+
+=== Kurzbeschreibung der Akteure
+
+==== <Akteur 1 Name>
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+<Vorbedingung 1>
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter verwalten" betätigt.
+. Das System ruft die Liste aller gespeicherten Roboter auf und zeigt diese dem Nutzer an.
+. Der Nutzer wählt einen Roboter aus der Liste aus.
+. Der Nutzer wählt "Roboter warten" aus.
+. Das System bestätigt dem Nutzer, dass der Roboter nun erfolgreich gewartet wird.
+. Das System zeigt dem Nutzer, wielange der ausgewählte Roboter gewartet wird.
+. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Roboter verwalten" anzeigt.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Der ausgewählte Roboter führt eine Aktivität aus
+Falls der in Schritt 3 ausgewählte Roboter aktuell einen anderen Befehl ausführt, dann 
+
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter bereits einen Befehl ausführt.
+. Das System fragt den Nutzer, ob der aktuelle Befehl des Roboters abgebrochen werden soll um ihn zu warten.
+. IF Der Nutzer wählt "Ja, der aktuelle Befehl soll abgebrochen werden"
+.. Das System bricht den aktuellen Befehl des Roboters ab.
+.. Das System ändert den aktuellen Status des Roboters auf "wird gewartet"
+.. Das System bestätigt dem Nutzer, dass der Roboter nun erfolgreich gewartet wird.
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+. ELSE
+.. Das System zeigt dem Nutzer, dass der Roboter nicht gewartet wird.
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== <Unterablauf 1>
+. <Unterablauf 1, Schritt 1>
+. …
+. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== <Szenario 1>
+. <Szenario 1, Schritt 1>
+. …
+. <Szenario 1, Schritt n>
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== <Nachbedingung 1>
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== <Besondere Anforderung 1>

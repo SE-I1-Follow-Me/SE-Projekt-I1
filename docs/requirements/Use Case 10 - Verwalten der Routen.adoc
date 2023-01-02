@@ -37,27 +37,56 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Routen verwalten" betätigt.
+. Das System ruft die Liste aller gespeicherten Routen auf und zeigt diese dem Nutzer an.
+. Der Nutzer kann durch gedrückthalten einen Route auswählen, um diese entweder zu bearbeiten oder zu löschen.
+. Der Nutzer wählt eine Route der Liste aus.
+. Der Nutzer wählt Bearbeiten aus.
+. Das System öffnet ein Fenster mit den Informationen der Route.
+. Der Nutzer wählt nun den Namen aus.
+. Das System öffnet ein Eingabefenster, damit der Nutzer den Namen ändern kann.
+. Der Nutzer gibt einen neuen Namen ein und bestätigt diesen.
+. Das System prüft, ob der neue Name bereits vergeben ist.
+. Da der Name noch nicht vergeben ist, wird dieser gespeichert.
+. Das System überträgt die Namensänderung an den Server.
+. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Routen Verwalten" anzeigt.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Nutzer wählt "löschen" aus
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+
+. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
+. IF Nutzer bestätigt Löschung der Route.
+.. Das System entfernt die Route aus der Liste der gespeicherten Routen.
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Routen verwalten" an.
+. ELSE
+..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten" an.
+
+==== Neuer Name ist bereits vergeben
+Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
+
+. Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
+. Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
+. IF Nutzer möchte neuen Namen vergeben
+.. Das Use Case wird bei Schritt 7 fortgesetzt.
+. ELSE 
+. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten".
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+==== Nutzer wählt "löschen" aus
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+
+. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
+. IF Nutzer bestätigt Löschung der Rpute
+.. Das System entfernt die Route aus der Liste der gespeicherten Roboter
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+. ELSE
+..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.

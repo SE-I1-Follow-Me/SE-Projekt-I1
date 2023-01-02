@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/activity_home.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/activity_main.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/fragment_account.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/fragment_home.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/fragment_add.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/fragment_add.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/fragment_alerts.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/fragment_alerts.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/fragment_route.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/fragment_route.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-4:/layout/activity_homescreen.xml",
+        "source": "com.example.myapplication.app-main-7:/layout/activity_homescreen.xml"
+    }
+]
