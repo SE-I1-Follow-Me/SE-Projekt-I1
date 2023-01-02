@@ -2,7 +2,7 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Senden des Folge Befehls
+== Use-Case: Senden des Zurückkehren Befehls
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
