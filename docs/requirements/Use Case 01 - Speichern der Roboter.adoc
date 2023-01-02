@@ -12,12 +12,12 @@ Dieser Use Case beschreibt das Abspeichern eines Roboters um diesen in weiteren 
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird der Use Case aufgerufen und gestartet.
 
 
 ==== Anwendung
 
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+    Die Anwendung dient dem Nutzer als grafische Oberfläche, um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
 
 ==== Server
 
@@ -38,7 +38,7 @@ Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötig
 Es existiert ein Roboter welcher bisher von keinem Nutzer gespeichert wurde.
 
 ==== <Roboter Authentifizieren>
-Der Nutzer kennt die HashKombination des zu speichernden Roboters.
+Der Nutzer kennt die Hash-Kombination des zu speichernden Roboters.
 
 
 === Standardablauf (Basic Flow)
@@ -63,7 +63,7 @@ Der Nutzer kennt die HashKombination des zu speichernden Roboters.
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== System findet keinen Roboter zu diesem Token
-Falls das System in Schritt 4 keinen Roboter findet, dann
+Falls das System in Schritt 4 keinen Roboter findet, dann:
 
 
 . Das System gibt dem Nutzer eine Fehlermeldung zurück.
@@ -79,9 +79,9 @@ Falls sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeich
 . Das System sagt dem Nutzer, dass sich der Roboter bereits in der Liste befindet.
 . Das System fragt den Nutzer, ob er ein anderes Token eingeben möchte oder ob er das Speichern eines Roboters abbrechen möchte.
 . IF Nutzer möchte ein anderes Token eingeben
-.. Das Use wird bei Schritt 4 fortgesetzt
+.. Das Use Case wird bei Schritt 4 fortgesetzt
 . ELSE
-. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
+.. Das Use Case endet erfolglos und das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 ==== Name des Roboters ist bereits vergeben
 Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 bereits vergeben ist, dann
@@ -91,7 +91,7 @@ Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 b
 . IF Nutzer möchte neuen Namen vergeben
 .. Das Use Case wird bei Schritt 8 fortgesetzt.
 . ELSE 
-. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -108,7 +108,7 @@ Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 b
 Der Roboter befindet sich nun in der Liste der gespeicherten Roboter und kann für Aktionen der App (siehe andere Use Cases) verwendet werden.
 
 ==== Erfolgloses beenden
-Der Roboter befindet sich nicht in der Liste der gespeicherten Roboter, bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben um gegebenenfalls erneut gespeichert werden zu können.
+Der Roboter befindet sich nicht in der Liste der gespeicherten Roboter, bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben, um gegebenenfalls erneut gespeichert werden zu können.
 
 ==== Der Nutzer bricht das Use Case ab
 Bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben um gegebenenfalls erneut gespeichert werden zu können.

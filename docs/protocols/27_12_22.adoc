@@ -1,0 +1,76 @@
+= Protokoll: Cycle Meeting KW 52
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
+v1.0, 27.12.22 16.30 Uhr - 17.30
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+
+
+== Agenda
+.	Arbeitsstand absprechen
+.   Neue Aufgaben besprechen
+
+
+
+=== Arbeitsstand absprechen
+
+Wireframes -> Uli:: 
+****
+Verbesserungen: Email weg, stattedessen einfach token; routenverwaltung (soll route abspeichern?, beenden, löschen -> nach follow me speichern?)
+****
+
+Risikoliste -> Leon:: 
+****
+Sprache Korrigiert, neugewichtung von punkten wurden besprochen, neue risiken identifizieren?, nr 5 anders gewichten
+****
+
+Prototyp Implementation -> Leon, Jonas:: 
+****
+erledigt
+****
+
+=== Termin mit Coach Ringel buchen
+
+Ergebnis:: 
+****
+wurde verschoben
+****
+
+=== Anstehende Aufgaben verteilen
+
+Ergebnis:: 
+****
+- Vision: Manuel, Michael
+- Anwendungsfallanalyse: Jonas, Leon
+- Protokolle: Uli, Leon
+- Magnus schaut sich Springboot an
+- Marcel schaut sich das GitHub-Vorprojekt an
+
+****
+
+=== Neue Fragen sammeln
+
+Ergebnis:: 
+****
+Ringel::
+-	Wozu ist Folie 2 vom Projektsteckbrief
+-	Was genau fällt unter den Begriff „Qualitätssicherung“
+-	Steckbrief zeigen
+-	Folgenden Dienstag 12:50 Termin?
+Neugebauer::
+-	Termin nach Ringel
+
+****

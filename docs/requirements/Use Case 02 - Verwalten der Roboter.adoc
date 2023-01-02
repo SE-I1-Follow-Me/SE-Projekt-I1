@@ -11,11 +11,11 @@ Dieses Use Case beschreibt den Menüpunkt "Roboter verwalten" und seine Funktion
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
 
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+    Die Anwendung dient dem Nutzer als grafische Oberfläche, um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
 
 ==== Server
 
@@ -58,7 +58,7 @@ Es befinden sich bereits Roboter in der Liste der gespeicherten Roboter.
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Nutzer wählt "löschen" aus
-Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann:
 
 . Das System fragt den Nutzer, ob er sich sicher ist, diesen Roboter zu löschen.
 . IF Nutzer bestätigt Löschung des Roboters
@@ -69,14 +69,14 @@ Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, d
 
 
 ==== Neuer Name ist bereits vergeben
-Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
+Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann:
 
 . Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
 . Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
 . IF Nutzer möchte neuen Namen vergeben
 .. Das Use Case wird bei Schritt 7 fortgesetzt.
 . ELSE 
-. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
