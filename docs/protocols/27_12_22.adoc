@@ -21,6 +21,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Agenda
 .	Arbeitsstand absprechen
+.   Probleme besprechen
 .   Neue Aufgaben besprechen
 
 
@@ -29,48 +30,77 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Wireframes -> Uli:: 
 ****
-Verbesserungen: Email weg, stattedessen einfach token; routenverwaltung (soll route abspeichern?, beenden, löschen -> nach follow me speichern?)
+Verbesserungen: Email weg, stattedessen einfach mittels Token; Routenverwaltung (soll route abspeichern?, beenden, löschen -> nach follow me speichern?)
 ****
 
 Risikoliste -> Leon:: 
 ****
-Sprache Korrigiert, neugewichtung von punkten wurden besprochen, neue risiken identifizieren?, nr 5 anders gewichten
+Sprache korrigiert, Neugewichtung von Punkten wurden besprochen, neue Risiken identifizieren?, Nr. 5 anders gewichten -> Risiken werden abgeändert
 ****
 
-Prototyp Implementation -> Leon, Jonas:: 
+Aufgabe Tessystem Framework -> Leon:: 
 ****
-erledigt
+- Leon braucht Hilfe beim Server einrichten
+- Rest probehalber eingerichtet
+- Entscheidung für Serverarchitektur wurde diskutiert
+- -> Todo: Einarbeitung in Serverarchitektur
 ****
 
-=== Termin mit Coach Ringel buchen
-
-Ergebnis:: 
+Serverentscheidung -> Marcel, Magnus:: 
 ****
-wurde verschoben
+- wurde noch nicht entschieden
+****
+
+Use-Cases -> Jonaes, Manuel, Michael:: 
+****
+- eine Userstories gemacht
+- usecases wurde nicht vereinfacht
+- jonas trifft sich mit michael für entscheidung
+
+****
+
+Furps + -> Michael:: 
+****
+- Fertig
+- TODO: Review
+
+****
+
+
+
+=== Probleme besprechen
+
+Manuel:: 
+****
+kleinere Probleme zur Vision wurden besprochen
+****
+
+Architecture Notebook -> Marcel:: 
+****
+kein Forschritt, erfolgt erst nach Architekturmodell
+****
+
+Prototyp -> Jonas:: 
+****
+kein Forschritt, spätestens zum Ende der nächsten Iteration
+****
+
+Magnus:: 
+****
+hat erfolgreich am Springbootcamp teilgenommen
 ****
 
 === Anstehende Aufgaben verteilen
 
 Ergebnis:: 
 ****
-- Vision: Manuel, Michael
-- Anwendungsfallanalyse: Jonas, Leon
-- Protokolle: Uli, Leon
-- Magnus schaut sich Springboot an
-- Marcel schaut sich das GitHub-Vorprojekt an
+- Uli, Michael -> Wireframes
+- Jonas,Leon -> Prototyp
+- Marcel, Magnus -> Serverentscheidung
+- Uli -> Review Furps+
+- Marcel -> Architecture Notebook
+- Michael -> Einarbeitung Serverarchitektur
+- Leon -> Risiken abändern
 
 ****
 
-=== Neue Fragen sammeln
-
-Ergebnis:: 
-****
-Ringel::
--	Wozu ist Folie 2 vom Projektsteckbrief
--	Was genau fällt unter den Begriff „Qualitätssicherung“
--	Steckbrief zeigen
--	Folgenden Dienstag 12:50 Termin?
-Neugebauer::
--	Termin nach Ringel
-
-****
