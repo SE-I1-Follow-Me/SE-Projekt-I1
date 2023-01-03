@@ -11,7 +11,7 @@ Dieser Use Case beschreibt den Ablauf der Follow-Me Funktion. In dieser wird ein
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
 
@@ -49,9 +49,9 @@ Es existiert ein Roboter, der die Follow me Funktion (Folgen, Warten, Zurücksen
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Nutzer möchte Follow Me Funktion doch nicht beenden
-Falls der Nutzer in Schritt 3 "Nein, Follow Me nicht Beenden" auswählt, dann
+Falls der Nutzer in Schritt 3 "Nein, Follow Me nicht Beenden" auswählt, dann:
 
-. Das Systen zeigt dem Nutzer an, dass die Follow Me Funktion nicht beendet wurde.
+. Das System zeigt dem Nutzer an, dass die Follow Me Funktion nicht beendet wurde.
 . Das Use Case endet erfolglos, das System zeigt dem Nutzer das Hauptmenü an.
 
 

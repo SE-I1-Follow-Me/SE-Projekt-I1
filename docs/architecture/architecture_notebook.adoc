@@ -14,16 +14,55 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 
 == Architekturziele und Philosophie
+
+Das System besteht aus einer Android App für das Controlling von Robertern, ein Simulation System und einem Server, der GPS-Tracks speichert und im Austausch mit den Robotern steht. Um die Roboter zu synchronisieren muss einmalig dem Gerät ein Token von einem Admin zugewiesen werden. Die App soll nicht im PlayStore veröffentlicht werden und vorerst nur von einer Person genutzt werden, aber nahezu rund um die Uhr verfügbar sein und später auch Mehrbenutzerbetrieb ermöglichen. Bei den verwendeten Endgeräten handelt es sich um Android Smartphones, die über einen Touchscreen bedient werden. Die technische Ausstattung (Bildschirmgröße, RAM, CPU, Bandbreite) sowie die genaue Android Version sind unbekannt. Ausgegangen wird für die Entwicklung von der derzeit gängigen Android Version 11.
+
+Die App soll eine möglichst intuitive Benutzeroberfläche haben und in Aktionen durch bekannte Icons oder Begriffe einfach beschrieben werden.
+
+Das System ist die initiale Version und wird vermutlich im Laufe der Zeit noch hinsichtlich verschiedener Aspekte erweitert werden. Dazu gehören z.B. die Optimierung des Mehrbenutzerbetriebs und die Erweiterung der angebotenen. Routenoptionen 
+
+
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
 
 == Annahmen und Abhängigkeiten
+
+Annahmen: ::
+
+* Auf dem Smartphone des Benutzers ist eine der neuesten Android Versionen installiert 
+* Der Benutzer besitzt ein stabile GPS-Verbindung.
+* Der Benutzer besitzt eine stabile Internetverbindung.
+* Der Benutzer hat der App alle benötigten Berechtigungen erteilt.
+* Die verwendeten Frameworks und APIs funktionieren nahezu fehlerfrei und werden in Zukunft gepflegt.
+
+Abhängigkeiten: ::
+
+* Wir sind drauf angewiesen, dass der Kartendaten Provider weiter kostenlos Kartendaten zu Verfügung stellt und nahezu rund um die Uhr erreichbar ist.
+* Wir sind von unserem Rechenzentrum abhängig, da der Server zur Synchronisation jederzeit zur Verfügung stehen muss.
+* Wir sind darauf angewiesen, dass alle eingesetzten Frameworks und APIs gepflegt werden.
+
+
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 
 
 == Architektur-relevante Anforderungen
+
+Functional: ::
+* SWFA-1: Die GPS-Tracks müssen dauerhaft gespeichert und bei Bedarf aktualisiert sein. Wenn ein aufgenommenener GPS-Track hochgeladen wird, ist dieser dann dauerhaft verfügbar 
+* SWFA-2: Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen. 
+
+Effizienz (Perfomance): ::
+
+* NFAP-2: Gewählte Aktionenen der App sollen innerhalb von 1000 Millisekunden an den Server gesendet, verarbeitet und verifiziert werden.
+
+* NFAP-3: Die Speicherung der Daten auf dem Server soll nicht länger als 5 Sekunden dauern
+
+Wartbarkeit (Supportability): ::
+* NFAS-1: Die App soll entwicklungsrelevante Systemfehler loggen und an die Entwickler schicken
+
+
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 
 
@@ -44,14 +83,6 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 . Architekturmechanismus 1
 . Architekturmechanismus 2
-
-
-== Wesentliche Abstraktionen
-//[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
-
-
-== Schichten oder Architektur-Framework
-//[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
 
 
 == Architektursichten (Views)

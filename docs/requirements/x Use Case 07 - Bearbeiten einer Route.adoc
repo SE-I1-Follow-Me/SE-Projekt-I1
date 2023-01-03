@@ -13,7 +13,7 @@ Dieses Use Case beschreibt den Menüpunkt "Routen verwalten" und seine Funktione
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
 
@@ -72,7 +72,7 @@ Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
 . IF Nutzer möchte neuen Namen vergeben
 .. Das Use Case wird bei Schritt 7 fortgesetzt.
 . ELSE 
-. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten".
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten".
 
 
 === Unterabläufe (subflows)
