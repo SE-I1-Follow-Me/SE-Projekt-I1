@@ -1,0 +1,173 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+
+//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+== Use-Case: Speichern der Route
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me Funktion der Follow-Me-App.
+
+=== Kurzbeschreibung der Akteure
+
+==== Nutzer (User)
+
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+
+==== Anwendung
+
+    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+
+==== Server
+
+    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+
+==== Roboter
+
+    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+==== Internetverbindung
+Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+
+
+==== Abgeschlossene Aktivität
+Damit dieses Use Case beginnen kann, muss das Use Case "Beenden der Follow-Me Funktion" vorausgegangen sein.
+
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn das Use Case "Beenden der Follow-Me Funktion" endet.
+. Die Anwendung fragt den Nutzer, ob dieser die soeben vollendete Route speichern möchte.
+. Der Nutzer wählt aus, dass die Route gespeichert werden soll.
+. Der Nutzer gibt der Route einen Namen.
+. Die Anwendung zeigt dem Nutzer an, dass die Route erfolgreich gespeichert wurde.
+. Das Use Case endet, wenn die Anwendung dem Nutzer die Route, den Zeitpunkt der Speicherung sowie den Routennamen anzeigt.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Nutzer möchte die soeben vollendete Route nicht speichern.
+
+Falls in Schritt 3 ausgewählt wird, dass die Route nicht abgespeichert werden soll:
+
+    . Die Anwendung zeigt dem Nutzer an, dass die Route nicht gespeichert wird.
+    . Das Use Case endet erfolgreich, die Anwendung zeigt dem Nutzer den Startbildschirm an.
+
+==== Speicher des Servers ist vollständig belegt.
+
+Falls in Schritt 4 die Daten nicht gespeichert werden können, da der Server keine weiteren Speichermöglichkeiten zur Verfügung hat.
+
+    . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
+    . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der Speicher des Servers vollständig belegt wurde.
+    . WHILE Nicht genügend Speicherplatz zur Verfügung um Route zu speichern
+    .. Die Anwendung zeigt dem Nutzer, wieviel Speicherplatz noch benötigt wird, um die Route erfolgreich speichern zu können.
+    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte um Speicher des Servers freizugeben.
+    .. IF Nutzer wählt aus, eine bereits gespeicherte Route zu löschen.
+    ... Die Anwendung zeigt dem Nutzer eine Liste aller gespeicherten Routen sowie den jeweiligen Speicherbedarf einer Route.
+    ... Der Nutzer wählt die zu löschende Route aus.
+    .. ELSE 
+    ... Die Anwendung zeigt dem Nutzer, dass die Route aufgrund von unzureichendem Speicher nicht gespeichert werden konnte.
+    ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
+    . Das Use Case wird bei Schritt 4 fortgesetzt.
+
+
+
+==== Reservierter Speicher für den Nutzer ist vollständig belegt.
+
+Falls in Schritt 4 die Daten nicht gespeichert werden können, da der reservierte Speicher für den Nutzer vollständig belegt ist.
+
+    . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
+    . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der reservierte Speicher des Nutzers vollständig belegt wurde.
+
+    . WHILE Nicht genügend Speicherplatz zur Verfügung um Route zu speichern
+    .. Die Anwendung zeigt dem Nutzer, wieviel Speicherplatz noch benötigt wird, um die Route erfolgreich speichern zu können.
+    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte um Speicher des Servers freizugeben.
+    .. IF Nutzer wählt aus, eine bereits gespeicherte Route zu löschen.
+    ... Die Anwendung zeigt dem Nutzer eine Liste aller gespeicherten Routen sowie den jeweiligen Speicherbedarf einer Route.
+    ... Der Nutzer wählt die zu löschende Route aus.
+    .. ELSE 
+    ... Die Anwendung zeigt dem Nutzer, dass die Route aufgrund von unzureichendem Speicher nicht gespeichert werden konnte.
+    ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
+    . Das Use Case wird bei Schritt 4 fortgesetzt.
+
+
+==== Daten konnten nicht vollständig übermittelt werden.
+
+Falls in Schritt 3 die Daten nicht erfolgreich übermittelt werden konnten.
+
+        . WHILE Keine Antwort vom Server
+        .. Die Anwendung teilt dem Nutzer mit, dass die Daten nicht übermittelt werden konnten.
+        .. Die Anwendung teilt dem Nutzer mit, dass er seine Verbindung überprüfen soll.
+        .. Die Anwendung fragt den Nutzer, ob er es erneut versuchen möchte.
+        .. IF Nutzer möchte erneut versuchen, die Daten an den Server zu übermitteln.
+        ... Das Use Case wird bei Schritt 3 fortgesetzt.
+        .. ELSE
+        ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
+
+==== Routenname exisitiert bereits.
+
+Falls in Schritt 4 ermittelt wird, dass eine Route mit der eingegebenen Bezeichnung bereits existiert.
+
+    . WHILE Name exisitert bereits
+    .. Die Anwendung zeigt dem Nutzer, dass dieser Name bereits verwendet wird.
+    .. Die Anwendung fragt nach einem neuen Routennamen.
+    .. Der Nutzer gibt einen neuen Namen ein.
+    . Das Use Case wird bei Schritt 5 fortgesetzt.
+
+
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== Der Nutzer wählt aus, dass die Route gespeichert werden soll.
+
+. Die Anwendung sendet dem Server die Informationen über die ausgewählte Route.
+. Die Anwendung sendet dem Server die Anweisung, die eben gesendeten Daten zu speichern.
+. Der Server speichert die Route und den dazugehörigen Nutzer.
+. Der Server sendet eine Bestätigung des erfolgreichen Speicherns der Route an die Anwendung.
+
+==== Der Nutzer wählt aus, dass die Route nicht abgespeichert werden soll.
+
+. Die Anwendung verwirft die Daten über die Route.
+
+==== Der Nutzer wählt aus, dass eine Route gelöscht werden soll.
+
+    . Die Anwendung fragt eine Liste aller gespeicherten Routen des Nutzers vom Server ab.
+    . Der Server sendet eine Liste aller gespeicherten Routen des Nutzers an die Anwendung.
+
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Erfolgreiches Speichern der Route
+Die Route wurde erfolgreich auf dem Server gespeichert, sie hat einen Namen und einen zugehörigen Nutzer. Die Route kann jetzt von dem Nutzer, der sie abgespeichert hat, immer wieder aufgerufen und verwendet werden, insofern sie nicht durch den Nutzer gelöscht wird.
+
+==== Verwerfen der Route
+Die Route wurde nicht gespeichert, da der Nutzer sich dagegen entschieden hat.
+
+==== Erfolgsloses Speichern der Route
+Die Route konnte nicht abgespeichert werden, da es zu Fehlern im Ablauf gekommen ist. 
+
+==== Der Nutzer bricht das Use Case ab
+Die Route wird verworfen, das Use Case endet erfolglos.
+
+
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+Route und den zugehörigen Nutzer gespeichert.
+Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
+
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== <Besondere Anforderung 1>
