@@ -12,7 +12,7 @@ Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me 
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
 
@@ -66,7 +66,7 @@ Falls in Schritt 4 die Daten nicht gespeichert werden können, da der Server kei
     . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der Speicher des Servers vollständig belegt wurde.
     . WHILE Nicht genügend Speicherplatz zur Verfügung um Route zu speichern
     .. Die Anwendung zeigt dem Nutzer, wieviel Speicherplatz noch benötigt wird, um die Route erfolgreich speichern zu können.
-    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte um Speicher des Servers freizugeben.
+    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte, um Speicher des Servers freizugeben.
     .. IF Nutzer wählt aus, eine bereits gespeicherte Route zu löschen.
     ... Die Anwendung zeigt dem Nutzer eine Liste aller gespeicherten Routen sowie den jeweiligen Speicherbedarf einer Route.
     ... Der Nutzer wählt die zu löschende Route aus.

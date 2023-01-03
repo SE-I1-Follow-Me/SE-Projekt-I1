@@ -11,7 +11,7 @@ Dieser Use Case beschreibt die Auswahl des zu steuernden Roboters. Der ausgewäh
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch Ihn wird das Use Case aufgerufen und gestartet.
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
 

@@ -63,7 +63,7 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 | Magnus Böhne
 | Architect
 | Wirtschaftsinformatik
-| 
+| C, C#, C++, Java, Kotlin, Go
 |
 
 | Michael Novak
