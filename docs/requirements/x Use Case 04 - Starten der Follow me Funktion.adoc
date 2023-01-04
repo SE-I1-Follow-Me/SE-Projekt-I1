@@ -5,9 +5,7 @@
 == Use-Case: Senden des "Folge" Befehls
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
-
-Dieser Use Case beschreibt das Versenden des "Folge" Befehls in der Follow-Me-App
+Dieses Use Case beschreibt das Starten der Follow me Funktion um einen Roboter dem Nutzer folgen zu lassen.
 
 === Kurzbeschreibung der Akteure
 
@@ -30,31 +28,40 @@ Dieser Use Case beschreibt das Versenden des "Folge" Befehls in der Follow-Me-Ap
 ==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
 
+==== GPS Verbindung
+Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.
+
 ==== Roboter existent
 Es wurden bereits Roboter gespeichert.
 
 ==== Roboter verfügbar
-Ein Roboter ist verfügbar (führt keine anderen Befehle aus).
+Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 
-. Der Use Case beginnt, wenn der Nutzer im Hauptmenü der App auswählt, dass er einen Roboter Folgen lassen will.
-. Die App zeigt dem Nutzer eine Liste der verfügbaren Roboter an. 
-. Der Nutzer wählt einen Roboter aus der zuvor angezeigten Liste aus.
-. Die Anwendung zeigt dem Nutzer eine Bestätigung an.
-. Das Use Case endet wenn der Roboter beginnt, dem Nutzer zu folgen.
+. Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow Me" betätigt.
+. Das System zeigt dem Nutzer eine Liste aller Roboter.
+. Der Nutzer wählt einen Roboter aus der Liste aller Roboter.
+. Das System teilt dem Roboter mit dem Nutzer zu folgen.
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter ihm nun folgt.
+. Das Use Case endet, wenn dem Nutzer die Liste der Roboter angezeigt wird.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== Keine verfügbaren Roboter
+==== Der ausgewählte Roboter führt eine Aktion aus
+Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
 
-Falls in Schritt 2 kein verfügbarer Roboter gefunden wurde, dann:
-
-    . Die Anwendung zeigt dem Nutzer an, dass keine Roboter verfügbar sind, denen der Folge Befehl gegeben werden kann.
-    . Das Use Case endet erfolglos, die Anwendung zeigt dem Nutzer den Startbildschirm.
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
+. Das System fragt, ob die Aktion abgebrochen werden soll.
+. IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
+.. Das System bricht die Aktion des Roboters ab.
+.. Das Use Case wird bei Schritt 4 fortgesetzt.
+. ELSE
+.. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
+.. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
