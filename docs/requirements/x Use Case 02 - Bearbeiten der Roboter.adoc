@@ -70,11 +70,6 @@ Falls der Nutzer in Schritt 4 Daten so geändert hat, dass diese sich mit den Da
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
-
 
 === Wesentliche Szenarios
 
@@ -87,17 +82,17 @@ Der Roboter wurde nicht bearbeitet, bei Auswahl und Verwendung des Roboters werd
 ==== Der Nutzer bricht das Use Case ab
 Bereits gesammelte Daten werden verworfen, bei Auswahl und Verwendung des Roboters werden die ursprünglichen Daten angezeigt.
 
-=== Nachbedingungen
+==== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 
-==== Roboter identifizierbar
+=== Roboter identifizierbar
 Der Roboter ist weiterhin eindeutig identifizierbar eingespeichert.
 
-==== Bestätigung an Nutzer
+=== Bestätigung an Nutzer
 Der Nutzer hat das erfolgreiche Bearbeiten des Roboters bestätigt bekommen.
 
-==== Logdatei aktualisiert
+=== Logdatei aktualisiert
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 

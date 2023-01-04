@@ -5,55 +5,65 @@
 == Use-Case: Beenden der Follow-Me Funktion
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt den Ablauf der Follow-Me Funktion. In dieser wird einem zuvor ausgewählten Roboter (Siehe UC3) der Befehl gegeben dem Nutzer der App zu folgen.
+Dieses Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter nicht länger dem Nutzer folgen zu lassen.
 
 === Kurzbeschreibung der Akteure
 
 ==== Nutzer (User)
-
     Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Anwendung
-
     Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
 
 ==== Server
-
     Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== Roboter
-
     Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-==== <Internetverbindung>
+==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
 
-==== <Roboter verfügbar>
-Es existiert ein Roboter, der die Follow me Funktion (Folgen, Warten, Zurücksenden) ausführt.
+==== GPS Verbindung
+Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.
+
+==== Roboter existent
+Es wurden bereits Roboter gespeichert.
+
+==== Roboter verfügbar
+Es existiert ein Roboter, der die Follow me Funktion ausführt.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Follow me beenden" betätigt.
-. Das System zeigt dem Nutzer ein Fenster und fragt, ob er wirklich die Follow Me Funktion Beenden möchte.
-// Frage: Ist das beenden abhängig vom Roboter, heißt, wird erst ein Roboter gewählt und dann kann, wenn möglich (Roboter führt follow me aus) diese Funktion für diesen Roboter beendet werden oder:
-// Follow me beenden zeigt eine liste von Robotern die momentan follow me ausführen und die beendet werden können.
-. Der Nutzer wählt "Ja, Follow Me Beenden" aus.
-. Das System bestätigt das erfolgreiche Beenden der Follow me Funktion.
-. Das Use Case endet, wenn das System dem Nutzer das Hauptmenü anzeigt.
+. Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow Me" betätigt.
+. Das System zeigt dem Nutzer eine Liste aller Roboter die den Follow me Befehl ausführen.
+. Der Nutzer wählt einen Roboter aus der Liste der Roboter.
+. Das System fragt erneut ob die Follow Me Funktion wirklich beendet werden soll.
+. Der Nutzer bestätigt erneut, dass die Follow Me Funktion beendet werden soll.
+. Das System teilt dem Roboter mit dem Nutzer nicht länger zu folgen.
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter ihm nun nicht mehr folgt.
+. Das Use Case endet erfolgreich, das Use Case 06 "Speichern der Route" beginnt.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Nutzer möchte Follow Me Funktion doch nicht beenden
-Falls der Nutzer in Schritt 3 "Nein, Follow Me nicht Beenden" auswählt, dann:
+Falls der Nutzer in Schritt 5 auswählt, dass die Follow Me Funktion nicht beendet werden soll
 
 . Das System zeigt dem Nutzer an, dass die Follow Me Funktion nicht beendet wurde.
-. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Hauptmenü an.
+. Das Use Case endet erfolglos, das System zeigt dem Nutzer die Lister der Roboter an.
 
+
+==== Der Nutzer möchte die Änderungen nicht übernehmen
+Falls der Nutzer in Schritt 6 die Änderungen nicht übernehmen möchte
+
+. Der Nutzer bestätigt nicht, dass er die Daten ändern möchte.
+. Das System verwirft die Änderungen.
+. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -66,17 +76,26 @@ Falls der Nutzer in Schritt 3 "Nein, Follow Me nicht Beenden" auswählt, dann:
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Erfolgreiches beenden
+Der Roboter führt die Follow-me Funktion nicht länger aus und folgt dem Nutzer nicht mehr. Der Nutzer sieht die Liste der Roboter.
+
+==== Erfolgloses beenden
+Der Roboter führt die Follow-me Funktion weiterhin aus und folgt dem Nutzer. Der Nutzer sieht die Liste der Roboter.
+
+==== Der Nutzer bricht das Use Case ab
+Der Roboter führt die Follow-me Funktion weiterhin aus. Der Nutzer sieht die Liste der Roboter.
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+==== Roboter Aktion 
+Der Roboter führt keine Funktion aus.
 
-=== Besondere Anforderungen
+==== Logdatei aktualisiert
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
+
+==== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+=== Usability
+Erlernbarkeit: Das Beenden der Follow Me Funktion ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.

@@ -2,7 +2,7 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Senden des "Folge" Befehls
+== Use-Case: Starten der Follow me Funktion
 
 === Kurzbeschreibung
 Dieses Use Case beschreibt das Starten der Follow me Funktion um einen Roboter dem Nutzer folgen zu lassen.
@@ -66,39 +66,34 @@ Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== Der Nutzer will einen Roboter den Folge Befehl geben
-
-. Die Anwendung fragt eine Liste aller für den Nutzer verfügbaren Roboter vom Server ab.
-. Der Server sendet eine Liste aller verfügbaren Roboter an die Anwendung.
-
-
-==== <Der Nutzer wählt einen Roboter aus der Liste>
-. Die Anwendung sendet die Daten des ausgewählten Roboters an den Server.
-. Die Anwendung sendet die Daten des Nutzer an den Server.
-. Der Server sendet den Befehl an den Roboter.
-. Der Roboter bestätigt den Befehl erhalten zu haben an den Server.
-. Der Server sendet eine erfolgreiche Bestätigung an die Anwendung.
-
-
-
 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== Der Nutzer bricht das Use Case ab
-Der Roboter führt den Folge Befehl nicht aus.
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Erfolgreiches beenden
+Der Roboter führt die Follow me Funktion aus und folgt dem Nutzer auf unbestimmte Zeit.
 
-=== Nachbedingungen
+==== Erfolgloses beenden
+Der Roboter führt die Follow me Funktion nicht aus und ist bereit, eine andere Aktion auszuführen. Der Nutzer sieht die Liste der Roboter.
+
+==== Der Nutzer bricht das Use Case ab
+Der Roboter führt die Follow me Funktion nicht aus und ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Roboter.
+
+
+==== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== Erfolgreiches Beenden
-Der Roboter folgt dem Nutzer, bis dieser ihm befiehlt, ihm nicht länger zu folgen.
+==== Roboter Aktion 
+Der Roboter führt die Follow-me Funktion aus.
+
+==== Logdatei aktualisiert
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 ==== <Besondere Anforderung 1>
+
+=== Usability 
+Erlernbarkeit: Das Starten der Follow Me Funktion ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.

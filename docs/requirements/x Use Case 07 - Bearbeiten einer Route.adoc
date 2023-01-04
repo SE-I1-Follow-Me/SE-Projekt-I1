@@ -2,12 +2,10 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Verwalten der Route
+== Use-Case: Bearbeiten einer Route
 
 === Kurzbeschreibung
-//<Kurze Beschreibung des Use Case>
-
-Dieses Use Case beschreibt den Menüpunkt "Routen verwalten" und seine Funktionen.
+Dieses Use Case beschreibt das Bearbeiten einer Route um zum Beispiel den Namen anzupassen.
 
 === Kurzbeschreibung der Akteure
 
@@ -30,76 +28,73 @@ Dieses Use Case beschreibt den Menüpunkt "Routen verwalten" und seine Funktione
 ==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Anwendung, Server) benötigen eine stabile Internetverbindung.
 
-==== Verfügbare Routen
+==== Routen verfügbar
 Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Routen verwalten" betätigt.
-. Das System ruft die Liste aller gespeicherten Routen auf und zeigt diese dem Nutzer an.
-. Der Nutzer kann durch gedrückthalten einen Route auswählen, um diese entweder zu bearbeiten oder zu löschen.
-. Der Nutzer wählt eine Route der Liste aus.
-. Der Nutzer wählt Bearbeiten aus.
-. Das System öffnet ein Fenster mit den Informationen der Route.
-. Der Nutzer wählt nun den Namen aus.
-. Das System öffnet ein Eingabefenster, damit der Nutzer den Namen ändern kann.
-. Der Nutzer gibt einen neuen Namen ein und bestätigt diesen.
-. Das System prüft, ob der neue Name bereits vergeben ist.
-. Da der Name noch nicht vergeben ist, wird dieser gespeichert.
-. Das System überträgt die Namensänderung an den Server.
-. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Routen Verwalten" anzeigt.
+. Der Use Case beginnt, wenn der Nutzer in der App eine Route aus der Liste der Routen auswählt.
+. Das System zeigt dem Nutzer alle zu der ausgewählten Route verfügbaren Daten an (Name, Token etc.)
+. WHILE Nutzer möchte Änderung der Daten vornehmen.
+.. Der Nutzer drückt auf die Daten, die zu ändern sind. 
+.. Der Nutzer ändert die Daten.
+. Der Nutzer wählt die Schaltfläche "Änderungen Speichern".
+. Das System zeigt dem Nutzer alle Daten die geändert werden.
+. Der Nutzer bestätigt erneut, dass er die Daten ändern möchte.
+. Das System ändert die Daten der ausgewählten Route.
+. Das System zeigt dem Nutzer die geänderten Daten an.
+. Das Use Case endet erfolgreich, dem Nutzer wird erneut die Liste der Routen angezeigt.
+
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== Nutzer wählt "löschen" aus
-Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+==== Der Nutzer möchte die Änderungen nicht übernehmen
+Falls der Nutzer in Schritt 6 die Änderungen nicht übernehmen möchte
 
-. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
-. IF Nutzer bestätigt Löschung der Route.
-.. Das System entfernt die Route aus der Liste der gespeicherten Routen.
-.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Routen verwalten" an.
-. ELSE
-..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten" an.
+. Der Nutzer bestätigt nicht, dass er die Daten ändern möchte.
+. Das System verwirft die Änderungen.
+. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
-==== Neuer Name ist bereits vergeben
-Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
 
-. Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
-. Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
-. IF Nutzer möchte neuen Namen vergeben
-.. Das Use Case wird bei Schritt 7 fortgesetzt.
-. ELSE 
-.. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten".
+==== Geänderte Daten sind bereits an einen anderen Roboter vergeben
+Falls der Nutzer in Schritt 4 Daten so geändert hat, dass diese sich mit den Daten anderer Routen überschneiden (zum Beispiel: Name)
+
+. Das System zeigt dem Nutzer, dass diese Daten sich, mit den Daten anderer Routen, überschneiden.
+. Das System verwirft die problematische Änderung.
+. Das Use Case wird bei Schritt 3 fortgesetzt.
 
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== Nutzer wählt "löschen" aus
-Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
-
-. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
-. IF Nutzer bestätigt Löschung der Rpute
-.. Das System entfernt die Route aus der Liste der gespeicherten Roboter
-.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
-. ELSE
-..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
 
 === Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Erfolgreiches beenden
+Der Roboter wurde erfolgreich bearbeitet, die Daten sind geändert und werden bei Auswahl und Verwendung des Roboters fehlerfrei angezeigt.
 
-=== Nachbedingungen
+==== Erfolgloses beenden
+Der Roboter wurde nicht bearbeitet, bei Auswahl und Verwendung des Roboters werden die ursprünglichen Daten angezeigt.
+
+==== Der Nutzer bricht das Use Case ab
+Bereits gesammelte Daten werden verworfen, bei Auswahl und Verwendung des Roboters werden die ursprünglichen Daten angezeigt.
+
+==== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+=== Roboter identifizierbar
+Der Roboter ist weiterhin eindeutig identifizierbar eingespeichert.
+
+=== Bestätigung an Nutzer
+Der Nutzer hat das erfolgreiche Bearbeiten des Roboters bestätigt bekommen.
+
+=== Logdatei aktualisiert
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
+
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.

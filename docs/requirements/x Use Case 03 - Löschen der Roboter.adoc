@@ -5,7 +5,7 @@
 == Use-Case: Löschen eines Roboters
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt die Auswahl des zu steuernden Roboters. Der ausgewählte Roboter wird in späteren Use Cases (siehe z.B. UC04) genutzt. 
+Dieser Use Case beschreibt das Löschen eines Roboters, um ihn beispielsweise neu einzuspeichern oder das System zu bereinigen.
 
 === Kurzbeschreibung der Akteure
 
@@ -86,7 +86,7 @@ Der Roboter wurde nicht gelöscht und befindet sich weiterhin unverändert in de
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 ==== Roboter gelöscht
-Alle dem Roboter zugehörigen Daten sind auf dem Gerät des Nutzer sowie in der Datenbank des Servers gelöscht. Der Roboter befindet sich nicht länger in der Liste der Roboter.
+Alle dem Roboter zugehörigen Daten sind auf dem Gerät des Nutzers sowie in der Datenbank des Servers gelöscht. Der Roboter befindet sich nicht länger in der Liste der Roboter.
 
 ==== Bestätigung an Nutzer
 Der Nutzer hat das erfolgreiche Löschen des Roboters bestätigt bekommen.
