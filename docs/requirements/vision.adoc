@@ -36,7 +36,7 @@ Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nu
 |===
 | Das Problem | Routen können aufgezeichnet, aber nicht verwaltet, gelöscht oder an einen Fahrroboter übergeben werden.
 | betrifft | Kunden, welche Aufgaben an die Fahrroboter deligieren möchten.
-| die Auswirkung davon ist | Automatisierte Steuerung der Fahrroboter ist nicht möglich
+| die Auswirkung davon ist | Automatisierte Bedienung der Fahrroboter ist nicht möglich
 | eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, die Fahrroboter zu bedienen.
 |===
 
@@ -96,7 +96,7 @@ Beispiel Produkt:
 
 | Entwickler Team der App I1
 | Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925), welche für das Projekt zuständig sind
-| Erstellen der App und Server dem Bedarf anpassen
+| Erstellen, Verwalten, Warten von Anwendung und Server
 
 | Firma Sciota Robotics (Entwickler der Fahrroboter)
 | Entwickler der Fahrroboter
@@ -128,8 +128,8 @@ Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 . Ein Kunde kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Kunden gehören, jedoch kann er nur von einem auf einmal benutzt werden bzw. Aufgaben erhalten.
 . Die Roboter werden während ihrer Arbeit gesperrt werden, das heißt, dass andere Kunden, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Kunde seine Sitzung beendet hat. 
 . Die App ist für den Outdoor Einsatz gedacht und benötigt ein GPS Signal sowie eine stabile Internetverbindung.
-. Die App wird auf der aktuell gängigen Android Version 11 entwickelt. Bei viel älteren oder zukünftigen Versionen kann es zu Kompatibilitätsproblemen kommen.
-. Die Daten über den absolvierten Pfad sollen auf einem Server gespeichert werden. Die App muss daher auf diesen zugreifen. Hierbei wird es einen Server mit einer Instanz geben, die Anzahl der Instanzen soll jedoch angepasst werden können.
+. Die App wird auf der aktuell gängigen Android Version 11 entwickelt.
+
 
 Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -147,7 +147,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 |Route laden |hoch |Zuvor aufgenommene Route anzeigen |
 |Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen |
 |Route löschen |hoch |Löschen einer zuvor aufgenommenen Route |
-|Follow-Me Funktion |hoch |bei der Follow-Me Funktion handelt es sich um eine erweiterung der "Route aufzeichnen" Funktion, bei der die Route aufgezeichnet wird, während ein oder mehrere Roboter dem Kunden folgen| 
+|Follow-Me Funktion |hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann. Zudem können den Roboter auf der aufgezeichneten Route Fahrkommandos erteilt werden (Siehe Funktionen "Route aufzeichnen" sowie "Roboter Fahrkommandos")| 
 |Roboter hinzufügen |hoch |Speichern eines neuen Roboters |
 |Roboter bearbeiten |niedrig |Namen des Roboters ändern | 
 |Roboter Fahrkommandos |niedrig |Befehle auf aufgezeichneten Routen an den Roboter geben |
