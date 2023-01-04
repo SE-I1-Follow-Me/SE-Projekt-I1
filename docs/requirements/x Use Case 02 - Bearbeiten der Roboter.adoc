@@ -90,8 +90,14 @@ Bereits gesammelte Daten werden verworfen, bei Auswahl und Verwendung des Robote
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
+
+==== Roboter identifizierbar
 Der Roboter ist weiterhin eindeutig identifizierbar eingespeichert.
-Der Nutzer hat das erfolgreiche Bearbeiten der Daten bestätigt bekommen.
+
+==== Bestätigung an Nutzer
+Der Nutzer hat das erfolgreiche Bearbeiten des Roboters bestätigt bekommen.
+
+==== Logdatei aktualisiert
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
