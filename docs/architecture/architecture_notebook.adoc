@@ -17,9 +17,11 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 
 Das System besteht aus einer Android App für das Controlling von Robertern, ein Simulation System und einem Server, der GPS-Tracks speichert und im Austausch mit den Robotern steht. Um die Roboter zu synchronisieren muss einmalig dem Gerät ein Token von einem Admin zugewiesen werden. Die App soll nicht im PlayStore veröffentlicht werden und vorerst nur von einer Person genutzt werden, aber nahezu rund um die Uhr verfügbar sein und später auch Mehrbenutzerbetrieb ermöglichen. Bei den verwendeten Endgeräten handelt es sich um Android Smartphones, die über einen Touchscreen bedient werden. Die technische Ausstattung (Bildschirmgröße, RAM, CPU, Bandbreite) sowie die genaue Android Version sind unbekannt. Ausgegangen wird für die Entwicklung von der derzeit gängigen Android Version 11.
 
-Die App soll eine möglichst intuitive Benutzeroberfläche haben und in Aktionen durch bekannte Icons oder Begriffe einfach beschrieben werden.
+Für den Server wird ein Ubuntu Server mit einer mySQL/mSQL basierten Datenbank verwendet. Er muss auch außerhalb des HTW-Netzes erreichbar sein. 
 
-Das System ist die initiale Version und wird vermutlich im Laufe der Zeit noch hinsichtlich verschiedener Aspekte erweitert werden. Dazu gehören z.B. die Optimierung des Mehrbenutzerbetriebs und die Erweiterung der angebotenen. Routenoptionen 
+Die App soll eine möglichst intuitive Benutzeroberfläche besitzen und in Aktionen durch bekannte Icons oder Begriffe einfach beschrieben werden.
+
+Das System ist die initiale Version und wird vermutlich im Laufe der Zeit noch hinsichtlich verschiedener Aspekte erweitert werden. Dazu gehören z.B. die Optimierung des Mehrbenutzerbetriebs und die Erweiterung der angebotenen Routenoptionen.
 
 
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
