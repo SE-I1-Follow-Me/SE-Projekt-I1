@@ -1,0 +1,1 @@
+data class Robot(var ivRoboter : Int, var robotName : String, var tvPfeil : String)
