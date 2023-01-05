@@ -142,7 +142,16 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Route aufzeichnen | hoch | Route abgehen und dabei aufzeichnen | xx
+| Starten der Follow-me Funktion | hoch | Route abgehen und dabei aufzeichnen | xx
+| Beenden der Follow-me Funktion | hoch | Route abgehen und dabei aufzeichnen | xx
+| Speichern eines Roboters | hoch | Roboter speichern und zur Verfügung stellen 
+| Bearbeiten eines Roboters | niedrig | Roboter im System entfernen |
+| Löschen eines Roboters | niedrig | Roboter aus dem System entfernen |
+
+
+
+
+| Route aufzeichnen | hoch | | 
 |Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern |
 |Route laden |hoch |Zuvor aufgenommene Route anzeigen |
 |Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen |
