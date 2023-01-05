@@ -23,6 +23,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * *UC10*: Warten eines Roboters
 
 Geordnet nach Priorität:
+
 * *UC01*: Anlegen eines Roboters
 * *UC04*: Starten der Follow-Me Funktion
 * *UC05*: Beenden der Follow-Me Funktion
