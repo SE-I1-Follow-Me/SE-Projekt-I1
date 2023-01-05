@@ -5,7 +5,7 @@
 == Use-Case: Bearbeiten einer Route
 
 === Kurzbeschreibung
-Dieses Use Case beschreibt das Bearbeiten einer Route um zum Beispiel den Namen anzupassen.
+Dieser Use Case beschreibt das Bearbeiten einer Route um zum Beispiel den Namen anzupassen.
 
 === Kurzbeschreibung der Akteure
 

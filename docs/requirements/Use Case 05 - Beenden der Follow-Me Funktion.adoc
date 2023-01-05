@@ -5,7 +5,7 @@
 == Use-Case: Beenden der Follow-me Funktion
 
 === Kurzbeschreibung
-Dieses Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter nicht länger dem Nutzer folgen zu lassen.
+Dieser Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter nicht länger dem Nutzer folgen zu lassen.
 
 === Kurzbeschreibung der Akteure
 

@@ -7,7 +7,7 @@
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-me Funktion der Follow-me-App.
+Dieser Use Case beschreibt das Speichern einer Route nach Beenden der Follow-me Funktion der Follow-me-App.
 
 === Kurzbeschreibung der Akteure
 
@@ -35,7 +35,7 @@ Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötig
 
 
 ==== Abgeschlossene Aktivität
-Damit dieses Use Case beginnen kann, muss das Use Case "Beenden der Follow-me Funktion" vorausgegangen sein.
+Damit dieser Use Case beginnen kann, muss das Use Case "Beenden der Follow-me Funktion" vorausgegangen sein.
 
 
 

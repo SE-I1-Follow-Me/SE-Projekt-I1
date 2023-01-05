@@ -6,7 +6,7 @@
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieses Use Case beschreibt das Starten des Roboters der eine vorausgesetzte Route ablaufen soll.
+Dieser Use Case beschreibt das Starten des Roboters der eine vorausgesetzte Route ablaufen soll.
 
 
 === Kurzbeschreibung der Akteure

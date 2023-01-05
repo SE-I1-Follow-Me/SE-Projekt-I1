@@ -5,7 +5,7 @@
 == Use-Case: Bearbeiten eines Roboters
 
 === Kurzbeschreibung
-Dieses Use Case beschreibt das Bearbeiten eines Roboters um zum Beispiel den Namen anzupassen.
+Dieser Use Case beschreibt das Bearbeiten eines Roboters um zum Beispiel den Namen anzupassen.
 
 === Kurzbeschreibung der Akteure
 
