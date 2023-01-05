@@ -71,23 +71,17 @@ Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== Erfolgreiches beenden
-Der Roboter führt die Follow me Funktion aus und folgt dem Nutzer auf unbestimmte Zeit.
+==== Erfolgreiches Starten der Follow-me Funktion
+Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.). Er wählt Roboter 2 aus und bekommt bestätigt, dass der Roboter ihm nun erfolgreich folgt.
 
-==== Erfolgloses beenden
-Der Roboter führt die Follow me Funktion nicht aus und ist bereit, eine andere Aktion auszuführen. Der Nutzer sieht die Liste der Roboter.
-
-==== Der Nutzer bricht das Use Case ab
-Der Roboter führt die Follow me Funktion nicht aus und ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Roboter.
+==== Erfolgloses Starten der Follow-me Funktion
+Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.). Er wählt Roboter 2 aus und bekommt angezeigt, dass Roboter 2 bereits eine andere Funktion ausführt. Er entscheidet sich, die Funktion nicht zu unterbrechen. Der Prozess wird erfolglos beendet, der Roboter folgt dem Nutzer nicht.
 
 
 ==== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== Roboter Aktion 
-Der Roboter führt die Follow-me Funktion aus.
-
-==== Logdatei aktualisiert
+Der ausgewählte Roboter folgt dem Nutzer.\n
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 === Besondere Anforderungen
