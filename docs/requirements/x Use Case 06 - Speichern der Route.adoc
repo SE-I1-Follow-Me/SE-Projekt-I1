@@ -2,12 +2,12 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
 
-//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+//Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
 == Use-Case: Speichern der Route
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieses Use Case beschreibt das Speichern einer Route nach Beenden der Follow-Me Funktion der Follow-Me-App.
+Dieser Use Case beschreibt das Speichern einer Route nach Beenden der Follow-me Funktion der Follow-me-App.
 
 === Kurzbeschreibung der Akteure
 
@@ -35,14 +35,14 @@ Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötig
 
 
 ==== Abgeschlossene Aktivität
-Damit dieses Use Case beginnen kann, muss das Use Case "Beenden der Follow-Me Funktion" vorausgegangen sein.
+Damit dieser Use Case beginnen kann, muss das Use Case "Beenden der Follow-me Funktion" vorausgegangen sein.
 
 
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn das Use Case "Beenden der Follow-Me Funktion" endet.
+. Der Use Case beginnt, wenn das Use Case "Beenden der Follow-me Funktion" endet.
 . Die Anwendung fragt den Nutzer, ob dieser die soeben vollendete Route speichern möchte.
 . Der Nutzer wählt aus, dass die Route gespeichert werden soll.
 . Der Nutzer gibt der Route einen Namen.

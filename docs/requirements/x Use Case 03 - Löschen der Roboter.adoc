@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
 
-//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+//Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
 == Use-Case: Löschen eines Roboters
 
 === Kurzbeschreibung

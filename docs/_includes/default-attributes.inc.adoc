@@ -1,5 +1,5 @@
 // Meta
-:project-name: Entwicklung einer Follow-ME APP für Android
+:project-name: Entwicklung einer Follow-me Android-App für Android
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis

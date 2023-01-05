@@ -1,0 +1,50 @@
+@startuml example-usecase-diagram
+left to right direction
+
+' skin parameters for usecase with special stereotype
+skinparam usecase<<unspezifiziert>> {
+  BackgroundColor #B4EEB4
+  BorderColor 		#698b69
+  StereotypeFontColor #black
+  StereotypeFontSize 10
+}
+
+
+actor Nutzer
+actor Roboter
+
+rectangle "Follow-me" {
+  usecase "UC01\nAnlegen eines Roboters" as uc01 #B4EEB4;line:698b69
+  usecase "UC02\nBearbeiten eines Roboters" as uc02 #B4EEB4;line:698b69
+  usecase "UC03\nLöschen eines Roboters" as uc03 #B4EEB4;line:698b69
+  usecase "UC04\nStarten der Follow-me Funktion" as uc04 #B4EEB4;line:698b69
+  usecase "UC05\nBeenden der Follow-me Funktion"  as uc05 #B4EEB4;line:698b69
+  usecase "UC06\nSpeichern einer Route" as uc06 #B4EEB4;line:698b69
+  usecase "UC07\nBearbeiten einer Route"  as uc07 #B4EEB4;line:698b69
+  usecase "UC08\nLöschen einer Route" as uc08 #B4EEB4;line:698b69
+  usecase "UC09\nAblaufen einer Route"  as uc09 #B4EEB4;line:698b69
+  usecase "UC10\n Warten eines Roboters"  as uc10 #B4EEB4;line:698b69
+
+
+
+  ' single line:
+  'usecase "UC05\nAnmeldedaten erfassen" as uc05
+  ' multiple lines:
+
+}
+
+Nutzer -- uc01
+Nutzer -- uc02
+Nutzer -- uc03
+Nutzer -- uc04
+Nutzer -- uc05
+Nutzer -- uc06
+Nutzer -- uc07
+Nutzer -- uc08
+Nutzer -- uc09
+Nutzer -- uc10
+uc04 -- Roboter
+uc05 -- Roboter
+uc10 -- Roboter
+uc09 -- Roboter 
+@enduml
