@@ -14,6 +14,7 @@
         android:adjustViewBounds="true"
         android:background="#E8F3EA"
         android:clickable="true"
+        android:checkable="true"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
