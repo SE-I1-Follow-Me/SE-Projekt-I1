@@ -45,7 +45,7 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 
 . Der Use Case beginnt, wenn der Nutzer in der App eine Route aus der Liste der Routen auswählt.
 . Das System zeigt dem Nutzer alle zu der ausgewählten Route verfügbaren Daten an (Name, Token etc.)
-. Der Nutzer betätigt die Schaltfläche "Route ablaufen"
+. Der Nutzer betätigt die Schaltfläche "Route ablaufen".
 . Das System zeigt dem Nutzer die Liste aller Roboter an.
 . Der Nutzer wählt einen Roboter aus der Liste aller Roboter aus.
 . Das System fragt den Nutzer erneut, ob der ausgewählte Roboter die ausgewählte Route ablaufen soll.
@@ -57,10 +57,17 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Der ausgewählte Roboter führt eine Aktion aus
+Falls der in Schritt 5 ausgewählte Roboter eine Aktion ausführt.
+
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
+. Das System fragt, ob die Aktion abgebrochen werden soll.
+. IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
+.. Das System bricht die Aktion des Roboters ab.
+.. Das Use Case wird bei Schritt 4 fortgesetzt.
+. ELSE
+.. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
+.. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -73,17 +80,27 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Erfolgreiches beenden
+Der Roboter läuft nun die Route ab.
+
+==== Erfolgloses beenden
+Der Roboter läuft die Route nicht abund ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Routen.
+
+==== Der Nutzer bricht das Use Case ab
+Der Roboter läuft die Route nicht abund ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Routen.
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+==== Roboter Aktion 
+Der Roboter läuft die Route ab.
+
+==== Logdatei aktualisiert
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
+
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
+=== Usability 
+Erlernbarkeit: Das Ablaufen einer Route ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.
