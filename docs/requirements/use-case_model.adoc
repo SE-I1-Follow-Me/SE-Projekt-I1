@@ -32,7 +32,7 @@ Geordnet nach Priorität:
 * *UC09*: Ablaufen einer Route
 
 * *UC02*: Bearbeiten eines Roboters
-* *UC03*: Löschen eines Roboters* 
+* *UC03*: Löschen eines Roboters
 * *UC07*: Bearbeiten einer Route
 * *UC08*: Löschen einer Route
 * *UC10*: Warten eines Roboters
