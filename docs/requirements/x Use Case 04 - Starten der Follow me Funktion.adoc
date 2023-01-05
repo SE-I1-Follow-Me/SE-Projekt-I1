@@ -63,8 +63,6 @@ Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
 .. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
 .. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
 
 
@@ -81,13 +79,15 @@ Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.
 ==== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-Der ausgewählte Roboter folgt dem Nutzer.\n
+Der ausgewählte Roboter folgt dem Nutzer.
+
+Es wird in der Liste der Roboter angezeigt, dass der ausgewählte Roboter eine Funktion ausführt.
+
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
-==== <Besondere Anforderung 1>
 
 === Usability 
 Erlernbarkeit: Das Starten der Follow Me Funktion ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.
