@@ -2,7 +2,7 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Speichern der Roboter
+== Use-Case: Anlegen eines Roboters
 
 === Kurzbeschreibung
 Dieser Use Case beschreibt das Anlegen eines Roboters um diesen in weiteren Use Cases verwenden zu können.
