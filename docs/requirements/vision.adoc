@@ -144,7 +144,7 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 | Bedarf | Priorität | Features | Geplantes Release
 | Starten der Follow-me Funktion | hoch | Route abgehen und dabei aufzeichnen | xx
 | Beenden der Follow-me Funktion | hoch | Route abgehen und dabei aufzeichnen | xx
-| Speichern eines Roboters | hoch | Roboter speichern und zur Verfügung stellen 
+| Speichern eines Roboters | hoch | Roboter speichern und zur Verfügung stellen |
 | Bearbeiten eines Roboters | niedrig | Roboter im System entfernen |
 | Löschen eines Roboters | niedrig | Roboter aus dem System entfernen |
 
