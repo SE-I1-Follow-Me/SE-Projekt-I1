@@ -11,17 +11,31 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Speichern der Roboter
-* *UC02*: Verwalten der Roboter
-* *UC03*: Auswahl der Roboter
-* *UC04*: Beenden der Follow-Me Funktion
-* *UC05*: Senden des Folge Befehls
-* *UC06*: Senden des Zurückkehren Befehls
-* *UC07*: Senden des Warte Befehls
-* *UC08*: Speichern der Route
-* *UC09*: Warten der Roboter
-* *UC10*: Verwalten der Routen
+* *UC01*: Anlegen eines Roboters
+* *UC02*: Bearbeiten eines Roboters
+* *UC03*: Löschen eines Roboters
+* *UC04*: Starten der Follow-Me Funktion
+* *UC05*: Beenden der Follow-Me Funktion
+* *UC06*: Speichern einer Route
+* *UC07*: Bearbeiten einer Route
+* *UC08*: Löschen einer Route
+* *UC09*: Ablaufen einer Route
+* *UC10*: Warten eines Roboters
 
+Geordnet nach Priorität:
+
+* *UC01*: Anlegen eines Roboters
+* *UC04*: Starten der Follow-Me Funktion
+* *UC05*: Beenden der Follow-Me Funktion
+
+* *UC06*: Speichern einer Route 
+* *UC09*: Ablaufen einer Route
+
+* *UC02*: Bearbeiten eines Roboters
+* *UC03*: Löschen eines Roboters
+* *UC07*: Bearbeiten einer Route
+* *UC08*: Löschen einer Route
+* *UC10*: Warten eines Roboters
 
 
 == Use Case Diagramm

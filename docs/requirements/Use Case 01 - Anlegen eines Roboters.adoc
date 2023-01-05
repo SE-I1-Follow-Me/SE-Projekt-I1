@@ -2,10 +2,10 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Speichern der Roboter
+== Use-Case: Anlegen eines Roboters
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt das Abspeichern eines Roboters um diesen in weiteren Use Cases verwenden zu können.
+Dieser Use Case beschreibt das Anlegen eines Roboters um diesen in weiteren Use Cases verwenden zu können.
 
 
 === Kurzbeschreibung der Akteure
@@ -44,19 +44,16 @@ Der Nutzer kennt die Hash-Kombination des zu speichernden Roboters.
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter verwalten" betätigt.
-. Das System öffnet eine Liste aller gespeicherten Roboter.
-. Der Nutzer wählt nun "Roboter hinzufügen" aus der Menüleiste aus.
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Roboter anlegen" betätigt.
 . Das System fragt nach einem Token.
 . Der Nutzer gibt das passende Token ein.
 . Das System findet den Roboter und vergleicht, ob dieses Token sich bereits in der Liste der gespeicherten Roboter befindet.
 . Das Token des Roboters befindet sich noch nicht in der Liste, daher speichert das System dieses und fragt den Nutzer nach einem Namen für den Roboter.
 . Der Nutzer vergibt einen Namen und bestätigt diesen.
 . Das System überprüft, ob der Name bereits vergeben ist.
-. Der Name ist noch nicht vergeben, daher speichert das System den neuen Roboter unter dem eingegebenen Namen samt dem Token in die Liste der gespeicherten Roboter.
-. Das System gibt diese Information an den Server weiter. 
+. Der Name ist noch nicht vergeben, daher speichert das System den neuen Roboter unter dem eingegebenen Namen samt dem Token in der Liste der gespeicherten Roboter.
 . Das System bestätigt das erfolgreiche Speichern des Roboters.
-. Das Use Case endet, wenn das System erneut dem Nutzer das Menü "Roboter verwalten" anzeigt.
+. Das Use Case endet, wenn das System dem Nutzer die Daten des angelegten Roboters (Name, Token) anzeigt.
 
 
 === Alternative Abläufe
@@ -104,20 +101,17 @@ Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 b
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== Erfolgreiches beenden
-Der Roboter befindet sich nun in der Liste der gespeicherten Roboter und kann für Aktionen der App (siehe andere Use Cases) verwendet werden.
 
-==== Erfolgloses beenden
-Der Roboter befindet sich nicht in der Liste der gespeicherten Roboter, bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben, um gegebenenfalls erneut gespeichert werden zu können.
+==== Erfolgreicher Ablauf
+Der Nutzer X gibt den Token seines Roboters an und bestätigt diesen. Er wird nach einem Namen für den Roboter gefragt und nennt diesen "Roboter 1". Der Nutzer bestätigt seine Eingaben und bekommt die Daten seines eben angelegten Roboters angezeigt. Der Roboter ist erfolgreich angelegt.
 
-==== Der Nutzer bricht das Use Case ab
-Bereits gesammelte Daten werden verworfen, der Roboter wird freigegeben um gegebenenfalls erneut gespeichert werden zu können.
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
+
 Der Roboter ist eindeutig identifizierbar eingespeichert.
-Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Der Nutzer hat das erfolgreiche Abschließen des Speichervorgangs bestätigt bekommen.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
@@ -125,4 +119,4 @@ Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeicher
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 ==== Funktionalität
-Authentifizierung: Der Roboter und der Nutzer müssen eindeutig über Token und (IP, Mac-Adresse) authentifiziert werden um einen fehlerfreien Ablauf im weiteren Nutzen des System gewährleisten zu können.
+Authentifizierung: Der Roboter und der Nutzer müssen eindeutig über Token und (IP, Mac-Adresse) authentifiziert werden um einen fehlerfreien Ablauf im weiteren Nutzen des Systems gewährleisten zu können.
