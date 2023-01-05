@@ -17,6 +17,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |Roboterroute |Bei einer "Roboterroute" handelt es sich um aufgenommene Routen, welche an einen oder mehrere Roboter gesendet werden können |
 |Fahrroboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier] 
 gefunden werden  |
+|Warten | Der Begriff "Warten" bezieht sich auf einen Zustand den jeder Roboter durch Eingabe des Nutzers annehmen und verlassen kann. Während dieses Zustands ist der Roboter nicht für Funktionen verfügbar.  |
 |===
 
 
