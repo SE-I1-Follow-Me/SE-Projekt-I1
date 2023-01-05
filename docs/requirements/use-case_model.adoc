@@ -10,12 +10,11 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Identifizierte Use Cases
-// Liste aller identifizierten Use Cases (priorisiert)
 * *UC01*: Anlegen eines Roboters
 * *UC02*: Bearbeiten eines Roboters
 * *UC03*: Löschen eines Roboters
-* *UC04*: Starten der Follow-Me Funktion
-* *UC05*: Beenden der Follow-Me Funktion
+* *UC04*: Starten der Follow-me Funktion
+* *UC05*: Beenden der Follow-me Funktion
 * *UC06*: Speichern einer Route
 * *UC07*: Bearbeiten einer Route
 * *UC08*: Löschen einer Route
@@ -27,8 +26,8 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | UC-ID | Use Case Name | Priorität (1-5)
 | UC01 | Anlegen eines Roboters | 5
-| UC04 | Starten der Follow-Me Funktion| 5
-| UC05 | Beenden der Follow-Me Funktion | 5
+| UC04 | Starten der Follow-me Funktion| 5
+| UC05 | Beenden der Follow-me Funktion | 5
 | UC06 | Speichern einer Route | 3
 | UC09 | Ablaufen einer Route | 2
 | UC02 | Bearbeiten eines Roboters | 1
@@ -43,6 +42,13 @@ include::../_includes/default-attributes.inc.adoc[]
 == Use Case Diagramm
 // ...
 
+.Use Case Model PlantUML
+[plantuml, "{diagramsdir}/syntax-example2", svg]
+....
+include::Follow-me Use Case model.puml[]
+....
+
+
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
 
@@ -54,10 +60,13 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 
 
 <<<
-include::Use Case 01 - Speichern der Roboter.adoc[]
+include::Use Case 01 - Anlegen eines Roboters.adoc[]
 
 <<<
-include::Use Case 08 - Speichern der Route.adoc[]
+include::Use Case 04 - Starten der Follow-me Funktion.adoc[]
+
+<<<
+include::Use Case 05 - Beenden der Follow-me Funktion.adoc[]
 
 //<<<
 //include::use_case_01.inc.adoc[]

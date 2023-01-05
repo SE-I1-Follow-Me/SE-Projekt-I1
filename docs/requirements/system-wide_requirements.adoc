@@ -26,8 +26,8 @@ Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortige
 SWFA-3: ::
 * Bei Nichtbestehen einer GPS Verbindung soll der Roboter stehen bleiben. 
 Sollte während einer Aktion keine GPS Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen.
-
-
+SWFA-4: ::
+* Die App soll dauerhaft im jeweiligen Menü die Liste der Roboter beziehungsweise die Liste der Routen anzeigen.
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
 

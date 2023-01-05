@@ -3,3 +3,9 @@
 # General
 .DS_Store
 *~
+
+# Asciidoctor
+.asciidoctor/
+images/diagrams/
+*.pdf
+*.html

@@ -1,7 +1,7 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
 
-//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+//Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
 == Use-Case: Starten der Follow me Funktion
 
 === Kurzbeschreibung
@@ -10,16 +10,10 @@ Dieses Use Case beschreibt das Starten der Follow me Funktion um einen Roboter d
 === Kurzbeschreibung der Akteure
 
 ==== Nutzer (User)
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
-
-==== Anwendung
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
-
-==== Server
-    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
+Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Roboter
-    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 
 === Vorbedingungen
@@ -45,7 +39,8 @@ Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 . Das System zeigt dem Nutzer eine Liste aller Roboter.
 . Der Nutzer wählt einen Roboter aus der Liste aller Roboter.
 . Das System teilt dem Roboter mit dem Nutzer zu folgen.
-. Das System zeigt dem Nutzer, dass der ausgewählte Roboter ihm nun folgt.
+. Der Roboter bestätigt, dass er dem Nutzer nun folgt.
+. Das System bestätigt dem Nutzer, dass der ausgewählte Roboter ihm nun folgt.
 . Das Use Case endet, wenn dem Nutzer die Liste der Roboter angezeigt wird.
 
 === Alternative Abläufe
@@ -57,7 +52,8 @@ Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
 . Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
 . Das System fragt, ob die Aktion abgebrochen werden soll.
 . IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
-.. Das System bricht die Aktion des Roboters ab.
+.. Das System teilt dem Roboter mit seine aktuell ausgeführte Funktion abzubrechen.
+.. Der Roboter bestätigt den Abbruch seiner aktuellen Funktion.
 .. Das Use Case wird bei Schritt 4 fortgesetzt.
 . ELSE
 .. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
@@ -76,7 +72,7 @@ Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.
 Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.). Er wählt Roboter 2 aus und bekommt angezeigt, dass Roboter 2 bereits eine andere Funktion ausführt. Er entscheidet sich, die Funktion nicht zu unterbrechen. Der Prozess wird erfolglos beendet, der Roboter folgt dem Nutzer nicht.
 
 
-==== Nachbedingungen
+=== Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 Der ausgewählte Roboter folgt dem Nutzer.
@@ -89,5 +85,5 @@ Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeicher
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 
-=== Usability 
+==== Usability 
 Erlernbarkeit: Das Starten der Follow Me Funktion ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.
