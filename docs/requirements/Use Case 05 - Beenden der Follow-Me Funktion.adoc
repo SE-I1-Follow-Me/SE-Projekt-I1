@@ -57,7 +57,7 @@ Falls der Nutzer in Schritt 5 auswählt, dass die Follow Me Funktion nicht beend
 Falls das System in Schritt 2 keine Roboter anzeigt, da keiner die Follow-me Funktion ausführt
 
 . Das System zeigt dem Nutzer, dass keiner der Roboter die Follow-me Funktion ausführt.
-. Das Use Case endet erfolglos, Das System zeigt dem Nutzer die Liste der Roboter an.
+. Das Use Case endet erfolglos, das System zeigt dem Nutzer die Liste der Roboter an.
 
 
 === Wesentliche Szenarios

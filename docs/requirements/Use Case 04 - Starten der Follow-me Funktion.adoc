@@ -35,7 +35,7 @@ Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 
-. Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow Me" betätigt.
+. Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow-me" betätigt.
 . Das System zeigt dem Nutzer eine Liste aller Roboter.
 . Der Nutzer wählt einen Roboter aus der Liste aller Roboter.
 . Das System teilt dem Roboter mit dem Nutzer zu folgen.
