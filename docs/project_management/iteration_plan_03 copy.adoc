@@ -1,5 +1,5 @@
-= Iteration Plan 01: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Iteration Plan 03: {project-name}
+Carl Ulrich Brinker carlulrich.brinker@htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -12,26 +12,30 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | -
-| ... | -
-| Ende der Iteration | -
+| Beginn der Iteration | 05.12.2022 
+| Iterationsüberprüfung| 12.12.2022
+| SpringbootCamp| 12.12.2022
+| LCO Meilenstein| 19.12.2022
+| Ende der Iteration | 21.12.2022
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-Beispiele:
-
-* Beheben der Usability-Probleme, die von Abteilung X berichtet wurden
-* Ausliefern der Hauptszenarios, die die Integration mit System Y zeigen
-* Present a technical demonstration (demo).
+* Anfertigung der finalen Vision 
+* Use-Cases initial ausarbeiten (inkl. Diagramme)
+* initialen Projektplan erstellen
+* Risikoliste
+* Systemweite Requirements definieren
+* Tiefergehendes Verständnis des Springboot-Framework erarbeiten
+* Absprache mit Kunden und Bestätigung des Erarbeiteten
 
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
+Die in dieser Iteration geplanten Aufgaben sind in den https://github.com/TitanKnife/SE-Projekt-I1/issues[GitHub-Issues] mit entsprechenden Meilensteinen gekennzeichnet.
 
 _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]

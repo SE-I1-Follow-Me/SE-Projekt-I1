@@ -1,6 +1,6 @@
 = Protokoll: Cycle Meeting KW 47
 Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>
-v1.0, 22.11.22 19.00 Uhr - 19.30
+v1.0, 21.11.22 19.00 Uhr - 19.30
 include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}
 

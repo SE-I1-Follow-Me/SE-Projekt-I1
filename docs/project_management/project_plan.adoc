@@ -78,13 +78,14 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 
 === Arbeitsweise
 
-Die Kommunikation lief sowohl simultan über die Anwendungen WhatsApp und Discord als auch in Präsenz. Die Aufgabenverteilung wurde anfangs nur über Discord besprochen und später zudem über GitHub-Issues verwaltet.
+Die Kommunikation lief sowohl über die Anwendungen WhatsApp und Discord als auch in Präsenz ab. Die Aufgabenverteilung wurde anfangs nur über Discord besprochen und später zudem über GitHub-Issues verwaltet.
 
-Wöchentlich wurden Aufgaben am Montags-Meeting verteilt, die Project Manager haben diese am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Am Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Problem oder zukünftige Fragestellungen im Team diskutiert anschließen wird das zugehörige Protokoll in das Ascii-Format übertragen und im GitHub-Repository hinzugefügt. Zusätzlich wird jede Aufgabe eines anderen Teams reviewed. 
+Im wöchentlichen Montags-Meeting wurden neue Aufgaben verteilt, Aufgaben umgeschichtet und der Arbeitsstand verglichen. Aufgaben wurden vom Projekt Manager und Stellvertretung am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Im Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Probleme oder Fragestellungen im Team diskutiert. Aus diesen Meetings wird ein Protokoll angefertigt, welches anschließen in das Ascii-Format übertragen und in das GitHub-Repository hinzugefügt wird. Nach erfolreicher Beendung von Aufgaben, werden diese zum Review durch ein anderes Teammitglied freigegeben.
 Zur Bearbeitung der Aufgaben wurden den Teammitgliedern Zuständigkeitsrollen zugeteilt, wobei sich jedoch darauf verständigt wurde, dass die Aufgabenverteilung nicht den festgelegten Rollen entsprechen müssen, was eine agile Aufgabenverteilung ermöglicht. Dieses Konzept ermöglicht den Teammitgliedern eine vollständige Transparenz über das Projekt, dessen Aufgaben und deren Arbeitsstand.
 
-Die Aufgaben werden, so weit wie möglich, in Zweierteams aufgeteilt, um eine differenziertere Sichtweise zu erreichen. In GitHub-Issues wird der aktuelle Bearbeitungsstand festgehalten, um eine Übersicht zu erhalten und die weitere Aufgabenverteilung agil zu halten.
+Die Aufgabenübersicht in GitHub-Issues erfolgt über ein  definiertes Label System. So werden Aufgaben, direkt nach Erstellung, zunächst mit einem Deadline-Label versehen, welches die Deadline der jeweiligen Aufgabe angibt. Wurde die Aufgabe angefangen, wird das Issue mit dem Label "in Bearbeitung versehen". Ist die Aufgabe abgeschlossen, ist sie bereit zum Review, was ebenfalls mit entsprechenden Labels symboliesiert wird. Nach Beendigung der Aufgabe und erfolgreichem Review, kann das Issue schlussendlich geschlossen werden. 
 
+Die Aufgaben werden, so weit wie möglich, in Zweierteams aufgeteilt, um eine differenziertere Sichtweise zu erreichen.
 
 
 == Praktiken und Bewertung
@@ -96,7 +97,7 @@ Nach Vorgabe der Lehrveranstaltung wurde als Managementmethode der Open Unified 
 
 Unser Team führt Iterationen in 14-tägigen Zyklen durch, wobei wir jedoch jede Woche ein Meeting durchführen. In unseren Montags-Meetings werden vorherige Aufgaben besprochen, neue Aufgaben zugeteilt und neu aufgekommene Fragen besprochen oder zur Absprache mit dem Kunden notiert. Es gibt einen Meetingsleiter, welcher das Team durch die Agenda führt und einen Protokollführer. Der Projektmanager und sein Stellvertreter besprechen am Vortag alle anstehenden Aufgaben und erstellen eine Agenda. Diese wird vor dem Montags-Meeting an alle Mitglieder verteilt, damit das Meeting vorbereitet werden kann.
 
-Die Iterative Komponente wird nach dem OpenUP Framework umgesetzt: Plan Iteration -> manage Iteration -> Assess Results. In der Iterationsplanung werden die fälligen Aufgaben priorisiert. Die einzelnen Aufgaben werden in den Iterationsmeetings zugeteilt. In der Planung der Iteration ist der Ausgang der vorherigen Iteration maßgebend und dient als Ausgangspunkt für die Darauffolgende. Die aktualisierte Risikobewertung findet hierbei ebenso Berücksichtigung. Gegebenenfalls wird anhand dessen Scope und Projektziel angepasst. Bestandteil des Montagsmeetings ist ebenfalls eine Bewertung und Ergänzung der bekannten Risiken. Bei Veränderung werden diese neu evaluiert. 
+Die iterative Komponente wird nach dem OpenUP Framework umgesetzt: Plan Iteration -> Manage Iteration -> Assess Results. In der Iterationsplanung werden die fälligen Aufgaben priorisiert. Die einzelnen Aufgaben werden in den zweiwöchig stattfindenden Iterationsmeetings zugeteilt. In der Planung der Iteration ist der Ausgang der vorherigen Iteration maßgebend und dient als Ausgangspunkt für die Darauffolgende. Die aktualisierte Risikobewertung findet hierbei ebenso Berücksichtigung. Gegebenenfalls wird anhand dessen Scope und Projektziel angepasst. Bestandteil des Montagsmeetings ist ebenfalls eine Bewertung und Ergänzung der bekannten Risiken. Bei Veränderung werden diese neu evaluiert. 
 
 In dem Meeting in der darauffolgenden Woche, können die Zuständigkeiten agil an den Bearbeitungsstand angepasst werden. Als Messkriterium des Iterationszyklus-Erfolges dient der prozentuale Anteil absolvierter und durch Teammitglieder überprüfter Aufgaben.
 
@@ -156,3 +157,7 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+- mehr feedback vom kunden
+- essence manager benutzen
+- probleme nicht nur in den wöchentlichen meetings sondern dauerhaft und direkt ansprechen
