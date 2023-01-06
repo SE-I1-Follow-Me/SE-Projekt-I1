@@ -72,8 +72,22 @@ Wartbarkeit (Supportability): ::
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Entscheidung oder Einschränkung oder Begründung 1
-. Entscheidung oder Einschränkung oder Begründung 2
+. Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten relativ schnell aufsetzbar ist und eine Arbeitsersparnis mitbringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
+
+. Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (xml Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist sehr modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Maven das passende Framework für unsere App.
+
+. Springboot inkludiert Spring Security, welches wir als Datenbankschnittstelle nutzen werden. Es ermöglicht eine sichere Kommunikation der App mit der Datenbank als Server. Dadurch wird der Datenschutz des Nutzers gewährleistet.
+
+. Wir werden eine relationale Datenbank verwenden, da es für die von uns gespeicherten Daten
+vorteilhaft ist. Relationale Datenbanken sind für unser System schnell genug, laufen stabiler
+und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
+
+. Als Datenbankmanagmentsystem nutzen wir Microsoft SQL. Durch Vorerfahrungen mit diesem System wird es erleichtert, die gewünschten Daten zu erhalten und zu verarbeiten.
+
+. Der Wunsch des Kunden war es, die App auf einem möglichst aktuellem Android Betriebssystem laufen zu lassen. Wir haben uns für die Android Version 11 als Programmiergrundlage geeinigt, da dies weitverbreitet ist und der größte Teil aller Android Geräten diese Version unterstützen. Bei älteren Android Versionen kann es daher zu Kompatibilitätsprobleme führen, da keine Optimierung für Vorversionen durchgeführt wird.
+
+. Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine kleine zusätzliche Simulationssoftware, die es uns ermöglicht die gewünschten, verfügbaren Funktionen zu überprüfen und zu testen.
+
 
 
 == Architekturmechanismen
@@ -84,8 +98,22 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
 
-. Architekturmechanismus 1
-. Architekturmechanismus 2
+. Da das System möglichst vielfältig einsetzbar sein soll, werden wir zu Beginn die Sprachen Englisch und Deutsch unterstützen. Die Einbindung von weiteren
+Sprachen wird bei der Programmierung bedacht und soll in Zukunft leicht möglich sein.
+
+. In der Analyse haben wir erfasst, dass die Routendaten persistent gespeichert werden müssen. 
+Im Entwurf entschieden wir auf dieser Grundlage, dass alle Daten zentral in einer Microsoft
+SQL Server Datenbank gespeichert werden. Diese eignet sich gut für die von uns zu speichern
+den Daten und unsere Teammitglieder haben bereits Erfahrung mit diesem Datenbankmanagementsystem.
+
+. Unser Datenbankserver wird ein zugehöriger Server des Laborbereichs der HTW Dresden sein. Wir haben uns dabei für einen Linux Ubuntu Server entschieden, da wir bereits Vorkenntnisse zum Aufsetzen eines solchen Servers beitzen. Es gibt eine sehr hohe Entwicklerbasis, sodass wir bei Problemfällen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können.
+Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Option einen Server privat aufzusetzen oder zu mieten.
+
+. Um die Roboter eindeutig zu identifizieren und sie dem korrekten Nutzer zuzuordnen, ist ein Tokensystem nötig. Dieses wird auf der Roboter ID basieren und Funktionen wie Erstellung von Robotergruppen ermöglichen.
+
+. Das System benötigt eine minimale Nutzerverwaltung, da in der Analyse bewusst geworden ist, dass die Nutzer vorerst nur Zugriff auf eigene erstellte Routen haben sollen. Auch für die Speicherung der Roboter über die Tokens in einer Liste ist ein Nutzerverwaltungssystem von Vorteil.
+
+
 
 
 == Architektursichten (Views)
@@ -94,16 +122,16 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-image::C4 Model System Context Diagram.jpg[]
+image::C4 Model System Context Diagram.png[]
 
 === Physische Sicht (Betriebssicht):
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 * Container Diagram
 
-image::C4 Model System Container Diagram.jpg[]
+image::C4 Model System Container Diagram.png[]
 
 * Component Diagram
 
-image::C4 Model System Component Diagram.jpg[]
+image::C4 Model System Component Diagram.png[]
 
