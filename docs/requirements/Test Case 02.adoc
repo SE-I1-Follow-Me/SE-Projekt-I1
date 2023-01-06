@@ -1,0 +1,47 @@
+=== Test Case 02
+
+==== Kurzbeschreibung
+Der Nutzer möchte, dass sein angelegter Roboter ihm folgt.
+
+==== Vorbedingungen
+. Der Nutzer hat seinen physisch vorhandenen Roboter angelegt.
+. Der angelegte Roboter "Roboter 1" ist verfügbar, führt also keine andere Funktion aus.
+
+
+==== Testablauf
+_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+
+. Der Nutzer startet die Follow-me Funktion ohne Vorbedingungen zu verletzen.
+. Der vom Nutzer ausgewählte Roboter ist nicht verfügbar.
+. Der Nutzer hat bisher keinen Roboter angelegt.
+
+
+==== Ausführung
+. Korrekte Ausführung
+.. Der Nutzer betätigt die Schaltfläche "Follow-me".
+.. Der Nutzer wählt seinen Roboter "Roboter 1" aus der Liste.
+
+. Inkorrekte Ausführung
+.. Der Nutzer betätigt die Schaltfläche "Follow-me".
+.. Der Nutzer wählt wissentlich seinen Roboter "Roboter 1" aus, obwohl dieser eine andere Funktion ausführt.
+
+. Ausführung ohne angelegten Roboter
+.. Der Nutzer betätigt die Schaltfläche "Follow-me"
+
+
+
+==== Erwartete Ergebnisse
+. "Roboter 1" ist vorhanden. "Roboter 1" führt keine andere Funktion aus.
+* Es wird bestätigt, dass "Roboter 1" nun erfolgreich dem Nutzer folgt.
+* "Roboter 1" wird in der Liste der Roboter als beschäftigt gekennzeichnet.
+
+. "Roboter 1" ist vorhanden. "Roboter 1" führt eine andere Funktion aus.
+* Es wird eine Fehlermeldung angezeigt, "Roboter 1" führt bereits eine andere Funktion aus.
+* Das Starten der Follow-me Funktion wird unterbrochen, dem Nutzer wird die Möglichkeit gegeben die aktuell ausgeführte Funktion von "Roboter 1" abzubrechen.
+* Das Starten der Follow-me Funktion kann fortgesetzt werden, wenn sich der Nutzer entscheidet die von "Roboter 1" ausgeführte Funktion abzubrechen.
+
+. Kein Roboter gefunden oder keinen Roboter angelegt.
+* Es wird eine leere Liste angezeigt.
+* Das Starten der Follow-me Funktion wird unterbrochen, es kann fortgesetzt werden sobald ein Roboter angelegt wurde.
+
+

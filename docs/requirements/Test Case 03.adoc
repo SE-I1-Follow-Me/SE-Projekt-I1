@@ -1,0 +1,36 @@
+=== Test Case 03
+
+==== Kurzbeschreibung
+Der Nutzer möchte, dass der ihm folgende Roboter nicht länger die Follow-me Funktion ausführt.
+
+==== Vorbedingungen
+. Der Nutzer hat seinen physisch vorhandenen Roboter angelegt.
+. Der angelegte Roboter "Roboter 1" folgt dem Nutzer.
+
+
+==== Testablauf
+_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+
+. Der Nutzer beendet die Follow-me Funktion ohne Vorbedingungen zu verletzen.
+. Der Nutzer hat aktuell keinen Roboter der die Follow-me Funktion ausführt.
+
+
+==== Ausführung
+. Korrekte Ausführung
+.. Der Nutzer betätigt die Schaltfläche "Follow-me Beenden".
+.. Der Nutzer wählt seinen Roboter "Roboter 1" aus der Liste.
+
+. Ausführung ohne dem Nutzer folgendem Roboter
+.. Der Nutzer betätigt die Schaltfläche "Follow-me"
+
+
+
+==== Erwartete Ergebnisse
+. "Roboter 1" ist vorhanden. "Roboter 1" führt die Follow-me Funktion aus.
+* Es wird bestätigt, dass "Roboter 1" nun nicht länger dem Nutzer folgt.
+* "Roboter 1" wird in der Liste der Roboter nicht länger als beschäftigt gekennzeichnet.
+* Das Use Case "Speichern einer Route" beginnt automatisch.
+
+. Kein Roboter gefunden der die Follow-me Funktion ausführt.
+* Es wird eine Fehlermeldung angezeigt, kein Roboter gefunden der die Follow-me Funktion ausführt.
+* Das Beenden der Follow-me Funktion wird unterbrochen, es kann fortgesetzt werden sobald ein Roboter die Follow-me Funktion ausführt.

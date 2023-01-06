@@ -1,0 +1,24 @@
+= Test Cases: Projekt I5 Follow-me Android-App
+
+== Allgemeine Informationen
+
+Die folgenden Test Cases sollen die Funktionalität der zu entwickelnden Android-App, sowie deren zugehörigem Server, überprüfen und sicherstellen.
+
+=== Vorbedingungen
+. Nutzer hat einen Roboter physisch vorhanden.
+. Nutzer hat Zugangsdaten für die Follow-me Android-App
+. Nutzer in der Follow-me Android-App eingeloggt
+. Nutzer besitzt aktive und konstante Internetverbindung
+. Server der HTW Dresden laufen
+. Server besitzt aktive und konstante Internetverbindung
+
+
+== Test Cases
+<<<
+include::Test Case 01.adoc[]
+
+<<<
+include::Test Case 03.adoc[]
+
+<<<
+include::Test Case 03.adoc[]
