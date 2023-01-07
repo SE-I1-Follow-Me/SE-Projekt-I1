@@ -158,6 +158,19 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
+- die tools und die projektmanagementmethode hätten von anfang an bekannt sein müssen. Spätere Methodenänderungen sind schwer etablierbar. Issues hätte vollständig beherrscht werden müssen und vielleicht lieber ein vernünftiges Kanbantool genutzt werden müssen (vgl. Taiga)
 - mehr feedback vom kunden
 - essence manager benutzen
 - probleme nicht nur in den wöchentlichen meetings sondern dauerhaft und direkt ansprechen
+- Use-Cases nicht agil genug entwickelt
+- auf den aufwand hätte man mehr rücksicht nehmen müssen-> mehr leute für schwere aufgaben
+- terminfindungstools könnten genutzt werden
+
+priorisierungsprinzip: 
+- in den projectplan
+- high medium low
+
+
+schätzung der Größe: 
+- 1-5/ low-high
+- in den projectplan

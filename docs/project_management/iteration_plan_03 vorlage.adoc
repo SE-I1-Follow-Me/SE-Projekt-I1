@@ -2,6 +2,7 @@
 Carl Ulrich Brinker carlulrich.brinker@htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -91,3 +92,4 @@ Beispiele:
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+

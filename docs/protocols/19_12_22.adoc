@@ -15,6 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * Michael Novak
 * Magnus Andreas Böhne
 * Jonas Pfeiffer
+* Manuel Scheer
 == Abwesende
 
 
