@@ -13,37 +13,49 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Beginn der Iteration | 05.12.2022 
-| Iterationsüberprüfung| 12.12.2022
-| SpringbootCamp| 12.12.2022
-| LCO Meilenstein| 19.12.2022
-| Ende der Iteration | 21.12.2022
+| Beginn der Iteration | 09.01.2023 
+| Kundenmeeting| 10.01.2023
+| Iterationsüberprüfung| 16.01.2023
+| LCA Meilenstein| 23.01.2023
+| Ende der Iteration | 23.01.2023
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Anfertigung der finalen Vision 
-* Use-Cases initial ausarbeiten (inkl. Diagramme)
-* initialen Projektplan erstellen
-* Risikoliste
-* Systemweite Requirements definieren
-* Tiefergehendes Verständnis des Springboot-Framework erarbeiten
-* Absprache mit Kunden und Bestätigung des Erarbeiteten
-
+* Implementierung der Serverarchitektur
+* Schnittstelle zwischen Server und Anwendung implementieren
+* Abnahme Wireframes vom Kunden
+* Testcases fertigstellen
+* BPMN-Modell fertigstellen
+* Domänenmodell
+* Überprüfung der Dokumentation
+* Vorstellung des Prototyps
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Die in dieser Iteration geplanten Aufgaben sind in den https://github.com/TitanKnife/SE-Projekt-I1/issues[GitHub-Issues] mit entsprechenden Meilensteinen gekennzeichnet.
 
 _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| x | x | x | x | x | x | x | x | x
+| BPMN-Modell | high | 4 | bis 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/37[Issue 37] | 5 | Manuel Scheer, Jonas Pfeiffer | 5 | 1
+| Domänenmodell | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+
+
+| Anfrage auf Server stellen | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| Server einrichten | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| SpringBoot Schnittstelle mit Server implemnetieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| Implementation von Springboot in die App | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| Login Funktion implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| Roboterauswahl implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
+| Abnahme der Wireframes durch Kunden | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | alle | 4 | 1
+| Abnahme des Prototyps durch Kunden | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | alle | 4 | 1
+| Testcases ausarbeiten | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Ulrich Brinker | 4 | 1
+| Überprüfung aller Requirements | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Ulrich Brinker | 4 | 1
 |===
 
 
