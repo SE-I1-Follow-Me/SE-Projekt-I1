@@ -13,6 +13,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * Marcel Axmann
 * Leon Lowa
 * Michael Novak
+* Manuel Scheer
 
 == Abwesende
 * Magnus Andreas Böhne
