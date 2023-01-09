@@ -31,13 +31,13 @@ Ergebnis::
 
 ****
 
-Leon, Jonas: -> Prototyp erstellen:
+* Leon, Jonas: -> Prototyp erstellen:
 
 * Prototyp besitzt kaum Funktionalitäten, unbedingt Hilfe benötigt.
 * *Offen*: Anbindung Server, Follow Me-Funktion, eventuell Map mit Standort
 
 
-Magnus, Marcel, Manuel: ->Servergrundlagen erarbeiten
+* Magnus, Marcel, Manuel: ->Servergrundlagen erarbeiten
 
 * Geography wäre einen mögliche SQL Instanz zum Routen verwalten
 * Login System sollte via Springboot realisiert werden
