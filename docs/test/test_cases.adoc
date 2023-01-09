@@ -4,11 +4,24 @@ Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vor
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
-
 == Allgemeine Informationen
 
+Die folgenden Test Cases sollen die Funktionalität der zu entwickelnden Android-App, sowie deren zugehörigem Server, überprüfen und sicherstellen.
+
+=== Vorbedingungen
+. Nutzer hat einen Roboter physisch vorhanden.
+. Nutzer hat Zugangsdaten für die Follow-me Android-App
+. Nutzer in der Follow-me Android-App eingeloggt
+. Nutzer besitzt aktive und konstante Internetverbindung
+. Server der HTW Dresden laufen
+. Server besitzt aktive und konstante Internetverbindung
+
 == Test Cases
+<<<
+include::Test Case 01.adoc[]
 
-=== Test Case 01
+<<<
+include::Test Case 02.adoc[]
 
-=== Test Case 02
+<<<
+include::Test Case 03.adoc[]
