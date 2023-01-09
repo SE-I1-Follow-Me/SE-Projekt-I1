@@ -2,7 +2,7 @@
 
 
 //Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
-== Use-Case: Beenden der Follow-me Funktion
+== Use-Case: Follow-me Funktion beenden
 
 === Kurzbeschreibung
 Dieser Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter nicht länger dem Nutzer folgen zu lassen.
