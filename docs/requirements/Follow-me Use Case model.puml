@@ -14,16 +14,16 @@ actor Nutzer
 actor Roboter
 
 rectangle "Follow-me" {
-  usecase "UC01\nAnlegen eines Roboters" as uc01 #B4EEB4;line:698b69
-  usecase "UC02\nBearbeiten eines Roboters" as uc02 #B4EEB4;line:698b69
-  usecase "UC03\nLöschen eines Roboters" as uc03 #B4EEB4;line:698b69
-  usecase "UC04\nStarten der Follow-me Funktion" as uc04 #B4EEB4;line:698b69
-  usecase "UC05\nBeenden der Follow-me Funktion"  as uc05 #B4EEB4;line:698b69
-  usecase "UC06\nSpeichern einer Route" as uc06 #B4EEB4;line:698b69
-  usecase "UC07\nBearbeiten einer Route"  as uc07 #B4EEB4;line:698b69
-  usecase "UC08\nLöschen einer Route" as uc08 #B4EEB4;line:698b69
-  usecase "UC09\nAblaufen einer Route"  as uc09 #B4EEB4;line:698b69
-  usecase "UC10\n Warten eines Roboters"  as uc10 #B4EEB4;line:698b69
+  usecase "UC01\nRoboter anlegen" as uc01 #B4EEB4;line:698b69
+  usecase "UC02\nRoboter bearbeiten" as uc02 #B4EEB4;line:698b69
+  usecase "UC03\nRoboter löschen" as uc03 #B4EEB4;line:698b69
+  usecase "UC04\nFollow-me Funktion starten" as uc04 #B4EEB4;line:698b69
+  usecase "UC05\nFollow-me Funktion beenden"  as uc05 #B4EEB4;line:698b69
+  usecase "UC06\nRoute speichern" as uc06 #B4EEB4;line:698b69
+  usecase "UC07\nRoute bearbeiten"  as uc07 #B4EEB4;line:698b69
+  usecase "UC08\nRoute löschen" as uc08 #B4EEB4;line:698b69
+  usecase "UC09\nRoute ablaufen"  as uc09 #B4EEB4;line:698b69
+  usecase "UC10\nRoboter warten"  as uc10 #B4EEB4;line:698b69
 
 
 

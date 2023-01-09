@@ -10,31 +10,31 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Identifizierte Use Cases
-* *UC01*: Anlegen eines Roboters
-* *UC02*: Bearbeiten eines Roboters
-* *UC03*: Löschen eines Roboters
-* *UC04*: Starten der Follow-me Funktion
-* *UC05*: Beenden der Follow-me Funktion
-* *UC06*: Speichern einer Route
-* *UC07*: Bearbeiten einer Route
-* *UC08*: Löschen einer Route
-* *UC09*: Ablaufen einer Route
-* *UC10*: Warten eines Roboters
+* *UC01*: Roboter anlegen
+* *UC02*: Roboter bearbeiten
+* *UC03*: Roboter löschen
+* *UC04*: Follow-me Funktion starten
+* *UC05*: Follow-me Funktion beenden
+* *UC06*: Route speichern
+* *UC07*: Route bearbeiten
+* *UC08*: Route löschen
+* *UC09*: Route ablaufen
+* *UC10*: Roboter warten
 
 == Priorisierung der Use Cases
 [%header, cols="2,4,1"]
 |===
 | UC-ID | Use Case Name | Priorität (1-5)
-| UC01 | Anlegen eines Roboters | 5
-| UC04 | Starten der Follow-me Funktion| 5
-| UC05 | Beenden der Follow-me Funktion | 5
-| UC06 | Speichern einer Route | 3
-| UC09 | Ablaufen einer Route | 2
-| UC02 | Bearbeiten eines Roboters | 1
-| UC03 | Löschen eines Roboters | 1
-| UC07 | Bearbeiten einer Route | 1
-| UC08 | Löschen einer Route  | 1
-| UC10 | Warten eines Roboters | 1
+| UC01 | Roboter anlegen | 5
+| UC04 | Follow-me Funktion starten | 5
+| UC05 | Follow-me Funktion beenden | 5
+| UC06 | Route speichern | 3
+| UC09 | Route ablaufen | 2
+| UC02 | Roboter bearbeiten | 1
+| UC03 | Roboter löschen | 1
+| UC07 | Route bearbeiten | 1
+| UC08 | Route löschen  | 1
+| UC10 | Roboter warten | 1
 |===
 
 
@@ -60,13 +60,13 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 
 
 <<<
-include::Use Case 01 - Anlegen eines Roboters.adoc[]
+include::Use Case 01 - Roboter anlegen.adoc[]
 
 <<<
-include::Use Case 04 - Starten der Follow-me Funktion.adoc[]
+include::Use Case 04 - Follow-me Funktion starten.adoc[]
 
 <<<
-include::Use Case 05 - Beenden der Follow-me Funktion.adoc[]
+include::Use Case 05 - Follow-me Funktion beenden.adoc[]
 
 //<<<
 //include::use_case_01.inc.adoc[]
