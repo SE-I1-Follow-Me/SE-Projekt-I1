@@ -11,19 +11,13 @@ Dieser Use Case beschreibt das Löschen einer Route, um sie beispielsweise neu e
 
 ==== Nutzer (User)
 
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
+Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
-==== Anwendung
 
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
-
-==== Server
-
-    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
-
+=== Vorbedingungen
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server) benötigen eine stabile Internetverbindung.
+Der Nutzer benötigt eine stabile Internetverbindung zum System.
 
 ==== Routen verfügbar
 Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
@@ -53,35 +47,10 @@ Falls der Nutzer in Schritt 5 die Route nicht löschen möchte.
 
 
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-=== Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-
-==== Erfolgreiches beenden
-Die Route wurde erfolgreich gelöscht und wird nicht mehr in der Liste der Routen angezeigt.
-
-==== Erfolgloses beenden
-Die Route wurde nicht gelöscht und befindet sich weiterhin unverändert in der Liste der Routen.
-
-==== Der Nutzer bricht das Use Case ab
-Die Route wurde nicht gelöscht und befindet sich weiterhin unverändert in der Liste der Routen.
-
-
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== Route gelöscht
-Alle der Route zugehörigen Daten sind auf dem Gerät des Nutzers sowie in der Datenbank des Servers gelöscht. Die Route befindet sich nicht länger in der Liste der Route.
 
-==== Bestätigung an Nutzer
+Alle der Route zugehörigen Daten sind auf dem Gerät des Nutzers sowie in der Datenbank des Servers gelöscht. Die Route befindet sich nicht länger in der Liste der Routen.
 Der Nutzer hat das erfolgreiche Löschen der Route bestätigt bekommen.
-
-==== Logdatei aktualisiert
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
-
-=== Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-==== <Besondere Anforderung 1>

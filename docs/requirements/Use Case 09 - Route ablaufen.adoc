@@ -12,24 +12,18 @@ Dieser Use Case beschreibt das Starten des Roboters der eine vorausgesetzte Rout
 === Kurzbeschreibung der Akteure
 
 ==== Nutzer (User)
-    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
+Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
-==== Anwendung
-    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
-
-==== Server
-    Der Server empfängt die Daten durch die Anwendung und leitet diese an den jeweiligen Roboter weiter. Er dient als Schnittstelle der Akteure.
 
 ==== Roboter
-    Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
-
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung.
 
 ==== Roboter existent
 Es wurden bereits Roboter gespeichert.
@@ -69,33 +63,12 @@ Falls der in Schritt 5 ausgewählte Roboter eine Aktion ausführt.
 .. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
 .. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
-
-=== Wesentliche Szenarios
-//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-
-==== Erfolgreiches beenden
-Der Roboter läuft nun die Route ab.
-
-==== Erfolgloses beenden
-Der Roboter läuft die Route nicht abund ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Routen.
-
-==== Der Nutzer bricht das Use Case ab
-Der Roboter läuft die Route nicht abund ist bereit, eine andere Aktion auszuführen, beziehungsweise fortzuführen. Der Nutzer sieht die Liste der Routen.
-
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== Roboter Aktion 
-Der Roboter läuft die Route ab.
 
-==== Logdatei aktualisiert
+Der Nutzer hat das Erfolgreiche Starten der Funktion bestätigt bekommen.
+Der Roboter läuft die Route ab.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
@@ -103,4 +76,4 @@ Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeicher
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 === Usability 
-Erlernbarkeit: Das Ablaufen einer Route ist eine grundlegende Funktion des Systems und soll intuitiv und linear funktionieren.
+Erlernbarkeit: Das Ablaufen einer Route soll intuitiv und linear funktionieren.
