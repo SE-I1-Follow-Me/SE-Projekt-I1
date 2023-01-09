@@ -21,7 +21,7 @@ Die folgenden Test Cases sollen die Funktionalität der zu entwickelnden Android
 include::Test Case 01.adoc[]
 
 <<<
-include::Test Case 03.adoc[]
+include::Test Case 02.adoc[]
 
 <<<
 include::Test Case 03.adoc[]
