@@ -12,30 +12,42 @@ Dieser Use Case beschreibt den Ablauf zwischen dem Use Case "Follow-me Funktion 
 ==== Nutzer 
 Der Nutzer ist der Hauptakteur in diesem Use Case.
 
-
 ==== Roboter
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
-=== Vorbedingungen
-//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn das Use Case "..." endet.
-. Das System zeigt dem Nutzer einen Bil
-. …
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+. Das System zeigt dem Nutzer einen Bildschirm mit seinem Standort,
+dem Standort des Roboters sowie der Zeit die seit Beginn des Use Cases vergangen ist.
+. WHILE Nutzer bewegt sich
+.. Das System sendet die GPS Daten des Nutzers an den Roboter.
+.. Der Roboter bestätigt das Erhalten der GPS Daten.
+.. Der Roboter bewegt sich zu den erhaltenen GPS Daten.
+.. Der Roboter sendet seine GPS Daten an das System.
+.. Das System zeigt dem Nutzer die Positionsänderungen an.
+. Das Use Case endet, wenn die Schaltfläche "Follow-me Beenden" betätigt wird.
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+==== Entfernung zwischen Roboter und Nutzer zu groß
+Falls das System in Schritt 3 d bemerkt, dass die Distanz zwischen Nutzer
+und Roboter größer als 5 Meter ist.
+
+. WHILE Distanz zwischen Roboter und Nutzer größer als 5 Meter
+.. Das System zeigt dem Nutzer eine Fehlermeldung.
+.. Das System macht den Nutzer auf die Fehlermeldung bemerkbar (Gerät spielt Ton ab, Gerät vibriert)
+.. Das System sendet die GPS Daten des Nutzers an den Roboter.
+.. Der Roboter bestätigt das Erhalten der GPS Daten.
+.. Der Roboter bewegt sich zu den erhaltenen GPS Daten.
+.. Der Roboter sendet seine GPS Daten an das System.
+. Das Use Case wird bei Schritt 3 e fortgesetzt.
+
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -56,7 +68,7 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-==== <Nachbedingung 1>
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
