@@ -20,7 +20,7 @@ Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
 
 ==== GPS Verbindung
 Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.
@@ -36,8 +36,8 @@ Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 
 
 . Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow-me" betätigt.
-. Das System zeigt dem Nutzer eine Liste aller Roboter.
-. Der Nutzer wählt einen Roboter aus der Liste aller Roboter.
+. Das System zeigt dem Nutzer eine Liste aller Roboter, die keine Vorbedingungen verletzen.
+. Der Nutzer wählt einen Roboter aus der angezeigten Liste der Roboter.
 . Das System teilt dem Roboter mit dem Nutzer zu folgen.
 . Der Roboter bestätigt, dass er dem Nutzer nun folgt.
 . Das System bestätigt dem Nutzer, dass der ausgewählte Roboter ihm nun folgt.
@@ -46,19 +46,11 @@ Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== Der ausgewählte Roboter führt eine Aktion aus
-Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
+==== Die GPS Daten von Nutzer und Roboter stimmen nicht überein
+Falls der in Schritt 3 ausgewählte Roboter weiter als 5 Meter vom Nutzer entfernt ist
 
-. Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
-. Das System fragt, ob die Aktion abgebrochen werden soll.
-. IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
-.. Das System teilt dem Roboter mit seine aktuell ausgeführte Funktion abzubrechen.
-.. Der Roboter bestätigt den Abbruch seiner aktuellen Funktion.
-.. Das Use Case wird bei Schritt 4 fortgesetzt.
-. ELSE
-.. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
-.. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
-
+. Das System zeigt dem Nutzer eine Fehlermeldung, "GPS Daten von Nutzer und Roboter stimmen nicht überein".
+. Das Use Case wird bei Schritt 2 fortgesetzt.
 
 
 
@@ -75,10 +67,9 @@ Der Nutzer sieht die Liste seiner angelegten Roboter (Roboter 1, Roboter 2, etc.
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
-Der ausgewählte Roboter folgt dem Nutzer.
 
-Es wird in der Liste der Roboter angezeigt, dass der ausgewählte Roboter eine Funktion ausführt.
-
+Use Case "Follow-me Funktion ausführen" hat begonnen.
+Es wird in der Liste der Roboter angezeigt, dass der ausgewählte Roboter die Follow-me Funktion ausführt.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 === Besondere Anforderungen

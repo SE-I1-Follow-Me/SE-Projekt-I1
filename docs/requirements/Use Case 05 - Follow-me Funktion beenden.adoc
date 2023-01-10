@@ -19,7 +19,7 @@ Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case a
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
 
 ==== GPS Verbindung
 Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.

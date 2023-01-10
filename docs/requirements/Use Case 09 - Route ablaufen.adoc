@@ -23,7 +23,7 @@ Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung.
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
 
 ==== Roboter existent
 Es wurden bereits Roboter gespeichert.

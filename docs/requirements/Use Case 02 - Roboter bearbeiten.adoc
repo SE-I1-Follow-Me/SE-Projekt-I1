@@ -14,7 +14,6 @@ Dieser Use Case beschreibt das Bearbeiten eines Roboters um zum Beispiel den Nam
 Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 
-
 === Vorbedingungen
 
 ==== Internetverbindung

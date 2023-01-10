@@ -1,0 +1,37 @@
+== User Story 01
+
+
+=== Story
+Als ein Förster, möchte ich Roboter fahren lassen, um Holz von A nach B zu transportieren.
+
+
+=== Kriterien
+Angesichts dessen, dass Holz von einem Ort zum anderen transportiert werden soll, müssen transportierender Roboter und zu fahrende Route gegeben sein.
+Angesichts dessen, dass ein Roboter diese Aufgabe erledigt, sollte der Status des Roboters geändert werden 
+und dementsprechend sein Aufgabenspektrum angepasst werden (zb neue Befehle warten, abbrechen)
+Angesichts dessen, dass die Aufgabe automatisiert verrichtet werden soll, sollte der Nutzer bei besonderen Ereignissen (Fehler, Abschluss) benachrichtigt werden.
+
+
+=== Konversation
+Gibt es ein zeitliche Anforderung? Muss der Roboter in so und so viel Zeit diese Aufgabe erledigen?
+
+
+Sollen mehrere Roboter diese Aufgabe gleichzeitig übernehmen? 
+
+
+Soll die Aufgabe automatisch wiederholt werden?
+
+
+=== Bestätigung
+Der Roboter soll, wenn er losfahren soll, losfahren. Dabei fährt er die ihm höchstmögliche Geschwindigkeit. Wichtiger ist, dass er zurück kommt beziehungsweise einen Fehler meldet falls er das nicht kann.
+
+
+Ja, jedoch nicht in einem gebündelten Prozess sondern "manuell", Roboter werden also selbstständig losgeschickt, was selbstverständlich auch mehrere Roboter betreffen kann.
+
+
+Nein, die Aufgabe wird jedes mal neu durch den Nutzer zugewiesen, wenn nötig.
+
+=== Requirements
+Functionality: Authentifizierung: Die User Story benötigt einen           angemeldeten Nutzer mit verifiziertem Roboter und Route.
+Auditierung: Die User Story enthält Aktionen die protokolliert werden sollten.
+Usability: Die User Story wird von einem Nutzer gestellt, der wahrscheinlich kaum Erfahrung hat, sie benötigt Einfachheit und Interaktivität.  

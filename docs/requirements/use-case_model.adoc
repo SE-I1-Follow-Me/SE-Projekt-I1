@@ -14,27 +14,31 @@ include::../_includes/default-attributes.inc.adoc[]
 * *UC02*: Roboter bearbeiten
 * *UC03*: Roboter löschen
 * *UC04*: Follow-me Funktion starten
-* *UC05*: Follow-me Funktion beenden
-* *UC06*: Route speichern
-* *UC07*: Route bearbeiten
-* *UC08*: Route löschen
-* *UC09*: Route ablaufen
-* *UC10*: Roboter warten
+* *UC05*: Follow-me Funktion ausführen
+* *UC06*: Follow-me Funktion beenden
+* *UC07*: Route speichern
+* *UC08*: Route bearbeiten
+* *UC09*: Route löschen
+* *UC10*: Route ablaufen
+* *UC11*: Roboter warten
+
+
 
 == Priorisierung der Use Cases
 [%header, cols="2,4,1"]
 |===
 | UC-ID | Use Case Name | Priorität (1-5)
-| UC01 | Roboter anlegen | 5
 | UC04 | Follow-me Funktion starten | 5
-| UC05 | Follow-me Funktion beenden | 5
-| UC06 | Route speichern | 3
-| UC09 | Route ablaufen | 2
+| UC05 | Follow-me Funktion ausführen | 5
+| UC06 | Follow-me Funktion beenden | 5
+| UC01 | Roboter anlegen | 4
+| UC07 | Route speichern | 3
+| UC10 | Route ablaufen | 2
 | UC02 | Roboter bearbeiten | 1
 | UC03 | Roboter löschen | 1
-| UC07 | Route bearbeiten | 1
-| UC08 | Route löschen  | 1
-| UC10 | Roboter warten | 1
+| UC08 | Route bearbeiten | 1
+| UC09 | Route löschen  | 1
+| UC11 | Roboter warten | 1
 |===
 
 
