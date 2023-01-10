@@ -1,0 +1,64 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+
+//Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
+== Use-Case: Follow-me Funktion ausführen
+
+=== Kurzbeschreibung
+Dieser Use Case beschreibt den Ablauf zwischen dem Use Case "Follow-me Funktion starten" und "Follow-me Funktion beenden".
+
+=== Kurzbeschreibung der Akteure
+
+==== Nutzer 
+Der Nutzer ist der Hauptakteur in diesem Use Case.
+
+
+==== Roboter
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+<Vorbedingung 1>
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn das Use Case "..." endet.
+. Das System zeigt dem Nutzer einen Bil
+. …
+. <Standardablauf Schritt n>
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== <Alternativer Ablauf 1>
+Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+. <Ablauf beschreiben>
+. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== <Unterablauf 1>
+. <Unterablauf 1, Schritt 1>
+. …
+. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== <Szenario 1>
+. <Szenario 1, Schritt 1>
+. …
+. <Szenario 1, Schritt n>
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== <Nachbedingung 1>
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== <Besondere Anforderung 1>
