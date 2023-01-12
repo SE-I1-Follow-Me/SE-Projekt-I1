@@ -148,12 +148,16 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 | <<Iteration Plan 03: {project-name}, Iterationsplan I03>>
 | From 19.12.2022 to 09.01.2023
 
+| I4
+| <<Iteration Plan 04: {project-name}, Iterationsplan I04>>
+| From 09.01.2023 to 23.01.2023
+
 |===
 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-
+Die serverseitigen Komponenten der Anwendung werden auf eine Server der HTW-Dresden betrieben. Die Anwendung in Form einer Android-App wird nach Fertigstellung in dem ofiziellen Google-Play-Store zum download bereit stehen. 
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
