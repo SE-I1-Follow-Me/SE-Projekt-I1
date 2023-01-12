@@ -95,24 +95,29 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | Assessment Datum | 23.12.2022
 | Teilnehmer | Leon Lowa, Ulrich Brinker
-| Projektstatus	| grün
+| Projektstatus	| gelb
 |===
 
 
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 Beurteilung im Vergleich zu den Zielen:: 
 ****
-* *Ziel 1:*
-* *Ziel 2:*
-* *Ziel 3:*
-* *Ziel 4:*
-* *Ziel 5:*
-* *Ziel 6:*
-* *Ziel 7:*
+* *Ziel 1:* Vision erfolgreich erstellt und vom Coach abgenommen
+* *Ziel 2:* Usecases nicht final abgeschlossen (sowohl Diagramm als auch Usecases selbst) -> auf nächste Iteration verschoben
+* *Ziel 3:* Projektplan initial erstellt, vom Coach abgenommen, Verfeinerung in nächster Iteration
+* *Ziel 4:* FURPS abgeschlossen, Review in nächster Iteration angesetzt
+* *Ziel 5:* Magnus Andreas Böhne hat erfolgreich am SpringbootCamp teilgenommen
+* *Ziel 6:* erfolgt; Kundenwunsch: weitere Usecases werden nächste Iteration vervollständigt 
+* *Ziel 7:* Meeting erfolgreich. Anmerkungen wurden während I3 umgesetzt
 ****
 
-* Geplante vs. erledigte Aufgaben
+Geplante vs. erledigte Aufgaben::
+****
+in nächste Iteration verschoben:
+* 
+****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
