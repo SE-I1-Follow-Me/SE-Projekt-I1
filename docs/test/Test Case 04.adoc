@@ -1,0 +1,42 @@
+=== Test Case 03
+
+==== Kurzbeschreibung
+Der Nutzer hat einen Roboter der ihm weiterhin folgen soll.
+
+==== Vorbedingungen
+. Der Nutzer hat seinen physisch vorhandenen Roboter angelegt.
+. Der angelegte Roboter "Roboter 1" folgt dem Nutzer.
+
+
+==== Testablauf
+_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+
+. Der Roboter folgt dem Nutzer weiterhin ohne probleme
+. Die Distanz zwischen Nutzer und Roboter ist größer als 5 Meter
+
+
+==== Ausführung
+. Korrekte Ausführung
+.. Der Nutzer sieht auf der Karte die Position des Roboters.
+
+
+. Beim folgen des Nutzers tritt ein Problem auf
+.. Die Distanz zwischen Nutzer und Roboter ist größer als 5 Meter
+
+
+
+
+==== Erwartete Ergebnisse
+. "Roboter 1" ist vorhanden. "Roboter 1" führt die Follow-me Funktion aus.
+* "Roboter 1" wird in der Liste der Roboter als beschäftigt gekennzeichnet.
+* Der Nutzer sieht auf der Karte die Position des Roboters
+
+
+. Beim folgen des Nutzers tritt ein Problem auf
+* Es wird eine Fehlermeldung angezeigt, die Distanz zum Roboter beträgt mehr als 5 Meter.
+* Der Roboter erhält die aktuellen GPS Daten des Nutzers
+* Der Roboter bestätigt das Erhalten der GPS Daten.
+* Der Roboter bewegt sich zu den erhaltenen GPS Daten.
+* Der Roboter sendet seine GPS Daten an das System.
+* Bei weiterhin unveränderter Position des Roboters wird der Roboter auf warten gesetzt
+* Der Nutzer wird mit einer Benachrichtigung aufgefordert nach dem Roboter zu schauen.
