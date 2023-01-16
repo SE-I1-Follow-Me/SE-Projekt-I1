@@ -18,13 +18,13 @@ Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird der Use Case a
 === Vorbedingungen
 
 ==== Internetverbindung
-Die untereinander kommunizierenden Akteure (Anwendung, Server, Roboter) benötigen eine stabile Internetverbindung.
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung.
 
 ==== Roboter verfügbar
 Es existiert ein Roboter welcher bisher von keinem Nutzer gespeichert wurde.
 
 ==== Roboter Authentifizieren
-Der Nutzer kennt die Hash-Kombination des zu speichernden Roboters.
+Der Nutzer kennt die Token des zu speichernden Roboters.
 
 
 === Standardablauf (Basic Flow)

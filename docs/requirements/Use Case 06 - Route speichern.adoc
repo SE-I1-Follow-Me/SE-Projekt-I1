@@ -1,4 +1,3 @@
-<<<<<<< HEAD:docs/requirements/x Use Case 06 - Speichern der Route.adoc
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
 
