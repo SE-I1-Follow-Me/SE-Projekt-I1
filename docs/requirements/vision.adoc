@@ -90,9 +90,9 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+// | [Benennung des Stakeholder-Typs.]
+// | [Kurze Beschreibung des Stakeholders.]
+// | [Fassen Sie die wesentlichen Verantwortlichkeiten des //Stakeholder //mit Bezug auf das zu entwickelnde System kurz //zusammend.. ihr besonderen Interessen. Beispiele: Dieser Stakeholder //sorgt dafür, dass das System gewartet wird / dass die angezeigten //Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 
 | Entwickler Team der App I1
 | Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925), welche für das Projekt zuständig sind
