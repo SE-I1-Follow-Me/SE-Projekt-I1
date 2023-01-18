@@ -1,4 +1,4 @@
-= Iteration Plan 03: {project-name}
+= Iteration Plan 04: {project-name}
 Carl Ulrich Brinker carlulrich.brinker@htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -42,20 +42,18 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| BPMN-Modell | high | 4 | bis 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/37[Issue 37] | 5 | Manuel Scheer, Jonas Pfeiffer | 5 | 1
-| Domänenmodell | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-
-
-| Anfrage auf Server stellen | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| Server einrichten | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| SpringBoot Schnittstelle mit Server implemnetieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| Implementation von Springboot in die App | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| Login Funktion implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| Roboterauswahl implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Michael | 4 | 1
-| Abnahme der Wireframes durch Kunden | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | alle | 4 | 1
-| Abnahme des Prototyps durch Kunden | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | alle | 4 | 1
-| Testcases ausarbeiten | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Ulrich Brinker | 4 | 1
-| Überprüfung aller Requirements | medium | 3 | 10.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 5 | Ulrich Brinker | 4 | 1
+| BPMN-Modell | high | 4 | bis 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/37[Issue 37] | 4 | Manuel Scheer, Jonas Pfeiffer | 5 | 1
+| Domänenmodell | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 4 | Michael Novak, Marcel Axmann | 4 | 1
+| Anfrage auf Server stellen | high | 1 | 12.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/38[Issue 38] | 5 | Leon Lowa | 0,5 | 0
+| Server einrichten | high | 4 | 16.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/39[Issue 369] | 4 | Magnus Andreas Böhne | 4 | 0
+| SpringBoot Schnittstelle mit Server implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/40[Issue 40] | 4 | Magnus Andreas Böhne | 3 | 1
+| Implementation von Springboot in die App | high | 4 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/42[Issue 42] | 4 | Leon Lowa | 3 | 0
+| Login Funktion implementieren | medium | 2 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/41[Issue 41] | 4 | Leon Lowa | 1 | 1
+| Roboterauswahl implementieren | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/43[Issue 43] | 4 | Leon Lowa | 2 | 1
+| Abnahme der Wireframes durch Kunden | medium | 1 | 10.01.23 | - | 4 | alle | 1 | 0
+| Abnahme des Prototyps durch Coach | medium | 1 | 13.01.23 | - | 4 | alle | 1 | 0
+| Testcases ausarbeiten | medium | 3 | 11.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/27[Issue 27] | 4 | Jonas Pfeiffer, Michael Novak| 4 | 1
+| Überprüfung aller Requirements | medium | 3 | 16.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/19[Issue 19] | 4 | Ulrich Brinker, Marcel Axmann, Michael Novak | 4 | 1
 |===
 
 
@@ -66,18 +64,22 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| x | x | x
+| Fehlende Anwesenheit | wurde adressiert | Fehlende Anwesenheit von Schlüsselpersonen in Meetings behindert den Arbeitsstandsabgleich und führt zu Verzögerungen. Wurde angesprochen und soll nicht wieder vorkommen. 
+| Nichterreichung der Deadlines | Behoben | Agilität des Projektes angepasst
+| Nicht ausreichende Nutzung etablierter Managementtools | Behoben | Adressiert
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-Beispiele:
 
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) mit den Abteilungen X und Y ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+
+* Kunde und Coach haben Wireframes und Protyp ohne Beanstandung bestätigt
+* die serverseitige Funktionalität der App wurde erfolgreich implementiert und dessen fehlerfreie Ablauf ist gewährleistet
+* der Server wurde angefragt und die notwendige Funktionalität implementiert.
+* eine reibungslose Kommunikation zwischen App und Server ist gewährleistet.
+* BPMN- und Domänenmodell wurden ins GitHub-Repo eingepflegt
 
 
 == Assessment
@@ -87,9 +89,9 @@ Beispiele:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Assessment Datum | 23.01.2023
+| Teilnehmer | Alle
+| Projektstatus	| grün
 |===
 
 * Beurteilung im Vergleich zu den Zielen

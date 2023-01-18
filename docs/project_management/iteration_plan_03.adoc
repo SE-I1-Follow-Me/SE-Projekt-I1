@@ -79,11 +79,11 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 
-* Prozentuale Anwesenheit in Meetings: 85,7%
+* Prozentuale Anwesenheit in Meetings
 * Aufgabenerfüllung fristgerecht? [Ja/Nein]
 * FURPS und Usecases wurden Teamintern reviewed
-* zwei Usecases wurden vollständig, 8 unvollständig ausgearbeitet
-* Usecases, Vision und FURPS erhielten positive Rückmeldung von Coach und Auftraggeber.
+* Zehn Usecases wurden im gewünschten Umfang ausgearbeitet.
+* Feedback über Usecases, Vision und FURPS einholen
 
 
 == Assessment
@@ -95,31 +95,43 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | Assessment Datum | 23.12.2022
 | Teilnehmer | Leon Lowa, Ulrich Brinker
-| Projektstatus	| grün
+| Projektstatus	| gelb
 |===
 
 
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 Beurteilung im Vergleich zu den Zielen:: 
 ****
-* *Ziel 1:*
-* *Ziel 2:*
-* *Ziel 3:*
-* *Ziel 4:*
-* *Ziel 5:*
-* *Ziel 6:*
-* *Ziel 7:*
+* *Ziel 1:* Vision erfolgreich erstellt und vom Coach abgenommen
+* *Ziel 2:* Usecases nicht final abgeschlossen (sowohl Diagramm als auch Usecases selbst) -> auf nächste Iteration verschoben
+* *Ziel 3:* Projektplan initial erstellt, vom Coach abgenommen, Verfeinerung in nächster Iteration
+* *Ziel 4:* FURPS abgeschlossen, Review in nächster Iteration angesetzt
+* *Ziel 5:* Magnus Andreas Böhne hat erfolgreich am SpringbootCamp teilgenommen
+* *Ziel 6:* erfolgt; Kundenwunsch: weitere Usecases werden nächste Iteration vervollständigt 
+* *Ziel 7:* Meeting erfolgreich. Anmerkungen wurden während I3 umgesetzt
 ****
 
-* Geplante vs. erledigte Aufgaben
+Geplante vs. erledigte Aufgaben::
+****
+in nächste Iteration verschoben:
+
+* Review Use-Cases
+* Use-Case-Diagramme initial erstellen (https://github.com/TitanKnife/SE-Projekt-I1/issues/37[Issue 37])
+****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
+
+Beurteilung im Vergleich zu den Bewertungskriterien::
+****
+* Prozentuale Anwesenheit in Meetings: 85,7%
+* Aufgabenerfüllung fristgerecht: Nein
+* FURPS und Usecases wurden Teamintern reviewed: Ja
+* Zehn Usecases wurden im gewünschten Umfang ausgearbeitet: zwei Usecases wurden vollständig, 8 unvollständig ausgearbeitet
+* Feedback über Usecases, Vision und FURPS einholen: Usecases, Vision und FURPS erhielten positive Rückmeldung von Coach und Auftraggeber.
+****
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 
-* Andere Belange und Abweichungen
-//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 
 
 == Essence Navigator

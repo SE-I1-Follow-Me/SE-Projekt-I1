@@ -90,9 +90,9 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+// | [Benennung des Stakeholder-Typs.]
+// | [Kurze Beschreibung des Stakeholders.]
+// | [Fassen Sie die wesentlichen Verantwortlichkeiten des //Stakeholder //mit Bezug auf das zu entwickelnde System kurz //zusammend.. ihr besonderen Interessen. Beispiele: Dieser Stakeholder //sorgt dafür, dass das System gewartet wird / dass die angezeigten //Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 
 | Entwickler Team der App I1
 | Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925), welche für das Projekt zuständig sind
@@ -122,16 +122,16 @@ Beispiel Produkt:
 |===
 
 === Benutzerumgebung
-Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
+//Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Ein Kunde kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Kunden gehören, jedoch kann er nur von einem auf einmal benutzt werden bzw. Aufgaben erhalten.
-. Die Roboter werden während ihrer Arbeit gesperrt werden, das heißt, dass andere Kunden, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Kunde seine Sitzung beendet hat. 
-. Die App ist für den Outdoor Einsatz gedacht und benötigt ein GPS Signal sowie eine stabile Internetverbindung.
+. Ein Kunde kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Kunden gehören, jedoch kann er nur von einem gleichzeitig benutzt werden bzw. Aufgaben erhalten.
+. Die Roboter werden während ihrer Arbeit gesperrt. Das heißt, dass andere Kunden, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Kunde seine Sitzung beendet hat. 
+. Die App ist für den Outdoor Einsatz gedacht und benötigt ein GPS-Signal, sowie eine stabile Internetverbindung.
 . Die App wird auf der aktuell gängigen Android Version 11 entwickelt.
 
 
-Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 
 == Produkt-/Lösungsüberblick
@@ -142,17 +142,17 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Route aufzeichnen | hoch | Route abgehen und dabei aufzeichnen | xx
-|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern |
-|Route laden |hoch |Zuvor aufgenommene Route anzeigen |
-|Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen |
-|Route löschen |hoch |Löschen einer zuvor aufgenommenen Route |
-|Follow-me Funktion |hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann. Zudem können den Roboter auf der aufgezeichneten Route Fahrkommandos erteilt werden (Siehe Funktionen "Route aufzeichnen" sowie "Roboter Fahrkommandos")| 
-|Roboter hinzufügen |hoch |Speichern eines neuen Roboters |
-|Roboter bearbeiten |niedrig |Namen des Roboters ändern | 
-|Roboter Fahrkommandos |niedrig |Befehle auf aufgezeichneten Routen an den Roboter geben |
-|Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen |
-|Roboter in Wartungsmodus setzen |sehr niedrig |Roboter wird in Warungsmodus gesetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung |
+| Route aufzeichnen | hoch | Route abgehen und dabei aufzeichnen | SS 2023
+|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | SS 2023
+|Route laden |hoch |Zuvor aufgenommene Route anzeigen | SS 2023
+|Route bearbeiten |hoch |Namen der Route ändern oder sie für andere Roboter zugänglich machen | SS 2023
+|Route löschen |hoch |Löschen einer zuvor aufgenommenen Route | SS 2023
+|Follow-me Funktion |hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann. Zudem können den Roboter auf der aufgezeichneten Route Fahrkommandos erteilt werden (Siehe Funktionen "Route aufzeichnen" sowie "Roboter Fahrkommandos")| SS 2023
+|Roboter hinzufügen |hoch |Speichern eines neuen Roboters | SS 2023
+|Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
+|Roboter Fahrkommandos |niedrig |Befehle auf aufgezeichneten Routen an den Roboter geben | SS 2023
+|Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
+|Roboter in Wartungsmodus setzen |sehr niedrig | SS 2023Roboter wird in Warungsmodus gesetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung | SS 2023
 |===
 
 
@@ -164,21 +164,21 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 //Notiz: Verbindung zum Roboter herstellen, Robotor aus Menge geziehlt auswählen, Aufgaben an Verbundene Roboter verteilen
 
 
-Hinweise:
+//Hinweise:
 
-. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
-. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
-. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
-. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+//. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
+//. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
+//. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
+//. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+//. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | xx
-|Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |hoch | 
-|Da die App auch nach Fertigstellung weiter entwickelt werden soll muss im Code möglichst auf hartcodierung verzichtet werden |hoch |
-|Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |mittel |
-|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |mittel |
-|In der Sprachauswahl soll neben Deutsch auch Englisch verfügbar sein |niedrig |
+| App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | SS 2023
+|Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |hoch | SS 2023
+|Da die App auch nach Fertigstellung weiter entwickelt werden soll muss im Code möglichst auf hartcodierung verzichtet werden |hoch | SS 2023
+|Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |mittel | SS 2023
+|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |mittel | SS 2023
+|In der Sprachauswahl soll neben Deutsch auch Englisch verfügbar sein |niedrig | SS 2023
 |===

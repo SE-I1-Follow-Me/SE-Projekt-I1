@@ -80,10 +80,10 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 
 Die Kommunikation lief sowohl über die Anwendungen WhatsApp und Discord als auch in Präsenz ab. Die Aufgabenverteilung wurde anfangs nur über Discord besprochen und später zudem über GitHub-Issues verwaltet.
 
-Im wöchentlichen Montags-Meeting wurden neue Aufgaben verteilt, Aufgaben umgeschichtet und der Arbeitsstand verglichen. Aufgaben wurden vom Projekt Manager und Stellvertretung am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Im Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Probleme oder Fragestellungen im Team diskutiert. Aus diesen Meetings wird ein Protokoll angefertigt, welches anschließen in das Ascii-Format übertragen und in das GitHub-Repository hinzugefügt wird. Nach erfolreicher Beendung von Aufgaben, werden diese zum Review durch ein anderes Teammitglied freigegeben.
+Im wöchentlichen Montags-Meeting wurden neue Aufgaben verteilt, Aufgaben umgeschichtet und der Arbeitsstand verglichen. Aufgaben wurden vom Projekt Manager und Stellvertretung am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Im Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Probleme oder Fragestellungen im Team diskutiert. Aus diesen Meetings wird ein Protokoll angefertigt, welches anschließen in das Ascii-Format übertragen und in das GitHub-Repository hinzugefügt wird. Nach erfolgreicher Beendigung von Aufgaben, werden diese zum Review durch ein anderes Teammitglied freigegeben.
 Zur Bearbeitung der Aufgaben wurden den Teammitgliedern Zuständigkeitsrollen zugeteilt, wobei sich jedoch darauf verständigt wurde, dass die Aufgabenverteilung nicht den festgelegten Rollen entsprechen müssen, was eine agile Aufgabenverteilung ermöglicht. Dieses Konzept ermöglicht den Teammitgliedern eine vollständige Transparenz über das Projekt, dessen Aufgaben und deren Arbeitsstand.
 
-Die Aufgabenübersicht in GitHub-Issues erfolgt über ein  definiertes Label System. So werden Aufgaben, direkt nach Erstellung, zunächst mit einem Deadline-Label versehen, welches die Deadline der jeweiligen Aufgabe angibt. Wurde die Aufgabe angefangen, wird das Issue mit dem Label "in Bearbeitung versehen". Ist die Aufgabe abgeschlossen, ist sie bereit zum Review, was ebenfalls mit entsprechenden Labels symboliesiert wird. Nach Beendigung der Aufgabe und erfolgreichem Review, kann das Issue schlussendlich geschlossen werden. 
+Die Aufgabenübersicht in GitHub-Issues erfolgt über ein definiertes Label System. So werden Aufgaben, direkt nach Erstellung, zunächst mit einem Deadline-Label versehen, welches die Deadline der jeweiligen Aufgabe angibt. Wurde die Aufgabe angefangen, wird das Issue mit dem Label "in Bearbeitung versehen". Ist die Aufgabe abgeschlossen, ist sie bereit zum Review, was ebenfalls mit entsprechenden Labels symbolisiert wird. Nach Beendigung der Aufgabe und erfolgreichem Review, kann das Issue schlussendlich geschlossen werden. 
 
 Die Aufgaben werden, so weit wie möglich, in Zweierteams aufgeteilt, um eine differenziertere Sichtweise zu erreichen.
 
@@ -148,29 +148,22 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 | <<Iteration Plan 03: {project-name}, Iterationsplan I03>>
 | From 19.12.2022 to 09.01.2023
 
+| I4
+| <<Iteration Plan 04: {project-name}, Iterationsplan I04>>
+| From 09.01.2023 to 23.01.2023
+
 |===
 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-
+Die serverseitigen Komponenten der Anwendung werden auf einem Server der HTW-Dresden betrieben. Die Anwendung in Form einer Android-App wird nach Fertigstellung in dem offiziellen Google-Play-Store zum Download bereit stehen. 
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
-- die tools und die projektmanagementmethode hätten von anfang an bekannt sein müssen. Spätere Methodenänderungen sind schwer etablierbar. Issues hätte vollständig beherrscht werden müssen und vielleicht lieber ein vernünftiges Kanbantool genutzt werden müssen (vgl. Taiga)
-- mehr feedback vom kunden
-- essence manager benutzen
-- probleme nicht nur in den wöchentlichen meetings sondern dauerhaft und direkt ansprechen
-- Use-Cases nicht agil genug entwickelt
-- auf den aufwand hätte man mehr rücksicht nehmen müssen-> mehr leute für schwere aufgaben
-- terminfindungstools könnten genutzt werden
 
-priorisierungsprinzip: 
-- in den projectplan
-- high medium low
-
-
-schätzung der Größe: 
-- 1-5/ low-high
-- in den projectplan
+- Die Tools und die genaue Projektmanagementmethode hätten von Anfang an vollständig bekannt sein sollen, da spätere Methodenänderungen sich als schwer etablierbar herausstellten. Zum Beispiel hätte GitHub-Issues vollständig beherrscht werden sollen und ein adäquates Kanbantool genutzt werden müssen (vgl. Taiga). Das fehlende Kanbanboard wurde zwar durch einen Workaround bestehend aus GitHub-Issues mit entsprechenden Labels beseitigt, die Umsetzung war jedoch deutlich umständlicher als es ein konventionelles Kanban wäre.
+- Das Essence Manager Tool wurde nicht von Anfang an verwendet. Dies hat das Problem mit sich gebracht, dass zwar einzelne Aufgaben vergeben werden konnten, auf Managementebene jedoch der allgemeine Überblick gefehlt hat. Da wir uns hier jedoch an den Vorlesungsfolien zum OpenUP orientierten, konnten wir dieses Problem mit Mehraufwand umgehen. 
+- Die Use-Cases wurden nicht agil genug entwickelt. So hat die Erstellung der Use-Cases bedeutend länger gedauert als es müsste, da hier nicht agil auf den Arbeitsaufwand eingegangen wurde. Mit einer Anpassung von Human Ressources hätte diesem Problem entgegengewirkt werden können.
+- Der Terminfindungsprozess stellte gelegentlich ein Problem dar, da bei einer Gruppe aus sieben Studierenden häufig zu Überschneidungen individueller Zeitplanungen kommt. Hier kann ein Terminfindungstool Abhilfe schaffen.
