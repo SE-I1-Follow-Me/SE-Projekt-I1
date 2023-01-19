@@ -25,7 +25,7 @@ Für Teile der Implementierung greift das Team I1 auf die https://github.com/Mar
 == Positionierung
 
 === Fachliche Motivation
-Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nutzbar zu machen, da diese zum jetzigen Standpunkt noch kein Use-Case als Verkaufsargument bieten. Zu bedenken ist jedoch, dass sich das autonome Fahren des Roboters zur Zeit ebenfalls in der Entwicklung befindet.
+Der Auftraggeber sucht nach einer Funktion, welche eine Basis bietet, um zukünftig mit den Fahrrobotern arbeiten zu können. Deshalb benötigt er eine App, welche für den Outdoorbereich geeinget ist, sowie eine Serveranbindung für selbige.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
@@ -33,7 +33,7 @@ Der Auftraggeber sucht nach einer Funktion, um die Fahrroboter wirtschaftlich nu
 [cols="1,3"]
 |===
 | Das Problem | Routen können aufgezeichnet, aber nicht verwaltet, gelöscht oder an einen Fahrroboter übergeben werden.
-| betrifft | Kunden, welche Aufgaben an die Fahrroboter deligieren möchten.
+| betrifft | Nutzern, welche Aufgaben an die Fahrroboter deligieren möchten.
 | die Auswirkung davon ist | Automatisierte Bedienung der Fahrroboter ist nicht möglich
 | eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, die Fahrroboter zu bedienen.
 |===
@@ -59,10 +59,10 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | Kunden
+| Für | Nutzer
 | die | mit den Fahrrobotern arbeiten
 | Das Produkt ist eine | mobile Android-App für den Outdoorbereich
-| Die | es dem Kunden ermöglicht, die Fahrroboter zu bedienen
+| Die | es dem Nutzer ermöglicht, die Fahrroboter zu bedienen
 | Im Gegensatz zu | Routen und Roboter können weder verwaltet noch hinzugefügt werden
 | Unser Produkt | unterstützt eine präzise Aufnahme sowie schnelle Speicherung von GPS-Tracks und eine benutzerfreundliche Aufgabenverteilung an die Roboter
 |===
@@ -101,8 +101,8 @@ Beispiel Produkt:
 | Bereitstellen der Roboter und Implementierung des autonomen Fahrens
 
 
-| Kunde (Förster, Bauern)
-| Kunden, welche die Fahrroboter im Berufsalltag nutzen möchten
+| Nutzer (Förster, Bauern)
+| Nutzer der App, welche die Fahrroboter im Berufsalltag nutzen möchten
 | Nutzen der App nach Anleitung
 
 | Auftraggeber Prof. Dr.-Ing. Mario Neugebauer
@@ -123,8 +123,8 @@ Beispiel Produkt:
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Ein Kunde kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Kunden gehören, jedoch kann er nur von einem gleichzeitig benutzt werden bzw. Aufgaben erhalten.
-. Die Roboter werden während ihrer Arbeit gesperrt. Das heißt, dass andere Kunden, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Kunde seine Sitzung beendet hat. 
+. Ein Nutzer kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Nutzern gehören, jedoch kann er nur von einem gleichzeitig benutzt werden bzw. Aufgaben erhalten.
+. Die Roboter werden während ihrer Arbeit gesperrt. Das heißt, dass andere Nutzer, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Nutzer seine Sitzung beendet hat. 
 . Die App ist für den Outdoor Einsatz gedacht und benötigt ein GPS-Signal, sowie eine stabile Internetverbindung.
 . Die App wird auf der aktuell gängigen Android Version 11 entwickelt.
 
@@ -144,9 +144,9 @@ Beispiel Produkt:
 | Route aufzeichnen | hoch | Route während der Follow-me Funktion aufzeichnen | SS 2023
 |Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | SS 2023
 |Route laden |hoch |Zuvor aufgenommene Route anzeigen | SS 2023
-|Route bearbeiten | niederig |Namen der Route ändern oder sie für andere Roboter zugänglich machen | SS 2023
-|Route löschen | niedrig |Löschen einer zuvor aufgenommenen Route | SS 2023
 |Roboter hinzufügen |hoch |Speichern eines neuen Roboters | SS 2023
+|Route bearbeiten | niedrig |Namen der Route ändern oder sie für andere Roboter zugänglich machen | SS 2023
+|Route löschen | niedrig |Löschen einer zuvor aufgenommenen Route | SS 2023
 |Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
 |Roboter Fahrkommandos |niedrig |Befehle, die das ablaufen einer Route betreffen (beginnen, pausieren, beenden) | SS 2023
 |Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
@@ -175,9 +175,8 @@ Beispiel Produkt:
 | Anforderung | Priorität | Geplantes Release
 | App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | SS 2023
 |Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |hoch | SS 2023
-|Da die App auch nach Fertigstellung weiter entwickelt werden soll muss im Code möglichst auf hartcodierung verzichtet werden | mittel | SS 2023
+|Die App muss möglichst einfach und linear aufgebaut sein, damit sie für den Outdoorbereich geeignet ist | hoch | SS 2023
 |Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |niedrig | SS 2023
-|In der Sprachauswahl soll neben Deutsch auch Englisch verfügbar sein |niedrig | SS 2023
-|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |sehr niedrig | SS 2023
+|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |sehr niedrig | noch offen
 
 |===
