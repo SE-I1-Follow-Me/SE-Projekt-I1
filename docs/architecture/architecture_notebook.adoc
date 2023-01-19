@@ -2,7 +2,6 @@
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
-:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -141,5 +140,3 @@ Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Robote
 Währenddessen kann man über den Robot Status Overview sehen, in welchem Zustand sich ein Roboter befindet. So sieht man zum Beispiel ob dieser gerade eine Aktion ausführt, wo sich der Roboter befindet oder ob er frei zur Verfügung steht.
 Beinahe alle Komponenten stehen dabei in Verbindung mit unserem Server. Das heißt, dass wir einen Datenbank Connector benötigen, um die genrierten Daten von Roboter und Benutzer aus der App an unseren Server zu senden oder angeforderte Daten zu empfangen. Auch Maps könnten hier noch eingebaut werden um Aktionen zu visualisieren.
 Über Spring Boot inklusive Spring Security erfolgt dann eine sichere Kommunikation zwischen App und Server. Diese Komponente dient als Datenbankschnittstelle.
-
-
