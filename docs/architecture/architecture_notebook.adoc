@@ -73,7 +73,7 @@ Wartbarkeit (Supportability): ::
 
 . Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten relativ schnell aufsetzbar ist und dadurch eine Zeitersparniss mit sich bringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
 
-. Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (XML Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Maven das passende Framework für unsere App.
+. Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (XML Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Gradle das passende Framework für unsere App.
 
 . Springboot inkludiert Spring Security, welches wir als Datenbankschnittstelle nutzen werden. Es ermöglicht eine sichere Kommunikation der App mit der Datenbank als Server. Dadurch wird der Datenschutz des Nutzers gewährleistet.
 
