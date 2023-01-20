@@ -42,7 +42,7 @@ Annahmen: ::
 Abhängigkeiten: ::
 
 * Wir sind drauf angewiesen, dass der Kartendaten Provider weiter kostenlos Kartendaten zur Verfügung stellt und nahezu rund um die Uhr erreichbar ist.
-* Wir sind von unserem Rechenzentrum abhängig, da der Server zur Synchronisation jederzeit zur Verfügung stehen muss.
+* Wir sind von einem Rechenzentrum abhängig, da der Server zur Synchronisation jederzeit zur Verfügung stehen muss.
 * Wir sind darauf angewiesen, dass alle eingesetzten Frameworks und APIs gepflegt werden.
 
 
