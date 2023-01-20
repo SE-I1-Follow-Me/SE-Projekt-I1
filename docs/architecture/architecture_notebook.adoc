@@ -101,8 +101,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 Sprachen wird bei der Programmierung bedacht und soll in Zukunft leicht möglich sein.
 
 . In der Analyse haben wir erfasst, dass die Routendaten persistent gespeichert werden müssen. 
-Im Entwurf entschieden wir auf dieser Grundlage, dass alle Daten zentral in einer MySQL Server Datenbank gespeichert werden. Diese eignet sich gut für die von uns zu speichern
-den Daten und unsere Teammitglieder haben bereits Erfahrung mit diesem Datenbankmanagementsystem.
+Im Entwurf entschieden wir auf dieser Grundlage, dass alle Daten zentral in einer MySQL Server Datenbank gespeichert werden. Diese eignet sich gut für die von uns zu speichernden Daten und unsere Teammitglieder haben bereits Erfahrung mit diesem Datenbankmanagementsystem.
 
 . Unser Datenbankserver wird ein zugehöriger Server des Laborbereichs der HTW Dresden sein. Wir haben uns dabei für einen Linux Ubuntu Server entschieden, da wir bereits Vorkenntnisse zum Aufsetzen eines solchen Servers beitzen. Es gibt eine sehr hohe Entwicklerbasis, sodass wir bei Problemfällen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können.
 Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Option einen Server privat aufzusetzen oder zu mieten.
