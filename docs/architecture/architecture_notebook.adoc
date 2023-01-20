@@ -71,7 +71,7 @@ Wartbarkeit (Supportability): ::
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten relativ schnell aufsetzbar ist und dadurch eine Zeitersparniss mit sich bringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
+. Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten relativ schnell aufsetzbar ist und dadurch eine Zeitersparnis mit sich bringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
 
 . Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (XML Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Gradle das passende Framework für unsere App.
 
@@ -103,7 +103,7 @@ Sprachen wird bei der Programmierung bedacht und soll in Zukunft leicht möglich
 . In der Analyse haben wir erfasst, dass die Routendaten persistent gespeichert werden müssen. 
 Im Entwurf entschieden wir auf dieser Grundlage, dass alle Daten zentral in einer MySQL Server Datenbank gespeichert werden. Diese eignet sich gut für die von uns zu speichernden Daten und unsere Teammitglieder haben bereits Erfahrung mit diesem Datenbankmanagementsystem.
 
-. Unser Datenbankserver wird ein zugehöriger Server des Laborbereichs der HTW Dresden sein. Wir haben uns dabei für einen Linux Ubuntu Server entschieden, da wir bereits Vorkenntnisse zum Aufsetzen eines solchen Servers beitzen. Es gibt eine sehr hohe Entwicklerbasis, sodass wir bei Problemfällen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können.
+. Unser Datenbankserver wird ein zugehöriger Server des Laborbereichs der HTW Dresden sein. Wir haben uns dabei für einen Linux Ubuntu Server entschieden, da wir bereits Vorkenntnisse zum Aufsetzen eines solchen Servers besitzen. Es gibt eine sehr hohe Entwicklerbasis, sodass wir bei Problemfällen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können.
 Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Option einen Server privat aufzusetzen oder zu mieten.
 
 . Um die Roboter eindeutig zu identifizieren und sie dem korrekten Nutzer zuzuordnen, ist ein Tokensystem nötig. Dieses wird auf der Roboter ID basieren und Funktionen wie Erstellung von Robotergruppen ermöglichen.
@@ -136,43 +136,5 @@ Unser App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Doku
 Nach der Sprachauswahl folgt das Login. Dieses dient dazu, dass der Nutzer Zugriff auf seine bereits hinzugefügten Routen und Roboter bekommt oder sich neu zuweisen kann. Mit dem Login verknüpft ist auch das Tokensystem, mit dem die Roboter identifiziert werden können.
 Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Roboters im Main Controller. Dieser bezieht sich auf die Ansteuerung des Roboters. Damit verknüpft ist die Follow Me Funktion, sodass der Roboter dem Benutzer folgen kann, eine Route automatisch absolviert, der Roboter auf Anweisung stoppt und vieles mehr.
 Währenddessen kann man über den Robot Status Overview sehen, in welchem Zustand sich ein Roboter befindet. So sieht man zum Beispiel ob dieser gerade eine Aktion ausführt, wo sich der Roboter befindet oder ob er frei zur Verfügung steht.
-Beinahe alle Komponenten stehen dabei in Verbindung mit unserem Server. Das heißt, dass wir einen Datenbank Connector benötigen, um die genrierten Daten von Roboter und Benutzer aus der App an unseren Server zu senden oder angeforderte Daten zu empfangen. Auch Maps könnten hier noch eingebaut werden um Aktionen zu visualisieren.
-Über Spring Boot inklusive Spring Security erfolgt dann eine sichere Kommunikation zwischen App und Server. Diese Komponente dient als Datenbankschnittstelle.
-
-
-
-. Unser Datenbankserver wird ein zugehöriger Server des Laborbereichs der HTW Dresden sein. Wir haben uns dabei für einen Linux Ubuntu Server entschieden, da wir bereits Vorkenntnisse zum Aufsetzen eines solchen Servers besitzen. Es gibt eine sehr hohe Entwicklerbasis, sodass wir bei Problemfällen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können.
-Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Option einen Server privat aufzusetzen oder zu mieten.
-
-. Um die Roboter eindeutig zu identifizieren und sie dem korrekten Nutzer zuzuordnen, ist ein Tokensystem nötig. Dieses wird auf der Roboter ID basieren und Funktionen wie Erstellung von Robotergruppen ermöglichen.
-
-. Das System benötigt eine minimale Nutzerverwaltung, da in der Analyse bewusst geworden ist, dass die Nutzer vorerst nur Zugriff auf eigene erstellte Routen haben sollen. Auch für die Speicherung der Roboter über die Tokens in einer Liste ist ein Nutzerverwaltungssystem von Vorteil.
-
-
-
-
-== Architektursichten (Views)
-//[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
-
-=== Logische Sicht
-//Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
-
-image::C4 Model System Context Diagram.png[]
-
-=== Physische Sicht (Betriebssicht):
-//Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
-
-* Container Diagram
-
-image::C4 Model System Container Diagram.png[]
-
-* Component Diagram
-
-image::C4 Model System Component Diagram.png[]
-
-Unsere App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Dokumenten gespeichert, sodass die Sprache in der App mit der Standardsprache des Geräts übereinstimmt. Es muss dazu auf den lokalen Speicher des Geräts zugegriffen werden.
-Nach der Sprachauswahl folgt das Login. Dieses dient dazu, dass der Nutzer Zugriff auf seine bereits hinzugefügten Routen und Roboter bekommt oder sich neu zuweisen kann. Mit dem Login verknüpft ist auch das Tokensystem, mit dem die Roboter identifiziert werden können.
-Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Roboters im Main Controller. Dieser bezieht sich auf die Ansteuerung des Roboters. Damit verknüpft ist die Follow-Me Funktion, sodass der Roboter dem Benutzer folgen kann, eine Route automatisch absolviert, der Roboter auf Anweisung stoppt und vieles mehr.
-Währenddessen kann man über den Robot Status Overview sehen, in welchem Zustand sich ein Roboter befindet. So sieht man zum Beispiel, ob dieser gerade eine Aktion ausführt, wo sich der Roboter befindet oder ob er frei zur Verfügung steht.
 Beinahe alle Komponenten stehen dabei in Verbindung mit unserem Server. Das heißt, dass wir einen Datenbank Connector benötigen, um die generierten Daten von Roboter und Benutzer aus der App an unseren Server zu senden oder angeforderte Daten zu empfangen. Auch Maps könnten hier noch eingebaut werden, um Aktionen zu visualisieren.
 Über Spring Boot inklusive Spring Security erfolgt dann eine sichere Kommunikation zwischen App und Server. Diese Komponente dient als Datenbankschnittstelle.
