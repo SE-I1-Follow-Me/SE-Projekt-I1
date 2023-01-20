@@ -81,7 +81,7 @@ Wartbarkeit (Supportability): ::
 vorteilhaft ist. Relationale Datenbanken sind für unser System schnell genug, laufen stabiler
 und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
 
-. Als Datenbankmanagementsystem nutzen wir Microsoft SQL. Durch Vorerfahrungen mit diesem System wird es erleichtert, die gewünschten Daten zu erhalten und zu verarbeiten.
+. Als Datenbankmanagementsystem nutzen wir MySQL. Durch Vorerfahrungen mit diesem System wird es erleichtert, die gewünschten Daten zu erhalten und zu verarbeiten.
 
 . Der Wunsch des Kunden war es, die App auf einem möglichst aktuellem Android Betriebssystem laufen zu lassen. Wir haben uns für die Android-Version 11 als Programmiergrundlage geeinigt, da dies weitverbreitet ist und der größte Teil aller Android Geräten diese Version unterstützen. Bei älteren Android-Versionen kann es daher zu Kompatibilitätsproblemen führen, da keine Optimierung für Vorversionen durchgeführt wird.
 
