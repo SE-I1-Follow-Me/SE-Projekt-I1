@@ -85,7 +85,7 @@ und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
 
 . Der Wunsch des Kunden war es, die App auf einem möglichst aktuellem Android Betriebssystem laufen zu lassen. Wir haben uns für die Android-Version 11 als Programmiergrundlage geeinigt, da diese weitverbreitet ist und der größte Teil aller Android Geräten diese Version unterstützen. Bei älteren Android-Versionen kann es daher zu Kompatibilitätsproblemen führen, da keine Optimierung für Vorversionen durchgeführt wird.
 
-. Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine kleine zusätzliche Simulationssoftware, die es uns ermöglicht, die gewünschten verfügbaren Funktionen zu überprüfen und zu testen.
+. Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine einfache zusätzliche Simulationssoftware, die es uns ermöglicht, die gewünschten verfügbaren Funktionen zu überprüfen und zu testen.
 
 
 
