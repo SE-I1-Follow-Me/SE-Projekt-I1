@@ -126,13 +126,7 @@ image::C4 Model System Context Diagram.png[]
 
 * Container Diagram
 
-image::architecture/images/architecture L1.png/[]
-
 image::/images/architecture L1.png/[]
-
-image::images/architecture L1.png/[]
-
-image::SE-Projekt-I1/docs/architecture/images/architecture L1.png/[]
 
 image::C4 Model System Component Diagram.png[]
 
