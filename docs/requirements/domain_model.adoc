@@ -5,7 +5,7 @@ include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
-== Allgemeine Informationen
+== Domain Model für Follow-me Android-App
 //Anmerkung: Bei Kompatibilitätsproblemen andere Version auskommentieren
 
 //image::Domain_Model.png[]
