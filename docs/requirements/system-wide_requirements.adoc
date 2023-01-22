@@ -6,13 +6,13 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-In diesem Dokument werden die systemweiten Anforderungen für das Projekt <Thema> spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt {project-name} spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
 
 * Systemweite funktionale Anforderungen (F),
 * Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
 * zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
 
-NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [hier ggf. Verweis einfügen]
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. link:use-case_model[Use Cases]
 
 
 == Systemweite funktionale Anforderungen
@@ -24,10 +24,10 @@ SWFA-2: ::
 * Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen.
 Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis die Verbindung herzustellen.
 SWFA-3: ::
-* Bei fehlendem GPS-Signal soll der Roboter stehen bleiben. 
+* Bei fehlendem GPS-Signal soll der Roboter stehen bleiben.
 Sollte während einer Aktion keine GPS Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen.
 SWFA-4: ::
-* Die App soll dauerhaft im jeweiligen Menü die Liste der Roboter beziehungsweise die Liste der Routen anzeigen.
+* Die App soll dauerhaft im jeweiligen Menü eine dynamische vom Server abgerufene Liste der Roboter beziehungsweise Routen anzeigen.
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
 
@@ -58,9 +58,9 @@ NFAU-5: ::
 
 === Zuverlässigkeit (Reliability)
 
-NFAR-1: :: 
+NFAR-1: ::
 * Bei instabiler Verbindung zum Server sollen nur vollständig und korrekt gesendete Befehle/Operationen ausgeführt werden.
-Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind. 
+Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind.
 
 NFAR-2: ::
 * Nur Roboter der organisationszugehörigen Flotte sollen genutzt werden können.
@@ -127,7 +127,7 @@ NAFI-2: ::
 * Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
 
 NAFI-3: ::
-* Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können. 
+* Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können.
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
