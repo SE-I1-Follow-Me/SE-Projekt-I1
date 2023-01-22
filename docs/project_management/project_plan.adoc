@@ -22,55 +22,47 @@ Der Projektplan wird während der Projektlaufzeit ergänzt und verfeinert. Veran
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist eine ausführliche Auflistung der einzelnen Stakeholder und deren Rolle innerhalb des Teams zu finden.
 
-[%header, cols="1,3a,2,1,1"]
+[%header, cols="1,3a,2,1"]
 |===
 | Name
 | Rolle
 | Studium
 | Vorkenntnisse
-| Aufgaben
 
 | Carl Ulrich Brinker
 | Project Manager
 | Wirtschaftsingenieurwesen
 | Projectmanagement
-| Protokoll, Organisation, Schriftverkehr
 
 | Leon Lowa
 | Project Manager, Developer
 | Wirtschaftsinformatik
 | Java, Python, C
-| Protokoll
 
 | Marcel Axmann
 | Tester, Analyst
 | Informatik
 | Java, C/C++
-|
 
 | Jonas Pfeiffer
 | Developer
 | Wirtschaftsinformatik
 | Java, C, SQL
-| 
 
 | Manuel Scheer
 | Analyst
 | Wirtschaftsinformatik
 | Projektmanagement, Java, C
-|
 
 | Magnus Böhne
 | Architect
 | Wirtschaftsinformatik
 | C, C#, C++, Java, Kotlin, Go
-|
 
 | Michael Novak
 | Tester
 | Wirtschaftsinformatik
 | Java, C, SQL
-|
 
 |===
 

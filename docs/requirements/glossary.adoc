@@ -1,4 +1,4 @@
-= Glossar: {project-name}
+= Glossar: SE I - Belegabgabe
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -13,11 +13,19 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Begriff | Definition und Erläuterung | Synonyme
 //| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
-| xx | xx | xx 
+
 |Roboterroute |Bei einer "Roboterroute" handelt es sich um aufgenommene Routen, welche an einen oder mehrere Roboter gesendet werden können |
-|Fahrroboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier] 
+|Fahrroboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier]
 gefunden werden  |
-|Warten | Der Begriff "Warten" bezieht sich auf einen Zustand den jeder Roboter durch Eingabe des Nutzers annehmen und verlassen kann. Während dieses Zustands ist der Roboter nicht für Funktionen verfügbar.  |
+|Warten | Der Begriff "Warten" bezieht sich auf einen Zustand den jeder Roboter durch Eingabe des Nutzers annehmen und verlassen kann. Während dieses Zustands ist der Roboter nicht für Funktionen verfügbar  |
+| Fehlermeldungen | Bei Fehlermeldungen handelt es sich um eine Mitteilung an den Nutzer, wenn der geplante Ablauf nicht wie vorgesehen ausgeführt werden konnte |
+| Pop-Ups | Pop-ups sind ein Element der Benutzeroberfläche um im Vordergrund zusätzliche Inhalte anzuzeigen oder Interaktionen abzufragen |
+| Systemfehler | Ein Systemfehler ist ein Problem, das zu einer ungewollten Situation führt, die den geplanten Ablauf des Systems verhindert |
+| Sourcecode | Sourcecode ist lesbarer Text einer Progammiersprache | Quellcode, Quelltext, Programmcode
+| GPS-Daten | GPS-Daten sind eine Gesamtheit von Wegpunkten aus der eine Route ermittelt werden kann | GPS-Tracks
+| Framework | Sichere verbindungsschnittstelle zwischen Applikation, Server und Simulation System. Das genutzte Framework ist Springboot |
+| Simulationsystem | Eine Windows Applikation die den Roboter für testzwecke simuliert |
+| Token | Eine Folge von Zeichen zur Identifizierung und Authentifizierung | Sicherheitsschlüssel, Verifizierungsschlüssel
 |===
 
 
@@ -26,7 +34,9 @@ gefunden werden  |
 |===
 | Abkürzung | Bedeutung | Erläuterung
 //| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
-| xx | xx | xx
+| GPS | Global Positioning System | Ein satellitengestütztes Funknavigationssystem
+| MySQL | "My" Structured Query Language | Ein relationales Datenbankverwaltungssystem
+| DB | Datenbank | Ein System zur elektronischen Datenverwaltung
 |===
 
 == Verzeichnis der Datenstrukturen
