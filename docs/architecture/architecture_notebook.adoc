@@ -125,12 +125,12 @@ image::C4 Model System Context Diagram.png[]
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 * Container Diagram
-:imagesdir: ../images/architecture L1.png/
-image::architecture L1.png[]
 
-image::../images/architecture L1.png/[]
+image::architecture/images/architecture L1.png/[]
 
 image::/images/architecture L1.png/[]
+
+image::images/architecture L1.png/[]
 
 image::SE-Projekt-I1/docs/architecture/images/architecture L1.png/[]
 
