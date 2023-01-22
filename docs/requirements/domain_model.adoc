@@ -6,6 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Allgemeine Informationen
+//Anmerkung: Bei Kompatibilitätsproblemen andere Version auskommentieren
 
-image::Domain_Model.png[]
+//image::Domain_Model.png[]
 image::images/Domain_Model.png/[]
