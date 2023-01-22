@@ -130,7 +130,7 @@ image::architecture L1.png[]
 
 * Component Diagram
 
-image::C4 Model System Component Diagram.png[]
+images::C4 Model System Component Diagram.png[]
 
 Unser App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Dokumenten gespeichert, sodass die Sprache in der App mit der Standardsprache des Geräts übereinstimmt. Es muss dazu auf den lokalen Speicher des Geräts zugegriffen werden.
 Nach der Sprachauswahl folgt das Login. Dieses dient dazu, dass der Nutzer Zugriff auf seine bereits hinzugefügten Routen und Roboter bekommt oder sich neu zuweisen kann. Mit dem Login verknüpft ist auch das Tokensystem, mit dem die Roboter identifiziert werden können.
