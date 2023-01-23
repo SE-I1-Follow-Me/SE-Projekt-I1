@@ -51,6 +51,17 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
+==== Roboter bestätigt Erhalt der Anweisung nicht
+Falls der Roboter in Schritt 9 den Erhalt der Anweisung nicht bestätigt.
+
+. WHILE Roboter hat den Erhalt der Anweisung nicht bestätigt
+.. Das System zeigt dem Nutzer eine Fehlermeldung.
+.. Das System fragt, ob der Nutzer die Anweisung erneut senden möchte.
+.. IF Nutzer möchte Anweisung neu senden
+.. Sende Anweisung erneut.
+.. ELSE 
+.. Das Use Case endet erfolglos, dem Nutzer wird die Liste der Routen angezeigt.
+
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
