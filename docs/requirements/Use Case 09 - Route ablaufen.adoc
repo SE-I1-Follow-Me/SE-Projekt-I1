@@ -11,12 +11,11 @@ Dieser Use Case beschreibt das Starten des Roboters der eine vorausgesetzte Rout
 
 === Kurzbeschreibung der Akteure
 
-==== Nutzer (User)
-Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
-
-
 ==== Roboter
-Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+Der Roboter ist der Hauptakteur in diesem Use Case, er soll eine ausgewählte Route, nach Erhalt des Befehls, selbstständig ablaufen. 
+
+==== Nutzer (User)
+Durch den Nutzer wird das Use Case aufgerufen und gestartet.
 
 
 === Vorbedingungen
@@ -40,35 +39,25 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 . Der Use Case beginnt, wenn der Nutzer in der App eine Route aus der Liste der Routen auswählt.
 . Das System zeigt dem Nutzer alle zu der ausgewählten Route verfügbaren Daten an (Name, Token etc.)
 . Der Nutzer betätigt die Schaltfläche "Route ablaufen".
-. Das System zeigt dem Nutzer die Liste aller Roboter an.
-. Der Nutzer wählt einen Roboter aus der Liste aller Roboter aus.
+. Das System zeigt dem Nutzer eine Liste aller verfügbaren Roboter an.
+. Der Nutzer wählt einen Roboter aus der Liste der verfügbaren Roboter aus.
 . Das System fragt den Nutzer erneut, ob der ausgewählte Roboter die ausgewählte Route ablaufen soll.
 . Der Nutzer bestätigt. 
-. Das System übermittelt die Anweisung an den Roboter
+. Das System übermittelt die Anweisung an den Roboter.
+. Der Roboter bestätigt Erhalt der Anweisung.
 . Das System bestätigt das erfolgreiche Starten der Funktion.
 . Das Use Case endet erfolgreich, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== Der ausgewählte Roboter führt eine Aktion aus
-Falls der in Schritt 5 ausgewählte Roboter eine Aktion ausführt.
-
-. Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
-. Das System fragt, ob die Aktion abgebrochen werden soll.
-. IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
-.. Das System bricht die Aktion des Roboters ab.
-.. Das Use Case wird bei Schritt 4 fortgesetzt.
-. ELSE
-.. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
-.. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 
 Der Nutzer hat das Erfolgreiche Starten der Funktion bestätigt bekommen.
-Der Roboter läuft die Route ab.
+Der Roboter beginnt die Route abzulaufen.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 
 
@@ -76,4 +65,4 @@ Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeicher
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 === Usability 
-Erlernbarkeit: Das Ablaufen einer Route soll intuitiv und linear funktionieren.
+Erlernbarkeit: Das Starten der "Ablaufen einer Route" Funktion soll intuitiv und linear funktionieren.
