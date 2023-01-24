@@ -149,7 +149,7 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-Die serverseitigen Komponenten der Anwendung werden auf einem Server der HTW-Dresden betrieben, im Laufe des 2. Semesters wird diese dann auf einem Server vom Auftraggeber installiert und auch nach Beendigung von dort aus ansprechbar sein. Die Anwendung in Form einer Android-App wird nach Fertigstellung auf einem portablen Speichermedium oder einer Cloud bereitstehen, was zum gegeben Zeitpunkt mit dem Auftraggeber noch besprochen wird. Während der Entwicklung der Anwendung, wird diese, bei Implementation neuer Features, dem Auftraggeber in Form einer ZIP Datei zugänglich gemacht und gegebenenfalls auch von uns installiert.
+Die serverseitigen Komponenten der Anwendung werden auf einem Server der HTW-Dresden betrieben, im Laufe des 2. Semesters wird diese dann auf einem Server vom Auftraggeber installiert und auch nach Beendigung von dort aus ansprechbar sein. Die Anwendung in Form einer Android-App wird nach Fertigstellung auf einem portablen Speichermedium oder einer Cloud bereitstehen, was zum gegeben Zeitpunkt mit dem Auftraggeber noch besprochen wird. Während der Entwicklung der Anwendung wird diese, bei Implementation neuer Features, dem Auftraggeber in Form einer ZIP Datei zugänglich gemacht und gegebenenfalls auch von uns installiert.
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
