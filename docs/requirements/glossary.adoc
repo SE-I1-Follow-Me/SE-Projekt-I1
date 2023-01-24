@@ -55,9 +55,15 @@ gefunden werden  |
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| xx
-| xx
-| xx
-| xx
-| xx
+| Robotertoken
+| Token, über welches ein bestimmter Roboter erreicht / angesteuert wird
+| String
+| Muss für jeden existierenden Roboter einzigartig sein
+| 
+
+| Routendaten
+| Datensatz für die erstellten und gespeicherten Routen
+| Decimal (9,6)  in MySQL, Float in Kotlin
+| Es werden immer zwei Daten (Längen- und Breitengrad) übertragen
+|
 |===
