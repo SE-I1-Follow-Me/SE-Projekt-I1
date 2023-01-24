@@ -28,6 +28,12 @@ Das System ist die initiale Version und wird vermutlich im Laufe der Zeit noch h
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
+== Validierung der Architektur
+Die Architekturkomponenten, bestehend aus Android App, Springboot Schnittstelle und Server mit MySQL Datenbank, sind eine schlüssige Wahl aus den vorgegbenen Vorschlägen und Hinweisen des Auftraggebers. Eine lokale Implementierung der Funktionalitäten auf einem Endgerät wäre nicht zielführend, da in diesem Fall nur eigene erstellte Routen genutzt werden können und es zu sehr großen Datenmengen mit großem Speicherbedarf kommen könnte. Auch mit Hinblick auf die Weiterentwicklung des Systems fiel die Wahl auf eine Serveranbindung leicht.
+
+Dieser Server ist ausgestattet mit einer MySQL Datenbank, welche benötigt wird für die langfristige Speicherung der Routen und die sichere Verwaltung der Nutzer, inlusive der von ihnen hinzugefügten Roboter.
+
+Zusätzlich muss eine Möglichkeit gefunden werden den Datenschutz des Nutzers zu gewährleisten und die Verbindung zwischen App zum Server herzustellen und zu verschlüsseln. Die Wahl dabei fiel auf Spring Boot inklusive Spring Security, da dieses Tool genau die gewünschten Anforderungen erfüllt. 
 
 == Annahmen und Abhängigkeiten
 
@@ -87,6 +93,14 @@ und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
 
 . Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine einfache zusätzliche Simulationssoftware, die es uns ermöglicht, die gewünschten verfügbaren Funktionen zu überprüfen und zu testen.
 
+. In der Prototypentwicklung haben wir uns entschieden die Oberfläche der App zuerst zu entwickeln, um das grundsätzliche Design mit dem Auftraggeber abzuklären und zu verbessern, damit danach die Entwicklung der Funktionen begonnen werden kann. Das Hinzufügen eines Roboters in eine Liste wurde im ersten Schritt implementiert, da dieser Use Case einer hohen Priorität zugeordnet ist und zugleich als Test der Systemkomponenten dient. 
+
+. Entscheidungen hinsichtlich der Hauptfunktionen:
+.. Das Hauptaugenmerk liegt bei unserem Projekt auf der Follow-me Funktion der Roboter. Folglich wurde der Ausarbeitung dieser Funktion eine sehr hohe Priorität zugeordnet (siehe Vision). Ohne der Follow-me Funktion ist unsere App nicht dem Zweck entsprechend, weshalb diese besonders ausgiebig ausgearbeitet und getestet werden soll.
+.. Den Routenoptionen wurde eine hohe Priorität zugeordnet, denn diese sind eng verknüpft mit der Follow-me Funktion. Das Aufzeichnen, Senden und Laden einer Route sind essenziell wichtig, damit Roboter die gewünschten Aufgaben übernehmen können.
+.. Dafür müssen die Roboter in der App zugeordnet werden, weshalb diese Funktion ebenfalls eine hohe Priorität in der Entwicklung besitzt.
+.. Weitere Funktionen wie das Bearbeiten einer Route bzw. eines Roboters oder dem Roboter Kommandos zu schicken, sind vorerst für die Hauptfunktion des Systems nicht vonnöten. Folglich werden diese erst zu späterem Zeitpunkt betrachtet und implementiert.
+
 
 
 == Architekturmechanismen
@@ -109,6 +123,7 @@ Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Optio
 . Um die Roboter eindeutig zu identifizieren und sie dem korrekten Nutzer zuzuordnen, ist ein Tokensystem nötig. Dieses wird auf der Roboter ID basieren und Funktionen wie Erstellung von Robotergruppen ermöglichen.
 
 . Das System benötigt eine minimale Nutzerverwaltung, da in der Analyse bewusst geworden ist, dass die Nutzer vorerst nur Zugriff auf eigene erstellte Routen haben sollen. Auch für die Speicherung der Roboter über die Tokens in einer Liste ist ein Nutzerverwaltungssystem von Vorteil.
+
 
 
 
