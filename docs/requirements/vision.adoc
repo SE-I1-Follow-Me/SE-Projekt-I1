@@ -25,7 +25,7 @@ Für Teile der Implementierung greift das Team I1 auf die https://github.com/Mar
 == Positionierung
 
 === Fachliche Motivation
-Der Auftraggeber sucht nach einer Funktion, welche eine Basis bietet, um zukünftig mit den Fahrrobotern arbeiten zu können. Deshalb benötigt er eine App, welche für den Outdoorbereich geeinget ist und es ermöglicht, die Roboter auch aus der Ferne zu steuern.
+Der Auftraggeber sucht nach einer Funktion, welche eine Basis bietet, um zukünftig mit den Fahrrobotern arbeiten zu können. Deshalb benötigt er eine App, welche für den Outdoorbereich geeignet ist und es ermöglicht, die Roboter auch aus der Ferne zu steuern.
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
@@ -115,7 +115,7 @@ Beispiel Produkt:
 
 | Gesetzgeber
 | Legt Rahmenbedingungen und Vorschriften fest
-| Lizensen und gesetzliche Vorschriften müssen zwingend beachtet werden
+| Lizenzen und gesetzliche Vorschriften müssen zwingend beachtet werden
 
 |===
 
@@ -125,7 +125,7 @@ Beispiel Produkt:
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 . Ein Nutzer kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Nutzern gehören, jedoch kann er nur von einem gleichzeitig benutzt werden bzw. Aufgaben erhalten.
 . Die Roboter werden während ihrer Arbeit gesperrt. Das heißt, dass andere Nutzer, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Nutzer seine Sitzung beendet hat. 
-. Die App ist für den Outdoor Einsatz gedacht und benötigt ein GPS-Signal, sowie eine stabile Internetverbindung.
+. Die App ist für den Outdooreinsatz gedacht und benötigt ein GPS-Signal, sowie eine stabile Internetverbindung.
 . Die App wird auf der aktuell gängigen Android Version 11 entwickelt. Somit muss der Nutzer ein Endgerät mit dieser oder einer kompatiblen Version nutzen, um die Funktion der App zu gewährleisten. 
 
 
@@ -148,7 +148,7 @@ Beispiel Produkt:
 |Route bearbeiten | niedrig |Namen der Route ändern oder sie für andere Roboter zugänglich machen | SS 2023
 |Route löschen | niedrig |Löschen einer zuvor aufgenommenen Route | SS 2023
 |Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
-|Roboter Fahrkommandos |niedrig |Befehle, die das ablaufen einer Route betreffen (beginnen, pausieren, beenden) | SS 2023
+|Roboter Fahrkommandos |niedrig |Befehle, die das Ablaufen einer Route betreffen (beginnen, pausieren, beenden) | SS 2023
 |Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
 |Roboter in Wartungsmodus setzen |sehr niedrig | Roboter wird in den Wartungsmodus versetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung | SS 2023
 |===

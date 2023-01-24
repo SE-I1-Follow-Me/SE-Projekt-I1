@@ -21,8 +21,8 @@ Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 ==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
 
-==== GPS Verbindung
-Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.
+==== GPS-Verbindung
+Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS-Verbindung.
 
 ==== Roboter existent
 Es wurden bereits Roboter gespeichert.
@@ -38,10 +38,10 @@ Ein Roboter ist verfügbar (führt keine anderen Aktionen aus).
 . Der Use Case beginnt, wenn das Use Case "Follow-me Funktion starten" endet.
 . Das System zeigt dem Nutzer einen Bildschirm mit seinem Standort, dem Standort des Roboters sowie der Zeit die seit Beginn des Use Cases vergangen ist.
 . WHILE Nutzer bewegt sich
-.. Das System sendet die GPS Daten des Nutzers an den Roboter.
-.. Der Roboter bestätigt das Erhalten der GPS Daten.
-.. Der Roboter bewegt sich zu den erhaltenen GPS Daten.
-.. Der Roboter sendet seine GPS Daten an das System.
+.. Das System sendet die GPS-Daten des Nutzers an den Roboter.
+.. Der Roboter bestätigt das Erhalten der GPS-Daten.
+.. Der Roboter bewegt sich zu den erhaltenen GPS-Daten.
+.. Der Roboter sendet seine GPS-Daten an das System.
 .. Das System aktualisiert die Positionsänderungen auf dem Bildschirm.
 . Das Use Case endet, wenn die Schaltfläche "Follow-me Beenden" betätigt wird.
 
@@ -55,10 +55,10 @@ Falls das System in Schritt 3 d bemerkt, dass die Distanz zwischen Nutzer und Ro
 . WHILE Distanz zwischen Roboter und Nutzer größer als 5 Meter
 .. Das System zeigt dem Nutzer eine Fehlermeldung.
 .. Das System macht den Nutzer auf die Fehlermeldung bemerkbar (Gerät spielt Ton ab, Gerät vibriert).
-.. Das System sendet die GPS Daten des Nutzers an den Roboter.
-.. Der Roboter bestätigt das Erhalten der GPS Daten.
-.. Der Roboter bewegt sich zu den erhaltenen GPS Daten.
-.. Der Roboter sendet seine GPS Daten an das System.
+.. Das System sendet die GPS-Daten des Nutzers an den Roboter.
+.. Der Roboter bestätigt das Erhalten der GPS-Daten.
+.. Der Roboter bewegt sich zu den erhaltenen GPS-Daten.
+.. Der Roboter sendet seine GPS-Daten an das System.
 . Das Use Case wird bei Schritt 3 e fortgesetzt.
 
 

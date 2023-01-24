@@ -9,7 +9,7 @@ Der Nutzer möchte, dass der ihm folgende Roboter nicht länger die Follow-me Fu
 
 
 ==== Testablauf
-_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+_Die Follow-me Android-App ist gestartet und der Nutzer hat sich eingeloggt._
 
 . Der Nutzer beendet die Follow-me Funktion ohne Vorbedingungen zu verletzen.
 . Der Nutzer hat aktuell keinen Roboter der die Follow-me Funktion ausführt.

@@ -5,7 +5,7 @@
 == Use-Case: Roboter anlegen
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt das Anlegen eines Roboters um diesen in weiteren Use Cases verwenden zu können.
+Dieser Use Case beschreibt das Anlegen eines Roboters, um diesen in weiteren Use Cases verwenden zu können.
 
 
 === Kurzbeschreibung der Akteure
@@ -21,10 +21,10 @@ Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird der Use Case a
 Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung.
 
 ==== Roboter verfügbar
-Es existiert ein Roboter welcher bisher von keinem Nutzer gespeichert wurde.
+Es existiert ein Roboter, welcher bisher von keinem Nutzer gespeichert wurde.
 
 ==== Roboter Authentifizieren
-Der Nutzer kennt die Token des zu speichernden Roboters.
+Der Nutzer kennt den Token des zu speichernden Roboters.
 
 
 === Standardablauf (Basic Flow)
@@ -50,7 +50,7 @@ Falls das System in Schritt 4 keinen Roboter findet, dann
 
 
 . Das System gibt dem Nutzer eine Fehlermeldung zurück.
-. Das System fragt den Nutzer ob er erneut einen Token eingeben will.
+. Das System fragt den Nutzer, ob er erneut einen Token eingeben will.
 . IF Nutzer möchte erneut einen Token eingeben
 .. Das Use Case wird bei Schritt 4 fortgesetzt.
 . ELSE
@@ -70,7 +70,7 @@ Falls sich das Token des Roboters in Schritt 5 bereits in der Liste der gespeich
 Falls das System feststellt, dass der vom Nutzer eingegebene Name in Schritt 8 bereits vergeben ist, dann
 
 . Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
-. Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
+. Das System fragt den Nutzer, ob er einen neuen Namen vergeben möchte.
 . IF Nutzer möchte neuen Namen vergeben
 .. Das Use Case wird bei Schritt 8 fortgesetzt.
 . ELSE 
@@ -99,4 +99,4 @@ Die Logdatei hat Beginn des Use Cases, sowie Ende und Beendigungsgrund gespeiche
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 
 ==== Funktionalität
-Authentifizierung: Der Roboter und der Nutzer müssen eindeutig über Token und Name authentifiziert werden um einen fehlerfreien Ablauf im weiteren Nutzen des Systems gewährleisten zu können.
+Authentifizierung: Der Roboter und der Nutzer müssen eindeutig über Token und Name authentifiziert werden, um einen fehlerfreien Ablauf im weiteren Nutzen des Systems gewährleisten zu können.
