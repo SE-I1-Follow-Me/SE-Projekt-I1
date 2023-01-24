@@ -5,7 +5,7 @@
 == Use-Case: Route bearbeiten
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt das Bearbeiten einer Route um zum Beispiel den Namen anzupassen.
+Dieser Use Case beschreibt das Bearbeiten einer Route, um zum Beispiel den Namen anzupassen.
 
 === Kurzbeschreibung der Akteure
 
@@ -33,7 +33,7 @@ Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
 .. Der Nutzer drückt auf die Daten, die zu ändern sind. 
 .. Der Nutzer ändert die Daten.
 . Der Nutzer wählt die Schaltfläche "Änderungen Speichern".
-. Das System zeigt dem Nutzer alle Daten die geändert werden.
+. Das System zeigt dem Nutzer alle Daten, die geändert werden.
 . Der Nutzer bestätigt erneut, dass er die Daten ändern möchte.
 . Das System ändert die Daten der ausgewählten Route.
 . Das System zeigt dem Nutzer die geänderten Daten an.
@@ -52,7 +52,7 @@ Falls der Nutzer in Schritt 6 die Änderungen nicht übernehmen möchte
 . Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Routen angezeigt.
 
 
-==== Geänderte Daten sind bereits an eineandere Route vergeben
+==== Geänderte Daten sind bereits an eine andere Route vergeben
 Falls der Nutzer in Schritt 4 Daten so geändert hat, dass diese sich mit den Daten anderer Routen überschneiden (zum Beispiel: Name)
 
 . Das System zeigt dem Nutzer, dass diese Daten sich, mit den Daten anderer Routen, überschneiden.
@@ -65,6 +65,6 @@ Falls der Nutzer in Schritt 4 Daten so geändert hat, dass diese sich mit den Da
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 Die Route und der zugehörige Nutzer sind gespeichert.
-Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Der Nutzer hat das erfolgreiche Abschließen des Speichervorgangs bestätigt bekommen.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 
 

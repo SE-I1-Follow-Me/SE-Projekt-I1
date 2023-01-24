@@ -28,6 +28,12 @@ Das System ist die initiale Version und wird vermutlich im Laufe der Zeit noch h
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
+== Validierung der Architektur
+Die Architekturkomponenten, bestehend aus Android App, Springboot Schnittstelle und Server mit MySQL Datenbank, sind eine schlüssige Wahl aus den vorgegebenen Vorschlägen und Hinweisen des Auftraggebers. Eine lokale Implementierung der Funktionalitäten auf einem Endgerät wäre nicht zielführend, da in diesem Fall nur eigene erstellte Routen genutzt werden können und es zu sehr großen Datenmengen mit großem Speicherbedarf kommen könnte. Auch mit Hinblick auf die Weiterentwicklung des Systems fiel die Wahl auf eine Serveranbindung leicht.
+
+Dieser Server ist ausgestattet mit einer MySQL Datenbank, welche benötigt wird für die langfristige Speicherung der Routen und die sichere Verwaltung der Nutzer, inklusive der von ihnen hinzugefügten Roboter.
+
+Zusätzlich muss eine Möglichkeit gefunden werden den Datenschutz des Nutzers zu gewährleisten und die Verbindung zwischen App zum Server herzustellen und zu verschlüsseln. Die Wahl dabei fiel auf Spring Boot inklusive Spring Security, da dieses Tool genau die gewünschten Anforderungen erfüllt. 
 
 == Annahmen und Abhängigkeiten
 
@@ -71,9 +77,9 @@ Wartbarkeit (Supportability): ::
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten relativ schnell aufsetzbar ist und dadurch eine Zeitersparnis mit sich bringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
+. Wir werden einen Linux Server mit Ubuntu Distribution nutzen, da dieser im Vergleich zu anderen Serverarten schnell aufsetzbar ist und dadurch eine Zeitersparnis mit sich bringt. Wir haben bereits Vorkenntnisse zur Aufsetzung eines solchen Servers. Eine hohe Entwicklerbasis ist ebenfalls von Vorteil, da wir bei auftretenden Problemen auf bereits gewonnene Erfahrung anderer Programmierer zurückgreifen können. So kann der Entwicklungsprozess deutlich beschleunigt werden.
 
-. Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (XML Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Gradle das passende Framework für unsere App.
+. Als Framework werden wir auf Springboot zurückgreifen. Mit der einfachen Syntax ist Springboot optimal geeignet für kleine bis mittlere Projekte. Bei der Nutzung ist vieles automatisiert (XML-Dateien) und ebenfalls sehr einfach aufzusetzen. Es ist modern, für unseren Bedarf sehr flexibel einsetzbar und durch die Vorkenntnisse in Gradle das passende Framework für unsere App.
 
 . Springboot inkludiert Spring Security, welches wir als Datenbankschnittstelle nutzen werden. Es ermöglicht eine sichere Kommunikation der App mit der Datenbank als Server. Dadurch wird der Datenschutz des Nutzers gewährleistet.
 
@@ -86,6 +92,14 @@ und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
 . Der Wunsch des Kunden war es, die App auf einem möglichst aktuellem Android Betriebssystem laufen zu lassen. Wir haben uns für die Android-Version 11 als Programmiergrundlage geeinigt, da diese weitverbreitet ist und der größte Teil aller Android Geräten diese Version unterstützen. Bei älteren Android-Versionen kann es daher zu Kompatibilitätsproblemen führen, da keine Optimierung für Vorversionen durchgeführt wird.
 
 . Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine einfache zusätzliche Simulationssoftware, die es uns ermöglicht, die gewünschten verfügbaren Funktionen zu überprüfen und zu testen.
+
+. In der Prototypentwicklung haben wir uns entschieden die Oberfläche der App zuerst zu entwickeln, um das grundsätzliche Design mit dem Auftraggeber abzuklären und zu verbessern, damit danach die Entwicklung der Funktionen begonnen werden kann. Das Hinzufügen eines Roboters in eine Liste wurde im ersten Schritt implementiert, da dieser Use Case einer hohen Priorität zugeordnet ist und zugleich als Test der Systemkomponenten dient. 
+
+. Entscheidungen hinsichtlich der Hauptfunktionen:
+.. Das Hauptaugenmerk liegt bei unserem Projekt auf der Follow-me Funktion der Roboter. Folglich wurde der Ausarbeitung dieser Funktion eine sehr hohe Priorität zugeordnet (siehe Vision). Ohne der Follow-me Funktion ist unsere App nicht dem Zweck entsprechend, weshalb diese besonders ausgiebig ausgearbeitet und getestet werden soll.
+.. Den Routenoptionen wurde eine hohe Priorität zugeordnet, denn diese sind eng verknüpft mit der Follow-me Funktion. Das Aufzeichnen, Senden und Laden einer Route sind essenziell wichtig, damit Roboter die gewünschten Aufgaben übernehmen können.
+.. Dafür müssen die Roboter in der App zugeordnet werden, weshalb diese Funktion ebenfalls eine hohe Priorität in der Entwicklung besitzt.
+.. Weitere Funktionen wie das Bearbeiten einer Route bzw. eines Roboters oder dem Roboter Kommandos zu schicken, sind vorerst für die Hauptfunktion des Systems nicht vonnöten. Folglich werden diese erst zu späterem Zeitpunkt betrachtet und implementiert.
 
 
 
@@ -113,6 +127,7 @@ Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Optio
 
 
 
+
 == Architektursichten (Views)
 //[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
 
@@ -120,29 +135,31 @@ Falls Unstimmigkeiten oder längere Wartezeiträume entstehen, besteht die Optio
 
 === System Context
 
-//image::architecture L1.png[]
+image::architecture L1.png[]
 
-image::images/architecture L1.png/[]
+//image::images/architecture L1.png/[]
+
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
 
 === Container diagram
 
-//image::architecture L2.png[]
-image::images/architecture L2.png/[]
+image::architecture L2.png[]
+//image::images/architecture L2.png/[]
+
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 === Component diagram
 
-//image::architecture L3.png[]
-image::images/architecture L3.png/[]
+image::architecture L3.png[]
+//image::images/architecture L3.png/[]
 
 
 
 === Überblick
 
 
-Unser App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Dokumenten gespeichert, sodass die Sprache in der App mit der Standardsprache des Geräts übereinstimmt. Es muss dazu auf den lokalen Speicher des Geräts zugegriffen werden.
+Unsere App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Dokumenten gespeichert, sodass die Sprache in der App mit der Standardsprache des Geräts übereinstimmt. Es muss dazu auf den lokalen Speicher des Geräts zugegriffen werden.
 Nach der Sprachauswahl folgt das Login. Dieses dient dazu, dass der Nutzer Zugriff auf seine bereits hinzugefügten Routen und Roboter bekommt oder sich neu zuweisen kann. Mit dem Login verknüpft ist auch das Tokensystem, mit dem die Roboter identifiziert werden können.
 Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Roboters im Main Controller. Dieser bezieht sich auf die Ansteuerung des Roboters. Damit verknüpft ist die Follow Me Funktion, sodass der Roboter dem Benutzer folgen kann, eine Route automatisch absolviert, der Roboter auf Anweisung stoppt und vieles mehr.
 Währenddessen kann man über den Robot Status Overview sehen, in welchem Zustand sich ein Roboter befindet. So sieht man zum Beispiel ob dieser gerade eine Aktion ausführt, wo sich der Roboter befindet oder ob er frei zur Verfügung steht.

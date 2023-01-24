@@ -8,5 +8,5 @@ include::../_includes/default-attributes.inc.adoc[]
 == Domain Model für Follow-me Android-App
 //Anmerkung: Bei Kompatibilitätsproblemen andere Version auskommentieren
 
-//image::Domain_Model.png[]
-image::images/Domain_Model.png/[]
+image::Domain_Model.png[]
+//image::images/Domain_Model.png/[]

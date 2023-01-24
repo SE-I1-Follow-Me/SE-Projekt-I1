@@ -6,7 +6,7 @@
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Dieser Use Case beschreibt das Versetzen eines Roboters in den "Warten" Zustand in welchem er nicht für Funktionen verfügbar ist, bis der "Warten" Zustand durch diesen Use Case aufgehoben wird.
+Dieser Use Case beschreibt das Versetzen eines Roboters in den Wartungszustand in welchem er nicht für Funktionen verfügbar ist, bis der "Warten" Zustand durch diesen Use Case aufgehoben wird.
 
 
 === Kurzbeschreibung der Akteure

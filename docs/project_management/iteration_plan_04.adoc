@@ -2,7 +2,6 @@
 Carl Ulrich Brinker carlulrich.brinker@htw-dresden.de
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
-:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -16,7 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | Beginn der Iteration | 09.01.2023 
 | Kundenmeeting| 10.01.2023
 | Iterationsüberprüfung| 16.01.2023
-| LCA Meilenstein| 23.01.2023
+| LCA-Meilenstein| 23.01.2023
 | Ende der Iteration | 23.01.2023
 |===
 
@@ -28,7 +27,6 @@ include::../_includes/default-attributes.inc.adoc[]
 * Schnittstelle zwischen Server und Anwendung implementieren
 * Abnahme Wireframes vom Kunden
 * Testcases fertigstellen
-* BPMN-Modell fertigstellen
 * Domänenmodell
 * Überprüfung der Dokumentation
 * Vorstellung des Prototyps
@@ -42,7 +40,6 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| BPMN-Modell | high | 4 | bis 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/37[Issue 37] | 4 | Manuel Scheer, Jonas Pfeiffer | 5 | 1
 | Domänenmodell | medium | 3 | 23.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/36[Issue 36] | 4 | Michael Novak, Marcel Axmann | 4 | 1
 | Anfrage auf Server stellen | high | 1 | 12.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/38[Issue 38] | 5 | Leon Lowa | 0,5 | 0
 | Server einrichten | high | 4 | 16.01.23 | https://github.com/TitanKnife/SE-Projekt-I1/issues/39[Issue 369] | 4 | Magnus Andreas Böhne | 4 | 0
@@ -75,11 +72,11 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 
 
-* Kunde und Coach haben Wireframes und Protyp ohne Beanstandung bestätigt
-* die serverseitige Funktionalität der App wurde erfolgreich implementiert und dessen fehlerfreie Ablauf ist gewährleistet
+* Kunde und Coach haben Wireframes und Prototyp ohne Beanstandung bestätigt
+* die serverseitige Funktionalität der App wurde erfolgreich implementiert und dessen fehlerfreier Ablauf ist gewährleistet
 * der Server wurde angefragt und die notwendige Funktionalität implementiert.
 * eine reibungslose Kommunikation zwischen App und Server ist gewährleistet.
-* BPMN- und Domänenmodell wurden ins GitHub-Repo eingepflegt
+* Domänenmodell wurde ins GitHub-Repo eingepflegt
 
 
 == Assessment
@@ -89,21 +86,51 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 23.01.2023
-| Teilnehmer | Alle
+| Assessment Datum | 22.01.2023
+| Teilnehmer | Leon Lowa, Ulrich Brinker
 | Projektstatus	| grün
 |===
 
-* Beurteilung im Vergleich zu den Zielen
-//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 
-* Geplante vs. erledigte Aufgaben
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+Beurteilung im Vergleich zu den Zielen:: 
+****
+* *Ziel 1:* Ziel erreicht
+* *Ziel 2:* Zielt nicht erreicht
+* *Ziel 3:* Ziel erreicht
+* *Ziel 4:* Ziel erreicht
+* *Ziel 5:* Ziel erreicht
+* *Ziel 6:* Ziel teilweise erreicht
+* *Ziel 7:* Ziel erreicht
+****
+
+Geplante vs. erledigte Aufgaben::
+****
+in nächste Iteration verschoben:
+
+* Implementation der Schnittstelle
+****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
+
+Beurteilung im Vergleich zu den Bewertungskriterien::
+****
+* Aufgabenerfüllung fristgerecht: Nein
+* *Ziel 1:* Server aufgesetzt
+* *Ziel 2:* Schnittstelle nicht implementiert
+* *Ziel 3:* Wireframes vom Kunden abgenommen
+* *Ziel 4:* Testcases fertig
+* *Ziel 5:* Domänenmodell fertig und eingepflegt
+* *Ziel 6:* Teile der Dokumentation überprüft
+* *Ziel 7:* Prototyp vorgestellt
+****
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 
-* Andere Belange und Abweichungen
-//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 
+
+== Essence Navigator
+
+Nach dieser Iteration wurde folgender Stand anhand des Essence Navigators erreicht:
+
+image::essence_i4.png[]

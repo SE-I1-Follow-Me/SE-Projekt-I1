@@ -18,7 +18,7 @@ rectangle "Follow-me" {
   usecase "UC02\nRoboter bearbeiten" as uc02 #B4EEB4;line:698b69
   usecase "UC03\nRoboter löschen" as uc03 #B4EEB4;line:698b69
   usecase "UC04\nFollow-me Funktion starten" as uc04 #B4EEB4;line:698b69
-   usecase "UC05\nFollow-me Funktion ausführen" as uc05 #B4EEB4;line:698b69
+  usecase "UC05\nFollow-me Funktion ausführen" as uc05 #B4EEB4;line:698b69
   usecase "UC06\nFollow-me Funktion beenden"  as uc06 #B4EEB4;line:698b69
   usecase "UC07\nRoute speichern" as uc07 #B4EEB4;line:698b69
   usecase "UC08\nRoute bearbeiten"  as uc08 #B4EEB4;line:698b69
@@ -49,5 +49,4 @@ uc04 -- Roboter
 uc05 -- Roboter
 uc06 -- Roboter
 uc10 -- Roboter
-uc09 -- Roboter 
 @enduml

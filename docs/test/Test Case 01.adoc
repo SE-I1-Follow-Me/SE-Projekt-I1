@@ -8,7 +8,7 @@ Der Nutzer möchte seine beiden physisch vorhandenen Roboter in der Follow-me An
 
 
 ==== Testablauf
-_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+_Die Follow-me Android-App ist gestartet und der Nutzer hat sich eingeloggt._
 _Die Liste der Roboter ist geöffnet._
 
 . Der Nutzer gibt korrekte Daten ein.
@@ -35,8 +35,8 @@ _Die Liste der Roboter ist geöffnet._
 
 . Der Token ist korrekt, der eingegebene Name "Roboter 1" wurde bereits verwendet.
 * Es wird eine Fehlermeldung angezeigt, "Roboter 1" existiert bereits.
-* Das Anlegen des Roboters wird unterbrochen, dem Nutzer wird die Möglichkeit gegeben einen anderen Namen einzugeben. Das Anlegen des Roboters kann nach Eingabe eines ungenutzen Namen fortgesetzt werden.
+* Das Anlegen des Roboters wird unterbrochen, dem Nutzer wird die Möglichkeit gegeben einen anderen Namen einzugeben. Das Anlegen des Roboters kann nach Eingabe eines ungenutzten Namens fortgesetzt werden.
 
 . Der Token ist unbekannt, das Eingabefeld des Tokens bleibt unausgefüllt.
-* Das Eingabefeld bleibt bestehen bis ein Token eingegeben wird.
+* Das Eingabefeld bleibt bestehen, bis ein Token eingegeben wird.
 * Das Anlegen des Roboters wird unterbrochen, das Anlegen des Roboters kann nach Eingabe eines Tokens fortgeführt werden.

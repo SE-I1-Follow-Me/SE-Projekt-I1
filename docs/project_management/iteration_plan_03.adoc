@@ -16,7 +16,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | Iterationsüberprüfung| 12.12.2022
 | SpringbootCamp| 12.12.2022
 | Kundenmeeting| 16.12.2022
-| LCO Meilenstein| 19.12.2022
+| LCO-Meilenstein| 19.12.2022
 | Ende der Iteration | 21.12.2022
 |===
 
@@ -41,22 +41,22 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Vision präzisieren (auf den eigentlichen Scope beziehen) | high | 4 | bis 19.12.22 | Prokoll vom 05.12.22 | 3 | Manuel Scheer | 4 | 1
+| Vision präzisieren (auf den eigentlichen Scope beziehen) | high | 4 | bis 19.12.22 | Protokoll vom 05.12.22 | 3 | Manuel Scheer | 4 | 1
 | Protokoll in aufbereiteter Form ins GIT übertragen | low | 1 | bis 06.12.22 | - | 3 | Ulrich Brinker | 0,5 | 0
-| Projektsteckbrief überarbeiten (Risiken anpassen)| low | 2 | bis 21.12.22 | Prokoll vom 06.12.22 | 3 | Ulrich Brinker, Leon Lowa | 1 | 0
-| Meeting mit Coach zur LCO Überprüfung| high | 1 | 21.12.22 | Prokoll vom 06.12.22 | 3 | Alle | 1 | 0
-| Fragen an Kunden sammeln | high | 2 | bis 16.12.22 | Prokoll vom 06.12.22 | 3 | Alle | 0,5 | 0
+| Projektsteckbrief überarbeiten (Risiken anpassen)| low | 2 | bis 21.12.22 | Protokoll vom 06.12.22 | 3 | Ulrich Brinker, Leon Lowa | 1 | 0
+| Meeting mit Coach zur LCO-Überprüfung| high | 1 | 21.12.22 | Protokoll vom 06.12.22 | 3 | Alle | 1 | 0
+| Fragen an Kunden sammeln | high | 2 | bis 16.12.22 | Protokoll vom 06.12.22 | 3 | Alle | 0,5 | 0
 | Projektplan initial ausarbeiten | medium | 2 | bis 19.12.22 | project_plan.adoc | 3 | Ulrich Brinker, Leon Lowa | 3 | 1
-| Use-Cases weiter ausarbeiten (Verfeinerung) | high | 5 | bis 19.12.22 | Prokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 5 | 1
-| Use-Case-Diagramme initial erstellen | medium | 2 | bis 19.12.22 | Prokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 1 | 0,5
-| FURPS | high | 3 | bis 19.12.22 | Prokoll vom 05.12.22 | 3 | Marcel Axmann, Magnus Andreas Böhne, Ulrich Brinker, Michael Novak | 5 | 1
-| Use-Cases ins GitHub einpflegen | medium | 1 | bis 19.12.22 | Prokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 1 | 0
+| Use-Cases weiter ausarbeiten (Verfeinerung) | high | 5 | bis 19.12.22 | Protokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 5 | 1
+| Use-Case-Diagramme initial erstellen | medium | 2 | bis 19.12.22 | Protokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 1 | 0,5
+| FURPS | high | 3 | bis 19.12.22 | Protokoll vom 05.12.22 | 3 | Marcel Axmann, Magnus Andreas Böhne, Ulrich Brinker, Michael Novak | 5 | 1
+| Use-Cases ins GitHub einpflegen | medium | 1 | bis 19.12.22 | Protokoll vom 05.12.22 | 3 | Jonas Pfeiffer, Leon Lowa | 1 | 0
 | SpringbootCamp | medium | 2 | 12.12.22 | - | 3 | Magnus Andreas Böhne | 5 | 0
-| Kundenmeeting vorbereiten | low | 2 | bis 16.12.22 | Prokoll vom 16.12.22 | 3 | Leon Lowa, Ulrich Brinker| 1 | 0
-| Review Use-Cases | medium | 1 | bis 21.12.22 | Prokoll vom 19.12.22 | 3 | Ulrich Brinker | 1 | 0
-| Use-Cases dem Kunden zur Prüfung vorlegen | high | 1 | 16.12.22 | Prokoll vom 16.12.22 | 3 | Alle | 1 | 0
-| Review Furps | medium | 1 | bis 21.12.22 | Prokoll vom 19.12.22 | 3 | Ulrich Brinker | 1 | 0
-| Abgleich der Arbeitsstände | high | 1 | 19.12.22 | Prokoll vom 19.12.22 | 3 | Alle | 1 | 0
+| Kundenmeeting vorbereiten | low | 2 | bis 16.12.22 | Protokoll vom 16.12.22 | 3 | Leon Lowa, Ulrich Brinker| 1 | 0
+| Review Use-Cases | medium | 1 | bis 21.12.22 | Protokoll vom 19.12.22 | 3 | Ulrich Brinker | 1 | 0
+| Use-Cases dem Kunden zur Prüfung vorlegen | high | 1 | 16.12.22 | Protokoll vom 16.12.22 | 3 | Alle | 1 | 0
+| Review Furps | medium | 1 | bis 21.12.22 | Protokoll vom 19.12.22 | 3 | Ulrich Brinker | 1 | 0
+| Abgleich der Arbeitsstände | high | 1 | 19.12.22 | Protokoll vom 19.12.22 | 3 | Alle | 1 | 0
 
 |===
 

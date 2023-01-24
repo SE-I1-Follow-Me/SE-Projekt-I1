@@ -9,7 +9,7 @@ Der Nutzer möchte, dass sein angelegter Roboter ihm folgt.
 
 
 ==== Testablauf
-_Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
+_Die Follow-me Android-App ist gestartet und der Nutzer hat sich eingeloggt._
 
 . Der Nutzer startet die Follow-me Funktion ohne Vorbedingungen zu verletzen.
 . Der vom Nutzer ausgewählte Roboter ist nicht verfügbar.
@@ -42,6 +42,6 @@ _Die Follow-me Android-App ist gestart und der Nutzer hat sich eingeloggt._
 
 . Kein Roboter gefunden oder keinen Roboter angelegt.
 * Es wird eine leere Liste angezeigt.
-* Das Starten der Follow-me Funktion wird unterbrochen, es kann fortgesetzt werden sobald ein Roboter angelegt wurde.
+* Das Starten der Follow-me Funktion wird unterbrochen, es kann fortgesetzt werden, sobald ein Roboter angelegt wurde.
 
 

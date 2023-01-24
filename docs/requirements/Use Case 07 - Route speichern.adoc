@@ -53,9 +53,9 @@ Falls in Schritt 4 die Daten nicht gespeichert werden können, da der Server kei
 
     . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
     . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der Speicher des Servers vollständig belegt wurde.
-    . WHILE Nicht genügend Speicherplatz zur Verfügung um Route zu speichern
+    . WHILE Nicht genügend Speicherplatz zur Verfügung, um Route zu speichern
     .. Die Anwendung zeigt dem Nutzer, wieviel Speicherplatz noch benötigt wird, um die Route erfolgreich speichern zu können.
-    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte um Speicher des Servers freizugeben.
+    .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte, um Speicher des Servers freizugeben.
     .. IF Nutzer wählt aus, eine bereits gespeicherte Route zu löschen.
     ... Die Anwendung zeigt dem Nutzer eine Liste aller gespeicherten Routen sowie den jeweiligen Speicherbedarf einer Route.
     ... Der Nutzer wählt die zu löschende Route aus.
@@ -73,7 +73,7 @@ Falls in Schritt 4 die Daten nicht gespeichert werden können, da der reserviert
     . Der Server sendet der Anwendung, dass die Daten nicht gespeichert werden konnten.
     . Die Anwendung zeigt dem Nutzer, dass die Daten nicht gespeichert werden konnten, da der reservierte Speicher des Nutzers vollständig belegt wurde.
 
-    . WHILE Nicht genügend Speicherplatz zur Verfügung um Route zu speichern
+    . WHILE Nicht genügend Speicherplatz zur Verfügung, um Route zu speichern
     .. Die Anwendung zeigt dem Nutzer, wieviel Speicherplatz noch benötigt wird, um die Route erfolgreich speichern zu können.
     .. Die Anwendung fragt den Nutzer, ob er bereits gespeicherte Routen löschen möchte um Speicher des Servers freizugeben.
     .. IF Nutzer wählt aus, eine bereits gespeicherte Route zu löschen.
@@ -98,11 +98,11 @@ Falls in Schritt 3 die Daten nicht erfolgreich übermittelt werden konnten.
         .. ELSE
         ... Das Use Case endet erfolglos, die Route wird nicht abgespeichert.
 
-==== Routenname exisitiert bereits.
+==== Routenname existiert bereits.
 
 Falls in Schritt 4 ermittelt wird, dass eine Route mit der eingegebenen Bezeichnung bereits existiert.
 
-    . WHILE Name exisitert bereits
+    . WHILE Name existiert bereits
     .. Die Anwendung zeigt dem Nutzer, dass dieser Name bereits verwendet wird.
     .. Die Anwendung fragt nach einem neuen Routennamen.
     .. Der Nutzer gibt einen neuen Namen ein.
@@ -114,5 +114,5 @@ Falls in Schritt 4 ermittelt wird, dass eine Route mit der eingegebenen Bezeichn
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 Die Route und der zugehörige Nutzer sind gespeichert.
-Der Nutzer hat das erfolgreiche abschließen des Speichervorgangs bestätigt bekommen.
+Der Nutzer hat das erfolgreiche Abschließen des Speichervorgangs bestätigt bekommen.
 Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert. 

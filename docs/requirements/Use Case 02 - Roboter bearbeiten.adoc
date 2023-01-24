@@ -5,7 +5,7 @@
 == Use-Case: Roboter bearbeiten
 
 === Kurzbeschreibung
-Dieser Use Case beschreibt das Bearbeiten eines Roboters um zum Beispiel den Namen anzupassen.
+Dieser Use Case beschreibt das Bearbeiten eines Roboters, um zum Beispiel den Namen anzupassen.
 
 === Kurzbeschreibung der Akteure
 
@@ -32,7 +32,7 @@ Es befinden sich bereits Roboter in der Liste der gespeicherten Roboter.
 .. Der Nutzer drückt auf die Daten, die zu ändern sind. 
 .. Der Nutzer ändert die Daten.
 . Der Nutzer wählt die Schaltfläche "Änderungen Speichern".
-. Das System zeigt dem Nutzer alle Daten die geändert werden.
+. Das System zeigt dem Nutzer alle Daten, die geändert werden.
 . Der Nutzer bestätigt erneut, dass er die Daten ändern möchte.
 . Das System ändert die Daten des ausgewählten Roboters.
 . Das System zeigt dem Nutzer die geänderten Daten an.

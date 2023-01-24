@@ -149,13 +149,13 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-Die serverseitigen Komponenten der Anwendung werden auf einem Server der HTW-Dresden betrieben. Die Anwendung in Form einer Android-App wird nach Fertigstellung in dem offiziellen Google-Play-Store zum Download bereit stehen. 
+Die serverseitigen Komponenten der Anwendung werden auf einem Server der HTW-Dresden betrieben. Die Anwendung in Form einer Android-App wird nach Fertigstellung in dem offiziellen Google-Play-Store zum Download bereitstehen. 
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
 
 
 - Die Tools und die genaue Projektmanagementmethode hätten von Anfang an vollständig bekannt sein sollen, da spätere Methodenänderungen sich als schwer etablierbar herausstellten. Zum Beispiel hätte GitHub-Issues vollständig beherrscht werden sollen und ein adäquates Kanbantool genutzt werden müssen (vgl. Taiga). Das fehlende Kanbanboard wurde zwar durch einen Workaround bestehend aus GitHub-Issues mit entsprechenden Labels beseitigt, die Umsetzung war jedoch deutlich umständlicher als es ein konventionelles Kanban wäre.
-- Das Essence Manager Tool wurde nicht von Anfang an verwendet. Dies hat das Problem mit sich gebracht, dass zwar einzelne Aufgaben vergeben werden konnten, auf Managementebene jedoch der allgemeine Überblick gefehlt hat. Da wir uns hier jedoch an den Vorlesungsfolien zum OpenUP orientierten, konnten wir dieses Problem mit Mehraufwand umgehen. 
-- Die Use-Cases wurden nicht agil genug entwickelt. So hat die Erstellung der Use-Cases bedeutend länger gedauert als es müsste, da hier nicht agil auf den Arbeitsaufwand eingegangen wurde. Mit einer Anpassung von Human Ressources hätte diesem Problem entgegengewirkt werden können.
-- Der Terminfindungsprozess stellte gelegentlich ein Problem dar, da bei einer Gruppe aus sieben Studierenden häufig zu Überschneidungen individueller Zeitplanungen kommt. Hier kann ein Terminfindungstool Abhilfe schaffen.
+- Das Essence Navigator Tool wurde nicht von Anfang an verwendet. Dies hat das Problem mit sich gebracht, dass zwar einzelne Aufgaben vergeben werden konnten, auf Managementebene jedoch der allgemeine Überblick gefehlt hat. Da wir uns hier jedoch an den Vorlesungsfolien zum OpenUP orientierten, konnten wir dieses Problem mit Mehraufwand umgehen. 
+- Die Use-Cases wurden nicht agil genug entwickelt. So hat die Erstellung der Use-Cases bedeutend länger gedauert als es müsste, da hier nicht agil auf den Arbeitsaufwand eingegangen wurde. Mit einer Anpassung der Human Ressources hätte diesem Problem entgegengewirkt werden können.
+- Der Terminfindungsprozess stellte gelegentlich ein Problem dar, da es bei einer Gruppe aus sieben Studierenden häufig zu Überschneidungen individueller Zeitplanungen kommt. Hier kann ein Terminfindungstool Abhilfe schaffen.

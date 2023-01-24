@@ -13,7 +13,7 @@ Dieser Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter n
 Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Roboter
- Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -21,8 +21,8 @@ Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case a
 ==== Internetverbindung
 Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
 
-==== GPS Verbindung
-Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS Verbindung.
+==== GPS-Verbindung
+Der Nutzer und der ausgewählte Roboter benötigen eine stabile GPS-Verbindung.
 
 ==== Roboter existent
 Es wurden bereits Roboter gespeichert.
@@ -34,9 +34,9 @@ Es existiert ein Roboter, der die Follow me Funktion ausführt.
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Das Use Case beginnt, wenn der Nutzer die Schaltfläche "Follow Me" betätigt.
-. Das System zeigt dem Nutzer eine Liste aller Roboter die den Follow me Befehl ausführen.
+. Das System zeigt dem Nutzer eine Liste aller Roboter, die den Follow me Befehl ausführen.
 . Der Nutzer wählt einen Roboter aus der Liste der Roboter.
-. Das System fragt erneut ob die Follow Me Funktion wirklich beendet werden soll.
+. Das System fragt erneut, ob die Follow Me Funktion wirklich beendet werden soll.
 . Der Nutzer bestätigt erneut, dass die Follow Me Funktion beendet werden soll.
 . Das System teilt dem Roboter mit dem Nutzer nicht länger zu folgen.
 . Der Roboter bestätigt, dass er dem Nutzer nicht länger folgt.

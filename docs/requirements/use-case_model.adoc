@@ -76,34 +76,25 @@ include::Use Case 03 - Roboter löschen.adoc[]
 include::Use Case 04 - Follow-me Funktion starten.adoc[]
 
 <<<
-include::Use Case 05 - Follow-me Funktion beenden.adoc[]
+include::Use Case 05 - Follow-me Funktion ausführen.adoc[]
 
 <<<
-include::Use Case 06 - Route speichern.adoc[]
+include::Use Case 06 - Follow-me Funktion beenden.adoc[]
 
 <<<
-include::Use Case 07 - Route bearbeiten.adoc[]
+include::Use Case 07 - Route speichern.adoc[]
 
 <<<
-include::Use Case 08 - Route löschen.adoc[]
+include::Use Case 08 - Route bearbeiten.adoc[]
 
 <<<
-include::Use Case 09 - Route ablaufen.adoc[]
+include::Use Case 09 - Route löschen.adoc[]
 
 <<<
-include::Use Case 10 - Roboter warten.adoc[]
+include::Use Case 10 - Route ablaufen.adoc[]
 
-//<<<
-//include::use_case_06.inc.adoc[]
+<<<
+include::Use Case 11 - Roboter warten.adoc[]
 
-//<<<
-//include::use_case_07.inc.adoc[]
-
-//<<<
-//include::use_case_08.inc.adoc[]
-
-//<<<
-//include::use_case_09.inc.adoc[]
-
-//<<<
-//include::use_case_10.inc.adoc[]
+<<<
+include::User Story.adoc[]
