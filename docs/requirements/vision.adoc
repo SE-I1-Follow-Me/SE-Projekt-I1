@@ -150,7 +150,7 @@ Beispiel Produkt:
 |Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
 |Roboter Fahrkommandos |niedrig |Befehle, die das Ablaufen einer Route betreffen (beginnen, pausieren, beenden) | SS 2023
 |Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
-|Roboter in Wartungsmodus setzen |sehr niedrig | Roboter wird in den Wartungsmodus versetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung | SS 2023
+|Roboter in Wartungsmodus setzen |sehr niedrig | Roboter wird in den Wartungsmodus versetzt; er steht damit bis zur Deaktivierung des Modus nicht zur Verfügung | noch offen
 |===
 
 

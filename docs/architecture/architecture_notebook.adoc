@@ -63,7 +63,7 @@ Functional: ::
 
 Effizienz (Perfomance): ::
 
-* NFAP-2: Gewählte Aktionen der App sollen innerhalb von 1000 Millisekunden an den Server gesendet, verarbeitet und verifiziert werden.
+* NFAP-2: Gewählte Aktionen der App sollen innerhalb von 1 Sekunde an den Server gesendet, verarbeitet und verifiziert werden.
 
 * NFAP-3: Die Speicherung der Daten auf dem Server soll nicht länger als 5 Sekunden dauern
 
@@ -93,11 +93,11 @@ und haben eine höhere Datenintegrität als nicht-relationale Datenbanken.
 
 . Da wir aktuell keinen Zugriff auf Roboter haben und ebenfalls nicht bekannt ist, wie diese anzusteuern sind, entwickeln wir eine einfache zusätzliche Simulationssoftware, die es uns ermöglicht, die gewünschten verfügbaren Funktionen zu überprüfen und zu testen.
 
-. In der Prototypentwicklung haben wir uns entschieden die Oberfläche der App zuerst zu entwickeln, um das grundsätzliche Design mit dem Auftraggeber abzuklären und zu verbessern, damit danach die Entwicklung der Funktionen begonnen werden kann. Das Hinzufügen eines Roboters in eine Liste wurde im ersten Schritt implementiert, da dieser Use Case einer hohen Priorität zugeordnet ist und zugleich als Test der Systemkomponenten dient. 
+. In der Prototypentwicklung haben wir uns entschieden, die Oberfläche der App zuerst zu entwickeln, um das grundsätzliche Design mit dem Auftraggeber abzuklären und zu verbessern, damit danach die Entwicklung der Funktionen begonnen werden kann. Das Hinzufügen eines Roboters in eine Liste wurde im ersten Schritt implementiert, da dieser Use Case einer hohen Priorität zugeordnet ist und zugleich als Test der Systemkomponenten dient. 
 
 . Entscheidungen hinsichtlich der Hauptfunktionen:
-.. Das Hauptaugenmerk liegt bei unserem Projekt auf der Follow-me Funktion der Roboter. Folglich wurde der Ausarbeitung dieser Funktion eine sehr hohe Priorität zugeordnet (siehe Vision). Ohne der Follow-me Funktion ist unsere App nicht dem Zweck entsprechend, weshalb diese besonders ausgiebig ausgearbeitet und getestet werden soll.
-.. Den Routenoptionen wurde eine hohe Priorität zugeordnet, denn diese sind eng verknüpft mit der Follow-me Funktion. Das Aufzeichnen, Senden und Laden einer Route sind essenziell wichtig, damit Roboter die gewünschten Aufgaben übernehmen können.
+.. Das Hauptaugenmerk liegt bei unserem Projekt auf der Follow-me Funktion der Roboter. Folglich wurde der Ausarbeitung dieser Funktion eine sehr hohe Priorität zugeordnet (siehe Vision). Ohne die Follow-me Funktion ist unsere App nicht dem Zweck entsprechend, weshalb diese besonders ausgiebig ausgearbeitet und getestet werden soll.
+.. Den Routenoptionen wurde eine hohe Priorität zugeordnet, denn diese sind eng verknüpft mit der Follow-me Funktion. Das Aufzeichnen, Senden und Laden einer Route sind essenziell, damit Roboter die gewünschten Aufgaben übernehmen können.
 .. Dafür müssen die Roboter in der App zugeordnet werden, weshalb diese Funktion ebenfalls eine hohe Priorität in der Entwicklung besitzt.
 .. Weitere Funktionen wie das Bearbeiten einer Route bzw. eines Roboters oder dem Roboter Kommandos zu schicken, sind vorerst für die Hauptfunktion des Systems nicht vonnöten. Folglich werden diese erst zu späterem Zeitpunkt betrachtet und implementiert.
 
@@ -161,7 +161,7 @@ image::architecture L3.png[]
 
 Unsere App beginnt mit der Sprachauswahl. Es werden verschiedene Sprachen in Dokumenten gespeichert, sodass die Sprache in der App mit der Standardsprache des Geräts übereinstimmt. Es muss dazu auf den lokalen Speicher des Geräts zugegriffen werden.
 Nach der Sprachauswahl folgt das Login. Dieses dient dazu, dass der Nutzer Zugriff auf seine bereits hinzugefügten Routen und Roboter bekommt oder sich neu zuweisen kann. Mit dem Login verknüpft ist auch das Tokensystem, mit dem die Roboter identifiziert werden können.
-Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Roboters im Main Controller. Dieser bezieht sich auf die Ansteuerung des Roboters. Damit verknüpft ist die Follow Me Funktion, sodass der Roboter dem Benutzer folgen kann, eine Route automatisch absolviert, der Roboter auf Anweisung stoppt und vieles mehr.
+Nach diesen Schritten besteht Zugriff auf die eigentlichen Funktionen des Roboters im Main Controller. Dieser bezieht sich auf die Ansteuerung des Roboters. Damit verknüpft ist die Follow Me Funktion, sodass der Roboter dem Benutzer folgen kann, eine Route automatisch absolviert, der Roboter auf Anweisung stoppt und andere.
 Währenddessen kann man über den Robot Status Overview sehen, in welchem Zustand sich ein Roboter befindet. So sieht man zum Beispiel ob dieser gerade eine Aktion ausführt, wo sich der Roboter befindet oder ob er frei zur Verfügung steht.
 Beinahe alle Komponenten stehen dabei in Verbindung mit unserem Server. Das heißt, dass wir einen Datenbank Connector benötigen, um die generierten Daten von Roboter und Benutzer aus der App an unseren Server zu senden oder angeforderte Daten zu empfangen. Auch Maps könnten hier noch eingebaut werden, um Aktionen zu visualisieren.
 Über Spring Boot inklusive Spring Security erfolgt dann eine sichere Kommunikation zwischen App und Server. Diese Komponente dient als Datenbankschnittstelle.
