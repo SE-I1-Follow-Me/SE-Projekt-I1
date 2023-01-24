@@ -26,6 +26,11 @@ gefunden werden  |
 | Framework | Sichere verbindungsschnittstelle zwischen Applikation, Server und Simulation System. Das genutzte Framework ist Springboot |
 | Simulationssystem | Eine Windows Applikation die den Roboter für testzwecke simuliert |
 | Token | Eine Folge von Zeichen zur Identifizierung und Authentifizierung | Sicherheitsschlüssel, Verifizierungsschlüssel
+| Signale | Signale sind die Befehle und informationen die zwischen der App, dem Server und dem Roboter ausgetauscht werden |
+| Server | Ein Server ist ein Programm, das über ein Netzwerk spezifische Funktionen bereitstellt. Hier dient es der speicherung und bereitstellung von Daten |
+| Kanban | Kanban ist eine Methode des Agilen Projektmanagments, wobei Aufgaben in kleine Schritte geteilt und nacheinander abgearbeitet werden | Kanbanboard, Kanbantool
+| GitHub Issues | GitHub Issues sind eine Funktion auf GitHub um offene Aufgaben und Probleme aufzulisten und Personen zuzuweisen | Issues
+| OpenUP | Der Open Unified Process ist ein Open-Source Softwareentwicklungsprozess der auf Iterative und Schrittweise Entwicklung setzt
 |===
 
 
@@ -33,7 +38,7 @@ gefunden werden  |
 [%header]
 |===
 | Abkürzung | Bedeutung | Erläuterung
-//| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 | GPS | Global Positioning System | Ein satellitengestütztes Funknavigationssystem
 | MySQL | "My" Structured Query Language | Ein relationales Datenbankverwaltungssystem
 | DB | Datenbank | Ein System zur elektronischen Datenverwaltung
