@@ -13,7 +13,7 @@ Dieser Use Case beschreibt das Beenden der Follow me Funktion um einen Roboter n
 Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
 
 ==== Roboter
- Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...

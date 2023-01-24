@@ -1,4 +1,4 @@
-=== Test Case 03
+=== Test Case 04
 
 ==== Kurzbeschreibung
 Der Nutzer hat einen Roboter der ihm weiterhin folgen soll.

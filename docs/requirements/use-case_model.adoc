@@ -95,3 +95,6 @@ include::Use Case 10 - Route ablaufen.adoc[]
 
 <<<
 include::Use Case 11 - Roboter warten.adoc[]
+
+<<<
+include::User Story.adoc[]

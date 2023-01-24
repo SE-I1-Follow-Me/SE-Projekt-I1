@@ -32,6 +32,6 @@ Ja, jedoch nicht in einem gebündelten Prozess sondern "manuell", Roboter werden
 Nein, die Aufgabe wird jedes mal neu durch den Nutzer zugewiesen, wenn nötig.
 
 === Requirements
-Functionality: Authentifizierung: Die User Story benötigt einen           angemeldeten Nutzer mit verifiziertem Roboter und Route.
+Functionality: Authentifizierung: Die User Story benötigt einen angemeldeten Nutzer mit verifiziertem Roboter und Route.
 Auditierung: Die User Story enthält Aktionen die protokolliert werden sollten.
 Usability: Die User Story wird von einem Nutzer gestellt, der wahrscheinlich kaum Erfahrung hat, sie benötigt Einfachheit und Interaktivität.  
