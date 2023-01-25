@@ -46,11 +46,8 @@ include::../_includes/default-attributes.inc.adoc[]
 == Use Case Diagramm
 // ...
 
-.Use Case Model PlantUML
-[plantuml, "{diagramsdir}/syntax-example2", svg]
-....
-include::Follow-me Use Case model.puml[]
-....
+<<<
+image::Use_Case_model.png[]
 
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
