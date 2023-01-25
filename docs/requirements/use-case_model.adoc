@@ -9,7 +9,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Allgemeine Informationen
 // ...
 
-s
+
 == Identifizierte Use Cases
 * *UC01*: Roboter anlegen
 * *UC02*: Roboter bearbeiten
