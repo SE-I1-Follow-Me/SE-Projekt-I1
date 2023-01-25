@@ -30,7 +30,9 @@ gefunden werden  |
 | Server | Ein Server ist ein Programm, das über ein Netzwerk spezifische Funktionen bereitstellt. Hier dient es der speicherung und bereitstellung von Daten |
 | Kanban | Kanban ist eine Methode des Agilen Projektmanagments, wobei Aufgaben in kleine Schritte geteilt und nacheinander abgearbeitet werden | Kanbanboard, Kanbantool
 | GitHub Issues | GitHub Issues sind eine Funktion auf GitHub um offene Aufgaben und Probleme aufzulisten und Personen zuzuweisen | Issues
-| OpenUP | Der Open Unified Process ist ein Open-Source Softwareentwicklungsprozess der auf Iterative und Schrittweise Entwicklung setzt
+| OpenUP | Der Open Unified Process ist ein Open-Source Softwareentwicklungsprozess der auf Iterative und Schrittweise Entwicklung setzt |
+| Aufgabenreview | Bei dem Aufgabenreview handelt es sich um das Überprüfen der erledigten Aufgaben durch andere Teammitglieder | Review
+|Android | Ein von Google entwickeltes Betriebssystem für Smartphones |
 |===
 
 
