@@ -4,11 +4,12 @@ Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vor
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
+:imagesdir: {docs-requirements}/images
 
 == Allgemeine Informationen
 // ...
 
-
+s
 == Identifizierte Use Cases
 * *UC01*: Roboter anlegen
 * *UC02*: Roboter bearbeiten
