@@ -46,8 +46,6 @@ s
 
 == Use Case Diagramm
 // ...
-
-<<<
 image::Use_Case_model.png[]
 
 
