@@ -6,10 +6,10 @@ Als ein Förster, möchte ich Roboter fahren lassen, um Holz von A nach B zu tra
 
 
 === Kriterien
-Angesichts dessen, dass Holz von einem Ort zum anderen transportiert werden soll, müssen transportierender Roboter und zu fahrende Route gegeben sein.
-Angesichts dessen, dass ein Roboter diese Aufgabe erledigt, sollte der Status des Roboters geändert werden 
+* Angesichts dessen, dass Holz von einem Ort zum anderen transportiert werden soll, müssen transportierender Roboter und zu fahrende Route gegeben sein.
+* Unter Betrachtung dessen, dass ein Roboter diese Aufgabe erledigt, sollte der Status des Roboters geändert werden 
 und dementsprechend sein Aufgabenspektrum angepasst werden (z.B. neue Befehle warten, abbrechen)
-Angesichts dessen, dass die Aufgabe automatisiert verrichtet werden soll, sollte der Nutzer bei besonderen Ereignissen (Fehler, Abschluss) benachrichtigt werden.
+* Dadurch, dass die Aufgabe automatisiert verrichtet werden soll, sollte der Nutzer bei besonderen Ereignissen (Fehler, Abschluss) benachrichtigt werden.
 
 
 === Konversation
