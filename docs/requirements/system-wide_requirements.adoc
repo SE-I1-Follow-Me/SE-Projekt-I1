@@ -123,10 +123,10 @@ Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App
 NFAI-1: ::
 * Text sollte auf dem Smartphone aus 50cm Entfernung lesbar sein. Zur Überprüfung laden sich Teammitglieder die App herunter und testen die Lesbarkeit.
 
-NAFI-2: ::
+NFAI-2: ::
 * Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
 
-NAFI-3: ::
+NFAI-3: ::
 * Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können.
 
 === Organisatorische Randbedingungen
