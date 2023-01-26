@@ -1,4 +1,4 @@
-= Architecture Notebook: SE I - Belegabgabe
+= Architecture Notebook: {project-name}
 Marcel Axmann <s83731@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
