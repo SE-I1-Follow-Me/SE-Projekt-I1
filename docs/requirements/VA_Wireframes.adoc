@@ -1,8 +1,11 @@
 = Wireframes
 Leon Lowa <s83824@htw-dresden.de>;
 {localdatetime}
+//
+
 include::../_includes/default-attributes.inc.adoc[]
 
+:imagesdir: {docs-requirements}/images
 
 ****
 
@@ -11,32 +14,43 @@ Der hauptsächliche Nutzen bestand bis zum Ende des 1. Semesters darin, einen An
 
 ****
 
-
-Login-Bildschirm der App
+.Login-Bildschirm der App
 image::Wireframe_Login.png[]
 
 
-Startseite für diverse Funktionen
-(z.B. Starten des Follow-me Befehls)
+.Startseite für diverse Funktionen
 image::Wireframe_Startseite.png[]
 
 
-Auswahl von Robotern im Startbildschirm
+.Auswahl von Robotern im Startbildschirm
 image::Wireframe_Startseite_Auswahl.png[]
 
 
-Routen-Aufzeichnung und deren Darstellung in der App
+.Routen-Aufzeichnung und deren Darstellung in der App
 image::Wireframe_Route.png[]
 
 
-Hinzufügen von neuen Robotern mit den Token-System
+.Hinzufügen von neuen Robotern mit den Token-System
 image::Wireframe_Roboter_hinzufügen.png[]
 
 
-Benachrichtungen in der App
+.Benachrichtungen in der App
 image::Wireframe_Benachrichtigungen.png[]
 
 
-Einstellungen
+.Einstellungen
 image::Wireframe_Einstellungen.png[]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
