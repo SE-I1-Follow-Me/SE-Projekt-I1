@@ -4,39 +4,39 @@ Leon Lowa <s83824@htw-dresden.de>;
 include::../_includes/default-attributes.inc.adoc[]
 
 
-
 ****
 
 Im Nachfolgenden sind die Wireframes zu sehen, die den konzeptionellen Entwurf darstellen. Diese werden während des gesamten Projekts verfeinert und angepasst.
 Der hauptsächliche Nutzen bestand bis zum Ende des 1. Semesters darin, einen Anhaltspunkt für die Gestaltung der Benutzeroberfläche in der App zu haben.
 
 ****
-<<<
-==== Login-Bildschirm der App
+
+
+Login-Bildschirm der App
 image::Wireframe_Login.png[]
 
-<<<
-==== Startseite für diverse Funktionen
+
+Startseite für diverse Funktionen
 (z.B. Starten des Follow-me Befehls)
 image::Wireframe_Startseite.png[]
 
-<<<
-==== Auswahl von Robotern im Startbildschirm
+
+Auswahl von Robotern im Startbildschirm
 image::Wireframe_Startseite_Auswahl.png[]
 
-<<<
-==== Routen-Aufzeichnung und deren Darstellung in der App
+
+Routen-Aufzeichnung und deren Darstellung in der App
 image::Wireframe_Route.png[]
 
-<<<
-==== Hinzufügen von neuen Robotern mit den Token-System
+
+Hinzufügen von neuen Robotern mit den Token-System
 image::Wireframe_Roboter_hinzufügen.png[]
 
-<<<
-==== Benachrichtungen in der App
+
+Benachrichtungen in der App
 image::Wireframe_Benachrichtigungen.png[]
 
-<<<
-==== Einstellungen
+
+Einstellungen
 image::Wireframe_Einstellungen.png[]
 
