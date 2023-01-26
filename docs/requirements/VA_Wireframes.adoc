@@ -4,6 +4,7 @@ Leon Lowa <s83824@htw-dresden.de>;
 include::../_includes/default-attributes.inc.adoc[]
 
 
+
 ****
 
 Im Nachfolgenden sind die Wireframes zu sehen, die den konzeptionellen Entwurf darstellen. Diese werden während des gesamten Projekts verfeinert und angepasst.
