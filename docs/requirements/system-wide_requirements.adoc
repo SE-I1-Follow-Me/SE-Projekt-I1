@@ -22,7 +22,7 @@ SWFA-1: ::
 Wenn ein aufgenommener GPS-Track hochgeladen wird, ist dieser dauerhaft verfügbar.
 SWFA-2: ::
 * Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen.
-Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis die Verbindung herzustellen.
+Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis, die Verbindung herzustellen.
 SWFA-3: ::
 * Bei fehlendem GPS-Signal soll der Roboter stehen bleiben.
 Sollte während einer Aktion keine GPS-Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen.
@@ -40,7 +40,7 @@ NFAU-1: ::
 * Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
 
 NFAU-2: ::
-* Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
+* Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Zur Überprüfung der Verständlichkeit wird die Anwendung  einer fachfremden Person vorgeführt.
 
 NFAU-3: ::
 * Zur Minimierung der Interaktionsauswahl, der Konfusion und zur Steigerung der Übersichtlichkeit werden Auswahlmöglichkeiten durch Ausgrauen reduziert, wenn sie zum Zeitpunkt der Auswahl technisch oder anderweitig nicht verfügbar sind. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
@@ -49,7 +49,7 @@ NFAU-4: ::
 * Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein. Dafür werden diese auf der Startseite auswählbar sein. Zur Überprüfung soll die Kernfunktionalität mit weniger als fünf Klicks erfüllbar sein.
 
 NFAU-5: ::
-* Alle Fehlermeldungen werden dem Nutzer offensichtlich, schnell und verständlich angezeigt. Dafür werden ihm Pop-Ups zur Bestätigung angezeigt. Zur Überprüfung wird ein Fehler simuliert und einem Fachfremden Nutzer vorgeführt.
+* Alle Fehlermeldungen werden dem Nutzer offensichtlich, schnell und verständlich angezeigt. Dafür werden ihm Pop-Ups zur Bestätigung angezeigt. Zur Überprüfung wird ein Fehler simuliert und einem fachfremden Nutzer vorgeführt.
 
 
 
@@ -63,7 +63,7 @@ NFAR-1: ::
 Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind.
 
 NFAR-2: ::
-* Nur Roboter der organisationszugehörigen Flotte sollen genutzt werden können.
+* Nur Roboter der Organisation zugehörigen Flotte sollen genutzt werden können.
 Zur Überprüfung soll ein Key angelegt werden, um den Roboter nutzen zu können.
 
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
@@ -98,7 +98,7 @@ Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle A
 
 NFAS-1: ::
 * Die App soll entwicklungsrelevante Systemfehler loggen können und an die Entwickler weiterleiten.
-Zur Überprüfung wird ein solcher Fehler simuliert und kontrolliert, ob die Entwickler über diesen Informiert wurden.
+Zur Überprüfung wird ein solcher Fehler simuliert und kontrolliert, ob die Entwickler über diesen informiert wurden.
 
 NFAS-2: ::
 * Die App soll zu jederzeit einfach erweiterbar sein, damit fehlende Funktionen hinzugefügt und auftretende Systemfehler beseitigt werden können.
@@ -121,7 +121,7 @@ Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App
 
 === Interface Requirements
 NFAI-1: ::
-* Text sollte auf dem Smartphone aus 50cm Entfernung lesbar sein. Zur Überprüfung laden sich Teammitglieder die App herunter und testen die Lesbarkeit.
+* Text sollte auf dem Smartphone aus 50 cm Entfernung lesbar sein. Zur Überprüfung laden sich Teammitglieder die App herunter und testen die Lesbarkeit.
 
 NFAI-2: ::
 * Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
@@ -139,4 +139,4 @@ NFAI-3: ::
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
 
 * Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
-* Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken um den Datenschutz der Nutzer zu gewährleisten.
+* Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
