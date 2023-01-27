@@ -14,25 +14,26 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Begriff | Definition und Erläuterung | Synonyme
 //| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
 
-|Roboterroute |Bei einer "Roboterroute" handelt es sich um aufgenommene Routen, welche an einen oder mehrere Roboter gesendet werden können |
-|Fahrroboter/ Roboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier]
-gefunden werden  |
-|Warten | Der Begriff "Warten" bezieht sich auf einen Zustand, den jeder Roboter durch Eingabe des Nutzers annehmen und verlassen kann. Während dieses Zustands ist der Roboter nicht für Funktionen verfügbar  |
-| Fehlermeldungen | Bei Fehlermeldungen handelt es sich um eine Mitteilung an den Nutzer, wenn der geplante Ablauf nicht wie vorgesehen ausgeführt werden konnte |
-| Pop-Ups | Pop-ups sind ein Element der Benutzeroberfläche um im Vordergrund zusätzliche Inhalte anzuzeigen oder Interaktionen abzufragen |
-| Systemfehler | Ein Systemfehler ist ein Problem, das zu einer ungewollten Situation führt, die den geplanten Ablauf des Systems verhindert |
-| Sourcecode | Sourcecode ist lesbarer Text einer Programmiersprache | Quellcode, Quelltext, Programmcode
-| GPS-Daten | GPS-Daten sind eine Gesamtheit von Wegpunkten aus der eine Route ermittelt werden kann | GPS-Tracks
-| Framework | Sichere verbindungsschnittstelle zwischen Applikation, Server und Simulation System. Das genutzte Framework ist Springboot |
-| Simulationssystem | Eine Windows Applikation die den Roboter für testzwecke simuliert |
-| Token | Eine Folge von Zeichen zur Identifizierung und Authentifizierung | Sicherheitsschlüssel, Verifizierungsschlüssel
-| Signale | Signale sind die Befehle und informationen die zwischen der App, dem Server und dem Roboter ausgetauscht werden |
-| Server | Ein Server ist ein Programm, das über ein Netzwerk spezifische Funktionen bereitstellt. Hier dient es der speicherung und bereitstellung von Daten |
-| Kanban | Kanban ist eine Methode des Agilen Projektmanagments, wobei Aufgaben in kleine Schritte geteilt und nacheinander abgearbeitet werden | Kanbanboard, Kanbantool
-| GitHub Issues | GitHub Issues sind eine Funktion auf GitHub um offene Aufgaben und Probleme aufzulisten und Personen zuzuweisen | Issues
-| OpenUP | Der Open Unified Process ist ein Open-Source Softwareentwicklungsprozess der auf Iterative und Schrittweise Entwicklung setzt |
+| Android | Ein von Google entwickeltes Betriebssystem für Smartphones |
 | Aufgabenreview | Bei dem Aufgabenreview handelt es sich um das Überprüfen der erledigten Aufgaben durch andere Teammitglieder | Review
-|Android | Ein von Google entwickeltes Betriebssystem für Smartphones |
+| Essence Navigator | Online Tool zum Verfolgen des Projektstandes |
+| Fehlermeldungen | Bei Fehlermeldungen handelt es sich um eine Mitteilung an den Nutzer, wenn der geplante Ablauf nicht wie vorgesehen ausgeführt werden konnte |
+| Framework | Sichere Verbindungsschnittstelle zwischen Applikation, Server und Simulation System. Das genutzte Framework ist Springboot |
+| GitHub Issues | GitHub Issues sind eine Funktion auf GitHub, um offene Aufgaben und Probleme aufzulisten und Personen zuzuweisen | Issues
+| GPS-Daten | GPS-Daten sind eine Gesamtheit von Wegpunkten, aus der eine Route ermittelt werden kann | GPS-Tracks
+| Kanban | Kanban ist eine Methode des agilen Projektmanagements, wobei Aufgaben in kleine Schritte geteilt und nacheinander abgearbeitet werden | Kanbanboard, Kanbantool
+| OpenUP | Der Open Unified Process ist ein Open-Source Softwareentwicklungsprozess, der auf iterative und schrittweise Entwicklung setzt |
+| Pop-Ups | Pop-ups sind ein Element der Benutzeroberfläche um im Vordergrund zusätzliche Inhalte anzuzeigen oder Interaktionen abzufragen |
+| Server | Ein Server ist ein Programm, das über ein Netzwerk spezifische Funktionen bereitstellt. Hier dient es der Speicherung und Bereitstellung von Daten |
+| Signale | Signale sind die Befehle und Informationen, die zwischen der App, dem Server und dem Roboter ausgetauscht werden |
+| Simulationssystem | Eine Windows Applikation, die den Roboter für Testzwecke simuliert |
+| Sourcecode | Sourcecode ist lesbarer Text einer Programmiersprache | Quellcode, Quelltext, Programmcode
+| Systemfehler | Ein Systemfehler ist ein Problem, das zu einer ungewollten Situation führt, die den geplanten Ablauf des Systems verhindert |
+| Token | Eine Folge von Zeichen zur Identifizierung und Authentifizierung | Sicherheitsschlüssel, Verifizierungsschlüssel
+| Warten | Der Begriff "Warten" bezieht sich auf einen Zustand, den jeder Roboter durch Eingabe des Nutzers annehmen und verlassen kann. Während dieses Zustands ist der Roboter nicht für Funktionen verfügbar |
+|Fahrroboter/ Roboter |Bei den in anderen Dokumenten angesprochenen Fahrrobotern handelt es sich um Fahrroboter der Firma Sciota Robotics. Weitere Informationen können  https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[hier] gefunden werden  |
+|Roboterroute |Bei einer "Roboterroute" handelt es sich um aufgenommene Routen, welche an einen oder mehrere Roboter gesendet werden können |
+
 |===
 
 
@@ -40,10 +41,12 @@ gefunden werden  |
 [%header]
 |===
 | Abkürzung | Bedeutung | Erläuterung
-| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+
+| DB | Datenbank | Ein System zur elektronischen Datenverwaltung
 | GPS | Global Positioning System | Ein satellitengestütztes Funknavigationssystem
 | MySQL | "My" Structured Query Language | Ein relationales Datenbankverwaltungssystem
-| DB | Datenbank | Ein System zur elektronischen Datenverwaltung
+| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+
 |===
 
 == Verzeichnis der Datenstrukturen

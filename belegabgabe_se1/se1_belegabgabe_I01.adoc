@@ -51,13 +51,11 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 // Vision
 include::{docs-requirements}/vision.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
-
-// Wireframes
-include::{docs-requirements}/VA_Wireframes.adoc[lines=1..1;4..-1,leveloffset=+1]
-<<<
-
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
 include::{docs-requirements}/use-case_model.adoc[lines=1..1;4..-1,leveloffset=+1]
+<<<
+// Wireframes
+include::{docs-requirements}/VA_Wireframes.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // System-wide Requirements
 include::{docs-requirements}/system-wide_requirements.adoc[lines=1..1;4..-1,leveloffset=+1]
