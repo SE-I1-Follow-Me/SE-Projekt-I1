@@ -33,7 +33,7 @@ Der Auftraggeber sucht nach einer Funktion, welche eine Basis bietet, um zukünf
 [cols="1,3"]
 |===
 | Das Problem | Routen können aufgezeichnet, aber nicht verwaltet, gelöscht oder an einen Fahrroboter übergeben werden.
-| betrifft | Nutzern, welche Aufgaben an die Fahrroboter deligieren möchten.
+| betrifft | Nutzern, welche Aufgaben an die Fahrroboter delegieren möchten.
 | die Auswirkung davon ist | Automatisierte Bedienung der Fahrroboter ist nicht möglich
 | eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, Routen und dazugehörende Aufgaben an Roboter zu übertragen.
 |===
@@ -92,11 +92,11 @@ Beispiel Produkt:
 // | [Kurze Beschreibung des Stakeholders.]
 // | [Fassen Sie die wesentlichen Verantwortlichkeiten des //Stakeholder //mit Bezug auf das zu entwickelnde System kurz //zusammend.. ihr besonderen Interessen. Beispiele: Dieser Stakeholder //sorgt dafür, dass das System gewartet wird / dass die angezeigten //Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 
-| Entwickler Team der App I1
+| Entwickler-Team der App I1
 | Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925)
 | Erstellen, Verwalten, Warten von Anwendung und Server
 
-| Firma Sciota Robotics (Entwickler der Fahrroboter)
+| Firma Sciota Robotics
 | Entwickler der Fahrroboter
 | Bereitstellen der Roboter und Implementierung des autonomen Fahrens
 
@@ -140,7 +140,7 @@ Beispiel Produkt:
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-|Follow-me Funktion | sehr hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann. Zudem können den Roboter auf der aufgezeichneten Route Fahrkommandos erteilt werden (Siehe Funktionen "Route aufzeichnen" sowie "Roboter Fahrkommandos")| SS 2023
+|Follow-me Funktion | sehr hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann. Zudem können den Robotern auf der aufgezeichneten Route Fahrkommandos erteilt werden (Siehe Funktionen "Route aufzeichnen" sowie "Roboter Fahrkommandos")| SS 2023
 | Route aufzeichnen | hoch | Route während der Follow-me Funktion aufzeichnen | SS 2023
 |Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | SS 2023
 |Route laden |hoch |Zuvor aufgenommene Route anzeigen | SS 2023

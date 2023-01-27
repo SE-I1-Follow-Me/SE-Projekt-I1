@@ -23,7 +23,7 @@ Soll die Aufgabe automatisch wiederholt werden?
 
 
 === Bestätigung
-Der Roboter soll, wenn er losfahren soll, losfahren. Dabei fährt er die ihm höchstmögliche Geschwindigkeit. Wichtiger ist, dass er zurückkommt beziehungsweise einen Fehler meldet falls er das nicht kann.
+Der Roboter soll, wenn er losfahren soll, losfahren. Dabei fährt er die ihm höchstmögliche Geschwindigkeit. Wichtiger ist, dass er zurückkommt beziehungsweise einen Fehler meldet, falls er das nicht kann.
 
 
 Ja, jedoch nicht in einem gebündelten Prozess, sondern "manuell", Roboter werden also selbstständig losgeschickt, was selbstverständlich auch mehrere Roboter betreffen kann.
