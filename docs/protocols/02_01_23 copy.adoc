@@ -1,0 +1,72 @@
+= Protokoll: Cycle Meeting KW 49
+Leon Lowa <leon.lowa@htw-dresden.de>
+v1.0, 05.12.22 18.30 Uhr - 19.30 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Carl Ulrich Brinker
+* Marcel Axmann
+* Manuel Scheer
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+
+== Abwesende
+
+
+
+== Agenda
+.	Vorstellung Ausarbeitungen 
+.   Organisation
+
+=== Vorstellung Ausarbeitungen
+
+Ergebnis:: 
+
+****
+
+* Jonas C4 Modell:
+
+* 4 Zoom fehlt, soll nicht gemacht werden laut Anke
+* *Offen*: Anbindung Server, Follow Me-Funktion, eventuell Map mit Standort
+
+
+* Manuel, Vision:
+
+* f
+* *Offen*: Linux- oder Windows-Konfiguration, Login-System, Wie kann der Zugriff auf dem Server realisiert werden
+
+* Marcel: -> Architecture-Notebook
+* Grundlegend fertig gestellt und in GitHub eingepflegt 
+* *Offen*: Architektur-Mechanismen, Entscheidungen, Nebenbedingungen, C1-4 View
+
+
+* Uli: -> Wireframes
+* Fertig gestellt
+* *Offen*: Vorstellung beim Auftraggeber, in Github einpflegen
+
+
+* Michael: -> Testfälle Architektur
+* sind Testfälle UC + SWR
+* *Offen*: Use Case Testfälle, Testfälle System Requirements 
+
+* Use-Cases: -> Jonas
+* Funktioniert nicht im Sinne der App
+* *Offen*: Andere Verteilung der Verwaltungsfunktionen bzg. Route und Roboter notwendig, ins GitHub einpflegen
+
+****
+
+=== Organisation
+
+Ergebnis:: 
+****
+
+*Aufgaben umverteilt 
+
+****

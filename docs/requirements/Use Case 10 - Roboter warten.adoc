@@ -1,0 +1,87 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+
+//Use Cases erste Überlegnung: Starten des Follow-me, Verbindung mit Roboter herstellen, About-Button,... 
+== Use-Case: Roboter warten
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Dieser Use Case beschreibt das Versetzen eines Roboters in den "Warten" Zustand in welchem er nicht für Funktionen verfügbar ist, bis der "Warten" Zustand durch diesen Use Case aufgehoben wird.
+
+
+=== Kurzbeschreibung der Akteure
+
+==== Nutzer (User)
+Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
+
+==== Roboter
+Er empfängt Signale und gibt Rückmeldung über den Erhalt der Signale.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+==== Internetverbindung
+Die untereinander kommunizierenden Akteure (Nutzer, Roboter) benötigen eine stabile Internetverbindung zum System.
+
+==== Roboter existent
+Es wurden bereits Roboter gespeichert.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+
+. Der Use Case beginnt, wenn der Nutzer in der App einen Roboter aus der Liste der Roboter auswählt.
+. Das System zeigt dem Nutzer alle zu dem ausgewählten Roboter verfügbaren Daten an (Name, Token etc.)
+. Der Nutzer wählt die Schaltfläche "Roboter warten" aus.
+. Das System fragt den Nutzer, ob der Roboter wirklich gewartet werden soll.
+. Der Nutzer bestätigt, dass er den Roboter warten möchte.
+. Das System versetzt den Roboter in den "Warten Zustand"
+. Das Use Case endet erfolgreich, dem Nutzer wird erneut die Liste der Roboter angezeigt.
+
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+
+==== Der Roboter befindet sich bereits im Zustand "Warten"
+Falls der in Schritt 3 ausgewählte Roboter bereits im "Warten" Zustand ist.
+
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter bereits im "Warten" Zustand ist.
+. Das System fragt, ob der "Warten" Zustand des Roboters beendet werden soll.
+. IF "Warten" Zustand soll beendet werden
+.. Das System beendet den "Warten" Zustand des Roboters
+.. Das Use Case endet erfolgreich, dem Nutzer wird die Liste der Roboter angezeigt.
+. ELSE 
+.. Der "Warten" Zustand des Roboters wird nicht beendet.
+.. Das Use Case endet erfolglos, dem Nutzer wird die Liste der Roboter angezeigt.
+
+
+==== Der Nutzer möchte den Roboter nicht warten
+Falls der Nutzer in Schritt 5 den Roboter nicht warten möchte.
+
+. Der Nutzer bestätigt nicht, dass er den Roboter warten möchte.
+. Das System nimmt keine Änderung vor.
+. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
+
+
+==== Der ausgewählte Roboter führt eine Aktion aus
+Falls der in Schritt 3 ausgewählte Roboter eine Aktion ausführt.
+
+. Das System zeigt dem Nutzer, dass der ausgewählte Roboter im Moment eine Aktion ausführt.
+. Das System fragt, ob die Aktion abgebrochen werden soll.
+. IF Nutzer wählt aus, dass die Aktion abgebrochen werden soll.
+.. Das System bricht die Aktion des Roboters ab.
+.. Das Use Case wird bei Schritt 4 fortgesetzt.
+. ELSE 
+.. Das System zeigt dem Nutzer, dass die Aktion des Roboters nicht abgebrochen wurde.
+.. Das Use Case endet erfolglos, dem Nutzer wird erneut die Liste der Roboter angezeigt.
+
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+
+Der Zustand des Roboters ist auf "Warten" geändert.
+Der Nutzer hat das erfolgreiche Ändern des Zustands bestätigt bekommen.
+Die Logdatei hat Beginn des Use Cases sowie Ende und Beendigungsgrund gespeichert.
+

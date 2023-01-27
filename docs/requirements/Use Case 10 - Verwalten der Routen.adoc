@@ -1,0 +1,107 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+
+//Use Cases erste Überlegnung: Starten des Follow-Me, Verbindung mit Roboter herstellen, About-Button,... 
+== Use-Case: Verwalten der Route
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+
+Dieses Use Case beschreibt den Menüpunkt "Routen verwalten" und seine Funktionen.
+
+=== Kurzbeschreibung der Akteure
+
+==== Nutzer (User)
+
+    Der Nutzer ist der Hauptakteur in diesem Use Case, durch ihn wird das Use Case aufgerufen und gestartet.
+
+==== Anwendung
+
+    Die Anwendung dient dem Nutzer als grafische Oberfläche um Aktionen durchzuführen und Entscheidungen zu treffen. Außerdem übermittelt sie im Hintergrund die nötigen Daten an den Server.
+
+==== Server
+
+    Der Server empfängt die Daten durch die Anwendung und speichert diese. Er dient außerdem als Schnittstelle der Akteure.
+
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+==== Internetverbindung
+Die untereinander kommunizierenden Akteure (Anwendung, Server) benötigen eine stabile Internetverbindung.
+
+==== Verfügbare Routen
+Es befinden sich bereits Routen in der Liste der gespeicherten Routen.
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Nutzer in der App die Schaltfläche "Routen verwalten" betätigt.
+. Das System ruft die Liste aller gespeicherten Routen auf und zeigt diese dem Nutzer an.
+. Der Nutzer kann durch gedrückthalten einen Route auswählen, um diese entweder zu bearbeiten oder zu löschen.
+. Der Nutzer wählt eine Route der Liste aus.
+. Der Nutzer wählt Bearbeiten aus.
+. Das System öffnet ein Fenster mit den Informationen der Route.
+. Der Nutzer wählt nun den Namen aus.
+. Das System öffnet ein Eingabefenster, damit der Nutzer den Namen ändern kann.
+. Der Nutzer gibt einen neuen Namen ein und bestätigt diesen.
+. Das System prüft, ob der neue Name bereits vergeben ist.
+. Da der Name noch nicht vergeben ist, wird dieser gespeichert.
+. Das System überträgt die Namensänderung an den Server.
+. Das Use Case endet, wenn das System dem Nutzer erneut das Menü "Routen Verwalten" anzeigt.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Nutzer wählt "löschen" aus
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+
+. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
+. IF Nutzer bestätigt Löschung der Route.
+.. Das System entfernt die Route aus der Liste der gespeicherten Routen.
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Routen verwalten" an.
+. ELSE
+..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten" an.
+
+==== Neuer Name ist bereits vergeben
+Falls der Nutzer in Schritt 8 einen bereits vergebenen Namen eingibt, dann
+
+. Das System zeigt dem Nutzer an, dass dieser Name bereits vergeben ist.
+. Das System fragt den Nutzer ob er einen neuen Namen vergeben möchte.
+. IF Nutzer möchte neuen Namen vergeben
+.. Das Use Case wird bei Schritt 7 fortgesetzt.
+. ELSE 
+.. Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Routen verwalten".
+
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+==== Nutzer wählt "löschen" aus
+Falls der Nutzer in Schritt 4  "löschen" anstelle von "bearbeiten" auswählt, dann
+
+. Das System fragt den Nutzer, ob er sich sicher ist, diese Route zu löschen.
+. IF Nutzer bestätigt Löschung der Rpute
+.. Das System entfernt die Route aus der Liste der gespeicherten Roboter
+.. Das Use Case endet erfolgreich, das System zeigt dem Nutzer erneut das Menü "Roboter verwalten" an.
+. ELSE
+..  Das Use Case endet erfolglos, das System zeigt dem Nutzer das Menü "Roboter verwalten".
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== <Szenario 1>
+. <Szenario 1, Schritt 1>
+. …
+. <Szenario 1, Schritt n>
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== <Nachbedingung 1>
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== <Besondere Anforderung 1>
