@@ -1,0 +1,73 @@
+= Protokoll: Kick-off Meeting SE2
+Manuel Scheer <manuel.brischeernker@htw-dresden.de>
+v1.0, 31.03.2023 15.00 Uhr - 16.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Leon Lowa
+* Michael Novak
+* Magnus Andreas Böhne
+* Manuel Scheer
+
+== Abwesende
+* Jonas Pfeiffer
+
+== Agenda
+.	Coach über aktuellen Stand informieren
+.	Zusammenfassung des letzten Semesters / Feedback des Coaches
+.	Planung des Semesters
+.	Organisation
+
+
+
+=== Coach über aktuellen Stand informieren
+
+Ergebnis:: 
+****
+Wurde erledigt, aktueller Stand laut Coach gut
+****
+
+=== Zusammenfassung des letzten Semesters / Feedback des Coaches
+
+Ergebnis:: 
+****
+* Use-Cases, Wireframes und Architektur waren gut ausgearbeitet; besonders negativ ist nichts aufgefallen.
+* Allgemeine Hinweise: 
+** NFAU3 ist Lösung, keine Anforderung ("Es ist darauf zu achten, dass XY sichergestellt wird")
+** Risiko 7 wurde vom Coach anfangs falsch verstanden und sollte eventuell umfomuliert werden
+** Risiko 8 ebenfalls, da nicht sofort klar wird, dass wir für den Test eine eigene Simulation benötigen, da kein Endgerät zur Verfügung steht
+****
+
+=== Planung des Semesters
+
+Ergebnis:: 
+****
+* Im Rahmen des Beleges ist es wichtig, dass wir die von Herrn Anke in Vorlesung und Praktikum besprochenen Methoden ausprobieren und nutzen; sollte eine Methode für das Projekt nicht hilfreich sein kann dies im Beleg so hinterlegt werden
+-> Es soll im Beleg also mit dem gelernten experimentiert werden und *nicht* stumpf nach Belegbeispiel gearbeitet werden
+
+* Es müssen nicht alle Use-Cases umgesetzt werden -> "lieber einer weniger und dafür eine Testmethode mehr probieren"
+
+* Kunde soll ich regelmäßigen Abständen Testversionen erhalten -> Wie dies erfolgen soll muss mit Herrn Neugebauer besprochen werden
+
+****
+
+=== Organisation
+
+Ergebnis:: 
+****
+Meetings::
+-	Meeting mit Herrn Neugebauer planen, in dem besprochen wird, wie er die Testversionen erhalten möchte (via Mail, in einem Meeting etc.) -> auf nächste Iteration verschoben
+-	Mit dem Coach müssen dieses Semester mindestens zwei weitere Meetings erfolgen; eins nach dem ersten drittel und eins um Pfingsten -> Planung muss erfolgen
+
+Kurzfristiges Ziel::
+-	In der ersten Iteration sollen zwei einfache Features in Gruppen erledigt werden. Diese sehen wie folgt aus:
+** 1. Gruppe: Leon und Jonas
+** 2. Gruppe: Magnus, Michael und Manuel
+-  Zudem soll noch eine Mail an Herrn Anke gesendet werden, in dem er gebeten wird rechtzeitig etwas zu den Anforderungen zu sagen
+
+****
