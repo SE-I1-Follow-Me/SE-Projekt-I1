@@ -1,5 +1,6 @@
 = Projektplan: {project-name}
-Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>; Leon Lowa <leon.lowa@htw-dresden.de>
+Carl Ulrich Brinker <carlulrich.brinker@htw-dresden.de>; Leon Lowa <leon.lowa@htw-dresden.de>; Magnus Andreas Böhne <magnus.boehne@gmail.com>; Manuel Scheer <manuel.scheer@htw-dresden.de>
+
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -29,17 +30,17 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 | Studium
 | Vorkenntnisse
 
-| Carl Ulrich Brinker
-| Project Manager
+| [.line-through]#Carl Ulrich Brinker#
+| Project Manager SE-1
 | Wirtschaftsingenieurwesen
 | Projectmanagement
 
 | Leon Lowa
-| Project Manager, Developer
+| Project Manager SE-1, Developer
 | Wirtschaftsinformatik
 | Java, Python, C
 
-| Marcel Axmann
+| [.line-through]#Marcel Axmann#
 | Tester, Analyst
 | Informatik
 | Java, C/C++
@@ -50,12 +51,12 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 | Java, C, SQL
 
 | Manuel Scheer
-| Analyst
+| Analyst, Project Manager SE-2
 | Wirtschaftsinformatik
 | Projektmanagement, Java, C
 
 | Magnus Böhne
-| Architect
+| Architect, Project Manager SE-2
 | Wirtschaftsinformatik
 | C, C#, C++, Java, Kotlin, Go
 
@@ -72,12 +73,13 @@ Die internen Stakeholder werden in der Rollenübersicht vorgestellt. Hier ist ei
 
 Die Kommunikation lief sowohl über die Anwendungen WhatsApp und Discord als auch in Präsenz ab. Die Aufgabenverteilung wurde anfangs nur über Discord besprochen und später zudem über GitHub-Issues verwaltet.
 
-Im wöchentlichen Montags-Meeting wurden neue Aufgaben verteilt, Aufgaben umgeschichtet und der Arbeitsstand verglichen. Aufgaben wurden vom Projekt Manager und Stellvertretung am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Im Montags-Meeting wurden die bearbeiten Aufgaben besprochen und mögliche Probleme oder Fragestellungen im Team diskutiert. Aus diesen Meetings wird ein Protokoll angefertigt, welches anschließen in das ASCII-Format übertragen und in das GitHub-Repository hinzugefügt wird. Nach erfolgreicher Beendigung von Aufgaben, werden diese zum Review durch ein anderes Teammitglied freigegeben.
+Im wöchentlichen Meeting* wurden neue Aufgaben verteilt, Aufgaben umgeschichtet und der Arbeitsstand verglichen. Aufgaben wurden vom Projekt Manager und Stellvertretung am Tag zuvor ausgearbeitet. Die Agenda wurden zudem am Tag davor über die Anwendung WhatsApp bekannt gegeben. Im Meeting* wurden die bearbeiten Aufgaben besprochen und mögliche Probleme oder Fragestellungen im Team diskutiert. Aus diesen Meetings wird ein Protokoll angefertigt, welches anschließen in das ASCII-Format übertragen und in das GitHub-Repository hinzugefügt wird. Nach erfolgreicher Beendigung von Aufgaben, werden diese zum Review durch ein anderes Teammitglied freigegeben.
 Zur Bearbeitung der Aufgaben wurden den Teammitgliedern Zuständigkeitsrollen zugeteilt, wobei sich jedoch darauf verständigt wurde, dass die Aufgabenverteilung nicht den festgelegten Rollen entsprechen müssen, was eine agile Aufgabenverteilung ermöglicht. Dieses Konzept ermöglicht den Teammitgliedern eine vollständige Transparenz über das Projekt, dessen Aufgaben und deren Arbeitsstand.
 
 Die Aufgabenübersicht in GitHub-Issues erfolgt über ein definiertes Label System. So werden Aufgaben, direkt nach Erstellung, zunächst mit einem Deadline-Label versehen, welches die Deadline der jeweiligen Aufgabe angibt. Wurde die Aufgabe angefangen, wird das Issue mit dem Label "in Bearbeitung versehen". Ist die Aufgabe abgeschlossen, ist sie bereit zum Review, was ebenfalls mit entsprechenden Labels symbolisiert wird. Nach Beendigung der Aufgabe und erfolgreichem Review, kann das Issue schlussendlich geschlossen werden. 
 
 Die Aufgaben werden, so weit wie möglich, in Zweierteams aufgeteilt, um eine differenziertere Sichtweise zu erreichen.
+
 
 
 == Praktiken und Bewertung
@@ -87,13 +89,17 @@ https://www2.htw-dresden.de/~anke/openup/publish.openup.base/customcategories/ma
 
 Nach Vorgabe der Lehrveranstaltung wurde als Managementmethode der Open Unified Process verwendet. Hierbei werden Meilensteine in Iterationen erreicht. Diese Meilensteine werden in kleinere Aufgaben/Teilschritte unterteilt, durchgeführt und gegebenenfalls erweitert. Resultierend können etwaig auftretende Probleme schnell erkannt und gelöst und falsche Entscheidungen rechtzeitig identifiziert und gegengesteuert werden.
 
-Unser Team führt Iterationen in 14-tägigen Zyklen durch, wobei wir jedoch jede Woche ein Meeting durchführen. In unseren Montags-Meetings werden vorherige Aufgaben besprochen, neue Aufgaben zugeteilt und neu aufgekommene Fragen besprochen oder zur Absprache mit dem Kunden notiert. Es gibt einen Meetingsleiter, welcher das Team durch die Agenda führt und einen Protokollführer. Der Projektmanager und sein Stellvertreter besprechen am Vortag alle anstehenden Aufgaben und erstellen eine Agenda. Diese wird vor dem Montags-Meeting an alle Mitglieder verteilt, damit das Meeting vorbereitet werden kann.
+Unser Team führt Iterationen in 14-tägigen Zyklen durch, wobei wir jedoch jede Woche ein Meeting* durchführen. In unseren Meetings* werden vorherige Aufgaben besprochen, neue Aufgaben zugeteilt und neu aufgekommene Fragen besprochen oder zur Absprache mit dem Kunden notiert. Es gibt einen Meetingsleiter, welcher das Team durch die Agenda führt und einen Protokollführer. Der Projektmanager und sein Stellvertreter besprechen am Vortag alle anstehenden Aufgaben und erstellen eine Agenda. Diese wird vor dem Meeting* an alle Mitglieder verteilt, damit das Meeting vorbereitet werden kann.
 
-Die iterative Komponente wird nach dem OpenUP Framework umgesetzt: Plan Iteration -> Manage Iteration -> Assess Results. In der Iterationsplanung werden die fälligen Aufgaben priorisiert. Die einzelnen Aufgaben werden in den zweiwöchig stattfindenden Iterationsmeetings zugeteilt. In der Planung der Iteration ist der Ausgang der vorherigen Iteration maßgebend und dient als Ausgangspunkt für die Darauffolgende. Die aktualisierte Risikobewertung findet hierbei ebenso Berücksichtigung. Gegebenenfalls wird anhand dessen Scope und Projektziel angepasst. Bestandteil des Montagsmeetings ist ebenfalls eine Bewertung und Ergänzung der bekannten Risiken. Bei Veränderung werden diese neu evaluiert. 
+Die iterative Komponente wird nach dem OpenUP Framework umgesetzt: Plan Iteration -> Manage Iteration -> Assess Results. In der Iterationsplanung werden die fälligen Aufgaben priorisiert. Die einzelnen Aufgaben werden in den zweiwöchig stattfindenden Iterationsmeetings zugeteilt. In der Planung der Iteration ist der Ausgang der vorherigen Iteration maßgebend und dient als Ausgangspunkt für die Darauffolgende. Die aktualisierte Risikobewertung findet hierbei ebenso Berücksichtigung. Gegebenenfalls wird anhand dessen Scope und Projektziel angepasst. Bestandteil des Meetings ist ebenfalls eine Bewertung und Ergänzung der bekannten Risiken. Bei Veränderung werden diese neu evaluiert. 
 
-In dem Meeting in der darauffolgenden Woche, können die Zuständigkeiten agil an den Bearbeitungsstand angepasst werden. Als Messkriterium des Iterationszyklus-Erfolges dient der prozentuale Anteil absolvierter und durch Teammitglieder überprüfter Aufgaben.
+In dem Meeting* in der darauffolgenden Woche, können die Zuständigkeiten agil an den Bearbeitungsstand angepasst werden. Als Messkriterium des Iterationszyklus-Erfolges dient der prozentuale Anteil absolvierter und durch Teammitglieder überprüfter Aufgaben.
 
 Zur besseren Übersicht werden die zugeteilten Aufgaben in GitHub-Issues eingepflegt und den Teammitgliedern zugewiesen. Die jeweilig verantwortlichen Teammitglieder werden daraufhin per Mail an ihre Aufgabe erinnert. Durch unterschiedliche Labels können die Aufgaben klassifiziert und priorisiert werden. In den Kommentaren unter den jeweiligen Issues können Unteraufgaben oder Arbeitsstände protokolliert werden. 
+
+
+*i.d.R. Montags in SE-1, Dienstags in SE-2
+
 
 === Technical Practices
 
@@ -143,6 +149,14 @@ Use Case Driven Development bezieht sich allgemein auf eine präzise Dokumentati
 | I4
 | <<Iteration Plan 04: {project-name}, Iterationsplan I04>>
 | From 09.01.2023 to 23.01.2023
+
+|Pre-I5
+|<<Iteration Plan Pre-05: {project-name}, Iterationsplan Pre-05>>
+|From 28.03.2023 to 04.04.2023
+
+|I5
+|<<Iteration Plan 05: {project-name}, Iterationsplan I05>>
+| From 04.04.2023 to 18.04.2023
 
 |===
 
