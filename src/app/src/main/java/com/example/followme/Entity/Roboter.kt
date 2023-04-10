@@ -1,5 +1,7 @@
 package com.example.followme.Entity
 
+
+//Roboter-Klasse, die Server gefetcht wird
 class Roboter {
 
     private var id: Int? = null
