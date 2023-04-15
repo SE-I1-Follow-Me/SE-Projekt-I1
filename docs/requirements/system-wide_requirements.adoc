@@ -43,7 +43,7 @@ NFAU-2: ::
 * Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Zur Überprüfung der Verständlichkeit wird die Anwendung  einer fachfremden Person vorgeführt.
 
 NFAU-3: ::
-* Zur Minimierung der Interaktionsauswahl, der Konfusion und zur Steigerung der Übersichtlichkeit werden Auswahlmöglichkeiten durch Ausgrauen reduziert, wenn sie zum Zeitpunkt der Auswahl technisch oder anderweitig nicht verfügbar sind. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
+* Es ist darauf zu achten, dass die Interaktionsauswahl minimiert wird, um Konfusion zu vermeiden und die Übersichtlichkeit zu steigern. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
 
 NFAU-4: ::
 * Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein. Dafür werden diese auf der Startseite auswählbar sein. Zur Überprüfung soll die Kernfunktionalität mit weniger als fünf Klicks erfüllbar sein.
