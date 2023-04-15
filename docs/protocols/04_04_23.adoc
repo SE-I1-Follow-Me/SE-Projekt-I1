@@ -1,0 +1,42 @@
+= Protokoll: Kick-off Meeting SE2
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 31.03.2023 16.30 Uhr - 16.40 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Michael Novak
+* Magnus Andreas Böhne
+* Manuel Scheer
+* Jonas Pfeiffer
+
+== Abwesende
+* Leon Lowa
+
+== Agenda
+.	Aufgabenverteilung
+.	Feedback des Projektteams
+
+
+
+
+=== Aufgabenverteilung
+
+Ergebnis:: 
+****
+Jedem Teammitglied wurde eine Aufgabe gegeben. Diese werden ab sofort in sogenannten "Aufgabenbriefen" festgehalten. Diese werden zusätzlich zum Issue auf GitHub erstellt und dem Teammitgliedern via Discord mitgeteilt. Diese Aufgabenbriefe sollen die Aufgabenstellung präzisieren.
+****
+
+=== Feedback des Projektteams
+
+Ergebnis:: 
+****
+* Die Aufgabenbriefe sollen auch im Issue verlinkt werden, damit diese leichter erreichbar sind -> Dies wird ab sofort getan
+* Die Serveranbindung muss schnellstmöglich gegeben sein, damit das programmierte Feature leichter getestet werden kann
+* Es muss eine neue Zeit für das wöchentliche Meeting gefunden werden, da es sonst bei einigen Teammitgliedern zu Komplikationen kommen wird
+****
+

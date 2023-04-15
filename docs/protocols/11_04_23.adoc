@@ -1,0 +1,51 @@
+= Protokoll: Kick-off Meeting SE2
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 31.03.2023 15.00 Uhr - 16.00 Uhr | 16.30 Uhr - 17.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+**ACHTUNG**: Aufgrund von Zeitproblemen wurde dieses Meeting in zwei Teile geteilt. Dies ist eine **einmalige** Ausnahme!
+
+== Anwesende
+* Leon Lowa
+* Magnus Andreas Böhne
+* Manuel Scheer
+* Jonas Pfeiffer
+
+
+== Abwesende
+* Michael Novak
+
+== Agenda
+.	Feedback zu den Aufgaben / Fragen
+.	Verteilung neuer Aufgaben
+.   Organisation
+
+
+
+=== Feedback zu den Aufgaben / Fragen
+
+Ergebnis:: 
+****
+* Aufgaben waren größtenteils Verständlich beschrieben, einzelne Fragen wurden beantwortet
+* Activitys stürzten bei einigen Teammitgliedern ab; dies wurde behoben
+* Code teilweise noch unkar -> Muss besser kommentiert werden
+****
+
+=== Verteilung neuer Aufgaben
+
+Ergebnis:: 
+****
+* Die Aufgabenbriefe wurden wie gewünscht nun auch im GitHub verlinkt
+* Es gab keine weiteren 
+* Es muss eine neue Zeit für das wöchentliche Meeting gefunden werden, da es sonst bei einigen Teammitgliedern zu Komplikationen kommen wird
+****
+
+=== Organisation
+* Zugriff zum Essence Navigator wurde der neuen Projektleitung übermittelt
+* Meeting mit Coach und Kunden muss geplant werden -> Auf nächstes Meeting (18.04.23) verschoben
+* Es muss dringend eine neue Zeit für das Meeting vereinbart werden
