@@ -71,11 +71,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tvKontakt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="route" />
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tilesource="Mapnik" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 = Protokoll: Kick-off Meeting SE2
-Manuel Scheer <manuel.scheer@htw-dresden.de>
+Manuel Scheer <manuel.brischeernker@htw-dresden.de>
 v1.0, 31.03.2023 15.00 Uhr - 16.00 Uhr
 include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}

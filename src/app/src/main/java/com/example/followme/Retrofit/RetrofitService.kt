@@ -14,7 +14,7 @@ class RetrofitService {
     private fun initializeRetrofit() {
         retrofit = Retrofit.Builder()
                 //Url wird geadded, wo es konvertiert werden soll, HTW-Server-Port
-            .baseUrl("http://iseproject07e.informatik.htw-dresden.de:3306")
+            .baseUrl("http://iseproject07e.informatik.htw-dresden.de:8080")
                 //JSon Libary von Google wird benutzt G-Son, witziger Name Hahaha
             .addConverterFactory(GsonConverterFactory.create(Gson()))
             .build()
