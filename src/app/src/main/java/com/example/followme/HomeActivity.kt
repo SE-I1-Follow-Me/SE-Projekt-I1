@@ -21,6 +21,13 @@ class HomeActivity : AppCompatActivity() {
     //!! Initialisierungen verschiedener wichtiger Variabeln
 
 
+
+    //Roboterliste (view, layout, adapter)
+    lateinit var rv: RecyclerView
+    lateinit var layoutManager: LinearLayoutManager
+    lateinit var adapter:MyAdapter
+
+
     //Anzeige für die Roboterliste
     lateinit var newRecyclerView: RecyclerView
     //Array in dem die Roboter-Objekte gespeichert werden
@@ -53,16 +60,14 @@ class HomeActivity : AppCompatActivity() {
             R.drawable.a
         )
 
-        newRecyclerView = findViewById(R.id.rvRobots)
-        newRecyclerView.layoutManager = LinearLayoutManager(this)
-        newRecyclerView.setHasFixedSize(true)
 
         newArrayList = arrayListOf<Robot>()
 
         //kreiert die einzelnen  <Roboter> Objekte
         getUserData()
+        initRecyclerView()
+        initContent()
 
-        newRecyclerView.adapter = MyAdapter(newArrayList)
 
         // create variables for the OnClickListener
         val btRoute = findViewById<ImageButton>(R.id.btRoute)
@@ -125,6 +130,8 @@ class HomeActivity : AppCompatActivity() {
             }
         })
     }
+
+
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
     private fun getUserData() {
         var i: Int = 0
@@ -132,9 +139,44 @@ class HomeActivity : AppCompatActivity() {
         for (robot in robotlist) {
             //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
             //und dem Pfeil
-            val robots = Robot(ivRoboter[0], robotlist[i].getName().toString(), tvPfeil[0])
+            val robots = Robot(ivRoboter[0], robotlist[i].getName().toString(), tvPfeil[0], 5, 5, false)
             newArrayList.add(robots)
             i += 1
         }
     }
+
+
+
+    fun initRecyclerView() {
+        rv = findViewById(R.id.rvRobots)
+        rv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        adapter = MyAdapter(this, newArrayList)
+        rv.adapter = adapter
+
+        adapter.setOnItemClickListener(object:MyAdapter.OnItemClickListener{
+            override fun setOnClickListener(pos: Int) {
+                //Toast.makeText(this@HomeActivity, "${content[pos].robotName} wurde geklickt", Toast.LENGTH_SHORT).show()
+                newArrayList[pos].followme = !newArrayList[pos].followme
+                adapter.notifyItemChanged(pos)
+            }
+
+        })
+
+
+    }
+
+
+    fun initContent() {
+        if (newArrayList.isEmpty()) {
+            for (i in 0..12) {
+                val robots = Robot(ivRoboter[0], "Roboter " + i, tvPfeil[0], 5, 5, false)
+                newArrayList.add(robots)
+            }
+        }
+    }
+
+
+
+
+
 }
