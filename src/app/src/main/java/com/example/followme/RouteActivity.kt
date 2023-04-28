@@ -6,9 +6,13 @@ import android.preference.PreferenceManager
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import kotlinx.android.synthetic.main.activity_route.*
 import org.osmdroid.config.Configuration.getInstance
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.views.MapView
+import org.osmdroid.config.Configuration.*
+import org.osmdroid.util.GeoPoint
+import org.osmdroid.views.overlay.Marker
 
 
 class RouteActivity : AppCompatActivity() {
@@ -60,6 +64,19 @@ class RouteActivity : AppCompatActivity() {
 
         map = findViewById<MapView>(R.id.mapview)
         map.setTileSource(TileSourceFactory.MAPNIK)
+        map.controller.setZoom(18.0)
+
+        //Hier wird der Startpunkt sowie der Start-Zoom festgelegt
+        val mapController = map.controller
+        mapController.setZoom(16.5)
+        val startPoint = GeoPoint(51.0405, 13.7322);
+        mapController.setCenter(startPoint);
+
+        //val markerHTW = Marker(mapview)
+        //val htwGeoPoint = GeoPoint(51.2026, 13.4408);
+        //markerHTW.position = htwGeoPoint
+
+
     }
 
     override fun onResume() {
