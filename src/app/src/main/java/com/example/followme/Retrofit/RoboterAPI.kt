@@ -10,7 +10,7 @@ interface RoboterAPI {
     // das ist das REST-Interface in der App
 
     //Die GET-Methode, ist Sachen vom Server rufen, andere folgen im Laufe des Projekts
-    @GET("/roboter/get-all")
+    @GET("/roboter/getAll")
     fun getRobotList(): Call<ArrayList<Roboter>>
 }
 

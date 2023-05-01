@@ -28,8 +28,6 @@ class HomeActivity : AppCompatActivity() {
     lateinit var adapter:MyAdapter
 
 
-    //Anzeige für die Roboterliste
-    lateinit var newRecyclerView: RecyclerView
     //Array in dem die Roboter-Objekte gespeichert werden
     lateinit var newArrayList: java.util.ArrayList<Robot>
     lateinit var robotlist: java.util.ArrayList<Roboter>
@@ -64,9 +62,8 @@ class HomeActivity : AppCompatActivity() {
         newArrayList = arrayListOf<Robot>()
 
         //kreiert die einzelnen  <Roboter> Objekte
-        getUserData()
         initRecyclerView()
-        initContent()
+        //initContent()
 
 
         // create variables for the OnClickListener
@@ -117,6 +114,8 @@ class HomeActivity : AppCompatActivity() {
                 //Fall dies Erfolgreich war, werden die Daten in das robotlost - Array geschrieben
                 if (response.isSuccessful) {
                     robotlist = response.body()?.apply { }!!
+                    //Aufruf nach erhalt der daten
+                    getUserData()
                 }
             }
             //Falls die API KEINE! Verbindung hat ODER! der Server NICHT! ansprechbar ist, ist es onFailure
@@ -134,20 +133,20 @@ class HomeActivity : AppCompatActivity() {
 
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
     private fun getUserData() {
-        var i: Int = 0
         //Für alle robot-Objekte, die vom Server gesendet wurde, wird ein Roboter-Objekt kreiert
         for (robot in robotlist) {
             //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
             //und dem Pfeil
-            val robots = Robot(ivRoboter[0], robotlist[i].getName().toString(), tvPfeil[0], 5, 5, false)
+            val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false)
             newArrayList.add(robots)
-            i += 1
         }
+        rv.adapter?.notifyDataSetChanged()
     }
 
 
 
     fun initRecyclerView() {
+
         rv = findViewById(R.id.rvRobots)
         rv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         adapter = MyAdapter(this, newArrayList)
@@ -164,19 +163,5 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
-
-
-    fun initContent() {
-        if (newArrayList.isEmpty()) {
-            for (i in 0..12) {
-                val robots = Robot(ivRoboter[0], "Roboter " + i, tvPfeil[0], 5, 5, false)
-                newArrayList.add(robots)
-            }
-        }
-    }
-
-
-
-
 
 }

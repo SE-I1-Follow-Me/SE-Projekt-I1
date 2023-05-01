@@ -6,9 +6,9 @@ class Roboter {
 
     private var id: Int? = null
 
-    private var Adresse: String? = null
+    private var adresse: String? = null
 
-    private var Name: String? = null
+    private var name: String? = null
 
     fun getId(): Int? {
         return id
@@ -19,19 +19,19 @@ class Roboter {
     }
 
     fun getAdresse(): String? {
-        return Adresse
+        return adresse
     }
 
     fun setAdresse(adresse: String?) {
-        Adresse = adresse
+        this.adresse = adresse
     }
 
     fun getName(): String? {
-        return Name
+        return name
     }
 
     fun setName(name: String?) {
-        Name = name
+        this.name = name
     }
 
 }
