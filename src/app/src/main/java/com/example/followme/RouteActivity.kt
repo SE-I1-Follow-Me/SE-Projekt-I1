@@ -1,6 +1,7 @@
 package com.example.followme
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.widget.ImageButton
@@ -14,10 +15,33 @@ import org.osmdroid.views.MapView
 import org.osmdroid.config.Configuration.*
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.overlay.Marker
+import org.osmdroid.views.overlay.gestures.RotationGestureOverlay
+import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider
+import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay
 
 
 class RouteActivity : AppCompatActivity() {
+
+    private val REQUEST_PERMISSIONS_REQUEST_CODE = 1
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        val permissionsToRequest = ArrayList<String>()
+        var i = 0
+        while (i < grantResults.size) {
+            permissionsToRequest.add(permissions[i])
+            i++
+        }
+        if (permissionsToRequest.size > 0) {
+            ActivityCompat.requestPermissions(
+                this,
+                permissionsToRequest.toTypedArray(),
+                REQUEST_PERMISSIONS_REQUEST_CODE)
+        }
+    }
+
     private lateinit var map: MapView
+    private lateinit var locationOverlay: MyLocationNewOverlay
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_route)
@@ -40,7 +64,10 @@ class RouteActivity : AppCompatActivity() {
         map = findViewById<MapView>(R.id.mapview)
         map.setTileSource(TileSourceFactory.MAPNIK)
         map.controller.setZoom(18.0)
-
+        val rotationGestureOverlay = RotationGestureOverlay(map)
+        rotationGestureOverlay.isEnabled
+        map.setMultiTouchControls(true)
+        map.overlays.add(rotationGestureOverlay)
         //Hier wird der Startpunkt sowie der Start-Zoom festgelegt
         val mapController = map.controller
         mapController.setZoom(16.5)
@@ -61,23 +88,11 @@ class RouteActivity : AppCompatActivity() {
         map.overlays.add(markerHTW)
         map.invalidate()
 
+        var locationOverlay = MyLocationNewOverlay(GpsMyLocationProvider(this), map);
+        locationOverlay.enableMyLocation();
+        map.overlays.add(locationOverlay)
+        map.invalidate()
 
-        /*private fun requestPermissionsIfNecessary(String[] permissions) {
-        val permissionsToRequest = ArrayList<String>();
-        permissions.forEach { permission ->
-        if (ContextCompat.checkSelfPermission(this, permission)
-                != PackageManager.PERMISSION_GRANTED) {
-            // Permission is not granted
-            permissionsToRequest.add(permission);
-        }
-    }
-        if (permissionsToRequest.size() > 0) {
-            ActivityCompat.requestPermissions(
-                    this,
-                    permissionsToRequest.toArray(new String[0]),
-                    REQUEST_PERMISSIONS_REQUEST_CODE);
-        }
-    }*/
         val btHome = findViewById<ImageButton>(R.id.btHome)
         val btAdd = findViewById<ImageButton>(R.id.btAdd)
         val btAlerts = findViewById<ImageButton>(R.id.btAlerts)
@@ -119,6 +134,7 @@ class RouteActivity : AppCompatActivity() {
         //if you make changes to the configuration, use
         //SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         //Configuration.getInstance().save(this, prefs);
+        locationOverlay.disableMyLocation();
         map.onPause()  //needed for compass, my location overlays, v6.0.0 and up
     }
 }
