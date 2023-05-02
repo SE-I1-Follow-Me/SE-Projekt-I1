@@ -1,19 +1,15 @@
 package com.example.followme
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_route.*
 import org.osmdroid.config.Configuration.getInstance
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
-import org.osmdroid.views.MapView
-import org.osmdroid.config.Configuration.*
 import org.osmdroid.util.GeoPoint
+import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 import org.osmdroid.views.overlay.gestures.RotationGestureOverlay
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider
@@ -22,27 +18,11 @@ import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay
 
 class RouteActivity : AppCompatActivity() {
 
-    private val REQUEST_PERMISSIONS_REQUEST_CODE = 1
-
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        val permissionsToRequest = ArrayList<String>()
-        var i = 0
-        while (i < grantResults.size) {
-            permissionsToRequest.add(permissions[i])
-            i++
-        }
-        if (permissionsToRequest.size > 0) {
-            ActivityCompat.requestPermissions(
-                this,
-                permissionsToRequest.toTypedArray(),
-                REQUEST_PERMISSIONS_REQUEST_CODE)
-        }
-    }
-
     private lateinit var map: MapView
     private lateinit var locationOverlay: MyLocationNewOverlay
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_route)
 
@@ -88,8 +68,9 @@ class RouteActivity : AppCompatActivity() {
         map.overlays.add(markerHTW)
         map.invalidate()
 
-        var locationOverlay = MyLocationNewOverlay(GpsMyLocationProvider(this), map);
-        locationOverlay.enableMyLocation();
+        var locationOverlay = MyLocationNewOverlay(GpsMyLocationProvider(this), map)
+        // getlocation()
+
         map.overlays.add(locationOverlay)
         map.invalidate()
 
@@ -119,12 +100,39 @@ class RouteActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+    /*
+    private fun getlocation() {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission_group.LOCATION) == PackageManager.PERMISSION_GRANTED)
+            if (!locationOverlay.isMyLocationEnabled)
+                startActivity(Intent(Settings.ACTION_LOCAT))
+
+    }
+
+   private fun requestPermission() {
+        ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission_group.LOCATION}, 10)
+    }
+
+
+
+    private fun onRequestPermissionsResult(int requestCode, String[] permisson, int[] grantResult) {
+        super.onRequestPermissionsResult(requestCode, permisson, grantResult)
+        if (requestCode == 10)
+            if (grantResult.length == 1 && grantResult[0] == PackageManager.PERMISSION_GRANTED)
+                getlocation()
+
+    }
+
+
+     */
+
+
     override fun onResume() {
         super.onResume()
         //this will refresh the osmdroid configuration on resuming.
         //if you make changes to the configuration, use
         //SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         //Configuration.getInstance().load(this, PreferenceManager.getDefaultSharedPreferences(this));
+        //locationOverlay.enableMyLocation()
         map.onResume() //needed for compass, my location overlays, v6.0.0 and up
     }
 
@@ -132,9 +140,9 @@ class RouteActivity : AppCompatActivity() {
         super.onPause()
         //this will refresh the osmdroid configuration on resuming.
         //if you make changes to the configuration, use
-        //SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        //SharedPreferences prefs = getDefaultSharedPreferences(this)
         //Configuration.getInstance().save(this, prefs);
-        locationOverlay.disableMyLocation();
+        //locationOverlay.disableMyLocation();
         map.onPause()  //needed for compass, my location overlays, v6.0.0 and up
     }
 }
