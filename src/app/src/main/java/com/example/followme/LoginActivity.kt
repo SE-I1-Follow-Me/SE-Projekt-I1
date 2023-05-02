@@ -48,25 +48,35 @@ class LoginActivity : AppCompatActivity() {
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
             )
-            permissonBACKGROUND_LOCATION = ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            )
+        }
+        if (permissions[Manifest.permission.WRITE_EXTERNAL_STORAGE] != false) {
             permissonEXTERNAL_STORAGE = ContextCompat.checkSelfPermission(
                 this,
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
             )
+        }
+        if (permissions[Manifest.permission.ACCESS_COARSE_LOCATION] != false) {
             permissonCOARSE_LOCATION = ContextCompat.checkSelfPermission(
                 this,
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.ACCESS_COARSE_LOCATION
             )
+        }
+        if (permissions[Manifest.permission.ACCESS_NETWORK_STATE] != false) {
             permissonNETWORK_STATE = ContextCompat.checkSelfPermission(
                 this,
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.ACCESS_NETWORK_STATE
             )
+        }
+        if (permissions[Manifest.permission.INTERNET] != false) {
             permissonINTERNET = ContextCompat.checkSelfPermission(
                 this,
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.INTERNET
+            )
+        }
+        if (permissions[Manifest.permission.ACCESS_BACKGROUND_LOCATION] != false) {
+            permissonBACKGROUND_LOCATION = ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_BACKGROUND_LOCATION
             )
         }
     }
