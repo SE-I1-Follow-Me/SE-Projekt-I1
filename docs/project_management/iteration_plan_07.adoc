@@ -1,5 +1,5 @@
-= Iteration Plan 06: {project-name}
-Magnus Andreas Böhne magnus.boehne@gmail.com
+= Iteration Plan 07: {project-name}
+Manuel Scheer <manuel.scheer@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -12,20 +12,22 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Anfang der Iteration | 18.04.2023
-| Team- Meeting | 18.04.2023 
-| Meeting Projektleitung | 18.04.2023 
-| Team- Meeting | 25.04.2023 
-| Ende der Iteration | 02.05.2023
+| Anfang der Iteration | 02.05.2023
+| Team- Meeting | 02.05.2023 
+| Meeting Projektleitung | 02.05.2023
+| Meeting mit Coach | 04.05.2023 
+| Meeting mit Kunden | 05.05.2023
+| Team- Meeting | 09.05.2023 
+| Ende der Iteration | 16.05.2023
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Beheben der Probleme mit Framework (Serveranbindung)
-* Meeting mit Coach Ringel und Kunden Neugebauer organisieren und halten
-* Erreichbarkeit und Stabilität von Springboot (Server) verbessern
+* Use-Case UC01 hinzufügen
+* Aktuellen Stand mit Coach und Kunden abgleichen
+* Einfügen von GPS Marker in der Map
 
 
 == Aufgabenzuordnung
@@ -37,13 +39,12 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Beheben der Probleme mit Framework (Serveranbindung) in der App | (sehr) hoch | 5 | 25.04.23 | - | 6 | Leon Lowa, Jonas Pfeiffer, Michael Novak, Manuel Scheer, Magnus Andreas Böhne | - | -
-| Auto-Start von Spring auf dem Server | hoch | 5 | 02.05.23 | - | 6 | Magnus Andreas Böhne | - | -
-| GitHub Action für das Hochladen von dem Springboot-Projekt | low | 2 | 02.05.23 | - | 6 | Magnus Andreas Böhne | - | -
-| Sicherheitslücke (Port 3306 offen) schließen | hoch | 2 | 25.04.23 | - | 6 | Magnus Andreas Böhne | - | - 
-| Mergen von Teilversion und Implementierung der Liste (Serveranbindung) | medium | 3 | 02.05.23 | - | 6 | Jonas Pfeiffer, Michael Novak  | - | -
-| Weiterarbeiten an der Karte | medium | 3 | 02.05.23 | - | 6 | Leon Lowa, Manuel Scheer | - | -
-| Neustrukturierung des Repository (Organisation erstellen & Server-Repository) | medium | 2 | 02.05.23 | - | 6 | Magnus Andreas Böhne | - | - 
+| Einarbeiten in JPA, UC01 implementieren | hoch | 5 | 16.05.23 | - | 7 | Jonas Pfeiffer, Michael Novak | - | -
+| Einfügen eines Markers an der aktuellen GPS Koordinate, Aufzeichnen der Route (UC04 & UC05) | hoch | 5 | 16.05.23 | - | 7 | Leon Lowa, Manuel Scheer | - | -
+| Teilnahme an Meetings, Klärung offener Fragen | medium | 2 | 05.05.23 | - | 7 | Magnus Andreas Böhne, Manuel Scheer | - | -
+| Erstellen und Überarbeitung der Protokolle / Iterationsplänen | medium | 2 | 09.05.23 | - | 7 | Manuel Scheer | - | - 
+| GitHub Action & Autostart (nachholen) | low | 2 | 16.05.23 | - | 6 | Magnus Andreas Böhne  | - | -
+| Spring Boot Security aufsetzen & Sicherheitslücken schließen | medium | 4 | 16.05.23 | - | 7 | Magnus Andreas Böhne | - | -
 |===
 
 
@@ -55,7 +56,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Kritischer Verbindungsfehler | Offen | Bis zur Behebung kann am Projekt nicht richtig weiter gearbeitet werden
+| Fehlendes Know-how mit JPA | Offen | JPA wird im weiteren Verlauf des Projektes eine entscheidende Rolle spielen
 
 |===
 
@@ -64,9 +65,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 
-* App kann sich stabil mit Server verbinden
-* Einfachkeit über GitHub an der App zu arbeiten 
-* Funktionalität und Aussehen der Karte
+* Zufriedenheit / Anmerkungen von Coach und Kunden
+* Handhabung von GPS Daten
+* Datensätze können der Datenbank von der App aus hinzugefügt werden
 
 
 
@@ -77,7 +78,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 02.05.2023
+| Assessment Datum | 03.04.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
 | Projektstatus	| grün
 |===
@@ -87,30 +88,28 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 Beurteilung im Vergleich zu den Zielen:: 
 ****
 * *Ziel 1:* Ziel erreicht
-* *Ziel 2:* Ziel nicht erreicht
-* *Ziel 3:* Ziel nicht erreicht
+* *Ziel 2:* Ziel erreicht
+* *Ziel 3:* Ziel erreicht
 * *Ziel 4:* Ziel erreicht
 * *Ziel 5:* Ziel erreicht
-* *Ziel 6:* Ziel erreicht
-* *Ziel 7:* Ziel erreicht
 ****
 
 Geplante vs. erledigte Aufgaben::
 ****
 in nächste Iteration verschoben:
 
-
-- Ziel 2 (Auto-Start von Spring auf dem Server)
-- Ziel 3 (GitHub Action für das Hochladen von dem Springboot-Projekt)
+-
 ****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* App verbindet sich schnell und zuverlässig mit dem Server
-* Das Repository funktioniert wieder
-* Die Karte funktioniert und wurde im Design angepasst
+* Projektleitung hat sich eingearbeitet
+* Iterationspläne wurden erstellt
+* Projektplan wurde angepasst
+* Alle Teammitglieder können an der App über GitHub arbeiten
+* Aktueller Stand ist laut Coach Gut
 ****
 
 
