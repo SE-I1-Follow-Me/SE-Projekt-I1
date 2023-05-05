@@ -1,0 +1,52 @@
+= Protokoll: Coach Meeting 04.05.2023
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 05.05.23 11.30 Uhr - 12.15 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+- Hinweis: Anwesenheit war freiwillig. Meeting wurde für die Projektleitung angesetzt
+* Manuel Scheer
+* Magnus Andreas Böhne
+
+== Abwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+
+
+== Agenda
+.	Kunden den aktuellen Stand des Projektes zeigen
+.   Feedback / Anmerkungen des Kunden
+
+
+=== Kunden den aktuellen Stand des Projektes zeigen
+
+Ergebnis:: 
+
+****
+
+* Kunde wurde über aktuellen Stand der App, des Servers und den aktuellen Arbeitsschritten (JPA) informiert
+
+* Wenn ein Roboter ausgewählt wird, Follow-me aktiviert wird und der Roboter wieder abgewählt wird, in welchen Zustand befindet sich der Roboter?
+* "Was sieht man nach der Auswahl?" -> Gefilterte Liste? Icon? 
+
+****
+
+=== Feedback / Anmerkungen des Kunden
+
+Ergebnis:: 
+****
+
+* Darstellung muss einheitlicher werden. Welcher Roboter hat aktuell Follow-me aktiv? Welcher ist erreichbar? -> Darstellung durch Icon oder andere Farbe? 
+* Wenn nach aktivieren des Follow-me eine gefilterte Liste angezeigt wird: Button "Roboter zu Follow-me hinzufügen" muss implementiert werden (vorerst ohne Funktion, damit der Gedanke gesehen wird)
+*  "Wichtig ist, dass Sie sich in den Prozess hineinversetzen. Wie läuft das ab? Was braucht man alles beim Follow-me? Notieren Sie sich wenig Stichpunkte und übernehmen Sie den einfachsen und implementieren Sie dies so simpel wie möglich. Dann denken Sie weiter. Wie muss es (die App) aussehen? Wie muss Sie aussehen, wenn Sie 100 Roboter haben?" -> Es muss sich mehr in den Endnutzer versetzt werden.
+* Es ist wichtiger, dass die App in einem Zustand ist, in der die Gedanken, die sich gemacht wurden, dargestellt werden. Wenn wir merken, dass wir eine Funktion extra bräuchten aber diese nicht mehr schaffen können wir einen Button für diese Funktion als Platzhalter einbauen etc.
+
+
+****
+

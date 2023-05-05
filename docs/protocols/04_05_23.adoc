@@ -1,6 +1,6 @@
 = Protokoll: Coach Meeting 04.05.2023
 Manuel Scheer <manuel.scheer@htw-dresden.de>
-v1.0, 05.12.22 18.30 Uhr - 19.30 Uhr
+v1.0, 04.05.23 11.00 Uhr - 11.45 Uhr
 include::../_includes/default-attributes.inc.adoc[]
 {localdatetime}
 
