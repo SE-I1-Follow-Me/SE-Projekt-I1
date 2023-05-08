@@ -22,14 +22,25 @@ class HomeActivity : AppCompatActivity() {
 
 
 
-    //Roboterliste (view, layout, adapter)
-    lateinit var rv: RecyclerView
-    lateinit var layoutManager: LinearLayoutManager
-    lateinit var adapter:MyAdapter
+    // companion ermöglicht es anderen activities darauf zuzugreifen
+    companion object {
+        //Roboterliste (view, layout, adapter)
+        lateinit var rv: RecyclerView
+        lateinit var layoutManager: LinearLayoutManager
+        lateinit var adapter:MyAdapter
 
 
-    //Array in dem die Roboter-Objekte gespeichert werden
-    lateinit var newArrayList: java.util.ArrayList<Robot>
+        //Array in dem die Roboter-Objekte gespeichert werden
+        lateinit var newArrayList: java.util.ArrayList<Robot>
+
+
+
+        fun updateRecyclerView() {
+            rv.adapter?.notifyDataSetChanged()
+        }
+    }
+
+
     lateinit var robotlist: java.util.ArrayList<Roboter>
     //einzelne Listen zum Zusammenfügen eines Roboterobjekts
 
@@ -94,6 +105,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
     //Funktion um die Daten vom Server durch die Rest-API zu bekommen
     private fun loadRoboter() {
         //Retrofit wandelt JSON Format in ein Java Array um
@@ -163,5 +175,6 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+
 
 }
