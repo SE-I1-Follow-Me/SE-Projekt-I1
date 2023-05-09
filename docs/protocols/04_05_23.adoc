@@ -1,0 +1,71 @@
+= Protokoll: Coach Meeting 04.05.2023
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 04.05.23 11.00 Uhr - 11.45 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+- Hinweis: Anwesenheit war freiwillig. Meeting wurde für die Projektleitung angesetzt
+* Manuel Scheer
+* Magnus Andreas Böhne
+
+== Abwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+
+
+== Agenda
+.	Coach Überblick über den aktuellen Stand geben
+.   Sicherheitslücken klären
+.   Organisation / Planung
+
+=== Coach Überblick über den aktuellen Stand geben
+
+Ergebnis:: 
+
+****
+
+* Dokumentation muss begonnen werden
+
+* Coach empfielt einen Break der Projektarbeit, damit sich auf ein Review der Arbeitsweise, des Codes und der Architektur konzentriert werden kann -> Daraus weiteres Vorgehen sowie erste Dokumentation entwickeln
+* Zeiträume begrenzen -> "Eine Iteration bringt ein Feature"
+* Gedanken über Projektbericht machen -> Lernziele aus Veranstaltungen praktisch umsetzen
+* Thema Testen: Roboter sollten (halb)automatisch getestet werden
+
+****
+
+=== Sicherheitslücken klären
+
+Ergebnis:: 
+****
+
+* typischer Fehler: SQL Injection
+* IP Adresse (und damit Server) ausschalten (runterfahren) wenn gerade nicht genutzt
+* (eventuell) Updates beachten
+
+
+****
+
+=== Organisation / Planung
+
+Ergebnis::
+****
+* Planungsmodelle: Sollten zu Beginn des Semesters genutzt werden; werden zeitnah umgesetzt, um am Ende nach Pause, Review und Reflektion eine Vergleichsgrundlage zu bieten
+* Aus Vorlesung sollen ein (oder zwei) Planungsmodelle probiert werden
+* Dokumentation != Code und Diagramme, sondern Arbeitsstil der Teams (Was war gut, was war schlecht und warum?)
+* Es geht nicht um das Ergebnis, sondern um den Weg, wie das Ergebnis erreicht wurde
+* Potenzielle Fragen: Wurden den Gruppenmitgliedern genug Freiheit gelassen? 
+* Aktuell geringe Priorität aber später wichtig: Wie wird das Projekt abgeschlossen / an den Kunden übergeben? Was gehört dazu? -> Gedanken bis zum nächsten Meeting mit Coach machen!
+* Lizensen, Haftungsweg müssen eventuell angepasst werden!
+* Zu Thema Lernerfolge: *Alle* schreiben was sie technisch *und* methodisch gelernt haben
+* Offline Meeting soll geplant werden -> Freitag, den 12.05.2023, um 11 Uhr
+* "weg vom Programmieren, hin zum praktischen Bezug"
+* Tipp vom Coach: Freeze des Projektes, Reflektionsphase, Planungsmodelle erstellen, Überlegungen zum Testen -> Dann nach Plan ein bis zwei Iterationen mit anschließendem Vergleich, ob die Änderung etwas bewirkt hat (Positiv wie Negativ)
+
+
+****
