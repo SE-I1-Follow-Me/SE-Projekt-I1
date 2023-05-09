@@ -6,14 +6,14 @@
     android:layout_height="wrap_content"
     android:paddingVertical="15dp">
 
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivRoboter"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:adjustViewBounds="true"
         android:background="#E8F3EA"
-        android:clickable="true"
+        android:focusable="false"
+        android:clickable="false"
         android:checkable="true"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingHorizontal="15dp"
-        android:text="deineMudda"
+        android:text="Roboter"
         android:textColor="#020202"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/ivRoboter"

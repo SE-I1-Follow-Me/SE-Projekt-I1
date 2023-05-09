@@ -29,26 +29,24 @@ class MyAdapter(private val context: Context, private val robots: java.util.Arra
 
     // Hier wird der ViewHolder gebindet, ist son Android Ding, ist dafür da, damit es angezeit werden kann
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-
         val currentItem = robots[position]
-        holder.ivRoboter.setImageResource(currentItem.ivRoboter)
         holder.tvRoboter.text = currentItem.robotName
         holder.tvPfeil.text = currentItem.tvPfeil
+
+        // Set robot image based on the followme property
+        holder.ivRoboter.setImageResource(if (currentItem.followme) R.drawable.b else R.drawable.a)
 
         holder.itemView.setOnClickListener {
             currentItem.followme = !currentItem.followme // toggle followme property
 
-            //Ändere die Farbe
-            if (currentItem.followme) {
-                holder.ivRoboter.setImageResource(R.drawable.b)
-            } else {
-                holder.ivRoboter.setImageResource(R.drawable.a)
-            }
+            // Update robot image based on the followme property
+            holder.ivRoboter.setImageResource(if (currentItem.followme) R.drawable.b else R.drawable.a)
 
             Toast.makeText(context, "Item $position clicked - Follow me: ${currentItem.followme}", Toast.LENGTH_SHORT).show()
         }
-
     }
+
+
 
     //Basically wird hier angegben welche Items, der RecyclerView halten soll
     class MyViewHolder(itemView: View, var mListener:OnItemClickListener) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
