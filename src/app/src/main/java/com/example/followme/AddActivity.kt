@@ -44,6 +44,7 @@ class AddActivity : AppCompatActivity() {
 
         val etID = findViewById<EditText>(R.id.etID)
         val btAddRoboter = findViewById<Button>(R.id.btAddRoboter)
+        val name = ""
 
         // Schaltfläche "Roboter anlegen" wurde betätigt
         btAddRoboter.setOnClickListener {
@@ -58,12 +59,13 @@ class AddActivity : AppCompatActivity() {
                     Toast.makeText(this, "Dieses Token ist bereits vorhanden.", Toast.LENGTH_SHORT).show()
                 } else {
                     // Fordern Sie den Benutzer auf, einen Namen für den neuen Roboter einzugeben
-                    val name = showNameInputDialog()
-                    if (name != null) {
-                        val robots = Robot(R.drawable.a, name, ">", 5, 5, false)
-                        HomeActivity.newArrayList.add(robots)
-                        Toast.makeText(this, "Roboter '$name' mit Token '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
-                        HomeActivity.updateRecyclerView()
+                    showNameInputDialog { name ->
+                        if (name != null) {
+                            val robots = Robot(R.drawable.a, name, ">", 5, 5, false)
+                            HomeActivity.newArrayList.add(robots)
+                            Toast.makeText(this, "Roboter '$name' mit Token '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
+                            HomeActivity.updateRecyclerView()
+                        }
                     }
                 }
             } else {
@@ -78,7 +80,7 @@ class AddActivity : AppCompatActivity() {
 
 
 
-    private fun showNameInputDialog(): String? {
+    private fun showNameInputDialog(callback: (String?) -> Unit) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Namen eingeben")
 
@@ -93,18 +95,25 @@ class AddActivity : AppCompatActivity() {
             // Prüfen, ob die ID gültig ist (z. B. Länge überprüfen)
             if (name.isNotBlank()) {
                 dialog.dismiss()
+                Toast.makeText(this, "Name eingegeben: $name", Toast.LENGTH_SHORT).show()
+                callback(name)
                 // return@setPositiveButton name
-                name
             } else {
                 Toast.makeText(this, "Bitte Namen eingeben", Toast.LENGTH_SHORT).show()
+                callback(null)
             }
         }
-        builder.setNegativeButton("Abbrechen") { dialog, which -> dialog.cancel() }
+        builder.setNegativeButton("Abbrechen") { dialog, which ->
+            dialog.cancel()
+            callback(null)
+        }
 
         builder.show()
-
-        return null
     }
+
+
+
+
 
 
 }
