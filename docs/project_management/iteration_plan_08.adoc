@@ -1,4 +1,4 @@
-= Iteration Plan 07: {project-name}
+= Iteration Plan 08: {project-name}
 Manuel Scheer <manuel.scheer@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -12,22 +12,21 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Anfang der Iteration | 02.05.2023
-| Team- Meeting | 02.05.2023 
-| Meeting Projektleitung | 02.05.2023
-| Meeting mit Coach | 04.05.2023 
-| Meeting mit Kunden | 05.05.2023
-| Team- Meeting | 09.05.2023 
-| Ende der Iteration | 16.05.2023
+| Anfang der Iteration | 16.05.2023
+| Team- Meeting | 16.05.2023 
+| Meeting Projektleitung | 16.05.2023
+| Team- Meeting | 23.05.2023 
+| Ende der Iteration | 30.05.2023
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Use-Case UC01 hinzufügen
-* Aktuellen Stand mit Coach und Kunden abgleichen
-* Einfügen von GPS Marker in der Map
+* Use-Case UC02 hinzufügen
+* Meeting mit Kunden Neugebauer planen -> Wie soll die Simulation aussehen?
+* Follow-me soll zentriert werden
+* Modelle anlegen
 
 
 == Aufgabenzuordnung
@@ -39,12 +38,12 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Einarbeiten in JPA, UC01 implementieren | hoch | 5 | 16.05.23 | - | 7 | Jonas Pfeiffer, Michael Novak | - | -
-| Einfügen eines Markers an der aktuellen GPS Koordinate, Aufzeichnen der Route (UC04 & UC05) | hoch | 5 | 16.05.23 | - | 7 | Leon Lowa, Manuel Scheer | - | -
-| Teilnahme an Meetings, Klärung offener Fragen | medium | 2 | 05.05.23 | - | 7 | Magnus Andreas Böhne, Manuel Scheer | - | -
-| Erstellen und Überarbeitung der Protokolle / Iterationsplänen | medium | 2 | 09.05.23 | - | 7 | Manuel Scheer | - | - 
-| GitHub Action & Autostart (nachholen) | low | 4 | 16.05.23 | - | 6 | Magnus Andreas Böhne  | - | -
-| Spring Boot Security aufsetzen & Sicherheitslücken schließen | medium | 4 | 16.05.23 | - | 7 | Magnus Andreas Böhne | - | -
+| Systementwurf phyische und logische Sicht | hoch | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | -
+| Objektentwurf (Komponentendiagramm) | medium | 3 | 30.05.23 | - | 8 | Leon Lowa, Manuel Scheer | - | -
+| Spring Security | medium | 4 | 30.05.23 | - | 8 | Magnus Andreas Böhne | - | -
+| Anpassung der Follow-me Funktion (Modus) | medium | 1 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | - 
+| Nacharbeiten an der Map  | medium | 2 | 30.05.23 | - | 7 | Leon Lowa, Manuel Scheer  | - | -
+| Bearbeitung über JPA möglich | medium | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | -
 |===
 
 
@@ -65,9 +64,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 
-* Zufriedenheit / Anmerkungen von Coach und Kunden
-* Handhabung von GPS Daten
-* Datensätze können der Datenbank von der App aus hinzugefügt werden
+* Qualität der Modelle
+* Funktionalitäten der Map / Follow-me
+
 
 
 
