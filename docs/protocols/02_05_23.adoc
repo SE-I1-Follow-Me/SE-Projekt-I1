@@ -1,0 +1,44 @@
+= Protokoll: Cycle Meeting KW 18
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 16.11.22 18.00 Uhr - 18.45 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer (verspätet)
+* Magnus Andreas Böhne
+* Manuel Scheer
+
+
+
+== Agenda
+. Auswertung des Erreichten der letzten Woche
+. Aufgaben für diese Iteration
+
+
+
+=== Auswertung des Erreichten der letzten Woche
+
+Ergebnis:: 
+****
+* Liste wurde gefixed und nutzt die Daten vom Server, Hitboxen der Listenelemente muss noch angepasst werden
+* Map startet nun zentriert über dem Dresdner Hauptbahnhof, zudem wurde ein Marker hinzugefügt -> aktuell wird noch an GPS support gearbeitet
+* Datensätze der Roboter wurden geändert. Zudem wurde ein neues Repository innerhalb einer Organisation eröffnet. Dadurch soll das Team in der Lage sein, ein Repository für die App, eins für den Server und eins für die Testsimulation zu nutzen. 
+****
+
+=== Aufgaben für diese Iteration
+
+Ergebnis:: 
+****
+* Wie zuvor über Aufgabenbriefe verteilt
+* Map soll GPS support bekommen und die Route aufzeichnen
+* JPA muss vom Team gelernt werden
+* Es sollen Roboter von der App aus auf der Datenbank hinzugefügt werden können
+****
+

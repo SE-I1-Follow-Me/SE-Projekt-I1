@@ -1,0 +1,43 @@
+= Protokoll: Cycle Meeting KW 16
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 16.11.22 16.30 Uhr - 17.30 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+* Magnus Andreas Böhne
+* Manuel Scheer
+
+
+
+== Agenda
+. Auswertung der Arbeit der letzten Woche
+. Planung der nächsten Woche
+
+
+
+=== Auswertung der Arbeit der letzten Woche
+
+Ergebnis:: 
+****
+* Follow-me wird als Boolean gespeichert, die Liste kann gefiltert werden, Anschaulichkeit noch nicht konstant
+* Speichern funktioniert, muss noch resetet werden aber Funktion ist vorhanden
+* Hinzufügen: Roboter eingeben und Überprüfung auf gleichen Namen funktioniert (lokal)
+* Map ist da, Zoom funktioniert, Marker noch nicht aber ein Ansatz ist da
+* Server: Läuft, startet aber immer neu; dadurch wird Spring immer resetet
+****
+
+=== Planung der nächsten Woche
+
+Ergebnis:: 
+****
+* Serveranbindung muss stabil laufen -> Mail an Herrn Ringel, ob er uns helfen kann oder ob es einen anderen Ansprechpartner gibt (Ruben-David Kraus?)
+****
+

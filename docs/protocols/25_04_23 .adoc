@@ -1,0 +1,50 @@
+= Protokoll: Cycle Meeting KW 17
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 16.11.22 16.30 Uhr - 17.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer (verspätet)
+* Magnus Andreas Böhne
+* Manuel Scheer
+
+
+
+== Agenda
+. Aufgaben verteilen und Teammitglieder nach Feedback fragen
+. Planen der Meetings mit Coach und Kunden
+. Einarbeitung in den Server & aktuelle Probleme besprechen
+
+
+
+=== Aufgaben verteilen und Teammitglieder nach Feedback fragen
+
+Ergebnis:: 
+****
+* Aufgaben werden nun immer über die Aufgabenbriefe, welche die Teammitglieder über Discord und GitHub erhalten, verteilt
+* Team ist zufrieden mit Aufgabenmenge
+* Arbeiten in Zweiergruppen funktioniert; entweder wird sich abgesprochen wer was macht und allein gearbeitet oder sich getroffen
+****
+=== Planen der Meetings mit Coach und Kunden
+
+Ergenis::
+****
+* Wurde erledigt, Meeting mit Coach ist angesetzt für den 04.05., Meeting mit Kunden für den 05.05.
+* Meeting wird voraussichtlich nur vom Projektleiter und Stellvertreter besucht
+
+
+=== Einarbeitung in den Server & aktuelle Probleme besprechen
+
+Ergebnis:: 
+****
+* Teammitglieder wurden in den Server eingearbeitet
+* Problem: Wie läuft es mit den neuen Eigenschaften der Roboter (Follow-me Boolean etc.)?
+****
+
