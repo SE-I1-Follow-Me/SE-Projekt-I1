@@ -13,11 +13,14 @@ import android.widget.Toast
 
 //Suuuper nervige Sache
 // Falls etwas unklar ist, bitte RecyclerView-Tutorial mal anschauen
-class MyAdapter(private val context: Context, private val robots: java.util.ArrayList<Robot>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val context: Context, private var robots: java.util.ArrayList<Robot>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     // ***** Variablen *****
     private lateinit var mListener: OnItemClickListener
+
+    //Originaler Content für Filtern
+    private var originalContent = ArrayList<Robot>()
 
 
     // Hier wird der gerade initialisierte ViewHolder kreiert
@@ -44,6 +47,7 @@ class MyAdapter(private val context: Context, private val robots: java.util.Arra
 
             Toast.makeText(context, "Item $position clicked - Follow me: ${currentItem.followme}", Toast.LENGTH_SHORT).show()
         }
+
     }
 
 
@@ -66,10 +70,30 @@ class MyAdapter(private val context: Context, private val robots: java.util.Arra
                 mListener.setOnClickListener(absoluteAdapterPosition)
             }
         }
+
     }
 
 
     // ***** Funktionen *****
+
+    //Filter
+    fun filterItems(showFollowMe: Boolean) {
+
+        //Befülle den originalContent einmalig
+        if (originalContent.isEmpty()) {
+            originalContent.addAll(robots)
+        }
+
+        //Filtere die Items
+        if (showFollowMe) {
+            robots = robots.filter { it.followme } as ArrayList<Robot>
+        } else {
+            robots = ArrayList<Robot>(originalContent)
+        }
+        notifyDataSetChanged()
+    }
+
+
     override fun getItemCount(): Int {
         return robots.size
     }

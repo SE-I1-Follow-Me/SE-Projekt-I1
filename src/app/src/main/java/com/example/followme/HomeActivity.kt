@@ -1,10 +1,11 @@
 package com.example.followme
-import com.example.followme.HomeActivity
 import MyAdapter
 import Robot
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.util.ArrayList
+import kotlin.properties.Delegates
 
 class HomeActivity : AppCompatActivity() {
     //!! Initialisierungen verschiedener wichtiger Variabeln
@@ -52,9 +54,18 @@ class HomeActivity : AppCompatActivity() {
     lateinit var ivRoboter: Array<Int>
 
 
+    //Toggle
+    lateinit var btFollowMe: Button
+    var isChecked: Boolean = false
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        // FollowMe Liste filtern
+        btFollowMe = findViewById<Button>(R.id.btFollowMe)
+
         //Liste wird erstellt
         robotlist = arrayListOf<Roboter>()
         //Funktion LoadRoboter wird aufgerufen, siehe unten
@@ -172,6 +183,12 @@ class HomeActivity : AppCompatActivity() {
             }
 
         })
+
+        btFollowMe.setOnClickListener {
+            isChecked = !isChecked
+            Toast.makeText(this, "FollowMe gedrückt, isChecked: $isChecked", Toast.LENGTH_SHORT).show()
+            adapter.filterItems(isChecked)
+        }
 
 
     }
