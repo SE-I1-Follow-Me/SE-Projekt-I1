@@ -22,6 +22,7 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     //Originaler Content für Filtern
     private var originalContent = ArrayList<Robot>()
 
+    var filteredListShowed: Boolean = false;
 
     // Hier wird der gerade initialisierte ViewHolder kreiert
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -40,12 +41,25 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
         holder.ivRoboter.setImageResource(if (currentItem.followme) R.drawable.b else R.drawable.a)
 
         holder.itemView.setOnClickListener {
-            currentItem.followme = !currentItem.followme // toggle followme property
+            if (!filteredListShowed) {
+                if (!currentItem.followme) {
+                    currentItem.isMarked = !currentItem.isMarked
+                    holder.ivRoboter.setImageResource(if (currentItem.isMarked) R.drawable.c else R.drawable.a)
+                    holder.ivRoboter.setImageResource(if (currentItem.isMarked) R.drawable.c else R.drawable.a)
+                    Toast.makeText(context, "Item $position angeklickt", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else {
+                if (currentItem.isMarked) {
+                    currentItem.isMarked = false
+                    holder.ivRoboter.setImageResource(R.drawable.b)
+                } else {
+                    currentItem.isMarked = true
+                    holder.ivRoboter.setImageResource(R.drawable.c)
+                }
 
-            // Update robot image based on the followme property
-            holder.ivRoboter.setImageResource(if (currentItem.followme) R.drawable.b else R.drawable.a)
-
-            Toast.makeText(context, "Item $position clicked - Follow me: ${currentItem.followme}", Toast.LENGTH_SHORT).show()
+                //currentItem.followme = !currentItem.followme // toggle followme property
+            }
         }
 
     }
@@ -76,6 +90,17 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
 
     // ***** Funktionen *****
 
+    //Beende FollowMe
+    fun endFollowMe() {
+        robots.forEach { robot ->
+            if (robot.isMarked) {
+                robot.followme = false
+                robot.isMarked = false
+            }
+        }
+        notifyDataSetChanged()
+    }
+
     //Filter
     fun filterItems(showFollowMe: Boolean) {
 
@@ -86,8 +111,20 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
 
         //Filtere die Items
         if (showFollowMe) {
+
+            robots.forEach { robot ->
+                if (robot.isMarked) {
+                    robot.followme = true
+                    robot.isMarked = false
+                }
+            }
+
+            filteredListShowed = true
+
             robots = robots.filter { it.followme } as ArrayList<Robot>
+
         } else {
+            filteredListShowed = false
             robots = ArrayList<Robot>(originalContent)
         }
         notifyDataSetChanged()

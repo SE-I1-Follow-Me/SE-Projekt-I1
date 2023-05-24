@@ -2,6 +2,8 @@ package com.example.followme
 import MyAdapter
 import Robot
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -57,6 +59,11 @@ class HomeActivity : AppCompatActivity() {
     //Toggle
     lateinit var btFollowMe: Button
     var isChecked: Boolean = false
+    val colorPressed = Color.parseColor("#307cd9")
+    val colorDefault = Color.parseColor("#E8F3EA")
+
+    //Beende Followme
+    lateinit var btBeenden: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +72,9 @@ class HomeActivity : AppCompatActivity() {
 
         // FollowMe Liste filtern
         btFollowMe = findViewById<Button>(R.id.btFollowMe)
+
+        //FollowMe Beenden
+        btBeenden =findViewById<Button>(R.id.btBeenden)
 
         //Liste wird erstellt
         robotlist = arrayListOf<Roboter>()
@@ -160,7 +170,7 @@ class HomeActivity : AppCompatActivity() {
         for (robot in robotlist) {
             //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
             //und dem Pfeil
-            val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false)
+            val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
             newArrayList.add(robots)
         }
         rv.adapter?.notifyDataSetChanged()
@@ -188,6 +198,16 @@ class HomeActivity : AppCompatActivity() {
             isChecked = !isChecked
             Toast.makeText(this, "FollowMe gedrückt, isChecked: $isChecked", Toast.LENGTH_SHORT).show()
             adapter.filterItems(isChecked)
+            val color = if (isChecked) colorPressed else colorDefault
+            btFollowMe.backgroundTintList = ColorStateList.valueOf(color)
+        }
+
+        btBeenden.setOnClickListener {
+            if (isChecked) {
+                adapter.endFollowMe()
+            } else {
+                Toast.makeText(this, "Bitte erst FollowMe aufrufen", Toast.LENGTH_SHORT).show()
+            }
         }
 
 

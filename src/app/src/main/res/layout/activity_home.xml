@@ -47,6 +47,7 @@
             android:layout_height="65dp"
             android:layout_marginStart="24dp"
             android:layout_marginBottom="8dp"
+            android:backgroundTint="#E8F3EA"
             android:checkable="true"
             android:gravity="center"
             android:text="Follow Me"
@@ -55,7 +56,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/RoundCorner"/>
+            app:shapeAppearanceOverlay="@style/RoundCorner" />
 
         <Button
             android:id="@+id/btBeenden"
