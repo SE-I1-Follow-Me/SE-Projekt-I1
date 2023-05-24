@@ -59,7 +59,7 @@ class HomeActivity : AppCompatActivity() {
     //Toggle
     lateinit var btFollowMe: Button
     var isChecked: Boolean = false
-    val colorPressed = Color.parseColor("#307cd9")
+    val colorPressed = Color.parseColor("#fe5454")
     val colorDefault = Color.parseColor("#E8F3EA")
 
     //Beende Followme
@@ -196,7 +196,6 @@ class HomeActivity : AppCompatActivity() {
 
         btFollowMe.setOnClickListener {
             isChecked = !isChecked
-            Toast.makeText(this, "FollowMe gedrückt, isChecked: $isChecked", Toast.LENGTH_SHORT).show()
             adapter.filterItems(isChecked)
             val color = if (isChecked) colorPressed else colorDefault
             btFollowMe.backgroundTintList = ColorStateList.valueOf(color)

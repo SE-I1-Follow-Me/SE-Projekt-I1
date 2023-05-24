@@ -46,7 +46,6 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
                     currentItem.isMarked = !currentItem.isMarked
                     holder.ivRoboter.setImageResource(if (currentItem.isMarked) R.drawable.c else R.drawable.a)
                     holder.ivRoboter.setImageResource(if (currentItem.isMarked) R.drawable.c else R.drawable.a)
-                    Toast.makeText(context, "Item $position angeklickt", Toast.LENGTH_SHORT).show()
                 }
             }
             else {
@@ -58,7 +57,6 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
                     holder.ivRoboter.setImageResource(R.drawable.c)
                 }
 
-                //currentItem.followme = !currentItem.followme // toggle followme property
             }
         }
 
@@ -92,12 +90,14 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
 
     //Beende FollowMe
     fun endFollowMe() {
+        if (!robots.any { robot ->  robot.isMarked }) { Toast.makeText(context, "Bitte mindestens einen Roboter auswählen", Toast.LENGTH_SHORT).show()}
         robots.forEach { robot ->
             if (robot.isMarked) {
                 robot.followme = false
                 robot.isMarked = false
             }
         }
+        robots = robots.filter { it.followme } as ArrayList<Robot>
         notifyDataSetChanged()
     }
 
