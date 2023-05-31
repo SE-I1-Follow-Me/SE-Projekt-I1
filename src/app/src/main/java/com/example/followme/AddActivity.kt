@@ -8,6 +8,13 @@ import android.os.Bundle
 import android.text.InputType
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import com.example.followme.Entity.Roboter
+import com.example.followme.Retrofit.RetrofitService
+import com.example.followme.Retrofit.RoboterAPI
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
 
 class AddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +24,9 @@ class AddActivity : AppCompatActivity() {
         val btHome = findViewById<ImageButton>(R.id.btHome)
         val btAlerts = findViewById<ImageButton>(R.id.btAlerts)
         val btAccount = findViewById<ImageButton>(R.id.btAccount)
+        val retrofitService = RetrofitService()
+        val api = retrofitService.getRetrofit().create(RoboterAPI::class.java)
+
 
         btRoute.setOnClickListener {
 
@@ -66,6 +76,30 @@ class AddActivity : AppCompatActivity() {
                             Toast.makeText(this, "Roboter '$name' mit Token '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
                             HomeActivity.updateRecyclerView()
                         }
+                        /*if (name != null) {
+                            // Create a new Roboter object
+                            val roboter = Roboter()
+                            roboter.setId(id)
+                            roboter.setName(name)
+
+                            api.saveRoboter(roboter).enqueue(object : Callback<Void> {
+                                override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                                    if (response.isSuccessful) {
+                                        // The robot was successfully saved on the server.
+                                        Toast.makeText(this@AddActivity, "Roboter '$name' mit Token '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
+                                        HomeActivity.updateRecyclerView()
+                                    } else {
+                                        // The server responded with an error.
+                                        Toast.makeText(this@AddActivity, "Server error: ${response.errorBody()}", Toast.LENGTH_SHORT).show()
+                                    }
+                                }
+
+                                override fun onFailure(call: Call<Void>, t: Throwable) {
+                                    // There was a network error.
+                                    Toast.makeText(this@AddActivity, "Network error: $t", Toast.LENGTH_SHORT).show()
+                                }
+                            })
+                        }*/
                     }
                 }
             } else {

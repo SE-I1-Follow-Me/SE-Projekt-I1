@@ -52,5 +52,7 @@ dependencies {
 
     implementation 'org.osmdroid:osmdroid-android:6.1.16'
 
+    //Selection Test
+    implementation 'androidx.recyclerview:recyclerview-selection:1.1.0'
 
 }
