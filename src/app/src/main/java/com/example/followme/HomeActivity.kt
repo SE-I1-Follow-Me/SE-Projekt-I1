@@ -18,6 +18,7 @@ import com.example.followme.Retrofit.RoboterAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.File
 import java.util.ArrayList
 import kotlin.properties.Delegates
 
@@ -42,10 +43,12 @@ class HomeActivity : AppCompatActivity() {
         fun updateRecyclerView() {
             rv.adapter?.notifyDataSetChanged()
         }
+
+        lateinit var robotlist: java.util.ArrayList<Roboter>
     }
 
 
-    lateinit var robotlist: java.util.ArrayList<Roboter>
+
     //einzelne Listen zum Zusammenfügen eines Roboterobjekts
 
     //Name der von der DB abgerufen wird
@@ -166,12 +169,29 @@ class HomeActivity : AppCompatActivity() {
 
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
     private fun getUserData() {
+
+        // Lies aus der Datei welche roboter geladen werden sollen
+        var RobotsUser = readDataFromFile("RobotsUserX.csv")
+
         //Für alle robot-Objekte, die vom Server gesendet wurde, wird ein Roboter-Objekt kreiert
         for (robot in robotlist) {
-            //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
-            //und dem Pfeil
-            val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
-            newArrayList.add(robots)
+
+            // Schau welcher roboter geladen werden soll
+            val robotId = robot.getId()
+            val isIdInDataList = RobotsUser.any { data ->
+                val dataArray = data.split(",")
+                val id = dataArray[0]
+                id == robotId.toString()
+            }
+
+            // Wenn der Roboter geladen werden soll:
+            if (isIdInDataList) {
+                //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
+                val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
+                newArrayList.add(robots)
+            }
+
+
         }
         rv.adapter?.notifyDataSetChanged()
     }
@@ -210,6 +230,33 @@ class HomeActivity : AppCompatActivity() {
         }
 
 
+    }
+
+
+    fun readDataFromFile(fileName: String): List<String> {
+        val dataList = mutableListOf<String>()
+        val file = File(this.filesDir, fileName)
+
+        // Füge IDs zum test hinzu (ansonsten ist app leer)
+        if (file.length() == 0L) {
+            try {
+                file.appendText("1" + "\n" + "3" + "\n" +"5" + "\n" +"7" + "\n")
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+
+        if (file.exists()) {
+            try {
+                file.forEachLine { line ->
+                    dataList.add(line)
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+
+        return dataList
     }
 
 
