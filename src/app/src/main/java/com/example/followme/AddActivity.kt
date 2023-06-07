@@ -59,7 +59,7 @@ class AddActivity : AppCompatActivity() {
             // Überprüfen Sie, ob die eingegebene ID gültig ist
             if (id != null) {
                 // Überprüfen Sie, ob das Token bereits in der Liste der gespeicherten Roboter vorhanden ist
-                if (HomeActivity.robotlist.any { it.getId() == id }) {
+                if (HomeActivity.robotsUser.any { it == id }) {
                     // Informieren Sie den Benutzer, dass das Token bereits vorhanden ist
                     Toast.makeText(this, "Dieses Token ist bereits vorhanden.", Toast.LENGTH_SHORT).show()
                 } else {
