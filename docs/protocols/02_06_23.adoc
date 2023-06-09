@@ -1,0 +1,69 @@
+= Protokoll: Meeting mit Kunden (Herrn Neugebauer)
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 02.06.23 15.00 Uhr - 16.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+* Michael Novak
+* Magnus Andreas Böhne
+* Manuel Scheer
+
+== Abwesende (Anmerkung: Die fehlenden Personen waren alle entschuldigt)
+* Jonas Pfeiffer 
+* Leon Lowa
+
+== Agenda
+.	Änderung an der App + Allgemeines
+.	Simulation
+.   Tests
+
+
+
+
+=== Änderung an der App + Allgemeines
+
+Ergebnis:: 
+****
+
+* Roboterliste dem Kunden vorgeführt
+* Button "Follow-me" laut Kunden missverständlich (muss ev. geändert oder so in der Nutzeranweisung dokumentiert werden)
+* Mehr in die Lage des (End)Nutzers versetzen; Spätere Nutzer "befragen" etc.
+* Roboterliste Filtern? Ideen des Kunden: Nur Roboter "in der Nähe", sollen Roboter, die von anderem Nutzer ausgewählt wurden, gesperrt werden? Favoriten hinzufügen; Roboter Gruppen hinzufügen und nach diesen Gruppen sotieren und mit ihnen arbeiten -> Was hat Priorität beim Filtern? -> "Meine Roboter" / "Mein Arbeitsbereich" für den Nutzer der App 
+* Button "Gruppe erstellen" und "Gruppe auflösen" dafür nötig
+* Zur Zuordnung können die Tokens/IDs genutzt werden
+* Zitat des Kunden: "Sie dürfen auch, wenn Sie sagen "Das (Projekt) wird zu groß" sagen, wir schauen uns einen Teil des Geschäftsprozesses an und setzen voraus, dass die Gruppe bereits zugeordnet ist"
+* Nach Veröffentichung: Eine Datenbank, nicht eine pro Kunden oder extern anbieten
+* Jeder Roboter muss jeden Tag neu zugeordnet werden? Mögliche Zuordnung später über Barcode denkbar?
+* Themen des Projektes dürfen "abgetrennt werden", heißt wenn wir nur einen Teil eines Themas fertig bekommen ist das in Ordnung
+* Eventuell Button in Map einfügen, in dem Fahrbefehle (Warte, Fahre zurück etc.) auswählbar sind + Map soll nach Start von Follow-me automatisch geladen werden
+* Zitat des Kunden: "Nehmen Sie das als großen Sandkasten für das, was später kommt und nehmen Sie mit, was Sie bei eigenen Projekten anders machen wollen" -> Das Projekt ist für uns zum lernen, nicht zum fertig werden
+
+****
+
+=== Simulation
+
+Ergebnis:: 
+****
+* Eigene Anwendung oder Eigene Activity? -> Ist uns überlassen, möglichst einfach halten, dann kann es im Nachhinein immer noch schwieriger gemacht werden / Ausgebaut werden
+* Position des Nutzers und des Roboters sollen in der Map angezeigt werden (nicht so einfach umsetzbar)
+* Marker der Linie nachgehen / telepotieren
+* Activity muss bei Server nachfragen, sonst sind die Daten ja lokal
+* Alternativ dazu: Mit zwei Handys arbeiten
+****
+
+=== Tests
+
+Ergebis::
+****
+* Was für Tests machen Sinn? UI-Tests? Simulation allein ausreichend? -> Modul Tests für kleine Teile des Systems
+* Selbst was überlegen, aber mit Modul Tests arbeiten
+* Vorgestellte Tests anschauen und entscheiden, was für unser Projekt sinnvoll ist und was nicht
+* Laut Kunden "auszugsweise" (Test) ausreichend
+* Für Spätere Tests: Sind nicht als "Beleg, dass es geht" gedacht, sondern als Versicherung, dass es geht
+
+****

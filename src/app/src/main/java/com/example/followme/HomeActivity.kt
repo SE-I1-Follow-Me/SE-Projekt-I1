@@ -5,10 +5,9 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.Switch
-import android.widget.Toast
+import android.text.InputType
+import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +17,7 @@ import com.example.followme.Retrofit.RoboterAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.File
 import java.util.ArrayList
 import kotlin.properties.Delegates
 
@@ -42,10 +42,14 @@ class HomeActivity : AppCompatActivity() {
         fun updateRecyclerView() {
             rv.adapter?.notifyDataSetChanged()
         }
+
+        lateinit var robotlist: java.util.ArrayList<Roboter>
+
+        lateinit var robotsUser: List<Int>
     }
 
 
-    lateinit var robotlist: java.util.ArrayList<Roboter>
+
     //einzelne Listen zum Zusammenfügen eines Roboterobjekts
 
     //Name der von der DB abgerufen wird
@@ -107,8 +111,27 @@ class HomeActivity : AppCompatActivity() {
         // direct to the different activities
         btAdd.setOnClickListener {
 
-            val intent = Intent(this, AddActivity::class.java)
-            startActivity(intent)
+            showIdInputDialog { id ->
+                if (id != null) {
+                    // val robots = Robot(R.drawable.a, id, ">", 5, 5, false, false)
+                    // HomeActivity.newArrayList.add(robots)
+                    Toast.makeText(
+                        this,
+                        "Roboter '$id' wurde erfolgreich angelegt.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    // write in file
+                    saveRoboterInFile(id)
+
+                    // Hole den neuen Roboter
+                    getUserData()
+
+                }
+            }
+
+            //val intent = Intent(this, AddActivity::class.java)
+            //startActivity(intent)
         }
         btRoute.setOnClickListener {
 
@@ -166,12 +189,22 @@ class HomeActivity : AppCompatActivity() {
 
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
     private fun getUserData() {
+
+        newArrayList.clear()
+
+        // Lies aus der Datei welche roboter geladen werden sollen
+        robotsUser = readDataFromFile("RobotsUserX.csv")
+
         //Für alle robot-Objekte, die vom Server gesendet wurde, wird ein Roboter-Objekt kreiert
         for (robot in robotlist) {
-            //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
-            //und dem Pfeil
-            val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
-            newArrayList.add(robots)
+
+            // Wenn der Roboter geladen werden soll:
+            if (robotsUser.contains(robot.getId())) {
+                //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
+                val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
+                newArrayList.add(robots)
+            }
+
         }
         rv.adapter?.notifyDataSetChanged()
     }
@@ -210,6 +243,70 @@ class HomeActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun showIdInputDialog(callback: (Int?) -> Unit) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("ID eingeben")
+
+        // Set up the input
+        val input = EditText(this)
+        input.inputType = InputType.TYPE_CLASS_NUMBER
+        builder.setView(input)
+
+        // Set up the buttons
+        builder.setPositiveButton("OK") { dialog, which ->
+            val idString = input.text.toString()
+            // Prüfen, ob die ID gültig ist (z. B. Parsing prüfen)
+            val id = idString.toIntOrNull()
+            if (id != null) {
+                dialog.dismiss()
+                Toast.makeText(this, "ID eingegeben: $id", Toast.LENGTH_SHORT).show()
+                callback(id)
+            } else {
+                Toast.makeText(this, "Ungültige ID", Toast.LENGTH_SHORT).show()
+                callback(null)
+            }
+        }
+        builder.setNegativeButton("Abbrechen") { dialog, which ->
+            dialog.cancel()
+            callback(null)
+        }
+
+        builder.show()
+    }
+
+
+    // Schreibe content in datei
+    fun saveRoboterInFile(ID: Int) {
+        val data = "$ID"
+        val file = File(this.filesDir, "RobotsUserX.csv")
+
+        try {
+            file.appendText(data + "\n")
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    fun readDataFromFile(fileName: String): List<Int> {
+        val dataList = mutableListOf<Int>()
+        val file = File(this.filesDir, fileName)
+
+        if (file.exists()) {
+            try {
+                file.forEachLine { line ->
+                    val value = line.toIntOrNull()
+                    if (value != null) {
+                        dataList.add(value)
+                    }
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+
+        return dataList
     }
 
 

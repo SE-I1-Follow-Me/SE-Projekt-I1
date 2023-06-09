@@ -1,0 +1,65 @@
+= Protokoll: Coach Meeting 04.05.2023
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+v1.0, 06.06.23 9.00 Uhr - 10.00 Uhr
+include::../_includes/default-attributes.inc.adoc[]
+{localdatetime}
+
+
+
+// Platzhalter für weitere Dokumenten-Attribute
+
+== Anwesende
+- Hinweis: Anwesenheit war freiwillig. Meeting wurde für die Projektleitung angesetzt
+* Manuel Scheer
+* Magnus Andreas Böhne
+
+== Abwesende
+* Leon Lowa
+* Michael Novak
+* Jonas Pfeiffer
+
+
+== Agenda
+.	Coach Überblick über den aktuellen Stand geben
+.   Dokumentation
+.   Allgemeines / Abgabe
+
+=== Coach Überblick über den aktuellen Stand geben
+
+Ergebnis:: 
+
+****
+
+* App gezeigt, aktueller Stand des Knowledge erklärt
+* Was wir bisher gemacht haben "passt"
+* Software soll auf aktuellem Stand bleiben (kleiner Ausbesserungen oder Ergänzungen die kurz vor Vollendung sind sind außgenommen) -> Schnellstmöglich Testen und mit Dokumentation anfangen
+
+****
+
+=== Dokumentation
+
+Ergebnis:: 
+****
+
+* Wir sind in der Phase "Übergabe an den Kunden"
+* Reflexionssteite: Was für Probleme sind aufgetreten, wie wurden diese behoben / umgangen oder wie wurde mit ihnen umgegangen?
+* Lizens muss ausgesucht werden! (Siehe Folien von Herrn Anke, dort ist eine Webseite hinterlegt, die bei der Entscheidung hilft)
+* Tests: Vor den Ergebnissen begründen, warum diese Tests ausgesucht wurden / was sich von den Tests erhofft wurde
+
+****
+
+=== Allgemeines / Abgabe
+
+Ergebnis::
+****
+* Übergabe an den Kunden: Nutzerdokumentation, Code, Lizensen, Entwurfsdokumentation
+* Wichtig: Wer hat es geschrieben, Versionsnummer, Datum...
+* Liste von Features: Testen/Vorführen, Ergebnis: Funktioniert / Funktioniert nicht / Funktioniert mit Mängeln
+* Wenn Kunde sagt "Das wäre schön" -> Noch letzte Dummy-Buttons oder nicht umsetzen
+* *Sehr Wichtig!!!:* Gewährleistung, Garantie, Haftung muss feststehen, sonst sind wir nach Ende des Projektes weiterhin für alles verantwortlich! -> "Projekt endet am XX.XX.XX, keine Haftung/Garantie dannach!" 
+* Sollte das Projekt nicht abgenommen werden heißt es NICHT, dass wir durchgefalle sind!
+* Bei Lizens/Haftung auf verwendete Frameworks/Bibliotheken achten
+* Angebarbeitetes Stabilisieren und Dokumentation machen, Bei Unstimmigkeiten im Dokument darauf hinweisen!
+* Bei Problemen Herrn Ringel kontaktieren
+
+****
