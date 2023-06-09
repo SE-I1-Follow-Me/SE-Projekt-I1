@@ -32,8 +32,8 @@ import java.util.*
 
 class RouteActivity : AppCompatActivity() {
 
-    private var interval: Long = 1000
-    private var fastestInterval: Long = 500
+    private var interval: Long = 2000
+    private var fastestInterval: Long = 1000
     private var maxWaitTime: Long = 1000
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -229,7 +229,7 @@ class RouteActivity : AppCompatActivity() {
         if (path1 == null) {
             path1 = Polyline()
             path1!!.outlinePaint.color = Color.RED
-            path1!!.outlinePaint.strokeWidth = 10f
+            path1!!.outlinePaint.strokeWidth = 8f
             path1!!.addPoint(startPoint.clone())
             map.overlayManager.add(path1)
         }
@@ -267,7 +267,7 @@ class RouteActivity : AppCompatActivity() {
         map.invalidate()
     }
 
-    fun onClickDraw4(view: View?) {
+    fun onClickCenter(view: View?) {
         startPoint.latitude = startPoint.latitude + (rnd.nextDouble() - 0.5) * 0.001
         startPoint.longitude = startPoint.longitude + (rnd.nextDouble() - 0.5) * 0.001
         getPath().addPoint(startPoint.clone())
@@ -280,7 +280,7 @@ class RouteActivity : AppCompatActivity() {
             // Create a new path overlay on the map
             pathOverlay = Polyline()
             pathOverlay!!.outlinePaint.color = Color.RED
-            pathOverlay!!.outlinePaint.strokeWidth = 10f
+            pathOverlay!!.outlinePaint.strokeWidth = 8f
             pathOverlay!!.addPoint(startPoint!!)
             map.overlayManager.add(pathOverlay)
             // Update the map view
@@ -293,7 +293,7 @@ class RouteActivity : AppCompatActivity() {
                     override fun run() {
                         updatePath()
                     }
-                }, 0, 1000)
+                }, 0, 4000)
             } else {
                 // Stop updating the path
                 pathUpdateTimer!!.cancel()
@@ -319,11 +319,11 @@ class RouteActivity : AppCompatActivity() {
     }
 
     fun onClickAdd(view: View?){
-        val intent = Intent(this, AddActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }
     fun onClickHome(view: View?){
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent(this, AddActivity::class.java)
         startActivity(intent)
     }
     fun onClickAlerts(view: View?){

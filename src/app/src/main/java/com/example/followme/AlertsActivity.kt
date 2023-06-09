@@ -16,12 +16,12 @@ class AlertsActivity : AppCompatActivity() {
 
         btAdd.setOnClickListener {
 
-            val intent = Intent(this, AddActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
         btHome.setOnClickListener {
 
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
         btRoute.setOnClickListener {

@@ -104,7 +104,7 @@ class HomeActivity : AppCompatActivity() {
 
         // create variables for the OnClickListener
         val btRoute = findViewById<ImageButton>(R.id.btRoute)
-        val btAdd = findViewById<ImageButton>(R.id.btAdd)
+        val btAdd = findViewById<ImageButton>(R.id.btHome)
         val btAlerts = findViewById<ImageButton>(R.id.btAlerts)
         val btAccount = findViewById<ImageButton>(R.id.btAccount)
 

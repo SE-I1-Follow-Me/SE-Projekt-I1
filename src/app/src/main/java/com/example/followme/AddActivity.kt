@@ -16,7 +16,7 @@ class AddActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
         val btRoute = findViewById<ImageButton>(R.id.btRoute)
-        val btHome = findViewById<ImageButton>(R.id.btHome)
+        val btAdd = findViewById<ImageButton>(R.id.btAdd)
         val btAlerts = findViewById<ImageButton>(R.id.btAlerts)
         val btAccount = findViewById<ImageButton>(R.id.btAccount)
         val retrofitService = RetrofitService()
@@ -28,7 +28,7 @@ class AddActivity : AppCompatActivity() {
             val intent = Intent(this, RouteActivity::class.java)
             startActivity(intent)
         }
-        btHome.setOnClickListener {
+        btAdd.setOnClickListener {
 
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
