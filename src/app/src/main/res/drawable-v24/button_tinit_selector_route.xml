@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:state_checked="true"
+    <item android:state_pressed="true"
         app:srcCompat="@drawable/ic_baseline_start_route_on"/>
-    <item android:state_checked="false"
-        app:srcCompat="@drawable/ic_baseline_current_location"/>
-    <item android:drawable="@drawable/ic_baseline_current_location">
+    <item app:srcCompat="@drawable/ic_baseline_current_location">
     </item>
 </selector>

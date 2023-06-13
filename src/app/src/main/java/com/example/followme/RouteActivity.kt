@@ -8,12 +8,18 @@ import android.location.Location
 import android.location.LocationManager
 import android.os.Bundle
 import android.os.Looper
+import android.text.InputType
 import android.view.View
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.followme.Entity.Coordinates
 import com.example.followme.Entity.Route
+import com.example.followme.Retrofit.RetrofitService
+import com.example.followme.Retrofit.RoboterAPI
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
 import com.google.android.gms.tasks.Task
@@ -29,6 +35,9 @@ import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 import org.osmdroid.views.overlay.Polyline
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import timber.log.Timber
 import java.util.*
 
@@ -51,6 +60,7 @@ class RouteActivity : AppCompatActivity() {
     private var requestingLocationUpdates = false
 
     companion object {
+        val FOLLOW_ME_IDS: Int = 0
         const val REQUEST_CHECK_SETTINGS = 20202
     }
 
@@ -85,6 +95,7 @@ class RouteActivity : AppCompatActivity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
@@ -111,6 +122,9 @@ class RouteActivity : AppCompatActivity() {
         permissionsLauncher.launch(appPerms)
 
         initLocation()
+        if(FOLLOW_ME_IDS != 0) {
+            drawPathOnMap()
+        }
     }
 
     override fun onResume() {
@@ -265,13 +279,53 @@ class RouteActivity : AppCompatActivity() {
             } else {
                 // Stop updating the path
                 //POST der Route rein
-                pathUpdateTimer!!.cancel()
-                pathUpdateTimer = null
-                routePoint == null
+                var temp = Route()
+                temp.setCoordinates(coordinatesRoute)
+                temp.setDrivenBy(FOLLOW_ME_IDS)
+                showNameInputDialog { name ->
+                    if (name != null) {
+                        temp.setName(name)
+                    }
+                    val retrofitService = RetrofitService()
+                    //neue API-Schnittstelle wird instanziert
+                    val api = retrofitService.getRetrofit().create(RoboterAPI::class.java)
+                    api.saveRoute(temp).enqueue(object : Callback<Void> {
+                        override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                            if (response.isSuccessful) {
+                                // The robot was successfully saved on the server.
+                                Toast.makeText(
+                                    this@RouteActivity,
+                                    "Route '$name' wurde erfolgreich angelegt.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                HomeActivity.updateRecyclerView()
+                            } else {
+                                // The server responded with an error.
+                                Toast.makeText(
+                                    this@RouteActivity,
+                                    "Server error: ${response.errorBody()}",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+
+                        override fun onFailure(call: Call<Void>, t: Throwable) {
+                            // There was a network error.
+                            Toast.makeText(
+                                this@RouteActivity,
+                                "Network error: $t",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    })
+                    coordinatesRoute.clear()
+                    pathUpdateTimer!!.cancel()
+                    pathUpdateTimer = null
+                    routePoint == null
+                }
             }
         }
     }
-
     private fun updatePath() {
         if (routeEndPoint == null) {
             // Set the ending location
@@ -290,6 +344,37 @@ class RouteActivity : AppCompatActivity() {
             // Set the current location as the new ending location
             routeEndPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
         }
+    }
+
+    private fun showNameInputDialog(callback: (String?) -> Unit) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Namen eingeben")
+
+        // Set up the input
+        val input = EditText(this)
+        input.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS
+        builder.setView(input)
+
+        // Set up the buttons
+        builder.setPositiveButton("OK") { dialog, which ->
+            val name = input.text.toString()
+            // Prüfen, ob die ID gültig ist (z. B. Länge überprüfen)
+            if (name.isNotBlank()) {
+                dialog.dismiss()
+                Toast.makeText(this, "Name eingegeben: $name", Toast.LENGTH_SHORT).show()
+                callback(name)
+                // return@setPositiveButton name
+            } else {
+                Toast.makeText(this, "Bitte Namen eingeben", Toast.LENGTH_SHORT).show()
+                callback(null)
+            }
+        }
+        builder.setNegativeButton("Abbrechen") { dialog, which ->
+            dialog.cancel()
+            callback(null)
+        }
+
+        builder.show()
     }
 
     fun onClickAdd(view: View?){
@@ -314,7 +399,6 @@ class RouteActivity : AppCompatActivity() {
     fun onClickDraw(view: View?){
         drawPathOnMap()
     }
-
 }
 
 class MyEventLocationSettingsChange (val on: Boolean){
