@@ -74,7 +74,7 @@ class HomeActivity : AppCompatActivity() {
     //Beende Followme
     lateinit var btBeenden: Button
 
-
+    var isDeleted: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -182,6 +182,7 @@ class HomeActivity : AppCompatActivity() {
     fun getUserData() {
 
         newArrayList.clear()
+        robotsUser = emptyList()
 
         // Lies aus der Datei welche roboter geladen werden sollen
         robotsUser = readDataFromFile("RobotsUserX.csv")
@@ -217,17 +218,26 @@ class HomeActivity : AppCompatActivity() {
             }
 
             override fun onArrowClick(pos: Int) {
+
+                isDeleted = false
+
                 if (newArrayList[pos].tvPfeil == ">") {
                     newArrayList[pos].tvPfeil = "x"
                     adapter.notifyItemChanged(pos)
+
                     Handler(Looper.getMainLooper()).postDelayed({
-                        newArrayList[pos].tvPfeil = ">"
-                        adapter.notifyItemChanged(pos)
+                        if (!isDeleted) {
+                            if (newArrayList[pos].tvPfeil == "x") {
+                                newArrayList[pos].tvPfeil = ">"
+                                adapter.notifyItemChanged(pos)
+                            }
+                        }
                     }, 5000)
                 }
                 else {
                     deleteValueFromFile("RobotsUserX.csv", newArrayList[pos].id)
                     getUserData()
+                    isDeleted = true
                 }
             }
 
