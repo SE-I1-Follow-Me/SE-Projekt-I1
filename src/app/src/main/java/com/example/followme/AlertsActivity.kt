@@ -1,5 +1,6 @@
 package com.example.followme
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,14 +15,19 @@ class AlertsActivity : AppCompatActivity() {
         val btHome = findViewById<ImageButton>(R.id.btHome)
         val btAccount = findViewById<ImageButton>(R.id.btAccount)
 
+        // !!! Home ist in diesem layout fälschlicherweise add
+        btHome.setOnClickListener {
+
+            DialogHelper.showIdInputDialog(this) { id ->
+                DialogHelper.handleIdInput(this, id)
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+
+            }
+        }
         btAdd.setOnClickListener {
 
             val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-        }
-        btHome.setOnClickListener {
-
-            val intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
         btRoute.setOnClickListener {
@@ -35,4 +41,15 @@ class AlertsActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    private fun openIdInputDialog(context: Context) {
+        DialogHelper.showIdInputDialog(context) { id ->
+            if (id != null) {
+                DialogHelper.handleIdInput(context, id)
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+
 }

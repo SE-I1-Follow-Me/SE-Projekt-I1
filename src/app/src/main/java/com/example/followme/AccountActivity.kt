@@ -14,6 +14,8 @@ class AccountActivity : AppCompatActivity() {
         val btAlerts = findViewById<ImageButton>(R.id.btAlerts)
         val btHome = findViewById<ImageButton>(R.id.btHome)
 
+
+        // !!! Home ist in diesem layout fälschlicherweise add
         btAdd.setOnClickListener {
 
             val intent = Intent(this, HomeActivity::class.java)
@@ -21,8 +23,12 @@ class AccountActivity : AppCompatActivity() {
         }
         btHome.setOnClickListener {
 
-            val intent = Intent(this, AddActivity::class.java)
-            startActivity(intent)
+            DialogHelper.showIdInputDialog(this) { id ->
+                DialogHelper.handleIdInput(this, id)
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+
+            }
         }
         btAlerts.setOnClickListener {
 

@@ -10,6 +10,8 @@ class Roboter {
 
     private var name: String? = null
 
+    private var isFollowing: Boolean = false
+
     fun getId(): Int? {
         return id
     }
@@ -33,5 +35,15 @@ class Roboter {
     fun setName(name: String?) {
         this.name = name
     }
+
+    fun getIsFollowing(): Boolean {
+        return isFollowing;
+    }
+
+    fun setIsFollowing(isFollowing: Boolean) {
+        this.isFollowing = isFollowing
+    }
+
+
 
 }

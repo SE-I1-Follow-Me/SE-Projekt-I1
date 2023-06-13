@@ -323,8 +323,11 @@ class RouteActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun onClickHome(view: View?){
-        val intent = Intent(this, AddActivity::class.java)
-        startActivity(intent)
+        DialogHelper.showIdInputDialog(this) { id ->
+            DialogHelper.handleIdInput(this, id)
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
     fun onClickAlerts(view: View?){
         val intent = Intent(this, AlertsActivity::class.java)

@@ -112,28 +112,11 @@ class HomeActivity : AppCompatActivity() {
 
         // direct to the different activities
         btAdd.setOnClickListener {
-
-            showIdInputDialog { id ->
-                if (id != null) {
-                    // val robots = Robot(R.drawable.a, id, ">", 5, 5, false, false)
-                    // HomeActivity.newArrayList.add(robots)
-                    Toast.makeText(
-                        this,
-                        "Roboter '$id' wurde erfolgreich angelegt.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-                    // write in file
-                    saveRoboterInFile(id)
-
-                    // Hole den neuen Roboter
-                    getUserData()
-
-                }
+            DialogHelper.showIdInputDialog(this) { id ->
+                DialogHelper.handleIdInput(this, id)
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
             }
-
-            //val intent = Intent(this, AddActivity::class.java)
-            //startActivity(intent)
         }
         btRoute.setOnClickListener {
 
@@ -190,7 +173,7 @@ class HomeActivity : AppCompatActivity() {
 
 
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
-    private fun getUserData() {
+    fun getUserData() {
 
         newArrayList.clear()
 
@@ -203,7 +186,7 @@ class HomeActivity : AppCompatActivity() {
             // Wenn der Roboter geladen werden soll:
             if (robotsUser.contains(robot.getId())) {
                 //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
-                val robots = Robot(robot.getId() ?: 0, ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
+                val robots = Robot(robot.getId() ?: 0, ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, robot.getIsFollowing(), false)
                 newArrayList.add(robots)
             }
 
@@ -247,38 +230,6 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    private fun showIdInputDialog(callback: (Int?) -> Unit) {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("ID eingeben")
-
-        // Set up the input
-        val input = EditText(this)
-        input.inputType = InputType.TYPE_CLASS_NUMBER
-        builder.setView(input)
-
-        // Set up the buttons
-        builder.setPositiveButton("OK") { dialog, which ->
-            val idString = input.text.toString()
-            // Prüfen, ob die ID gültig ist (z. B. Parsing prüfen)
-            val id = idString.toIntOrNull()
-            if (id != null) {
-                dialog.dismiss()
-                Toast.makeText(this, "ID eingegeben: $id", Toast.LENGTH_SHORT).show()
-                callback(id)
-            } else {
-                Toast.makeText(this, "Ungültige ID", Toast.LENGTH_SHORT).show()
-                callback(null)
-            }
-        }
-        builder.setNegativeButton("Abbrechen") { dialog, which ->
-            dialog.cancel()
-            callback(null)
-        }
-
-        builder.show()
-    }
-
-
     // Schreibe content in datei
     fun saveRoboterInFile(ID: Int) {
         val data = "$ID"
@@ -309,6 +260,37 @@ class HomeActivity : AppCompatActivity() {
         }
 
         return dataList
+    }
+
+    private fun showIdInputDialog(callback: (Int?) -> Unit) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("ID eingeben")
+
+        // Set up the input
+        val input = EditText(this)
+        input.inputType = InputType.TYPE_CLASS_NUMBER
+        builder.setView(input)
+
+        // Set up the buttons
+        builder.setPositiveButton("OK") { dialog, which ->
+            val idString = input.text.toString()
+            // Prüfen, ob die ID gültig ist (z. B. Parsing prüfen)
+            val id = idString.toIntOrNull()
+            if (id != null) {
+                dialog.dismiss()
+                Toast.makeText(this, "ID eingegeben: $id", Toast.LENGTH_SHORT).show()
+                callback(id)
+            } else {
+                Toast.makeText(this, "Ungültige ID", Toast.LENGTH_SHORT).show()
+                callback(null)
+            }
+        }
+        builder.setNegativeButton("Abbrechen") { dialog, which ->
+            dialog.cancel()
+            callback(null)
+        }
+
+        builder.show()
     }
 
 
