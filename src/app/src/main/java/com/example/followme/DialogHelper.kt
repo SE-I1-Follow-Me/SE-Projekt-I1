@@ -13,7 +13,6 @@ object DialogHelper {
         val builder = Builder(context)
         builder.setTitle("ID eingeben")
 
-        // Set up the input
         val input = EditText(context)
         input.inputType = InputType.TYPE_CLASS_NUMBER
         builder.setView(input)
@@ -21,7 +20,6 @@ object DialogHelper {
         // Set up the buttons
         builder.setPositiveButton("OK") { dialog, which ->
             val idString = input.text.toString()
-            // Prüfen, ob die ID gültig ist (z. B. Parsing prüfen)
             val id = idString.toIntOrNull()
             if (id != null) {
                 dialog.dismiss()
@@ -41,6 +39,7 @@ object DialogHelper {
     fun handleIdInput(context: Context, id: Int?) {
         if (id != null && !HomeActivity.robotsUser.contains(id)) {
             Toast.makeText(context, "Roboter '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
+            saveRoboterInFile(context, id)
         } else {
             Toast.makeText(context, "ID ungültig oder schon hinzugefügt", Toast.LENGTH_SHORT).show()
         }

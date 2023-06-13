@@ -5,6 +5,8 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.InputType
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
@@ -17,7 +19,10 @@ import com.example.followme.Retrofit.RoboterAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.BufferedReader
 import java.io.File
+import java.io.FileReader
+import java.io.FileWriter
 import java.util.ArrayList
 import kotlin.properties.Delegates
 
@@ -88,6 +93,7 @@ class HomeActivity : AppCompatActivity() {
         loadRoboter()
 
         tvPfeil = arrayOf(
+            //"✖",
             ">",
         )
 
@@ -210,6 +216,21 @@ class HomeActivity : AppCompatActivity() {
                 adapter.notifyItemChanged(pos)
             }
 
+            override fun onArrowClick(pos: Int) {
+                if (newArrayList[pos].tvPfeil == ">") {
+                    newArrayList[pos].tvPfeil = "x"
+                    adapter.notifyItemChanged(pos)
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        newArrayList[pos].tvPfeil = ">"
+                        adapter.notifyItemChanged(pos)
+                    }, 5000)
+                }
+                else {
+                    deleteValueFromFile("RobotsUserX.csv", newArrayList[pos].id)
+                    getUserData()
+                }
+            }
+
         })
 
         btFollowMe.setOnClickListener {
@@ -262,35 +283,41 @@ class HomeActivity : AppCompatActivity() {
         return dataList
     }
 
-    private fun showIdInputDialog(callback: (Int?) -> Unit) {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("ID eingeben")
+    fun deleteValueFromFile(fileName: String, value: Int) {
+        val file = File(this.filesDir, fileName)
 
-        // Set up the input
-        val input = EditText(this)
-        input.inputType = InputType.TYPE_CLASS_NUMBER
-        builder.setView(input)
+        // Liste zum Speichern der CSV-Daten
+        val data = ArrayList<Int>()
 
-        // Set up the buttons
-        builder.setPositiveButton("OK") { dialog, which ->
-            val idString = input.text.toString()
-            // Prüfen, ob die ID gültig ist (z. B. Parsing prüfen)
-            val id = idString.toIntOrNull()
-            if (id != null) {
-                dialog.dismiss()
-                Toast.makeText(this, "ID eingegeben: $id", Toast.LENGTH_SHORT).show()
-                callback(id)
-            } else {
-                Toast.makeText(this, "Ungültige ID", Toast.LENGTH_SHORT).show()
-                callback(null)
+        try {
+            // CSV-Datei einlesen
+            val reader = BufferedReader(FileReader(file))
+            var line: String?
+
+            // Daten in die Liste laden
+            while (reader.readLine().also { line = it } != null) {
+                val intValue = line!!.trim().toIntOrNull()
+                if (intValue != null) {
+                    data.add(intValue)
+                }
             }
-        }
-        builder.setNegativeButton("Abbrechen") { dialog, which ->
-            dialog.cancel()
-            callback(null)
-        }
+            reader.close()
 
-        builder.show()
+            // Wert aus der Liste entfernen
+            data.remove(value)
+
+            // Aktualisierte Daten zurück in die CSV-Datei schreiben
+            val writer = FileWriter(file)
+            for (item in data) {
+                writer.write(item.toString())
+                writer.write("\n")
+            }
+            writer.close()
+
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
 

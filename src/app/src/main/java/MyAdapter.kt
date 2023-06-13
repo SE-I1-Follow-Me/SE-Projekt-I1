@@ -84,11 +84,17 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
         //OnClick Listener
         init {
             itemView.setOnClickListener(this)
+            tvPfeil.setOnClickListener(this)
         }
 
-        override fun onClick(p0: View?) {
-            if(mListener != null) {
-                mListener.setOnClickListener(absoluteAdapterPosition)
+        override fun onClick(view: View) {
+            val position = absoluteAdapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                when (view) {
+                    itemView -> mListener.setOnClickListener(position)
+                    tvPfeil -> mListener.onArrowClick(position)
+
+                }
             }
         }
 
@@ -162,6 +168,7 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     //Click Listener
     interface OnItemClickListener {
         fun setOnClickListener(pos:Int)
+        fun onArrowClick(position: Int)
     }
 
     fun setOnItemClickListener(mListener: OnItemClickListener) {
