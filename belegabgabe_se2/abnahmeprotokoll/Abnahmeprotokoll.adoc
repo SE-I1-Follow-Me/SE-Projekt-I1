@@ -1,0 +1,192 @@
+= Abnahmeprotokoll: {project-name}
+:icons: font
+:lang: de
+//:sectnums: short
+:docs: ../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+//:source-highlighter: highlightjs
+//:imagesdir: img
+//Platzhalter für weitere Dokumenten-Attribute
+
+//Autor: {author}, Version {revnumber}, {revdate}
+== Projektangaben
+Thema: I1 Follow-me
+
+Zeitraum: November 22  - Juni 23
+
+GitHub Repositorys
+App: https://github.com/SE-I1-Follow-Me/SE-Projekt-I1.git
+Server: https://github.com/SE-I1-Follow-Me/SE-Projekt-I1-Server.git
+
+== Abnahmedokumentation 
+=== Abnahme
+Datum: 24.06.2022
+
+Zeit: 17:30 Uhr
+
+Abnahmeumgebung: HTW Dresden
+
+=== Lieferumfang
+
+* Software in folgender Form: demo apk, verbunden mit Server
+* Benutzeranleitung
+* Betriebsanleitung
+* Anforderungsspezifikation
+* Entwicklerdokumentation
+* Testdokumentation
+
+=== Funktionalität
+[cols="4,1,5"]
+
+Folgende Use Case wurden vollständig umgesetzt:
+|===
+|Use Case |  Anmerkung
+
+|UC01: Roboter anlegen
+|...
+
+|UC04: Follow-me starten
+|...
+
+|UC07: Route speichern
+|...
+
+|===
+
+Folgende Use Cases wurden nur unvollständig ausgearbeitet:
+|===
+|Use Case | Anmerkung
+| UC02: Roboter bearbeiten | Roboter mit der gleichen ID können durch überschreiben bearbeitet werden, die geplante Überarbeitungsfunktion jedoch wurde nicht umgesetzt
+| UC05: Follow-me ausführen | Die Route wird gezeichnet, jedoch konnte die Simulation nicht mehr durchgeführt werden, weshalb wir nicht garantieren können, dass das fetchen der GPS Daten wie gewünscht funktioniert
+| UC06: Follow-me beenden | Die Funktion kann wie vorgesehen beendet werden, jedoch ist auch hier die Simulation nicht umgesetzt worden (Siehe UC05)
+| UC | ...
+| UC | ...
+| UC | ...
+
+|===
+
+Folgende Use Cases wurden nicht ausgearbeitet: 
+
+|===
+|Use Case | Anmerkung/Begründung
+| UC03: Roboter löschen | Geringere Priorität. Zudem wurde im laufe des Projektes klar, dass der Use Case nicht wie ursprünglich geplant umgesetzt wird
+| UC08: Route bearbeiten | Das speichern/erstellen der Routen war bereits schwerer als gedacht; zudem hatte dieser Use Case eine geringere Priorität
+| UC09: Route löschen | Geringere Priorität sowie Zeitmangel 
+| UC10: Route ablaufen | Dieser Use Case wäre durch die Simulation entstanden, diese konnte jedoch nicht mehr umgesetzt werden
+| UC11: Roboter warten | Sehr geringe Priorität
+
+
+|===
+
+===  Systemweite Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | erfüllt | Anmerkung
+
+|SWFA-1: Die GPS-Daten müssen dauerhaft gespeichert und bei Bedarf aktualisiert sein. Wenn ein aufgenommener GPS-Track hochgeladen wird, ist dieser dauerhaft verfügbar.
+| ja
+|...
+|SWFA-2: Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen. Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis, die Verbindung herzustellen.
+| ja
+|...
+|SWFA-3: Bei fehlendem GPS-Signal soll der Roboter stehen bleiben. Sollte während einer Aktion keine GPS-Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen.
+| nein
+| ...
+| SWFA-4: Die App soll dauerhaft im jeweiligen Menü eine dynamische vom Server abgerufene Liste der Roboter beziehungsweise Routen anzeigen.
+| ja
+| ...
+|NFAU-1: Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
+| ja
+|...
+|NFAU-2: Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Zur Überprüfung der Verständlichkeit wird die Anwendung einer fachfremden Person vorgeführt.
+| ja
+|...
+|NFAU-3: Es ist darauf zu achten, dass die Interaktionsauswahl minimiert wird, um Konfusion zu vermeiden und die Übersichtlichkeit zu steigern. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
+| ja
+|...
+|NFAU-4: Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein. Dafür werden diese auf der Startseite auswählbar sein. Zur Überprüfung soll die Kernfunktionalität mit weniger als fünf Klicks erfüllbar sein.
+| ja
+|...
+| NFAU-5: Alle Fehlermeldungen werden dem Nutzer offensichtlich, schnell und verständlich angezeigt. Dafür werden ihm Pop-Ups zur Bestätigung angezeigt. Zur Überprüfung wird ein Fehler simuliert und einem fachfremden Nutzer vorgeführt.
+| ja
+| ...
+| NFAR-1: Bei instabiler Verbindung zum Server sollen nur vollständig und korrekt gesendete Befehle/Operationen ausgeführt werden. Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind.
+| ja
+| ...
+| NFAR-2: Nur Roboter der Organisation zugehörigen Flotte sollen genutzt werden können. Zur Überprüfung soll ein Key angelegt werden, um den Roboter nutzen zu können.
+|
+|
+| NFAP-1: Innerhalb der App soll das Laden eines Menüs und die Nutzung einer Funktion maximal 3 Sekunden* benötigen. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
+| ja
+| ...
+| NFAP-2: Gewählte Aktionen der App sollen innerhalb von 1000 Millisekunden* an den Server gesendet, verarbeitet und verifiziert werden. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+| ja
+| ...
+| NFAP-3: Die Speicherung der Daten auf dem Server soll nicht länger als 5 Sekunden dauern. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+| ja
+| ...
+| NFAP-4: Die Routen sollen möglichst gleich absolviert werden. Zur Überprüfung wird das Intervall der GPS-Aufzeichnung möglichst kurz gehalten und automatisch überprüft, ob die aktuellen GPS Daten mit denen der Route übereinstimmen
+| ja
+| ...
+| NFAP-5: Gesendete Befehle an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+| ja
+| ...
+|NFAS-1: Die App soll entwicklungsrelevante Systemfehler loggen können und an die Entwickler weiterleiten. Zur Überprüfung wird ein solcher Fehler simuliert und kontrolliert, ob die Entwickler über diesen informiert wurden.
+| ja
+|...
+|NFAS-2: Die App soll zu jederzeit einfach erweiterbar sein, damit fehlende Funktionen hinzugefügt und auftretende Systemfehler beseitigt werden können. Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App zum späteren Zeitpunkt universell für unterschiedliche Roboter einsetzbar ist.
+| nein
+|...
+|===
+*ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
+
+=== Zusätzliche Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | erfüllt | Anmerkung
+
+|Die Verwaltung des Sourcecodes und der Dokumentation muss mittels GitHub erfolgen.
+| ja
+|...
+|Das Framework SpringBoot soll verwendet werden.
+| ja
+|...
+|Die App soll auf handelsüblichen Android Smartphones laufen.
+| ja
+|...
+|Der Benutzer muss über alle benötigten Berechtigungen informiert werden und diese akzeptieren.
+| ja
+|...
+|Text sollte auf dem Smartphone aus 50 cm Entfernung lesbar sein. Zur Überprüfung laden sich Teammitglieder die App herunter und testen die Lesbarkeit.
+| ja
+|...
+|Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
+| ja
+|...
+|Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können.
+| ja
+|...
+|Die Speicherung der Daten soll nicht auf dem Smartphone erfolgen.
+| ja
+|...
+|Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
+|
+| ...
+|Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
+|
+|
+|===
+
+== Unterschriften
+
+Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt. (Unzutreffendes bitte durchstreichen.)
+
+Bemerkungen:
+
+[cols="1,1"]
+|===
+|> 
+|>
+|Unterschrift Themensteller*in
+|Unterschrift Projektleiter*in
+|===
