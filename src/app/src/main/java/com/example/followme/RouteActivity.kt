@@ -12,9 +12,12 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.followme.Entity.Coordinates
+import com.example.followme.Entity.Route
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
 import com.google.android.gms.tasks.Task
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_route.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -25,15 +28,14 @@ import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
-import org.osmdroid.views.overlay.Polygon
 import org.osmdroid.views.overlay.Polyline
 import timber.log.Timber
 import java.util.*
 
 class RouteActivity : AppCompatActivity() {
 
-    private var interval: Long = 2000
-    private var fastestInterval: Long = 1000
+    private var interval: Long = 500
+    private var fastestInterval: Long = 250
     private var maxWaitTime: Long = 1000
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -62,15 +64,16 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
-    private val rnd = Random()
     private lateinit var map: MapView
     private var startPoint: GeoPoint = GeoPoint(46.55951, 15.63970)
     private lateinit var mapController: IMapController
     private var marker: Marker? = null
     private var path1: Polyline? = null
-    private var endPoint: GeoPoint? = null
+    private var routePoint: GeoPoint? = null
+    private var routeEndPoint: GeoPoint? = null
     private var pathOverlay: Polyline? = null
     private var pathUpdateTimer: Timer? = null
+    private var coordinatesRoute: ArrayList<Coordinates> = ArrayList<Coordinates>()
 
     private val permissionsLauncher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
@@ -224,18 +227,6 @@ class RouteActivity : AppCompatActivity() {
         mapController.setCenter(startPoint)
         map.invalidate()
     }
-
-    private fun getPath(): Polyline {
-        if (path1 == null) {
-            path1 = Polyline()
-            path1!!.outlinePaint.color = Color.RED
-            path1!!.outlinePaint.strokeWidth = 8f
-            path1!!.addPoint(startPoint.clone())
-            map.overlayManager.add(path1)
-        }
-        return path1!!
-    }
-
     private fun getPositionMarker(): Marker {
         if (marker == null) {
             marker = Marker(map)
@@ -246,42 +237,19 @@ class RouteActivity : AppCompatActivity() {
         }
         return marker!!
     }
-
-    fun onClickDraw1(view: View?) {
-        startPoint.latitude = startPoint.latitude + (rnd.nextDouble() - 0.5) * 0.001
-        mapController.setCenter(startPoint)
-        getPositionMarker().position = startPoint
-        map.invalidate()
-    }
-
-    fun onClickDraw2(view: View?) {
-        startPoint.latitude = startPoint.latitude + (rnd.nextDouble() - 0.5) * 0.001
-        mapController.setCenter(startPoint)
-        val circle = Polygon(map)
-        circle.points = Polygon.pointsAsCircle(startPoint, 40.0 + rnd.nextInt(100))
-        circle.fillPaint.color = 0x32323232
-        circle.outlinePaint.color = Color.GREEN
-        circle.outlinePaint.strokeWidth = 2f
-        circle.title = "Area X"
-        map.overlays.add(circle)
-        map.invalidate()
-    }
-
-    fun onClickCenter(view: View?) {
-        startPoint.latitude = startPoint.latitude + (rnd.nextDouble() - 0.5) * 0.001
-        startPoint.longitude = startPoint.longitude + (rnd.nextDouble() - 0.5) * 0.001
-        getPath().addPoint(startPoint.clone())
-        map.invalidate()
-    }
     private fun drawPathOnMap() {
-        if (startPoint == null) {
+        if (routePoint == null) {
             // Set the starting location
-            startPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
+            routePoint = GeoPoint(startPoint.latitude, startPoint.longitude)
+            var temp = Coordinates()
+            temp.setLongitude(Gson().toJson(routePoint!!.longitude))
+            temp.setLatitude(Gson().toJson(routePoint!!.latitude))
+            coordinatesRoute.add(temp)
             // Create a new path overlay on the map
             pathOverlay = Polyline()
             pathOverlay!!.outlinePaint.color = Color.RED
             pathOverlay!!.outlinePaint.strokeWidth = 8f
-            pathOverlay!!.addPoint(startPoint!!)
+            pathOverlay!!.addPoint(routePoint!!)
             map.overlayManager.add(pathOverlay)
             // Update the map view
             map.invalidate()
@@ -296,25 +264,31 @@ class RouteActivity : AppCompatActivity() {
                 }, 0, 4000)
             } else {
                 // Stop updating the path
+                //POST der Route rein
                 pathUpdateTimer!!.cancel()
                 pathUpdateTimer = null
+                routePoint == null
             }
         }
     }
 
     private fun updatePath() {
-        if (endPoint == null) {
+        if (routeEndPoint == null) {
             // Set the ending location
-            endPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
+            routeEndPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
         } else {
             // Add the new point to the path overlay
-            pathOverlay?.addPoint(endPoint!!)
+            pathOverlay?.addPoint(routeEndPoint!!)
+            var temp = Coordinates()
+            temp.setLongitude(Gson().toJson(routeEndPoint!!.longitude))
+            temp.setLatitude(Gson().toJson(routeEndPoint!!.latitude))
+            coordinatesRoute.add(temp)
             // Update the map view
             map.invalidate()
             // Set the ending location as the new starting location
-            startPoint = endPoint as GeoPoint
+            routePoint = routeEndPoint as GeoPoint
             // Set the current location as the new ending location
-            endPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
+            routeEndPoint = GeoPoint(startPoint.latitude, startPoint.longitude)
         }
     }
 
