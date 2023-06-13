@@ -2,9 +2,7 @@ package com.example.followme.Retrofit
 
 import com.example.followme.Entity.Roboter
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 
 interface RoboterAPI {
@@ -17,7 +15,8 @@ interface RoboterAPI {
     @POST("/roboter/save")
     fun saveRoboter(@Body roboter: Roboter): Call<Void>
 
-
+    @PATCH("/roboter/update/{id}")
+    fun updateIsFollowing(@Path("id") id: Int, @Query("isFollowing") isFollowing: Boolean): Call<Void>
 
 
 

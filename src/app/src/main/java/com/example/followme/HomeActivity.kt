@@ -70,6 +70,8 @@ class HomeActivity : AppCompatActivity() {
     lateinit var btBeenden: Button
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -201,7 +203,7 @@ class HomeActivity : AppCompatActivity() {
             // Wenn der Roboter geladen werden soll:
             if (robotsUser.contains(robot.getId())) {
                 //Neue variable robots wird erstellt, mit der Box, den Roboter-Name (vom Robot-Objekt vom Server)
-                val robots = Robot(ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
+                val robots = Robot(robot.getId() ?: 0, ivRoboter[0], robot.getName().toString(), tvPfeil[0], 5, 5, false, false)
                 newArrayList.add(robots)
             }
 
@@ -308,6 +310,9 @@ class HomeActivity : AppCompatActivity() {
 
         return dataList
     }
+
+
+
 
 
 }

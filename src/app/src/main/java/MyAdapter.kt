@@ -10,6 +10,11 @@ import com.google.android.material.imageview.ShapeableImageView
 import android.content.Context
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.Toast
+import com.example.followme.Retrofit.RetrofitService
+import com.example.followme.Retrofit.RoboterAPI
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 //Suuuper nervige Sache
 // Falls etwas unklar ist, bitte RecyclerView-Tutorial mal anschauen
@@ -23,6 +28,10 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     private var originalContent = ArrayList<Robot>()
 
     var filteredListShowed: Boolean = false;
+
+    //Retrofit fuer server
+    val retrofitService = RetrofitService()
+    val roboterAPI = retrofitService.getRetrofit().create(RoboterAPI::class.java)
 
     // Hier wird der gerade initialisierte ViewHolder kreiert
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -95,6 +104,7 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
             if (robot.isMarked) {
                 robot.followme = false
                 robot.isMarked = false
+                updateFollowStatus(robot.id, robot.followme)
             }
         }
         robots = robots.filter { it.followme } as ArrayList<Robot>
@@ -116,7 +126,10 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
                 if (robot.isMarked) {
                     robot.followme = true
                     robot.isMarked = false
+                    updateFollowStatus(robot.id, robot.followme)
                 }
+
+
             }
 
             filteredListShowed = true
@@ -153,6 +166,36 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
 
     fun setOnItemClickListener(mListener: OnItemClickListener) {
         this.mListener = mListener
+    }
+
+
+    private fun updateFollowStatus(robotId: Int, isFollowing: Boolean) {
+        val call = roboterAPI.updateIsFollowing(robotId, isFollowing)
+        call.enqueue(object : Callback<Void> {
+            override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                if (response.isSuccessful) {
+                    Toast.makeText(
+                        context,
+                        "Successfully updated follow status",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    Toast.makeText(
+                        context,
+                        "Failed to update follow status",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+            override fun onFailure(call: Call<Void>, t: Throwable) {
+                Toast.makeText(
+                    context,
+                    "Failed to update follow status",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        })
     }
 
 

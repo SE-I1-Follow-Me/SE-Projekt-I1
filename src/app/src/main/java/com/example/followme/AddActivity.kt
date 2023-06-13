@@ -66,7 +66,7 @@ class AddActivity : AppCompatActivity() {
                     // Fordern Sie den Benutzer auf, einen Namen für den neuen Roboter einzugeben
                     showNameInputDialog { name ->
                         if (name != null) {
-                            val robots = Robot(R.drawable.a, name, ">", 5, 5, false, false)
+                            val robots = Robot(id, R.drawable.a, name, ">", 5, 5, false, false)
                             HomeActivity.newArrayList.add(robots)
                             Toast.makeText(this, "Roboter '$name' mit Token '$id' wurde erfolgreich angelegt.", Toast.LENGTH_SHORT).show()
                             HomeActivity.updateRecyclerView()
