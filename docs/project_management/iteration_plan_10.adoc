@@ -1,0 +1,123 @@
+= Iteration Plan 10: {project-name}
+Manuel Scheer <manuel.scheer@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+
+| Anfang der Iteration | 13.06.2023
+| Team- Meeting | 13.06.2023 
+| Meeting Projektleitung | 13.06.2023
+| Team- Meeting | 20.06.2023 
+| Kundenabnahme | 22.06.2023
+| Ende der Iteration | 25.06.2023
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Dokumentation vollständig
+* Projekt Abnahmebereit
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+
+| Benutzeranleitung und Betriebsanleitung ausarbeiten | hoch | 4 | 20.06.23 | - | 10 | Michael Novak, Jonas Pfeiffer | - | -
+| Anforderungsspezifikation und Entwicklerdokumentation ausarbeiten | hoch | 4 | 20.06.23 | - | 10 | Leon Lowa | - | -
+| Testdokumentation und 1-2 kleine Integrationstests (negativ) | hoch | 4 | 20.06.23 | - | 9 | Michael Novak| - | -
+| Abnahmeprotokoll und Review aus SE1 | hoch | 4 | 20.06.23 | - | 10 | Manuel Scheer | - | -
+| Iterationen im Projektbericht | hoch | 4 | 25.06.23 | - | 10 | Jonas Pfeiffer (x3), Magnus Andreas Böhne, Leon Lowa, Michael Novak, Manuel Scheer (je x1) | - | -
+| Präsentation, Lizensauswahl, Softwaresystem ausarbeiten | hoch | 4 | 25.06.23 | - | 10 | Magnus Andreas Böhne, Manuel Scheer | - | -
+| Reflexion schreiben | hoch | 4 | 25.06.23 | - | 10 | gesamtes Team | - | -
+| 
+|===
+
+
+== Probleme (optional)
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+
+| Einhitlichkeit der Dokumente | Offen | Es ist viel Kommunikation erforderlich, um sicherzustellen, dass die Dokumente einheitlich geschrieben werden
+| hoher Zeitdruck | Offen | Ein Großteil der Dokumentation muss bis zur Übergabe an den Kunden fertig werden
+
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+
+* Einheitlichkeit der Dokumente
+* Verständlichkeit der Dokumente
+
+
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+
+| Assessment Datum | 03.04.2023
+| Teilnehmer | Manuel Scheer, Magnus Böhne
+| Projektstatus	| gelb
+|===
+
+
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+Beurteilung im Vergleich zu den Zielen:: 
+****
+* *Ziel 1:* Ziel erreicht
+* *Ziel 2:* Ziel erreicht
+* *Ziel 3:* Ziel erreicht
+* *Ziel 4:* Ziel erreicht
+* *Ziel 5:* Ziel erreicht
+****
+
+Geplante vs. erledigte Aufgaben::
+****
+in nächste Iteration verschoben:
+
+-
+****
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+
+Beurteilung im Vergleich zu den Bewertungskriterien::
+****
+* Projektleitung hat sich eingearbeitet
+* Iterationspläne wurden erstellt
+* Projektplan wurde angepasst
+* Alle Teammitglieder können an der App über GitHub arbeiten
+* Aktueller Stand ist laut Coach Gut
+****
+
+
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+
+
+== Essence Navigator
+
+Nach dieser Iteration wurde folgender Stand anhand des Essence Navigators erreicht:
+
+image::essence_i7.png[]
