@@ -24,10 +24,12 @@ class AccountActivity : AppCompatActivity() {
         btHome.setOnClickListener {
 
             DialogHelper.showIdInputDialog(this) { id ->
-                DialogHelper.handleIdInput(this, id)
-                val intent = Intent(this, HomeActivity::class.java)
-                startActivity(intent)
+                if (id != null) {
+                    DialogHelper.handleIdInput(this, id)
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
 
+                }
             }
         }
         btAlerts.setOnClickListener {
