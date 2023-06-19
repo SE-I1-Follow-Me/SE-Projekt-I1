@@ -282,10 +282,12 @@ class RouteActivity : AppCompatActivity() {
                 var temp = Route()
                 temp.setCoordinates(coordinatesRoute)
                 temp.setDrivenBy(FOLLOW_ME_IDS)
+                temp.setId(1)
                 showNameInputDialog { name ->
                     if (name != null) {
                         temp.setName(name)
                     }
+                }
                     val retrofitService = RetrofitService()
                     //neue API-Schnittstelle wird instanziert
                     val api = retrofitService.getRetrofit().create(RoboterAPI::class.java)
@@ -295,7 +297,7 @@ class RouteActivity : AppCompatActivity() {
                                 // The robot was successfully saved on the server.
                                 Toast.makeText(
                                     this@RouteActivity,
-                                    "Route '$name' wurde erfolgreich angelegt.",
+                                    "Route '${temp.getName()}' wurde erfolgreich angelegt.",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 HomeActivity.updateRecyclerView()
@@ -325,7 +327,6 @@ class RouteActivity : AppCompatActivity() {
                 }
             }
         }
-    }
     private fun updatePath() {
         if (routeEndPoint == null) {
             // Set the ending location
