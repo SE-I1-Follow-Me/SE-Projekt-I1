@@ -16,10 +16,13 @@ include::../_includes/default-attributes.inc.adoc[]
 | Team- Meeting | 13.06.2023 
 | Meeting Projektleitung | 13.06.2023
 | Team- Meeting | 20.06.2023 
-| Kundenabnahme | 22.06.2023
+| [.line-through]#Kundenabnahme#| [.line-through]#22.06.2023#
 | Ende der Iteration | 25.06.2023
+| Kundenabnahme | 29.06.2023
 |===
 
+=== Hinweis
+Die Verschiebung der Kundenabnahme wurde mit allen Verantwortlichen abgeklärt und genehmigt. Da die Belegabgabe jedoch am 26.06.2023 erfolgt endet die Iteration wie geplant am 25.06.2023.
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
@@ -87,9 +90,7 @@ Beurteilung im Vergleich zu den Zielen::
 ****
 * *Ziel 1:* Ziel erreicht
 * *Ziel 2:* Ziel erreicht
-* *Ziel 3:* Ziel erreicht
-* *Ziel 4:* Ziel erreicht
-* *Ziel 5:* Ziel erreicht
+
 ****
 
 Geplante vs. erledigte Aufgaben::
@@ -105,9 +106,7 @@ Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
 * Projektleitung hat sich eingearbeitet
 * Iterationspläne wurden erstellt
-* Projektplan wurde angepasst
-* Alle Teammitglieder können an der App über GitHub arbeiten
-* Aktueller Stand ist laut Coach Gut
+
 ****
 
 
