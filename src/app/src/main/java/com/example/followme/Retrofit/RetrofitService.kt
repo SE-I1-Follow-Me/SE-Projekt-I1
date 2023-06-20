@@ -3,7 +3,10 @@ package com.example.followme.Retrofit
 import com.google.gson.Gson
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-//Für die Konverteirung der Daten von JSON zu Arrays
+
+/**
+ * Klasse Für die Konverteirung der Daten von JSON zu Arrays, siehe Retrofit Library
+ */
 class RetrofitService {
     private lateinit var retrofit: Retrofit
 

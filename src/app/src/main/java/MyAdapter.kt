@@ -16,8 +16,13 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-//Suuuper nervige Sache
-// Falls etwas unklar ist, bitte RecyclerView-Tutorial mal anschauen
+
+/**
+ * Klasse um die Roboter zu laden und anzeigen zu könnnen
+ * @param context
+ * @param robots
+ *
+ */
 class MyAdapter(private val context: Context, private var robots: java.util.ArrayList<Robot>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
@@ -33,13 +38,22 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     val retrofitService = RetrofitService()
     val roboterAPI = retrofitService.getRetrofit().create(RoboterAPI::class.java)
 
+    /**
+     * Funktion um den Viewholder zu erstellen
+     * @param parent
+     * @param viewType
+     */
     // Hier wird der gerade initialisierte ViewHolder kreiert
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.roboter_item, parent, false)
         return MyViewHolder(itemView, mListener)
     }
 
-
+    /**
+     * Funktion um den erstellten Viewholder  zu binden, so dass er angezeigt werden kann
+     * @param holder
+     * @param position
+     */
     // Hier wird der ViewHolder gebindet, ist son Android Ding, ist dafür da, damit es angezeit werden kann
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = robots[position]
@@ -72,8 +86,11 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     }
 
 
-
-    //Basically wird hier angegben welche Items, der RecyclerView halten soll
+    /**
+     * Klasse um die einzelnen items die in der Roboterloste sind zu initialisieren
+     * @param itemView um die einzelnen Elemente eines Items zu initialisieren
+     * @param mListener onClicklistener
+     */
     class MyViewHolder(itemView: View, var mListener:OnItemClickListener) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         // Das ist, aus was unser Roboter OBjekt besteht
         val ivRoboter : ShapeableImageView = itemView.findViewById(R.id.ivRoboter)
@@ -103,7 +120,9 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
 
     // ***** Funktionen *****
 
-    //Beende FollowMe
+    /**
+     * Funktion um die Roboter von den FollowMe-Befehl abzuwählen
+     */
     fun endFollowMe() {
         if (!robots.any { robot ->  robot.isMarked }) { Toast.makeText(context, "Bitte mindestens einen Roboter auswählen", Toast.LENGTH_SHORT).show()}
         robots.forEach { robot ->
@@ -118,6 +137,10 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
     }
 
     //Filter
+    /**
+     * Funktion um die Roboter dessen FollowMe "true" ist zu filtern
+     * @param showFollowMe
+     */
     fun filterItems(showFollowMe: Boolean) {
 
         //Befülle den originalContent einmalig
@@ -149,7 +172,10 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
         notifyDataSetChanged()
     }
 
-
+    /**
+     * Funktion um die Anzahl der anzuzeigenden Elemnte zu berechnen
+     * @return Größe der Robot Liste
+     */
     override fun getItemCount(): Int {
         return robots.size
     }
@@ -175,7 +201,11 @@ class MyAdapter(private val context: Context, private var robots: java.util.Arra
         this.mListener = mListener
     }
 
-
+    /**
+     * Funktion um den Wert "FolowMe" der Roboter mittels der PATCH-Methode  zu ändern
+     * @param robotId Identifier der Roboter
+     * @param isFollowing
+     */
     private fun updateFollowStatus(robotId: Int, isFollowing: Boolean) {
         val call = roboterAPI.updateIsFollowing(robotId, isFollowing)
         call.enqueue(object : Callback<Void> {

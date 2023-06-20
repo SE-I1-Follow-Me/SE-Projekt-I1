@@ -7,9 +7,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.text.InputType
 import android.widget.*
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,8 +22,11 @@ import java.io.File
 import java.io.FileReader
 import java.io.FileWriter
 import java.util.ArrayList
-import kotlin.properties.Delegates
 
+
+/**
+ * Klasse um die Funktionalität der Activity "Home" zu gewährleisten
+ */
 class HomeActivity : AppCompatActivity() {
     //!! Initialisierungen verschiedener wichtiger Variabeln
 
@@ -145,6 +146,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     //Funktion um die Daten vom Server durch die Rest-API zu bekommen
+    /**
+     * Funktion um Roboter mittels der GET-Methode zu laden
+     */
     private fun loadRoboter() {
         //Retrofit wandelt JSON Format in ein Java Array um
         val retrofitService = RetrofitService()
@@ -155,6 +159,9 @@ class HomeActivity : AppCompatActivity() {
         //Call (Abruf) wird als Request eingereiht
         call.enqueue(object : Callback<ArrayList<Roboter>> {
             //Falls die API Verbindung hat und der Server ansprechbar ist, ist es onResponse
+            /**
+             * Funktion für den Response von der API
+             */
             override fun onResponse(
                 //Es wird versucht die Roboterliste abzurufen
                 call: Call<ArrayList<Roboter>>,
@@ -169,6 +176,11 @@ class HomeActivity : AppCompatActivity() {
                 }
             }
             //Falls die API KEINE! Verbindung hat ODER! der Server NICHT! ansprechbar ist, ist es onFailure
+            /**
+             * Funktion falls Verbidnung zum Server nicht funktionierte
+             * @param call
+             * @param t
+             */
             override fun onFailure(call: Call<ArrayList<Roboter>>, t: Throwable) {
                 Toast.makeText(
                     this@HomeActivity,
@@ -182,6 +194,9 @@ class HomeActivity : AppCompatActivity() {
 
 
     // Schreibt das Fertige Objekt Roboter, welches dann im Recyclerview angezeigt wird
+    /**
+     * Funktion um die geladenen Roboter als Items für die Anzeige zu schreiben
+     */
     fun getUserData() {
 
         newArrayList.clear()
@@ -205,7 +220,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-
+    /**
+     * Intialisiert die Anzeige mit der Liste von den geladenen und umgewandelten Roboter Items
+     */
     fun initRecyclerView() {
 
         rv = findViewById(R.id.rvRobots)
@@ -280,6 +297,9 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     *
+     */
     fun readDataFromFile(fileName: String): List<Int> {
         val dataList = mutableListOf<Int>()
         val file = File(this.filesDir, fileName)

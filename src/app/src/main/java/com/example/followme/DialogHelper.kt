@@ -4,7 +4,6 @@ import android.content.Context
 import android.text.InputType
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AlertDialog.*
 import java.io.File
 
