@@ -23,6 +23,33 @@ Nach der Installation können Sie die App wie folgt verwenden:
 
 == Hauptfunktionen
 
+=== Navigationsleiste nutzen
+
+[NOTE]
+====
+Hinweis: Die Navigationsleiste dient als übergeordnetes Mittel um zwischen den Funktionen der Anwendung zu navigieren und ist immer sichtbar.
+====
+
+Durch einen Klick auf folgende Knöpfe, gelangen sie zu folgenden Funktionen:
+
+[frame="none", grid="none", rowheight=10]
+|===
+| |
+|1. "Add" lässt sie einen Roboter hinzufügen, siehe <<Roboter hinzufügen>>.
+|image:Images/Navigation_FollowMe_Add.png[50, 50]
+
+|2. "GPS" bringt sie zur Karte und der damit verbundenen Funktion: <<Route anzeigen>>.
+|image:Images/Navigation_FollowMe_GPS.png[50, 50]
+
+|3. "Homescreen" bringt sie zur Liste ihrer Roboter. | image:Images/Navigation_FollowMe_Home.png[50, 50]
+
+|4. "Alerts" bringt sie zu wichtigen Meldungen. |image:Images/Navigation_FollowMe_Alerts.png[50, 50]
+
+|5. "Personal" bringt sie zu ihren angegebenen Daten.
+|image:Images/Navigation_FollowMe_Personal.png[50, 50]
+|===
+
+
 === Roboter hinzufügen
 
 [NOTE]
@@ -112,13 +139,13 @@ Um Roboter nicht länger folgen zu lassen, gehen sie wie folgt vor:
 [frame="none", grid="none"]
 |===
 |  |
-|1. Öffnen sie die Liste der Roboter die ihnen folgen in dem sie "Follow me" anklicken.| image:Images/FollowMe_NavigationAndButtons_Markup.png[150,150]
+|1. Öffnen sie die Liste der Roboter die ihnen folgen, in dem sie "Follow me" anklicken.| image:Images/FollowMe_NavigationAndButtons_Markup.png[150,150]
 
 |2. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt.
 |image:Images/FollowMe_Roboter_following.png[150,150]
 
 |3. Wählen sie durch anklicken aus, welche Roboter ihnen nicht mehr folgen sollen. Die ausgewählten Roboter sind [blau]#blau# markiert.
-|
+|image:Images/FollowMe_Roboter_TwoPicked.png[150,150]
 
 | 4. Drücken sie "Beenden".
 | image:Images/FollowMe_NavigationAndButtons_Markup_Beenden.png[150,150]
@@ -126,6 +153,12 @@ Um Roboter nicht länger folgen zu lassen, gehen sie wie folgt vor:
 | 5. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt. Exklusive der Roboter, die Sie eben ausgewählt haben.
 |
 |===
+
+[NOTE]
+====
+Hinweis: Sie können erkennen, ob ihre aktuelle Liste gefiltert wird, in dem sie darauf achten, ob "Follow me" rot hinterlegt ist.
+====
+
 
 === Route anzeigen
 

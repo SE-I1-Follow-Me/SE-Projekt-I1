@@ -251,10 +251,10 @@ class HomeActivity : AppCompatActivity() {
             adapter.filterItems(isChecked)
             val color = if (isChecked) colorPressed else colorDefault
             btFollowMe.backgroundTintList = ColorStateList.valueOf(color)
-            val intent = Intent(this, RouteActivity::class.java)
-            val followMeId = 12
-            intent.putExtra("RouteActivity.FOLLOW_ME_IDS", followMeId);
-            startActivity(intent)
+            //val intent = Intent(this, RouteActivity::class.java)
+            //val followMeId = 12
+            //intent.putExtra("RouteActivity.FOLLOW_ME_IDS", followMeId);
+            //startActivity(intent)
         }
 
         btBeenden.setOnClickListener {
