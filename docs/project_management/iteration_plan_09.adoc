@@ -36,9 +36,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| UC07 Route speichern umsetzen (lokal mit Autosync) | hoch | 4 | 10.06.23 | - | 9 | Leon Lowa, Manuel Scheer | - | -
-| JPA einsatzbereit (UC04, UC06, UC07, UC02) | hoch | 4 | 10.06.23 | - | 9 | Michael Novak, Jonas Pfeiffer | - | -
-| Spring Security | hoch | 4 | 10.06.23 | - | 9 | Magnus Andreas Böhne | - | -
+| UC07 Route speichern umsetzen (lokal mit Autosync) | hoch | 4 | 10.06.23 | - | 9 | Leon Lowa, Manuel Scheer | 8 | -
+| JPA einsatzbereit (UC04, UC06, UC07, UC02) | hoch | 4 | 10.06.23 | - | 9 | Michael Novak, Jonas Pfeiffer | 4 | -
+| Spring Security | hoch | 4 | 10.06.23 | - | 9 | Magnus Andreas Böhne | 3 | -
 |===
 
 
@@ -71,7 +71,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 03.04.2023
+| Assessment Datum | 13.06.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
 | Projektstatus	| gelb
 |===
@@ -81,10 +81,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 Beurteilung im Vergleich zu den Zielen:: 
 ****
 * *Ziel 1:* Ziel erreicht
-* *Ziel 2:* Ziel erreicht
-* *Ziel 3:* Ziel erreicht
-* *Ziel 4:* Ziel erreicht
-* *Ziel 5:* Ziel erreicht
+* *Ziel 2:* Ziel teilweise erreicht
+* *Ziel 3:* Ziel nicht erreicht
+
 ****
 
 Geplante vs. erledigte Aufgaben::
@@ -98,11 +97,9 @@ in nächste Iteration verschoben:
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* Projektleitung hat sich eingearbeitet
-* Iterationspläne wurden erstellt
-* Projektplan wurde angepasst
-* Alle Teammitglieder können an der App über GitHub arbeiten
-* Aktueller Stand ist laut Coach Gut
+* Daten können nun wie gewünscht von der App auf der Datenbank gespeichert werden
+* Routen können gespeichert werden, allerdings kann der Server diese nicht entgegen nehmen
+
 ****
 
 
@@ -115,4 +112,4 @@ Beurteilung im Vergleich zu den Bewertungskriterien::
 
 Nach dieser Iteration wurde folgender Stand anhand des Essence Navigators erreicht:
 
-image::essence_i4.png[]
+image::essence_i7.png[]

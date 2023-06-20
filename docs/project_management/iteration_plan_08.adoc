@@ -38,12 +38,12 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Systementwurf phyische und logische Sicht | hoch | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | -
-| Objektentwurf (Komponentendiagramm) | medium | 3 | 30.05.23 | - | 8 | Leon Lowa, Manuel Scheer | - | -
-| Spring Security | medium | 4 | 30.05.23 | - | 8 | Magnus Andreas Böhne | - | -
-| Anpassung der Follow-me Funktion (Modus) | medium | 1 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | - 
-| Nacharbeiten an der Map  | medium | 2 | 30.05.23 | - | 7 | Leon Lowa, Manuel Scheer  | - | -
-| Bearbeitung über JPA möglich | medium | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | - | -
+| Systementwurf phyische und logische Sicht | hoch | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | 6 | -
+| Objektentwurf (Komponentendiagramm) | medium | 3 | 30.05.23 | - | 8 | Leon Lowa, Manuel Scheer | 6 | -
+| Spring Security | medium | 4 | 30.05.23 | - | 8 | Magnus Andreas Böhne | 3 | -
+| Anpassung der Follow-me Funktion (Modus) | medium | 1 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | 2 | - 
+| Nacharbeiten an der Map  | medium | 2 | 30.05.23 | - | 7 | Leon Lowa, Manuel Scheer  | 4 | -
+| Bearbeitung über JPA möglich | medium | 3 | 30.05.23 | - | 8 | Jonas Pfeiffer, Michael Novak | 4 | -
 |===
 
 
@@ -66,7 +66,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 * Qualität der Modelle
 * Funktionalitäten der Map / Follow-me
-
+* Datensätze können der Datenbank von der App aus hinzugefügt werden
 
 
 
@@ -77,7 +77,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 03.04.2023
+| Assessment Datum | 30.05.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
 | Projektstatus	| grün
 |===
@@ -90,25 +90,24 @@ Beurteilung im Vergleich zu den Zielen::
 * *Ziel 2:* Ziel erreicht
 * *Ziel 3:* Ziel erreicht
 * *Ziel 4:* Ziel erreicht
-* *Ziel 5:* Ziel erreicht
+
 ****
 
 Geplante vs. erledigte Aufgaben::
 ****
 in nächste Iteration verschoben:
 
--
+- Spring Security
 ****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* Projektleitung hat sich eingearbeitet
-* Iterationspläne wurden erstellt
-* Projektplan wurde angepasst
-* Alle Teammitglieder können an der App über GitHub arbeiten
-* Aktueller Stand ist laut Coach Gut
+* Qualität der Modelle ist auf gewünschten Niveau
+* Fehler mit den Permissions verhindert noch das Arbeiten mit den GPS Koordinaten
+* Roboter können noch nicht wie gewünscht hinzugefügt werden
+
 ****
 
 

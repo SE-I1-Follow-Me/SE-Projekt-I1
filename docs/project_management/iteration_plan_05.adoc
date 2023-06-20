@@ -36,13 +36,13 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| UC01 BF 1-4 umsetzen und Test-Token erstellen | medium | 3 | 18.04.23 | - | 5 | Leon Lowa | - | -
-| UC01 BF 5-7 umsetzen | medium | 2 | 18.04.23 | - | 5 | Michael Novak | - | -
-| UC01 BF 8-10 umsetzen | medium | 3 | 18.04.23 | - | 5 | Jonas Pfeiffer | - | -
-| Aufsetzen Springboot für den Server (Spring Security) | high | 4 | 18.04.23 | - | 5 | Magnus Andreas Böhne | - | -
-| Anpassung NFAU3, Risiko ID 7 und 8 | low | 1 | 18.04.23 | - | 5 | Michael Novak | - | - 
-| UC04 umsetzen | medium | 3 | 18.04.23 | - | 5 | Jonas Pfeiffer, Michael Novak | - | - 
-| UC05 umsetzen ohne BF3| medium | 3 | 18.04.23 | - | 5 | Manuel Scheer, Leon Lowa | - | - 
+| UC01 BF 1-4 umsetzen und Test-Token erstellen | medium | 3 | 18.04.23 | - | 5 | Leon Lowa | 3 | -
+| UC01 BF 5-7 umsetzen | medium | 2 | 18.04.23 | - | 5 | Michael Novak | 2 | -
+| UC01 BF 8-10 umsetzen | medium | 3 | 18.04.23 | - | 5 | Jonas Pfeiffer | 3 | -
+| Aufsetzen Springboot für den Server (Spring Security) | high | 4 | 18.04.23 | - | 5 | Magnus Andreas Böhne | 6 | -
+| Anpassung NFAU3, Risiko ID 7 und 8 | low | 1 | 18.04.23 | - | 5 | Michael Novak | 1 | - 
+| UC04 umsetzen | medium | 3 | 18.04.23 | - | 5 | Jonas Pfeiffer, Michael Novak | 4 | - 
+| UC05 umsetzen ohne BF3| medium | 3 | 18.04.23 | - | 5 | Manuel Scheer, Leon Lowa | 3 | - 
 |===
 
 
@@ -66,8 +66,6 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 * Funktionalität des UC01 
 * Feedback der Teammitgliedern über Kenntnisse in Kotlin 
 * App kann sich sicher mit Server verbinden
-* Fähigkeit über GitHub an der App zu arbeiten
-* Feedback zum aktuellen Stand des Coaches
 
 
 == Assessment
@@ -77,7 +75,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 03.04.2023
+| Assessment Datum | 18.04.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
 | Projektstatus	| grün
 |===
@@ -89,8 +87,7 @@ Beurteilung im Vergleich zu den Zielen::
 * *Ziel 1:* Ziel erreicht
 * *Ziel 2:* Ziel erreicht
 * *Ziel 3:* Ziel erreicht
-* *Ziel 4:* Ziel erreicht
-* *Ziel 5:* Ziel erreicht
+
 ****
 
 Geplante vs. erledigte Aufgaben::
@@ -104,11 +101,9 @@ in nächste Iteration verschoben:
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* Projektleitung hat sich eingearbeitet
-* Iterationspläne wurden erstellt
-* Projektplan wurde angepasst
-* Alle Teammitglieder können an der App über GitHub arbeiten
-* Aktueller Stand ist laut Coach Gut
+* UC01 (vorerst) lokal umgesetzt
+* Programmierteams wurden anhand der Kenntnisse gebildet (Dual Programing)
+* Serveranbindung noch nicht möglich
 ****
 
 

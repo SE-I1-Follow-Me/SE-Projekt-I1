@@ -1,5 +1,5 @@
-= Iteration Plan 06: {project-name}
-Magnus Andreas Böhne magnus.boehne@gmail.com
+= Iteration Plan 10: {project-name}
+Manuel Scheer <manuel.scheer@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -12,21 +12,23 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 
-| Anfang der Iteration | 18.04.2023
-| Team- Meeting | 18.04.2023 
-| Meeting Projektleitung | 18.04.2023 
-| Team- Meeting | 25.04.2023 
-| Ende der Iteration | 02.05.2023
+| Anfang der Iteration | 13.06.2023
+| Team- Meeting | 13.06.2023 
+| Meeting Projektleitung | 13.06.2023
+| Team- Meeting | 20.06.2023 
+| [.line-through]#Kundenabnahme#| [.line-through]#22.06.2023#
+| Ende der Iteration | 25.06.2023
+| Kundenabnahme | 29.06.2023
 |===
 
+=== Hinweis
+Die Verschiebung der Kundenabnahme wurde mit allen Verantwortlichen abgeklärt und genehmigt. Da die Belegabgabe jedoch am 26.06.2023 erfolgt endet die Iteration wie geplant am 25.06.2023.
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Beheben der Probleme mit Framework (Serveranbindung)
-* Meeting mit Coach Ringel und Kunden Neugebauer organisieren und halten
-* Erreichbarkeit und Stabilität von Springboot (Server) verbessern
-
+* Dokumentation vollständig
+* Projekt Abnahmebereit
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -37,15 +39,15 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Beheben der Probleme mit Framework (Serveranbindung) in der App | (sehr) hoch | 5 | 25.04.23 | - | 6 | Leon Lowa, Jonas Pfeiffer, Michael Novak, Manuel Scheer, Magnus Andreas Böhne | 4 | -
-| Auto-Start von Spring auf dem Server | hoch | 5 | 02.05.23 | - | 6 | Magnus Andreas Böhne | 1 | 4
-| GitHub Action für das Hochladen von dem Springboot-Projekt | low | 2 | 02.05.23 | - | 6 | Magnus Andreas Böhne | 1 | 3
-| Sicherheitslücke (Port 3306 offen) schließen | hoch | 2 | 25.04.23 | - | 6 | Magnus Andreas Böhne | 1 | - 
-| Mergen von Teilversion und Implementierung der Liste (Serveranbindung) | medium | 3 | 02.05.23 | - | 6 | Jonas Pfeiffer, Michael Novak  | 1 | -
-| Weiterarbeiten an der Karte | medium | 3 | 02.05.23 | - | 6 | Leon Lowa, Manuel Scheer | 6 | -
-| Neustrukturierung des Repository (Organisation erstellen & Server-Repository) | medium | 2 | 02.05.23 | - | 6 | Magnus Andreas Böhne | 3 | - 
+| Benutzeranleitung und Betriebsanleitung ausarbeiten | hoch | 4 | 20.06.23 | - | 10 | Michael Novak, Jonas Pfeiffer | - | -
+| Anforderungsspezifikation und Entwicklerdokumentation ausarbeiten | hoch | 4 | 20.06.23 | - | 10 | Leon Lowa | - | -
+| Testdokumentation und 1-2 kleine Integrationstests (negativ) | hoch | 4 | 20.06.23 | - | 9 | Michael Novak| - | -
+| Abnahmeprotokoll und Review aus SE1 | hoch | 4 | 20.06.23 | - | 10 | Manuel Scheer | - | -
+| Iterationen im Projektbericht | hoch | 4 | 25.06.23 | - | 10 | Jonas Pfeiffer (x3), Magnus Andreas Böhne, Leon Lowa, Michael Novak, Manuel Scheer (je x1) | - | -
+| Präsentation, Lizensauswahl, Softwaresystem ausarbeiten | hoch | 4 | 25.06.23 | - | 10 | Magnus Andreas Böhne, Manuel Scheer | - | -
+| Reflexion schreiben | hoch | 4 | 25.06.23 | - | 10 | gesamtes Team | - | -
+| 
 |===
-
 
 
 == Probleme (optional)
@@ -55,7 +57,8 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Kritischer Verbindungsfehler | Offen | Bis zur Behebung kann am Projekt nicht richtig weiter gearbeitet werden
+| Einhitlichkeit der Dokumente | Offen | Es ist viel Kommunikation erforderlich, um sicherzustellen, dass die Dokumente einheitlich geschrieben werden
+| hoher Zeitdruck | Offen | Ein Großteil der Dokumentation muss bis zur Übergabe an den Kunden fertig werden
 
 |===
 
@@ -64,9 +67,8 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 
-* App kann sich stabil mit Server verbinden
-* Einfachkeit über GitHub an der App zu arbeiten 
-* Funktionalität und Aussehen der Karte
+* Einheitlichkeit der Dokumente
+* Verständlichkeit der Dokumente
 
 
 
@@ -77,9 +79,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 02.05.2023
+| Assessment Datum | 03.04.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
-| Projektstatus	| grün
+| Projektstatus	| gelb
 |===
 
 
@@ -88,7 +90,6 @@ Beurteilung im Vergleich zu den Zielen::
 ****
 * *Ziel 1:* Ziel erreicht
 * *Ziel 2:* Ziel erreicht
-* *Ziel 3:* Ziel teilweise erreicht
 
 ****
 
@@ -96,18 +97,16 @@ Geplante vs. erledigte Aufgaben::
 ****
 in nächste Iteration verschoben:
 
-
-- Ziel 2 (Auto-Start von Spring auf dem Server)
-- Ziel 3 (GitHub Action für das Hochladen von dem Springboot-Projekt)
+-
 ****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* App verbindet sich schnell und zuverlässig mit dem Server
-* Das Repository funktioniert wieder
-* Die Karte funktioniert und wurde im Design angepasst
+* Projektleitung hat sich eingearbeitet
+* Iterationspläne wurden erstellt
+
 ****
 
 
@@ -120,4 +119,4 @@ Beurteilung im Vergleich zu den Bewertungskriterien::
 
 Nach dieser Iteration wurde folgender Stand anhand des Essence Navigators erreicht:
 
-image::essence_i4.png[]
+image::essence_i7.png[]

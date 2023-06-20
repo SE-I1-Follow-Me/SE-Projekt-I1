@@ -1,0 +1,70 @@
+= Betriebsanleitung: FollowMe Android App
+Hier finden Sie eine Anleitung zur Installation des Servers und der FollowMe Android App
+:toc:
+:toc-title: Inhaltsverzeichnis
+
+
+<<<
+== Server
+
+Der Server bietet eine REST-API an, mit der Roboter- und Routeninformationen auf dem Server gespeichert und abgerufen werden können.
+
+=== Allgemeiner Aufbau
+
+Der Server besteht aus mehreren Java-Dateien, die in verschiedenen Paketen organisiert sind. Die Daten zu Robotern und Routen werden in einer Datenbank gespeichert, die durch Spring Data JPA verwaltet wird.
+
+=== Endpunkte
+
+- `/roboter/getAll`:
+Ermöglicht das Abrufen einer Liste aller Roboter über einen GET-Request.
+
+- `/roboter/save`:
+Ermöglicht das Speichern eines Roboters auf dem Server über einen POST-Request. Die Roboterdaten sollten im Body des Requests im JSON-Format bereitgestellt werden.
+
+- `/roboter/update/{id}`:
+Ermöglicht das Aktualisieren des "isFollowing"-Status eines Roboters über einen PATCH-Request. Die Roboter-ID sollte in der URL angegeben werden und der neue Status sollte als "isFollowing"-Parameter im Request bereitgestellt werden.
+
+- `/route/getAll`:
+Ermöglicht das Abrufen einer Liste aller Routen über einen GET-Request.
+
+- `/route/save`:
+Ermöglicht das Speichern einer Route auf dem Server über einen POST-Request. Die Routendaten sollten im Body des Requests im JSON-Format bereitgestellt werden.
+
+=== Anforderungen
+
+
+
+=== Installation
+
+
+
+=== Wartung
+
+
+
+== App
+
+==== Anforderungen
+
+Zum Kompilieren der Anwendung benötigen Sie Android Studio und den Android SDK. Die Mindest-Android-Version, die zum Ausführen der Anwendung erforderlich ist, hängt von den spezifischen Funktionen ab, die Sie verwenden möchten. Da einige Funktionen in neueren Android-Versionen eingeführt wurden, wird empfohlen, die Anwendung auf einem Gerät mit Android 8 (API Level 29) oder höher zu betreiben. Entwickelt und getested wurde die App mit Android 13 (API Level 33)
+
+==== Installation und Setup
+
+Sie können die Anwendung entweder direkt aus dem Android Studio heraus oder durch Installation der APK auf einem Android-Gerät ausführen.
+
+Um die Anwendung aus Android Studio heraus zu starten:
+
+. Öffnen Sie das Projekt in Android Studio
+. Verbinden Sie Ihr Android-Gerät oder starten Sie den Android-Emulator
+. Klicken Sie auf den grünen Play-Button
+
+Um die APK auf einem Android-Gerät zu installieren:
+
+. Übertragen Sie die APK-Datei auf Ihr Gerät
+. Öffnen Sie die APK-Datei
+. Sie müssen möglicherweise die Installation von unbekannten Quellen in den Sicherheitseinstellungen Ihres Geräts zulassen, um die Installation zu ermöglichen
+
+==== Wartung und Betrieb
+
+Nachdem Sie die Anwendung erfolgreich installiert und konfiguriert haben, steht Ihnen die Möglichkeit offen, Roboter hinzuzufügen sowie deren Zustand zu überprüfen und zu kontrollieren. Um detaillierte Informationen zur Nutzung der App zu erhalten, verweisen wir Sie auf unsere Benutzeranleitung.
+

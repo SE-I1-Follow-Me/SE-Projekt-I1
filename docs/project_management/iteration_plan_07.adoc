@@ -25,7 +25,7 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Use-Case UC01 hinzufügen
+* Use-Case UC01 (mit Serveranbindung) hinzufügen
 * Aktuellen Stand mit Coach und Kunden abgleichen
 * Einfügen von GPS Marker in der Map
 
@@ -39,12 +39,12 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Einarbeiten in JPA, UC01 implementieren | hoch | 5 | 16.05.23 | - | 7 | Jonas Pfeiffer, Michael Novak | - | -
-| Einfügen eines Markers an der aktuellen GPS Koordinate, Aufzeichnen der Route (UC04 & UC05) | hoch | 5 | 16.05.23 | - | 7 | Leon Lowa, Manuel Scheer | - | -
-| Teilnahme an Meetings, Klärung offener Fragen | medium | 2 | 05.05.23 | - | 7 | Magnus Andreas Böhne, Manuel Scheer | - | -
-| Erstellen und Überarbeitung der Protokolle / Iterationsplänen | medium | 2 | 09.05.23 | - | 7 | Manuel Scheer | - | - 
-| GitHub Action & Autostart (nachholen) | low | 4 | 16.05.23 | - | 6 | Magnus Andreas Böhne  | - | -
-| Spring Boot Security aufsetzen & Sicherheitslücken schließen | medium | 4 | 16.05.23 | - | 7 | Magnus Andreas Böhne | - | -
+| Einarbeiten in JPA, UC01 implementieren | hoch | 5 | 16.05.23 | - | 7 | Jonas Pfeiffer, Michael Novak | 6 | -
+| Einfügen eines Markers an der aktuellen GPS Koordinate, Aufzeichnen der Route (UC04 & UC05) | hoch | 5 | 16.05.23 | - | 7 | Leon Lowa, Manuel Scheer | 5 | 7
+| Teilnahme an Meetings, Klärung offener Fragen | medium | 2 | 05.05.23 | - | 7 | Magnus Andreas Böhne, Manuel Scheer | 3 | -
+| Erstellen und Überarbeitung der Protokolle / Iterationsplänen | medium | 2 | 09.05.23 | - | 7 | Manuel Scheer | 3 | - 
+| GitHub Action & Autostart (nachholen) | low | 4 | 16.05.23 | - | 6 | Magnus Andreas Böhne  | 4 | -
+| Spring Boot Security aufsetzen & Sicherheitslücken schließen | medium | 4 | 16.05.23 | - | 7 | Magnus Andreas Böhne | 3 | 5
 |===
 
 
@@ -78,7 +78,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | 03.04.2023
+| Assessment Datum | 16.05.2023
 | Teilnehmer | Manuel Scheer, Magnus Böhne
 | Projektstatus	| grün
 |===
@@ -90,26 +90,25 @@ Beurteilung im Vergleich zu den Zielen::
 * *Ziel 1:* Ziel erreicht
 * *Ziel 2:* Ziel erreicht
 * *Ziel 3:* Ziel erreicht
-* *Ziel 4:* Ziel erreicht
-* *Ziel 5:* Ziel erreicht
+
 ****
 
 Geplante vs. erledigte Aufgaben::
 ****
 in nächste Iteration verschoben:
 
--
+- Aufzeichnen der Route (UC05)
+- Spring Security aufsetzen
 ****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
 
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
-* Projektleitung hat sich eingearbeitet
-* Iterationspläne wurden erstellt
-* Projektplan wurde angepasst
-* Alle Teammitglieder können an der App über GitHub arbeiten
-* Aktueller Stand ist laut Coach Gut
+* Kunde und Coach mit aktuellen Stand Zufrieden; Anmerkungen wurden dem Team weitergeleitet und werden in der weiteren Planung berücksichtigt
+* GPS Daten funktionieren aufgrund eines Fehlers mit den Permissions nur bedingt
+* Datensätze können noch nicht aus der App hinzugefügt werden, aber das nötige Know-how wurde gebildet
+
 ****
 
 
