@@ -280,16 +280,17 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+    // Diese funktion lädt alle IDs aus der Datei, in dieser sie gespeichert werden (hier noch hardcodiert)
     fun readDataFromFile(fileName: String): List<Int> {
-        val dataList = mutableListOf<Int>()
-        val file = File(this.filesDir, fileName)
+        val dataList = mutableListOf<Int>() // Liste um die IDs einzutragen, wird benötigt um später nach den IDs sehen zu können
+        val file = File(this.filesDir, fileName) // Öffne die Datei mit angegebenen Dateinamen
 
-        if (file.exists()) {
+        if (file.exists()) { // Wenn die Datei exisitert..
             try {
-                file.forEachLine { line ->
-                    val value = line.toIntOrNull()
-                    if (value != null) {
-                        dataList.add(value)
+                file.forEachLine { line -> // für jede Zeile:
+                    val value = line.toIntOrNull() // Der Wert ist die Zeile als Int
+                    if (value != null) { // Wenn der Wert nicht leer ist
+                        dataList.add(value) // Dann schreibe den Wert in den Array
                     }
                 }
             } catch (e: Exception) {
@@ -297,14 +298,15 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
-        return dataList
+        return dataList // Gib die Liste zurück um sie zu nutzen
     }
 
+    // Lösche eine ID aus der Datei, um einen Roboter nicht mehr anzeigen zu lassen
     fun deleteValueFromFile(fileName: String, value: Int) {
-        val file = File(this.filesDir, fileName)
+        val file = File(this.filesDir, fileName) // Öffne die Datei
 
         // Liste zum Speichern der CSV-Daten
-        val data = ArrayList<Int>()
+        val data = ArrayList<Int>() // Speichere die Daten in einem Array um diesen dann zu durchsuchen
 
         try {
             // CSV-Datei einlesen
