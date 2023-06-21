@@ -32,14 +32,64 @@ Ermöglicht das Speichern einer Route auf dem Server über einen POST-Request. D
 
 === Anforderungen
 
-
+Der Server benötigt eine JVM-Umgebung, daher sollte auf dem System Java installiert sein. Zusätzlich wird das Spring Framework benötigt, insbesondere Spring Boot, um die REST-API zu erstellen und die Datenbank zu verwalten. MySQL-Server ist ebenfalls erforderlich. Es muss sichergestellt sein, dass auf dem Server genügend Speicherplatz für die gewünschte Anzahl von Robotern und Routen zur Verfügung steht.
 
 === Installation
 
+- Installation von Java:
+
+Laden Sie Java von der offiziellen Oracle-Website herunter und installieren Sie es, oder verwenden Sie einen Paketmanager auf Linux-Betriebssystemen.
+
+        sudo apt install default-jdk
+
+- Installation von Gradle:
+
+Laden Sie Gradle von der offiziellen Gradle-Website herunter und installieren Sie es, oder verwenden Sie einen Paketmanager auf Linux-Betriebssystemen.
+
+    sudo apt-get install gradle
+
+
+- Installation von MySQL Server:
+
+Führen Sie folgende Befehle auf Ihrem System aus:
+
+    sudo apt update
+    sudo apt install mysql-server
+    sudo systemctl start mysql.service
+    sudo mysql_secure_installation
+
+- Klonen des Projekt-Repository:
+
+Verwenden Sie Git, um das Projekt-Repository zu klonen.
+
+    git clone [Repository-URL]
+
+- Erstellen der Anwendung:
+
+Führen Sie im Hauptverzeichnis des Projekts den Befehl gradle clean build aus, um das Projekt zu erstellen.
+
+    cd [Projektverzeichnis]
+    gradle clean build
+
+
+- Benutzer und Tabellen in MySQL anlegen:
+
+Erstellen Sie einen neuen Benutzer in MySQL und legen Sie die benötigten Tabellen manuell an. Nutzen Sie dazu folgende Befehle:
+
+    CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+    GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
+- Starten der Anwendung:
+
+Im Verzeichnis build/libs führen Sie den Befehl java -jar springboot.jar aus, um den Server zu starten.
+
+    cd build/libs
+    java -jar springboot.jar
 
 
 === Wartung
 
+Der Server benötigt wenig wartung, jedoch sollte sichergestellt werden, dass das Betriebssystem aktualisiert wird. Sobald die Anwendung installiert und eingerichtet ist, können Sie Roboter hinzufügen, deren Status überprüfen und steuern.
 
 
 == App
@@ -67,4 +117,3 @@ Um die APK auf einem Android-Gerät zu installieren:
 ==== Wartung und Betrieb
 
 Nachdem Sie die Anwendung erfolgreich installiert und konfiguriert haben, steht Ihnen die Möglichkeit offen, Roboter hinzuzufügen sowie deren Zustand zu überprüfen und zu kontrollieren. Um detaillierte Informationen zur Nutzung der App zu erhalten, verweisen wir Sie auf unsere Benutzeranleitung.
-
