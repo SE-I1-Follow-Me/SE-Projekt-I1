@@ -1,9 +1,14 @@
 package com.example.followme.Entity
 
-
-//Roboter-Klasse, die Server gefetcht wird
+/**
+ * Klasse um Roboter zu speichern
+ * wird für die Darstellung, als auch für das Abspeichern der einzelnen Roboter benutzt
+ */
 class Roboter {
 
+    /**
+     * Identifier für die einzelnene Roboter
+     */
     private var id: Int? = null
 
     private var adresse: String? = null

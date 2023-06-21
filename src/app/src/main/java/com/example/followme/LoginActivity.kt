@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 
 
+/**
+ * Klasse um die Funktionalität der Activity "Login" zu gewährleisten
+ * außerdem ist diese Activity die erste, die angezeigt wird
+ */
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

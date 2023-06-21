@@ -41,6 +41,10 @@ import retrofit2.Response
 import timber.log.Timber
 import java.util.*
 
+
+/**
+ * Klasse um die Funktionalität der Activity "Home" zu gewährleisten
+ */
 class RouteActivity : AppCompatActivity() {
 
     private var interval: Long = 500
@@ -127,6 +131,9 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Funktion, die das aktualisieren des Standorts fortsetzt, nachdem erneut auf die Activity gewechselt wurde
+     */
     override fun onResume() {
         super.onResume()
         map.onResume()
@@ -135,27 +142,42 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Funktion, die das aktualisieren des Standorts pausiert, nachdem die Activity gewechselt wurde
+     */
     override fun onPause() {
         super.onPause()
         stopLocationUpdates()
         map.onPause()
     }
 
+    /**
+     * Funktion, die den Eventbus regisitriert, nachdem die Activity gestartet wurde
+     */
     override fun onStart() {
         super.onStart()
         EventBus.getDefault().register(this)
     }
 
+    /**
+     * Funktion, die den Eventbus deregisitriert, nachdem die Activity gewechselt wurde
+     */
     override fun onStop() {
         super.onStop()
         EventBus.getDefault().unregister(this)
     }
 
+    /**
+     * Funktion, die den fusedLocationClient erstellt, um Standortaktualisierungen zu erhalten
+     */
     private fun initLocation() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         readLastKnownLocation()
     }
 
+    /**
+     * Funktion, die die Standortaktualisierungen startet
+     */
     @SuppressLint("MissingPermission")
     private fun startLocationUpdates() {
         fusedLocationClient.requestLocationUpdates(
@@ -165,10 +187,16 @@ class RouteActivity : AppCompatActivity() {
         )
     }
 
+    /**
+     * Funktion, die die Standortaktualisierungen stoppt
+     */
     private fun stopLocationUpdates() {
         fusedLocationClient.removeLocationUpdates(locationCallback)
     }
 
+    /**
+     * Funktion, die den letzten Standort ausließt
+     */
     @SuppressLint("MissingPermission")
     private fun readLastKnownLocation() {
         fusedLocationClient.lastLocation
@@ -177,6 +205,9 @@ class RouteActivity : AppCompatActivity() {
             }
     }
 
+    /**
+     * Dummyfunktion, da eine "@Subscribe" Methode von der timber Bibliothek gefordert wird"
+     */
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMsg(status: MyEventLocationSettingsChange) {
         if (status.on) {
@@ -186,6 +217,9 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Funktion um die Berechtigungen, die für das darstellen der Route notwendig sind, zu überprüfen
+     */
     private fun initCheckLocationSettings() {
         val builder = LocationSettingsRequest.Builder()
             .addLocationRequest(locationRequest)
@@ -223,6 +257,10 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Funktion um die GPS-Koordinaten zu aktualisieren, diese werden in "startpoint" gespeichert
+     * @param newLocation neue GPS-Koordinate
+     */
     private fun updateLocation(newLocation: Location) {
         lastLocation = newLocation
         startPoint.longitude = newLocation.longitude
@@ -232,6 +270,9 @@ class RouteActivity : AppCompatActivity() {
         map.invalidate()
     }
 
+    /**
+     * Funktion, die die Darstellung der Karte initialisiert
+     */
     private fun initMap() {
         if (!requestingLocationUpdates) {
             requestingLocationUpdates = true
@@ -241,16 +282,26 @@ class RouteActivity : AppCompatActivity() {
         mapController.setCenter(startPoint)
         map.invalidate()
     }
+
+    /**
+     * Funktion um eine Makierung auf den aktuellen Standort zu setzten
+     */
     private fun getPositionMarker(): Marker {
         if (marker == null) {
             marker = Marker(map)
-            marker!!.title = "Here I am"
+            marker!!.title = "Standort"
             marker!!.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
             marker!!.icon = ContextCompat.getDrawable(this, R.drawable.ic_baseline_place_24)
             map.overlays.add(marker)
         }
         return marker!!
     }
+
+    /***
+     * Funktion, die die Route einzeichnet und speichert
+     * nach erneuten aktivieren der Funktion wird eine Route-Objekt mit den entsprechenden Koordinaten
+     * erstellt und an den Server gesendet, außerdem wird eine Name vom User gefordert
+     */
     private fun drawPathOnMap() {
         if (routePoint == null) {
             // Set the starting location
@@ -327,6 +378,10 @@ class RouteActivity : AppCompatActivity() {
                 }
             }
         }
+
+    /**
+     * Hilfsfunktion für drawPathOnMap(), wird benutzt um die Route zu erweitern
+     */
     private fun updatePath() {
         if (routeEndPoint == null) {
             // Set the ending location
@@ -347,6 +402,10 @@ class RouteActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Funktion um ein Fenster zu öffnen
+     * @
+     */
     private fun showNameInputDialog(callback: (String?) -> Unit) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Namen eingeben")
@@ -402,10 +461,17 @@ class RouteActivity : AppCompatActivity() {
     }
 }
 
+
+/**
+ * Klasse um zu ermitteln ob sich die Permission geändert haben
+ */
 class MyEventLocationSettingsChange (val on: Boolean){
     companion object {
         var globalState = false
 
+        /**
+         * Funktion um die geänderten Permission zu aktualisieren
+         */
         fun setChangeAndPost(_on: Boolean) {
             if (globalState != _on) {
                 globalState = _on
@@ -415,6 +481,10 @@ class MyEventLocationSettingsChange (val on: Boolean){
     }
 }
 
+
+/**
+ *  Klasse um Permissions abzufragen, falls sich die Art des GPS Signals geändert hat
+ */
 class LocationProviderChangedReceiver : BroadcastReceiver() {
 
     private var isGpsEnabled: Boolean = false

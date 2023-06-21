@@ -1,3 +1,6 @@
+/**
+ * Datenklasse um Roboter lokal zu handhaben, wichtig für die Anzeige der Roboter
+ */
 data class Robot(
     var id: Int,
     var ivRoboter : Int,

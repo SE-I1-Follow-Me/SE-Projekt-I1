@@ -1,10 +1,20 @@
 package com.example.followme.Entity
 
+/**
+ * Klasse um Routen zu speichern
+ * wird für die Darstellung, als auch für das Abspeichern der einzelnen Routen benutzt
+ */
 class Route {
 
     private var id: Int? = null
+
+    /**
+     * Integer, was einen bereits vorhandenen Id des gefahrenen Roboter nimmt
+     */
     private var drivenBy: Int? = null
+
     private var name: String? = null
+
     private var coordinates: ArrayList<Coordinates> = ArrayList<Coordinates>()
 
 
