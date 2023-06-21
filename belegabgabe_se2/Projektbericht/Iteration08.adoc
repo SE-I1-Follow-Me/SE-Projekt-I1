@@ -1,0 +1,60 @@
+= Iteration 08: {Projektname} (16.05.2023 - 30.05.2023) [MS]
+
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
+In der vierten Iteration dieses Semesters gab es vier Schwerpunkte: 
+****
+* Das Umsetzen des Use-Cases UC02 "Roboter bearbeiten" (siehe https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/requirements/Use%20Case%2002%20-%20Roboter%20bearbeiten.adoc[UC02])
+* Das Ausarbeiten der Modelle
+* Die "Follow-me"-Funktion sollte weiter zentriert werden
+* Meeting mit dem Kunden organisieren (Thema Simulation sowie Feedback zum aktuellen Stand)
+
+****
+
+== Umsetzen von UC02
+Bei der Umsetzung des UC02 benötigten wir, wie in der vorherigen Iteration, JPA (Jakarta Persistence API), um Daten auf dem Server ändern zu können. In der letzten Iteration konnte noch nichts mit JPA umgesetzt werden, jedoch wurde das nötige Know-how gebildet. Mit dem neuen Wissen war es nun unser Ziel, Roboter nicht nur über die App der Datenbank hinzuzufügen, sondern sie auch bearbeiten zu können. 
+
+Doch auch mit dem neuen Wissen gab es große Schwierigkeiten bei der Implementierung der Funktion. Unser Team suchte im Internet nach möglichen Lösungen. Da JPA ein sehr häufig verwendetes Tool ist, fanden wir diese letztendlich auch. Allerdings schafften wir es nicht, diese Funktion vollständig in dieser Iteration umzusetzen. Kleinere Teile der Funktion liefen bereits, weshalb wir uns sicher waren, diese Funktion in der nächsten Iteration zu vervollständigen.
+ 
+== Ausarbeitung der Modelle
+
+Zum Überprüfen unserer Arbeit nutzten wir bisher die Modelle aus dem letzten Semester sowie ein neueres UML Diagramm.
+
+.UML-Diagramm
+
+image::uml_diagram.png[Abbildung2: UML-Diagramm]
+
+
+
+Da uns bereits zuvor aufgefallen ist, dass diese Modelle dem Umfang des Projektes nicht mehr gerecht werden, entschieden wir uns, drei neue Modelle anzulegen. Wir haben uns hierbei bewusst für drei Modelle entschieden, da es sein könnte, dass wir während der Ausarbeitung feststellen, dass uns diese Art von Modell für unser Projekt als nicht sinnvoll erscheint. Eines der angefertigten Modelle war hierbei das Komponentendiagramm.
+
+.Komponenten Diagramm
+image::Komponenten_Diagramm.png[]
+
+Die Entwicklung dieses Modells erwies sich als schwerer als gedacht, da unser Projekt viele Komponenten besitzt. Jedoch war es aus diesem Grund auch sehr nützlich für unser weiteres Vorgehen. Auch wenn das Modell nur die Grundfunktionen der App zeigt, ist es deutlich ausführlicher als das zuvor verwendete UML-Diagramm.
+
+Zudem entschieden wir uns für die Entwicklung einer physischen Sicht sowie einer logischen Sicht.
+
+.image:Images/physische_Sicht.png
+.image:Images/logische_Sicht.png
+
+Text für die Bilder
+
+== Zentrieren der Follow-me Funktion
+
+Der letzte Schwerpunkt der Iteration war das Zentrieren der Follow-me Funktion. Gemeint ist hierbei, dass der Schwerpunkt in der Entwicklung bisher auf den Funktionen, die zur Implementierung der Follow-me Funktion nötig sind, lag. Nun waren diese in einem Zustand, in denen die Follow-me Funktion implementiert werden konnte. Das größte Problem hierbei waren die Permissions. Permissions legen fest, was eine App aufrufen darf und was nicht. Da die Follow-me Funktion zum einen GPS-Daten des Nutzers sowie Internetzugang erfordert, sind diese Permissions essenziell für die Nutzung. Diese wurden jedoch noch nicht wie gewünscht abgefragt. Zwar konnten diese in den Handy- bzw. Emulatoreinstellungen selbstständig festgelegt werden, jedoch war dies nur zum Testen annehmbar. Die Map funktionierte nun wie gewünscht, was manuelle Tests belegen konnten, aber es konnte bis zum Ende der Iteration keine Lösung für das Problem der Permissions gefunden werden, wobei es Teilerfolge gab. Auch hier waren wir uns sicher, dass wir kurz vor dem Durchbruch standen.
+
+== Planung des Meetings mit dem Kunden
+
+Es sollte ein Meeting mit dem Kunden, möglichst am Anfang der nächsten Iteration, geplant werdenn, um mit ihm über die Simulation reden zu können. Die Simulation ist hierbei unsere Art zu testen, da die Roboter, mit denen später gearbeitet werden sollen, noch nicht existieren. Zudem brauchten wir ein letztes mal Feedback des Kunden, ob die App sich in eine Richtung entwickelt, die ihm gefällt. Die Planung lief problemlos und das Team konnte sich schnell mit dem Kunden auf einen Termin einigen, der für beide Partein günstig lag. Im Punkto Anwesenheit wurde erstmal mit drei Personen geplant: Der Projektleitung sowie unserem Tester. Die anderen Gruppenmitgliedern war die Teilnahme freigestellt. Ebenso wurde angeboten, dass diese Fragen über die Projektleitung an den Kunden richten konnten, sollten sie keine Möglichkeit haben, dieses Meeting warzunehmen.
+
+*Für einen detailierten Überblicken sehen Sie sich bitte den kompletten https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/project_management/iteration_plan_08.adoc[Iterationsplan 08] an.*
+
+== Aktueller Stand Essence-Diagramm
+
+
+
+image::{docs}/project_management/images/essence_i7.PNG[]
+
