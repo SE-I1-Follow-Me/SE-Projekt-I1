@@ -9,7 +9,7 @@ Das erste wichtige Meeting hat an dem 02.06.23 stattgefunden. In diesem Meeting 
 
 Routenspeicherung
 
-Es gibt ein altes SE- Projekt, welches sich nur mit dem Thema Routen und Routenspeicherung auseinandergesetzt hat. Nach einer Quellcode- Review, wurde festgestellt, dass dieser, mitsamt der Dokumentation ausgesprochen mangelhaft und als eher unbrauchbar einzustufen ist. Aufgrund dessen wurde entschieden, Komponenten mit der selben Idee des Autosyncs, aber komplett neuen Code neu zu schreiben. Die Begründung war hierzu, dass der Aufwand das alte Projekt zu integrieren, höher ist, als es neu zu schreiben. Ein zusätzlicher Zeitschaden ist in beiden Fällen unausweichlich. Hürden wie die Android Permissions, werden abgebaut.
+Es gibt ein altes SE- Projekt, welches sich nur mit dem Thema Routen und Routenspeicherung auseinandergesetzt hat. Nach einer Quellcode- Review, wurde festgestellt, dass dieser, mitsamt der Dokumentation ausgesprochen mangelhaft und als eher unbrauchbar einzustufen ist. Aufgrund dessen wurde entschieden, Komponenten mit der selben Idee des Autosyncs, aber als komplett neuen Code zu schreiben. Die Begründung war hierzu, dass der Aufwand das alte Projekt zu integrieren, höher ist, als es neu zu schreiben. Ein zusätzlicher Zeitschaden ist in beiden Fällen unausweichlich. Hürden wie die Android Permissions, werden abgebaut.
 
 
 Vorbereitungen der Simulation
