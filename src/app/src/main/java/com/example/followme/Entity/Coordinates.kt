@@ -1,5 +1,9 @@
 package com.example.followme.Entity
 
+/**
+ * Klasse um Koordinaten zu speichern
+ * wir benutzt um das Route Objekt zu erstellen
+ */
 class Coordinates {
     private var longitude: String? = null
     private var latitude: String? = null

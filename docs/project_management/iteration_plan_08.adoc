@@ -86,7 +86,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 Beurteilung im Vergleich zu den Zielen:: 
 ****
-* *Ziel 1:* Ziel erreicht
+* *Ziel 1:* Ziel nicht erreicht
 * *Ziel 2:* Ziel erreicht
 * *Ziel 3:* Ziel erreicht
 * *Ziel 4:* Ziel erreicht
@@ -98,6 +98,7 @@ Geplante vs. erledigte Aufgaben::
 in nächste Iteration verschoben:
 
 - Spring Security
+- Ausarbeitung JPA
 ****
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 

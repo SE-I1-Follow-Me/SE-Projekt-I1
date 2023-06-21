@@ -2,3 +2,7 @@
 include::Iteration05.adoc[]
 
 <<<
+
+include::Iteration06.adoc[]
+
+<<<

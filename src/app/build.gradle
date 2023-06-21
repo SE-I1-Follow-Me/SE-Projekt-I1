@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'org.jetbrains.dokka'
 }
 
 android {
@@ -76,5 +77,5 @@ dependencies {
     implementation "androidx.test.espresso:espresso-core:3.5.1"
     implementation "androidx.test.espresso:espresso-contrib:3.5.1"
 
-
+    implementation "org.jetbrains.dokka:android-documentation-plugin:1.8.20"
 }
