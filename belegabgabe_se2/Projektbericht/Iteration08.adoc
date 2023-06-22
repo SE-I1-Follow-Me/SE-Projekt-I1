@@ -1,4 +1,4 @@
-= Iteration 08: {Projektname} (16.05.2023 - 30.05.2023) [MS]
+= Iteration 08: {project-name} (16.05.2023 - 30.05.2023) [MS]
 
 
 :docs: ../../docs
