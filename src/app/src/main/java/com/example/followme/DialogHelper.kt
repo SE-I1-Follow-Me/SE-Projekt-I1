@@ -7,8 +7,16 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog.*
 import java.io.File
 
+/**
+ * Klasse um einen Dialog zur Eingabe der Roboter ID zu öffnen
+ */
 object DialogHelper {
 
+        /**
+         * Funktion die das Dialogfenster öffnet
+         * @param context
+         * @param callback
+         */
         // Funktion öffnet ein Dialogfenster zur Eingabe eines Integerwertes
         fun showIdInputDialog(context: Context, callback: (Int?) -> Unit) {
         val builder = Builder(context)
@@ -37,6 +45,11 @@ object DialogHelper {
         builder.show()
     }
 
+    /**
+     * Funktion, die die Eingabe der ID verarbeitet und diese speichert
+     * @param context
+     * @param id
+     */
     // Funktion um die Eingabe zu verarbeiten
     fun handleIdInput(context: Context, id: Int?) {
         if (id != null) { // Wenn id nicht null ist, ansonsten wird fehler auch angezeigt wenn man abbricht
@@ -54,6 +67,11 @@ object DialogHelper {
         }
     }
 
+    /**
+     * Funktion die die Id in einen csv File schreibt
+     * @param context
+     * @param id
+     */
     // Funktion um eine ID in der hardcodierten datei einzutragen
     fun saveRoboterInFile(context: Context, ID: Int) {
         val data = "$ID"
