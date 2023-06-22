@@ -5,9 +5,16 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Zweck
-Dieses Dokument soll Künftige Entwickler bei der Weiterentwicklung des Systems unterstützen.
+Dieses Dokument soll künftige Entwickler bei der Weiterentwicklung des Systems unterstützen.
 
 == Systemarchitektur
+Logische Sicht:
+
+image::Platzhalter
+
+Physische Sicht:
+
+image::physischeSicht.png[]
 
 
 
@@ -73,7 +80,7 @@ Es wurden folgende Bilbiotheken benutzt:
 	
 
 == Datenbankschema
-
+image::DB_schema.png[]
 
 
 
@@ -82,7 +89,7 @@ Es wurden folgende Bilbiotheken benutzt:
 .Rest-API
     Es wird eine Rest-API als Schnittstelle zwischen der MySQL Datenbank und der Android App benutzt.
     Diese dient der Speicherung, Veränderung und Löschung der Routen und Robotern.
-    Als Framework wird Springboot benutzt, siehe Frameworks.
+    Als Framework wird Springboot benutzt, siehe Frameworks. Für weitere Informationen siehe Softwaredokumentation der Rest-API.
 
 == Komponenten
 image::sequencediagram.png[]
