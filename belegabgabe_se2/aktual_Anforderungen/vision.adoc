@@ -1,0 +1,179 @@
+= Vision: {project-name}
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+Das Ziel des Dokumentes ist es, die wesentlichen Bedarfe und Funktionalitäten der Follow-me Android-App zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die Details, wie die Follow-me Android-App diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+
+=== Zweck
+Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
+
+=== Gültigkeitsbereich (Scope)
+Dieses Visions-Dokument bezieht sich auf die Follow-me Android-App für Fahrroboter, welche von Team I1 entwickelt wird. Ziel des Projektes ist es, eine funktionierende App, welche via GPS, Daten über eine absolvierte Route sammelt, als auch ein Roboter-Management System bereit zu stellen. Vom Server sollen alle Daten zu Robotern und Routen empfangen und in der App asugelesen werden, als auch zu speichernde neue Daten an diesen zu senden.
+
+=== Definitionen, Akronyme und Abkürzungen
+//Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
+Siehe <<#glossary, Glossar>>.
+
+=== Referenzen
+Die im vorangegangenen Projektzyklus von Team I5 entwickelte App https://github.com/MarioNeugebauer/GpsTrackingAndroid[GPS-Tracking-Android-App], stellte sich im Laufe des Projekts als nicht nützlich heraus, da diverse Funktionen in der zu entwickelnden App nicht lauffähig sind.  
+
+== Positionierung
+
+=== Fachliche Motivation
+Der Auftraggeber sucht nach einer Funktion, welche eine Basis bietet, um zukünftig mit Fahrrobotern arbeiten zu können. Deshalb benötigt er eine App, welche für den Outdoorbereich geeignet ist und es ermöglicht, die Roboter auch aus der Ferne zu steuern.
+
+=== Problem Statement
+//Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
+
+[cols="1,3"]
+|===
+| Das Problem | Routen können aufgezeichnet, aber nicht verwaltet, gelöscht oder an einen Fahrroboter übergeben werden.
+| betrifft | Nutzern, welche Aufgaben an die Fahrroboter delegieren möchten.
+| die Auswirkung davon ist | Automatisierte Bedienung der Fahrroboter ist nicht möglich
+| eine erfolgreiche Lösung wäre | Eine Android-App, welche es ermöglicht, Routen und dazugehörende Aufgaben an Roboter zu übertragen.
+|===
+
+
+
+
+////
+Beispiel:
+[cols="1,3"]
+|===
+|Das Problem | aktuelle Informationen zum Stundenplan und Noten einfach zu erhalten
+|betrifft | Studierende der HTW Dresden
+|die Auswirkung davon ist | umständliche und aufwändige Suche nach Noten, Zeiten und Räumen
+|eine erfolgreiche Lösung wäre | die Zusammenführung und benutzer-individuelle Darstellung auf einem mobilen Endgerät
+|===
+////
+
+=== Positionierung des Produkts
+//Ein Positionierung des Produkts beschreibt das Einsatzziel der Anwendung und die Bedeutung das Projekts an alle beteiligten Mitarbeiter.
+
+//Geben Sie in knapper Form übersichtsartig die Positionierung der angestrebten Lösung im Vergleich zu verfügbaren Alternativen dar. Das folgende Format kann dazu verwendet werden:
+
+[cols="1,3"]
+|===
+| Für | Nutzer
+| die | mit den Fahrrobotern arbeiten
+| Das Produkt ist eine | mobile Android-App für den Outdoorbereich
+| Die | es dem Nutzer ermöglicht, die Fahrroboter zu bedienen
+| Im Gegensatz zu | das Routen und Roboter weder verwaltet noch hinzugefügt werden können
+| Unser Produkt | unterstützt eine präzise Aufnahme sowie schnelle Speicherung von GPS-Tracks und eine benutzerfreundliche Aufgabenverteilung an die Roboter
+|===
+
+////
+Beispiel Produkt:
+|===
+| Für | Studierende der HTW
+| die | die ihren Studienalltag effizienter organisieren möchten
+| Das Produkt ist eine | mobile App für Smartphones
+| Die | für den Nutzer Informationen zum Stundenplan und Noten darstellt
+| Im Gegensatz zu | Stundenplänen der Website und HIS-Noteneinsicht
+| Unser Produkt | zeigt nur die für den Nutzer relevanten Informationen komfortabel auf dem Smartphone an.
+|===
+////
+
+
+== Stakeholder Beschreibungen
+
+=== Zusammenfassung der Stakeholder
+
+[%header, cols="1,3,3"]
+|===
+| Name | Beschreibung | Verantwortlichkeiten
+
+// | [Benennung des Stakeholder-Typs.]
+// | [Kurze Beschreibung des Stakeholders.]
+// | [Fassen Sie die wesentlichen Verantwortlichkeiten des //Stakeholder //mit Bezug auf das zu entwickelnde System kurz //zusammend.. ihr besonderen Interessen. Beispiele: Dieser Stakeholder //sorgt dafür, dass das System gewartet wird / dass die angezeigten //Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+
+| Entwickler-Team der App I1
+| Kursteilnehmer des Moduls Software Engineering I (I150) / Requirements Engineering (I925)
+| Erstellen, Verwalten, Warten von Anwendung und Server
+
+| Firma Sciota Robotics
+| Entwickler der Fahrroboter
+| Bereitstellen der Roboter und Implementierung des autonomen Fahrens
+
+
+| Nutzer 
+| Nutzer der App, welche die Fahrroboter im Berufsalltag nutzen möchten (Förster, Bauern)
+| Nutzen der App nach Anleitung
+
+| Auftraggeber 
+| Auftraggeber des Projektes (Prof. Dr.-Ing. Mario Neugebauer)
+| Ansprechpartner für das Projekt; legt die Anforderungen fest
+
+| HTW Dresden Rechenzentrum
+| Server, auf dem die Daten zwischengespeichert werden
+| Bereitstellung des benötigten Speichers; Zuverlässigkeit der Server sichern
+
+| Gesetzgeber
+| Legt Rahmenbedingungen und Vorschriften fest
+| Lizenzen und gesetzliche Vorschriften müssen zwingend beachtet werden
+
+|===
+
+=== Benutzerumgebung
+//Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
+
+//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+. Ein Nutzer kann mehrere Roboter speichern und gleichzeitig bedienen und ein Roboter kann mehreren Nutzern gehören, jedoch kann er nur von einem gleichzeitig benutzt werden bzw. Aufgaben erhalten.
+. Die Roboter werden während ihrer Arbeit gesperrt. Das heißt, dass andere Nutzer, die normalerweise Zugriff auf diese Roboter haben, nicht auf diese zugreifen können, bis der aktuelle Nutzer seine Sitzung beendet hat. 
+. Die App ist für den Outdooreinsatz gedacht und benötigt ein GPS-Signal, sowie eine stabile Internetverbindung.
+. Die App wird auf der aktuell gängigen Android Version 11 entwickelt.
+
+
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+
+
+== Produkt-/Lösungsüberblick
+
+=== Bedarfe und Hauptfunktionen
+//Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
+
+[%header, cols="4,1,4,1"]
+|===
+| Bedarf | Priorität | Features | Release
+|Follow-me Funktion | sehr hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann.| SS 2023
+| Route aufzeichnen | hoch | Route während der Follow-me Funktion aufzeichnen | SS 2023
+|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | SS 2023
+|Route laden |hoch |Zuvor aufgenommene Route anzeigen | offen
+|Roboter hinzufügen |hoch |Speichern eines neuen Roboters | SS 2023
+|Route bearbeiten | niedrig |Namen der Route ändern oder sie für andere Roboter zugänglich machen | offen
+|Route löschen | niedrig |Löschen einer zuvor aufgenommenen Route | offen
+|Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
+|Roboter Fahrkommandos |niedrig |Befehle, die das Ablaufen einer Route betreffen (beginnen, pausieren, beenden) | offen
+|Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
+|===
+
+
+
+
+== Zusätzliche Produktanforderungen
+//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+
+//Notiz: Verbindung zum Roboter herstellen, Robotor aus Menge geziehlt auswählen, Aufgaben an Verbundene Roboter verteilen
+
+
+//Hinweise:
+
+//. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
+//. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
+//. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
+//. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
+//. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+
+[%header, cols="4,1,1"]
+|===
+| Anforderung | Priorität | Release
+| App muss auf allen aktuellen Android Versionen lauffähig sein | hoch | SS 2023
+|Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |hoch | offen
+|Die App muss möglichst einfach und linear aufgebaut sein, damit sie für den Outdoorbereich geeignet ist | hoch | SS 2023
+|Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |niedrig | SS 2023
+|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |sehr niedrig | SS 2023
+|===
