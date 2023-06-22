@@ -1,4 +1,7 @@
-= Iteration 06: {Projektname}
+= Iteration 06: {project-name} [JP]
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
 
 Die zweite Iteration des neuen Semesters sollte einen besonderen Schwerpunkt auf die Anbindung des Servers legen. Dieser Aspekt hat die höchste Priorität und wird von der Größe her als besonders umfangreich eingeschätzt. Die gesamte Teamressource wird für diese Aufgabe benötigt. Darüber hinaus sind durch die Zusammenarbeit am Code erste Unstimmigkeiten und Probleme im gemeinsamen Repository aufgetreten, die dringend behoben werden müssen, um eine effektive Gruppenarbeit zu ermöglichen. Die Integration der Serveranbindung ist von entscheidender Bedeutung für die Verwirklichung der Projektidee. Ohne eine funktionierende Serveranbindung müssten Funktionen mehrfach bearbeitet werden, was ineffizient wäre. Diese Iteration markiert somit einen kritischen Punkt in der Entwicklung unseres Projekts und wird über die zukünftige Arbeit daran entscheiden.
 
