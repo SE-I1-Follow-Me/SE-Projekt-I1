@@ -59,6 +59,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 
     implementation 'org.osmdroid:osmdroid-android:6.1.16'
 
@@ -76,6 +77,11 @@ dependencies {
     //for tests
     implementation "androidx.test.espresso:espresso-core:3.5.1"
     implementation "androidx.test.espresso:espresso-contrib:3.5.1"
+
+    androidTestImplementation 'com.squareup.okhttp3:mockwebserver3:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:4.9.0'
+
 
     implementation "org.jetbrains.dokka:android-documentation-plugin:1.8.20"
 }
