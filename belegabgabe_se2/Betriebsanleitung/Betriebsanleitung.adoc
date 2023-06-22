@@ -76,8 +76,8 @@ Führen Sie im Hauptverzeichnis des Projekts den Befehl gradle clean build aus, 
 
 Erstellen Sie einen neuen Benutzer in MySQL und legen Sie die benötigten Tabellen manuell an. Nutzen Sie dazu folgende Befehle:
 
-    CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
-    GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+    CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+    GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;
 
 - Starten der Anwendung:
 

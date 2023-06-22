@@ -1,0 +1,94 @@
+== Testkonzept
+
+=== Testobjekte
+
+Die wichtigsten Komponenten, die getestet wurden, sind das RoboterAPI-Interface und die HomeActivity-Klasse in der Android-Anwendung. Diese Testobjekte wurden mit Unit- und Integrationstests getestet, wobei die Hauptaufmerksamkeit auf der API und der Integration mit der Hauptaktivität lag.
+
+=== Testmethoden
+
+Wir haben uns für eine Kombination aus Blackbox- und Whitebox-Tests entschieden. Beim Blackbox-Test haben wir die Funktionen der RoboterAPI und HomeActivity ohne Blick auf den internen Code getestet. Beim Whitebox-Test haben wir den internen Code berücksichtigt und Fehler simuliert, wie beispielsweise die API-Fehler, um die Robustheit der App zu überprüfen.
+
+==== Modultests
+
+Nach eingehender Überlegung haben wir beschlossen, Modultests selektiv zu verwenden. Diese Entscheidung basiert auf der Beobachtung, dass einige Module, wie die HomeActivity, im Verlauf des Projekts an Komplexität gewonnen haben. Für diese Module wurden spezifische Modultests erstellt, um deren grundlegende Funktionalität zu gewährleisten. Dazu gehörten automatisierte Tests, die unterschiedliche Aspekte abdeckten. Ein Beispiel dafür ist die Überprüfung des korrekten Verhaltens von RecyclerViews. Mit dieser selektiven Anwendung von Modultests konnten wir sicherstellen, dass die Kernfunktionen unserer komplexeren Module stets ordnungsgemäß funktionieren.
+
+==== Integrationstest
+
+In unserem Testprozess lag ein wesentlicher Schwerpunkt auf Integrationstests. Hierbei orientierten wir uns an den definierten Anwendungsfällen (Use-Cases), um die erfolgreiche Zusammenarbeit mehrerer Module sowie deren korrekte Synchronisation zu überprüfen. Besonders berücksichtigt wurde dabei die Zusammenarbeit zwischen der HomeActivity und dem RoboterAPI Service, die eine zentrale Rolle in unserer Anwendung spielt. Auch die Synchronisation mit der Retrofit-Bibliothek und den Datenstrukturen der Entity-Klassen wurden getestet. Diese Integrationstests sind entscheidend, um die korrekte Funktionalität unserer App zu gewährleisten, da sie die Interaktion zwischen den verschiedenen Modulen sicherstellen.
+
+==== Manuelle Tests
+
+Wir als Team haben uns dazu entschieden, aufgrund der überschaubaren Größe des Projekts und der natürlichen Interaktionen, die in einer realen Nutzungssituation auftreten können, eine signifikante Menge an manuellen Tests durchzuführen. Trotz des Wertes automatisierter Tests, waren wir uns bewusst, dass sie nicht alle Aspekte eines komplexen Systems wie unserem abdecken können, insbesondere in Bezug auf die Benutzerinteraktion und das allgemeine Benutzererlebnis. Die Durchführung von manuellen Tests erlaubte es uns, die App aus der Perspektive des Endbenutzers zu betrachten und dabei subtile Fehler und Verbesserungsmöglichkeiten zu entdecken, die in automatisierten Tests möglicherweise übersehen worden wären. Darüber hinaus war diese Methode angesichts der Größe und Komplexität unseres Projekts sowohl zeit- als auch ressourceneffizient.
+
+=== Akzeptanztest
+
+Im Laufe des Projekts haben wir in regelmäßigen, persönlichen Meetings unsere Fortschritte und einzelnen Systemteile dem Kunden zur Überprüfung präsentiert. Diese iterativen Überprüfungen ermöglichten es uns, wertvolles Feedback in Echtzeit zu erhalten und dieses unmittelbar in unsere Weiterentwicklung einfließen zu lassen. Durch diesen direkten und kontinuierlichen Austausch mit dem Kunden konnten wir sicherstellen, dass unsere Arbeit den Erwartungen und Anforderungen des Kunden entspricht. Aufgrund des zügig erhaltenen Feedbacks konnten wir schnell auf mögliche Anpassungswünsche reagieren und unser System erfolgreich validieren und optimieren.
+
+=== Testdurchführungsplanung
+
+UNKLAR
+
+== Testen der nicht-funktionalen Anforderungen
+
+===  Systemweite Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | Status | Bemerkung
+
+|NFAU-1: Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden.
+|Erfüllt
+|-
+
+|NFAU-2: Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein.
+|Erfüllt
+|-
+
+|NFAU-3: Es ist darauf zu achten, dass die Interaktionsauswahl minimiert wird
+|Erfüllt
+|-
+
+|NFAU-4: Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein.
+|Erfüllt
+|-
+
+|NFAU-5: Alle Fehlermeldungen werden dem Nutzer offensichtlich, schnell und verständlich angezeigt.
+|Erfüllt
+|Verwendung von Android Toasts
+
+|NFAP-1: Innerhalb der App soll das Laden eines Menüs und die Nutzung einer Funktion maximal 3 Sekunden benötigen.
+|Erfüllt
+|ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
+
+
+|NFAP-2: ewählte Aktionen der App sollen innerhalb von 1000 Millisekunden* an den Server gesendet, verarbeitet und verifiziert werden.
+|Erfüllt
+|ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
+
+|NFAP-3: Die Speicherung der Daten auf dem Server soll nicht länger als 5 Sekunden dauern.
+|Erfüllt
+|-
+
+|NFAP-4: Die Routen sollen möglichst gleich absolviert werden.
+|Noch nicht implementiert/Überprüft
+|Keine reellen Roboter vorhanden
+
+|NFAP-5: Gesendete Befehle an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden.
+|Noch nicht implementiert/Überprüft
+|Keine reellen Roboter vorhanden
+|===
+
+[.landscape]
+<<<
+
+== Testfallbeschreibung & Testergebnisse
+
+include::{docs-test}/test_cases_UC01_Pilot_anmelden.adoc[]
+<<<
+include::{docs-test}/test_cases_UC02_Pilot_abmelden.adoc[]
+<<<
+
+
+
+=== Abnahmetest
+
+
