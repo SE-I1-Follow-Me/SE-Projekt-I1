@@ -1,4 +1,4 @@
-= Iteration 07: {Projektname}
+== Iteration 07: {project-name}
 
 Die siebte Iteration des Projekts begann am 02.05.2023 und endete am 16.05.2023. Während dieser Iteration wurden bedeutende Fortschritte gemacht und einige Schlüsselziele erreicht, trotz einiger Herausforderungen und unerwarteter Verzögerungen.
 
