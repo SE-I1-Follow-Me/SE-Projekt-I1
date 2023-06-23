@@ -153,7 +153,7 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 |Das Framework SpringBoot soll verwendet werden.
 | ja
 |...
-|Die App soll auf handelsüblichen Android Smartphones laufen.
+|Die App soll auf handelsüblichen Android Smartphones mit aktueller Android-Version laufen.
 | ja
 |...
 |Der Benutzer muss über alle benötigten Berechtigungen informiert werden und diese akzeptieren.
@@ -177,6 +177,13 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 |Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
 | ja
 | GPS sowie ID der Roboter ist notwendig
+| Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert
+| nein
+| noch nicht implementiert
+| Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist
+| nein
+| Aktuell ist die Sprache Hardcoded, jedoch gibt es auch nicht viel Text
+
 |===
 
 == Garantie und Haftung
