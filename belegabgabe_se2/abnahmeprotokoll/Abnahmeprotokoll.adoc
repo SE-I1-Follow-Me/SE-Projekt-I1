@@ -2,7 +2,7 @@
 :icons: font
 :lang: de
 //:sectnums: short
-:docs: ../docs
+:docs: ../../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 //:source-highlighter: highlightjs
 //:imagesdir: img
@@ -16,19 +16,22 @@ Zeitraum: November 22  - Juni 23
 
 GitHub Repositorys
 App: https://github.com/SE-I1-Follow-Me/SE-Projekt-I1.git
+
 Server: https://github.com/SE-I1-Follow-Me/SE-Projekt-I1-Server.git
+
+Organisation: https://github.com/SE-I1-Follow-Me
 
 == Abnahmedokumentation 
 === Abnahme
-Datum: 24.06.2022
+Datum: 29.06.2022
 
-Zeit: 17:30 Uhr
+Zeit: 17:00 Uhr
 
-Abnahmeumgebung: HTW Dresden
+Abnahmeumgebung: HTW Dresden (Z343)
 
 === Lieferumfang
 
-* Software in folgender Form: demo apk, verbunden mit Server
+* Software in folgender Form: Demo APK, verbunden mit Server
 * Benutzeranleitung
 * Betriebsanleitung
 * Anforderungsspezifikation
@@ -43,25 +46,26 @@ Folgende Use Case wurden vollständig umgesetzt:
 |Use Case |  Anmerkung
 
 |UC01: Roboter anlegen
-|...
+|Funktioniert vollständig, sowie Hinzufügen auf den Server für Test- und Demonstrationszwecke 
 
 |UC04: Follow-me starten
-|...
+|vollständig Implementiert
 
 |UC07: Route speichern
-|...
+|Route kann gespeichert werden, Speicherung auf dem Server funktioniert noch nicht wie gewünscht
+
 
 |===
 
 Folgende Use Cases wurden nur unvollständig ausgearbeitet:
 |===
 |Use Case | Anmerkung
-| UC02: Roboter bearbeiten | Roboter mit der gleichen ID können durch überschreiben bearbeitet werden, die geplante Überarbeitungsfunktion jedoch wurde nicht umgesetzt
+| UC02: Roboter bearbeiten | Da die Namen auf dem Server nicht in der App angepasst werden können ist diese Funktion nur bedingt umgesetzt
+| UC03: Roboter löschen | Keine Funktion im Interface, Serverseitig ist die Funktion gegeben
 | UC05: Follow-me ausführen | Die Route wird gezeichnet, jedoch konnte die Simulation nicht mehr durchgeführt werden, weshalb wir nicht garantieren können, dass das fetchen der GPS Daten wie gewünscht funktioniert
 | UC06: Follow-me beenden | Die Funktion kann wie vorgesehen beendet werden, jedoch ist auch hier die Simulation nicht umgesetzt worden (Siehe UC05)
-| UC | ...
-| UC | ...
-| UC | ...
+| UC09: Route löschen | Keine Funktion im Interface, Serverseitig ist die Funktion gegeben
+
 
 |===
 
@@ -69,9 +73,7 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 
 |===
 |Use Case | Anmerkung/Begründung
-| UC03: Roboter löschen | Geringere Priorität. Zudem wurde im laufe des Projektes klar, dass der Use Case nicht wie ursprünglich geplant umgesetzt wird
-| UC08: Route bearbeiten | Das speichern/erstellen der Routen war bereits schwerer als gedacht; zudem hatte dieser Use Case eine geringere Priorität
-| UC09: Route löschen | Geringere Priorität sowie Zeitmangel 
+| UC08: Route bearbeiten | Funktion aus dem Projekt der vorherigen Gruppe konnte nicht übernommen werden; eigene Implementation konnte aus Zeitgründen nicht erfolgen
 | UC10: Route ablaufen | Dieser Use Case wäre durch die Simulation entstanden, diese konnte jedoch nicht mehr umgesetzt werden
 | UC11: Roboter warten | Sehr geringe Priorität
 
@@ -84,59 +86,59 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 |Anforderung | erfüllt | Anmerkung
 
 |SWFA-1: Die GPS-Daten müssen dauerhaft gespeichert und bei Bedarf aktualisiert sein. Wenn ein aufgenommener GPS-Track hochgeladen wird, ist dieser dauerhaft verfügbar.
-| ja
-|...
+| teilweise
+| Speicherung der Route funktioniert noch nicht wie gewünscht
 |SWFA-2: Während der Nutzung der App muss dauerhaft eine Internetverbindung bzw. Verbindung zum Server bestehen. Wenn man die App ohne Internetzugang nutzen möchte, bekommt man einen sofortigen Hinweis, die Verbindung herzustellen.
 | ja
-|...
+|Meldung wird angezeigt
 |SWFA-3: Bei fehlendem GPS-Signal soll der Roboter stehen bleiben. Sollte während einer Aktion keine GPS-Verbindung mehr bestehen, soll der Roboter seine Aktion abbrechen und nicht fortführen.
 | nein
-| ...
+| Roboter sind nicht vorhanden, daher konnte dies nicht umgesetzt werden
 | SWFA-4: Die App soll dauerhaft im jeweiligen Menü eine dynamische vom Server abgerufene Liste der Roboter beziehungsweise Routen anzeigen.
-| ja
-| ...
+| teilweise
+| Liste der Route noch nicht in der App implementiert
 |NFAU-1: Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden. Die Anwendung wird einer fachfremden Person zur Überprüfung auf Verständlichkeit vorgeführt.
-| ja
-|...
+| teilweise
+|Der Begriff "ID" ist eingedeutscht, der Begriff "Follow-me" wird als Eigenname gewertet 
 |NFAU-2: Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein. Zur Überprüfung der Verständlichkeit wird die Anwendung einer fachfremden Person vorgeführt.
 | ja
-|...
+| Eine fachfremde Person konnte die App navigieren
 |NFAU-3: Es ist darauf zu achten, dass die Interaktionsauswahl minimiert wird, um Konfusion zu vermeiden und die Übersichtlichkeit zu steigern. Zur Überprüfung werden die minimal verfügbaren Auswahlmöglichkeiten real mit denen in der Anwendung verglichen.
 | ja
-|...
+|Die Bedienung der App erfolgt Schrittweise
 |NFAU-4: Zur Nutzung der Kernfunktionalität soll die Anwendung mit minimaler Klickzahl steuerbar sein. Dafür werden diese auf der Startseite auswählbar sein. Zur Überprüfung soll die Kernfunktionalität mit weniger als fünf Klicks erfüllbar sein.
 | ja
-|...
+| Es werden selbst zum Hinzufügen eines Roboters und Starten der "Follow-me" Funktion maximal 5 Klicks benötigt
 | NFAU-5: Alle Fehlermeldungen werden dem Nutzer offensichtlich, schnell und verständlich angezeigt. Dafür werden ihm Pop-Ups zur Bestätigung angezeigt. Zur Überprüfung wird ein Fehler simuliert und einem fachfremden Nutzer vorgeführt.
 | ja
-| ...
+| Verwendung von Android Toasts
 | NFAR-1: Bei instabiler Verbindung zum Server sollen nur vollständig und korrekt gesendete Befehle/Operationen ausgeführt werden. Zur Überprüfung wird getestet, ob die empfangenen Daten konsistent und nicht lückenhaft sind.
-| ja
-| ...
+| teilweise
+| Fehlermeldungen werden angezeigt sollte der Nutzer etwas falsches eingeben, teilweise werden jedoch die falsche Meldung gezeigt
 | NFAR-2: Nur Roboter der Organisation zugehörigen Flotte sollen genutzt werden können. Zur Überprüfung soll ein Key angelegt werden, um den Roboter nutzen zu können.
-|
-|
+| teilweise
+| Login Funktion nicht implementiert, aktuelle Funktionen gehen von Login-System aus
 | NFAP-1: Innerhalb der App soll das Laden eines Menüs und die Nutzung einer Funktion maximal 3 Sekunden* benötigen. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
 | ja
-| ...
+| Das Laden der Menüs überschritt die Grenze von 3 Sekunden nie.
 | NFAP-2: Gewählte Aktionen der App sollen innerhalb von 1000 Millisekunden* an den Server gesendet, verarbeitet und verifiziert werden. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
 | ja
-| ...
+| Gesendete Daten sind bereits wenige Millisekunden nach dem Senden auf dem Server verfügbar
 | NFAP-3: Die Speicherung der Daten auf dem Server soll nicht länger als 5 Sekunden dauern. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
 | ja
-| ...
+| Das Speichern der Daten erfolgt innerhalb des Zeitfensters von 5 Sekunden
 | NFAP-4: Die Routen sollen möglichst gleich absolviert werden. Zur Überprüfung wird das Intervall der GPS-Aufzeichnung möglichst kurz gehalten und automatisch überprüft, ob die aktuellen GPS Daten mit denen der Route übereinstimmen
-| ja
-| ...
-| NFAP-5: Gesendete Befehle an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
-| ja
-| ...
-|NFAS-1: Die App soll entwicklungsrelevante Systemfehler loggen können und an die Entwickler weiterleiten. Zur Überprüfung wird ein solcher Fehler simuliert und kontrolliert, ob die Entwickler über diesen informiert wurden.
-| ja
-|...
-|NFAS-2: Die App soll zu jederzeit einfach erweiterbar sein, damit fehlende Funktionen hinzugefügt und auftretende Systemfehler beseitigt werden können. Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App zum späteren Zeitpunkt universell für unterschiedliche Roboter einsetzbar ist.
 | nein
-|...
+| Keine reellen Roboter vorhanden
+| NFAP-5: Gesendete Befehle an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden. Zur Überprüfung werden manuelle bzw. automatische Tests feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit ablaufen.
+| nein
+| Keine reellen Roboter vorhanden
+|NFAS-1: Die App soll entwicklungsrelevante Systemfehler loggen können und an die Entwickler weiterleiten. Zur Überprüfung wird ein solcher Fehler simuliert und kontrolliert, ob die Entwickler über diesen informiert wurden.
+| nein
+| nicht implementiert
+|NFAS-2: Die App soll zu jederzeit einfach erweiterbar sein, damit fehlende Funktionen hinzugefügt und auftretende Systemfehler beseitigt werden können. Zur Weiterentwicklung soll die Ausarbeitung eine Basis darstellen, damit die App zum späteren Zeitpunkt universell für unterschiedliche Roboter einsetzbar ist.
+| ja
+| Dokumentation liegt bereit, zudem ist der Code gut kommentiert
 |===
 *ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
@@ -161,8 +163,8 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 | ja
 |...
 |Alle Buttons sollen Outdoor klar erkennbar sein. Zum Überprüfen wird die App bei unterschiedlichen Lichtverhältnissen getestet.
-| ja
-|...
+| teilweise
+| Einzelne Buttons benötigen eine Anpassung
 |Alle Schaltflächen sollen groß genug sein, um mit Handschuhen bedient werden zu können.
 | ja
 |...
@@ -170,16 +172,24 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 | ja
 |...
 |Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
-|
+| ja
 | ...
 |Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
-|
-|
+| ja
+| GPS sowie ID der Roboter ist notwendig
 |===
+
+== Garantie und Haftung
+
+Das Projekt endet offiziell am 26.06.2023. Nach diesem Datum wird die Projektgruppe I1 aufgelöst. Alle (ehemaligen) Mitglieder der Projektegruppe übernehmen ab der Abgabe des Projektes keinerlei Garantie oder Haftung für die Funktionalität, Leistungsfähigkeit oder etwaige Schäden im Zusammenhang mit der Nutzung der erstellten "Follow-me" App. 
+
+Mit Ihrer Unterschrift akzeptieren Sie diese Bedingung.
 
 == Unterschriften
 
-Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt. (Unzutreffendes bitte durchstreichen.)
+Hiermit wird die Abnahme wie oben beschrieben vollständig / mit Mängeln bestätigt.
+    
+(Unzutreffendes bitte durchstreichen.)
 
 Bemerkungen:
 
