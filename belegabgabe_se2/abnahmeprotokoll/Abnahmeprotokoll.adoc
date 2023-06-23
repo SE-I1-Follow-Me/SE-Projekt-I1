@@ -172,8 +172,8 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 | ja
 |...
 |Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
-| nein
-| Die Lizens wurde zur Apache License 2.0 geändert. 
+| ja
+|...
 |Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
 | ja
 | GPS sowie ID der Roboter ist notwendig
@@ -192,9 +192,6 @@ Das Projekt endet offiziell am 26.06.2023. Nach diesem Datum wird die Projektgru
 
 Mit Ihrer Unterschrift akzeptieren Sie diese Bedingung.
 
-== Lizens
-
-Die Lizens des Produktes wurde zur Apache License 2.0 geändert. 
 
 == Unterschriften
 
