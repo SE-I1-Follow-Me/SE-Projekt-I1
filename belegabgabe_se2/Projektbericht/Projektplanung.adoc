@@ -1,3 +1,7 @@
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
 = Projektplanung
 
 .Verwendete Namenskürzel 
