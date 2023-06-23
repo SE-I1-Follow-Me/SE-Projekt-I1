@@ -1,0 +1,75 @@
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
+= Projektplanung
+
+.Verwendete Namenskürzel 
+|===
+
+| *Name* | *Namenskürzel*
+| Magnus Andreas Böhne | MAB
+| Leon Lowa | LL
+| Jonas Pfeiffer | JP
+| Michael Novak | MN
+| Manuel Scheer | MS
+
+|===
+
+
+
+== Aufgabenstellung und Auftraggeber
+
+Im Rahmen unseres Studienmodules "Software Engineering" gab uns unser Auftraggeber und Kunde Professor Neugebauer die Möglichkeit, eine App für Fahrroboter zu entwickeln. Das Projekt war als Nachfolger des vorangegangenen Projektes https://github.com/MarioNeugebauer/GpsTrackingAndroid/tree/master["I5-Erstellung von GPS-Tracks"] entstanden. 
+
+Die angesprochenen Fahrroboter werden aktuell von der Firma https://sciota-robotics.com/de/sciota-robotics-for-outdoor-applications-deutsch/[Sciota Robotics] entwickelt und stehen somit nicht reell zur Verfügung. Unser Kunde unterstützt das Kickstarter-Unternehmen. 
+
+Sobald die Roboter fertig entwickelt sind müssen diese irgendwie gesteuert werden. Auch wenn erste Prototypen, welche über eine Art Controller fernbedient werden, bereits existieren, wäre in der Praxis eine App zur Steuerung leicherter zu handhaben und günstiger für Firmen, die mit diesen Fahrrobotern arbeiten wollen. Die Fahrroboter werden dabei in verschiedenen Ausführungen angeboten. Eine ihrer Hauptaufgaben ist das Transportieren von Lasten wie Beispielsweise Holz für einen Förster. 
+
+Hierfür muss es zum einen eine Funktion geben, dass die Roboter gezielt dem Endnutzer folgen um dann am Zielpunkt be- oder entladen zu werden und auf der zuvor gelaufenen Route über Befehle eigenständig arbeiten zu können. So sollen sie zum Beispiel in der Lage sein, eine bekannte Route nur zur Hälfte abzufahren oder Holz aufgeladen bekommen, an einen anderen Ort transpotieren, dort entladen werden und wieder zurück zur Aufladefläche zu fahren, um diesen Vorgang zu wiederholen. 
+
+Bei unserem Projekt begleiteten uns zum einen unser Dozent in den Modulen "Software Engineering I" sowie "Software Engineering II", Herr Professor Anke, sowie unser Coach, Herr Ringel und unser Kunde Herr Professor Neugebauer als direkten Ansprechpartner von Kundenseite. Da unser Kunde sehr erfahren und kompetent auf dem Gebiet der Programmierung ist, konnten wir mit ihm offen über Entscheidungen und Schwierigkeiten bei der Implementierung, sowie der Integration der einzelnen Komponenten reden, wobei er uns sehr viele Freiheiten gegeben hat, wie die App letztendlich aussehen soll. Das Team stand mit allen Ansprechpartnern im ständigen Austausch wodurch Probleme, bei denen das Team Hilfe benötigte, schnell gelöst werden konnten.
+
+== Situation zum Semesterbeginn
+
+Zu Beginn des Semesters musste unsere Gruppe umplanen, da uns zwei Mitglieder verlassen haben. Zum einen ist der vorherige Gruppenleiter weggefallen, da dieser aus dem Studiengang Wirtschaftsingenierwesen stammte, zum anderen hat aus persönlichen Gründen ein weiteres Mitglied das Team verlassen. Daher benötigte das Team eine neue Projektleitung und musste zukünftig mit fünf Leuten, anstelle der gewohnten sieben, planen. Dies hatte zur Folge, dass jedes Teammitglied mehrere Rollen innerhalb des Teams übernehmen musste. Die neue Projektleitung setzte sich aus Magnus Andreas Böhne als Projektleiter und Manuel Scheer als Stellvertreter zusammen. Ein großer Vorteil unserer Gruppe war jedoch, dass wir bereits im letzten Semester mit dem Programmieren angefangen haben. Dadurch waren einige Gruppenmitglieder bereits mit der genutzten Programmiersprache sowie dem Framework vertraut.
+
+== Team und Rollen
+
+Unser Team bestand, wie bereits erwähnt, aus fünf Mitgliedern. Die Ansprechpartner blieben zum neuen Semester unverändert. Da der Fokus in diesem Semester nicht länger auf der Planung, sondern der Implementierung, der Tests und der Dokumentation der Features lag, wurden alle Teammitglieder die Aufgaben so zugeteilt, dass jeder an jedem Teil gearbeitet hat. Hierbei wurde auf Dual Programming, also Partnerprogrammierung gesetzt. Dazu wurde ein Teammitglied, welches letztes Semester bereits an der Implementierung der App gearbeitet hat mit einem Teammitglied zusammengesetzt, welches letztes Semester noch nicht an der App gearbeitet hat. Da unser Team aus fünf Mitgliedern bestand wurde die fünfte Person, unser Projektleiter Magnus Andreas Böhne, für den Server verantwortlich. Da er bereits letztes Semester am Server gearbeitet hat passte dies. Das erste Zweierteam bestand hierbei aus Jonas Pfeiffer sowie Michael Novak, das zweite Zweierteam aus Leon Lowa und Manuel Scheer.
+
+
+|===
+| *Name* | *Rolle*
+| Magnus Andreas Böhne | Projektleiter, Serveradministrator, Architektur
+| Leon Lowa | Entwicklung. Datenbankadministrator
+| Jonas Pfeiffer | Entwicklung, Entwürfe
+| Michael Novak | Entwicklung, Analyse, Tester, Entwürfe
+| Manuel Scheer | Stellvertretender Projektleiter, Entwicklung, Analyse, Entwürfe
+|===
+
+* Diese Tabelle stellt *nur* die Verantwortlichkeiten in diesem Projekt dar. 
+
+== Kommunikation und eigesetzte Tools
+
+Wie bereits im vorherigen Semester gab es intern in unserer Gruppe einen wöchentlichen Termin für die Meetings. Diese fanden, bis auf wenige Ausnahmen, jeden Dienstag, um 16:30 Uhr online statt. Als Kommunikationstool wurde hierbei die Platform Discord genutzt, da alle Teammitglieder diese bereits nutzten und dies auch schon im vorherigen Semester genutzt wurde. Für Fragen zwischendurch wurde auf eine Kommunikation über WhatsApp zurückgegriffen. Bei größeren Problemen wurden Notfallmeetings in Discord einberufen. Alle zwei Wochen wurde das wöchentliche Meeting genutzt, um die vorangegangene Iteration zu besprechen und die Planung der nächsten Iteration bekannt zu geben.
+
+Zudem wurden "Aufgabenbriefe" geschrieben, in denen den Teammitgliedern detailiert ihre Aufgaben für die aktuelle Iteration / Use Cases beschrieben wurde. In diesen Aufgabenbriefen standen zudem immer Lösungsansätze bei, wo zum Beispiel mögliche Klassenobjekte oder Funktionen vorgeschlagen wurden. Die Briefe wurden den Teammitgliedern über Discord und GitHub Issues zugänglich gemacht. Dadurch waren die Briefe auch für alle Projektmitglieder einsichtig, sodass jeder im Team wusste, wer an was arbeitete. Auf dem Projekt Discord-Server gab es einen Nachrichtenkanal  __/update__, wo blogartig Neuerungen, Events und Anstehendes veröffentlicht wurde. Auf dem Server gab es zudem weitere Kanäle, welche alle via Permissions geschützt sind. 
+
+Meetings mit dem Kunden wurden angesetzt, wenn es Fragen gab oder wir unseren Fortschritt dem Kunden zeigen wollten, um sicherzustellen, dass wir die App nach seinen Wünschen entwickeln. Auf die gleiche Art und Weise wurden auch die Meetings mit unserem Coach geplant. Im Durchschnitt fand nach zwei Iterationen jeweils Meetings mit dem Coach und dem Kunden statt.
+
+== Dokumentation und eigesetzte Tools
+
+Die Dokumentation gestalten wir nach dem https://github.com/htwdd-se/Projektstruktur_OpenUP-Templates[OpenUP Template]. Das Template erweiterten wir hierbei um fehlende Ordner wie zum Beispiele dem Ordner __/protocols__ , in dem wir unsere Meetingprotokolle ablegten. Als Dateiformat wurde hierbei AsciiDoc genutzt, da alle Teammitglieder dank des Praktikums mit diesem Format vertraut waren. Für die Abgabe wurden die Dateien als PDF formatiert. Für die Wireframes sowie die Modelle wurde Visual Paradigm Online genutzt.
+
+Damit die Struktur der einzelnen Dokumente möglichst einheitlich bleiben, wurden die Strukturen des Templates beibehalten. Durch diese Einheitlichkeit lief die Arbeit an der Dokumentation schneller. Zudem wurden lange, komplexe Zusammenhänge so möglichst leicht verständlich dargestellt. 
+
+Für die Aufgabenverteilung wurden, wie bereits erwähnt, GitHub Issues sowie der Projekt Discord-Server verwendet. Durch die Arbeit im vorangegangenen Semester waren die Teammitglieder bereits mit GitHub Issues vertraut. Zum Ende jeder Iteration wurde im internen Meeting der Stand der jeweiligen Aufgabe besprochen, was in der Planung der weiteren Aufgaben und in den Iterationsplänen berücksichtigt wurde. 
+
+Wie auch im letzten Semester nutzen wir die Prinzipien des __OpenUP__. Dies hatte sich als sehr erfolgreich herausgestellt, weshalb es bebehalten wurde. 
+
+
+
+
+
+

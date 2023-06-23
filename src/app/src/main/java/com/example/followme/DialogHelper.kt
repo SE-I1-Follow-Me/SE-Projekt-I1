@@ -1,5 +1,6 @@
 package com.example.followme
 
+import android.app.AlertDialog
 import android.content.Context
 import android.text.InputType
 import android.widget.EditText
