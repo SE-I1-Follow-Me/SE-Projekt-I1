@@ -35,9 +35,8 @@ image::Komponenten_Diagramm.png[]
 
 Die Entwicklung dieses Modells erwies sich als schwerer als gedacht, da unser Projekt viele Komponenten besitzt. Jedoch war es aus diesem Grund auch sehr nützlich für unser weiteres Vorgehen. Auch wenn das Modell nur die Grundfunktionen der App zeigt, ist es deutlich ausführlicher als das zuvor verwendete UML-Diagramm.
 
-Zudem entschieden wir uns für die Entwicklung einer physischen Sicht sowie einer logischen Sicht.
+Zudem entschieden wir uns für die Entwicklung einer logischen Sicht.
 
-.image:Images/physische_Sicht.png
 .image:Images/logische_Sicht.png
 
 Text für die Bilder
