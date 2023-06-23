@@ -172,8 +172,8 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 | ja
 |...
 |Die Anwendung steht unter der "Creative Commons Attribution 4.0 International" Lizenz.
-| ja
-| ...
+| nein
+| Die Lizens wurde zur Apache License 2.0 geändert. 
 |Die App darf nur zur Funktionsweise der App notwendige Daten an den Server schicken, um den Datenschutz der Nutzer zu gewährleisten.
 | ja
 | GPS sowie ID der Roboter ist notwendig
@@ -191,6 +191,10 @@ Folgende Use Cases wurden nicht ausgearbeitet:
 Das Projekt endet offiziell am 26.06.2023. Nach diesem Datum wird die Projektgruppe I1 aufgelöst. Alle (ehemaligen) Mitglieder der Projektegruppe übernehmen ab der Abgabe des Projektes keinerlei Garantie oder Haftung für die Funktionalität, Leistungsfähigkeit oder etwaige Schäden im Zusammenhang mit der Nutzung der erstellten "Follow-me" App. 
 
 Mit Ihrer Unterschrift akzeptieren Sie diese Bedingung.
+
+== Lizens
+
+Die Lizens des Produktes wurde zur Apache License 2.0 geändert. 
 
 == Unterschriften
 
