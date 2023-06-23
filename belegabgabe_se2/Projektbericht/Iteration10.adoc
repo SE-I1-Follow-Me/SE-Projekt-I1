@@ -1,4 +1,4 @@
-= Iteration 10 (13.06.-29.06.) {project-name} [LL]
+== Iteration 10 (13.06.-29.06.) {project-name} [LL]
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
