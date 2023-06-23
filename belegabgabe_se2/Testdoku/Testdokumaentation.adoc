@@ -1,8 +1,11 @@
+= Testdokumentation
+
+include::../_includes/default-attributes.inc.adoc[]
 == Testkonzept
 
 === Testobjekte
 
-Die wichtigsten Komponenten, die getestet wurden, sind das RoboterAPI-Interface und die HomeActivity-Klasse in der Android-Anwendung. Diese Testobjekte wurden mit Unit- und Integrationstests getestet, wobei die Hauptaufmerksamkeit auf der API und der Integration mit der Hauptaktivität lag.
+Die wichtigsten Komponenten, die getestet wurden, sind das RoboterAPI-Interface und die HomeActivity-Klasse in der Android-Anwendung. Diese Testobjekte wurden mit Unit- und Integrationstests getestet, wobei die Hauptaufmerksamkeit auf der API und der Integration mit der Hauptaktivität lag. Zusätzlich haben wir unseren Testansatz stark auf die jeweiligen Use-Cases ausgerichtet. Bei der Implementierung jedes Use-Cases erstellten wir einen zugehörigen Testfall, der in der nachfolgenden Iteration ausgeführt wurde.
 
 === Testmethoden
 
@@ -18,7 +21,7 @@ In unserem Testprozess lag ein wesentlicher Schwerpunkt auf Integrationstests. H
 
 ==== Manuelle Tests
 
-Wir als Team haben uns dazu entschieden, aufgrund der überschaubaren Größe des Projekts und der natürlichen Interaktionen, die in einer realen Nutzungssituation auftreten können, eine signifikante Menge an manuellen Tests durchzuführen. Trotz des Wertes automatisierter Tests, waren wir uns bewusst, dass sie nicht alle Aspekte eines komplexen Systems wie unserem abdecken können, insbesondere in Bezug auf die Benutzerinteraktion und das allgemeine Benutzererlebnis. Die Durchführung von manuellen Tests erlaubte es uns, die App aus der Perspektive des Endbenutzers zu betrachten und dabei subtile Fehler und Verbesserungsmöglichkeiten zu entdecken, die in automatisierten Tests möglicherweise übersehen worden wären. Darüber hinaus war diese Methode angesichts der Größe und Komplexität unseres Projekts sowohl zeit- als auch ressourceneffizient.
+Wir als Team haben uns dazu entschieden, aufgrund der überschaubaren Größe des Projekts und der natürlichen Interaktionen, die in einer realen Nutzungssituation auftreten können, eine signifikante Menge an manuellen Tests durchzuführen. Trotz des Wertes automatisierter Tests, waren wir uns bewusst, dass sie nicht alle Aspekte eines komplexen Systems abdecken können, insbesondere in Bezug auf die Benutzerinteraktion und das allgemeine Benutzererlebnis. Die Durchführung von manuellen Tests erlaubte es uns, die App aus der Perspektive des Endbenutzers zu betrachten und dabei subtile Fehler und Verbesserungsmöglichkeiten zu entdecken, die in automatisierten Tests möglicherweise übersehen worden wären. Darüber hinaus war diese Methode angesichts der Größe und Komplexität unseres Projekts sowohl zeit- als auch ressourceneffizient.
 
 === Akzeptanztest
 
@@ -26,7 +29,7 @@ Im Laufe des Projekts haben wir in regelmäßigen, persönlichen Meetings unsere
 
 === Testdurchführungsplanung
 
-UNKLAR
+Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz entschieden, der eng mit der Implementierung der einzelnen Use-Cases verknüpft war. Für jeden Use-Case, der in einer Iteration entwickelt wurde, erstellten wir einen zugehörigen Testfall. Dieser Testfall wurde dann in der darauf folgenden Iteration durchgeführt. Diese Vorgehensweise ermöglichte es uns, Tests direkt mit den Entwicklungsschritten zu verknüpfen und eine kontinuierliche Überprüfung der implementierten Funktionalitäten zu gewährleisten. Dadurch konnten wir sicherstellen, dass jedes neue Feature nicht nur entsprechend den Anforderungen implementiert, sondern auch gründlich getestet und validiert wurde. Dieser Ansatz gewährleistete eine hohe Qualität und Zuverlässigkeit unserer Software, da jede neue Funktion vor ihrer endgültigen Implementierung einer gründlichen Prüfung unterzogen wurde.
 
 == Testen der nicht-funktionalen Anforderungen
 
@@ -36,8 +39,8 @@ UNKLAR
 |Anforderung | Status | Bemerkung
 
 |NFAU-1: Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden.
-|Erfüllt
-|-
+|Teilweise Erfüllt
+|ID und FollowMe unter umständen nicht sofort verständlich
 
 |NFAU-2: Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein.
 |Erfüllt
@@ -60,7 +63,7 @@ UNKLAR
 |ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
 
-|NFAP-2: ewählte Aktionen der App sollen innerhalb von 1000 Millisekunden* an den Server gesendet, verarbeitet und verifiziert werden.
+|NFAP-2: ewählte Aktionen der App sollen innerhalb von 1000 Millisekunden an den Server gesendet, verarbeitet und verifiziert werden.
 |Erfüllt
 |ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
@@ -75,6 +78,59 @@ UNKLAR
 |NFAP-5: Gesendete Befehle an den Roboter sollen spätestens 6 Sekunden* nach Auswahl ausgeführt werden.
 |Noch nicht implementiert/Überprüft
 |Keine reellen Roboter vorhanden
+|===
+
+[.landscape]
+
+===  Implementierte Use Cases
+[cols="4,1,5"]
+|===
+|Use Case | Status | Bemerkung
+
+|Use Case 01: Roboter anlegen
+|Implementiert
+|-
+
+|Use Case 02: Roboter bearbeiten
+|Nicht Implementiert
+|-
+
+|Use-Case 03: Roboter löschen
+|Implementiert
+|-
+
+|Use-Case 04: Follow-me Funktion starten
+|Implementiert
+|-
+
+|Use-Case 05: Follow-me Funktion ausführen
+|Implementiert
+|-
+
+|Use-Case 06: Follow-me Funktion beenden
+|Implementiert
+|-
+
+
+|Use-Case 07: Route speichern
+|Implementiert
+|-
+
+|Use-Case 08: Route bearbeiten
+|Nicht Implementiert
+|-
+
+|Use-Case 09: Löschen einer Route
+|Nicht Implementiert
+|-
+
+|Use-Case 10: Ablaufen einer Route
+|Nicht Implementiert
+|-
+
+|Use-Case 11: Roboter warten
+|Nicht Implementiert
+|-
 |===
 
 [.landscape]
