@@ -14,7 +14,7 @@ Das Produkt ist leicht weiterentwickelbar. Es wurde bereits zu Beginn des Projek
 
 Die App kann im aktuellen Zustand folgende Features aufweisen: 
 
-* Abrufen der Daten vom Datenbankserver (CRUD)
+* Abrufen der Daten vom Datenbankserver
 * Integrierte Karte (Streetview)
 * Aufnahme von Routen + GPS-Tracking
 * Darstellung der Roboter in einer Liste
