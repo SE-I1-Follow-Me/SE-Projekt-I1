@@ -34,6 +34,14 @@ interface RoboterAPI {
     fun updateIsFollowing(@Path("id") id: Int, @Query("isFollowing") isFollowing: Boolean): Call<Void>
 
     /**
+     * DELETE-Methode um Roboter zu löschen
+     * @param id
+     */
+    @DELETE("/roboter/delete/{id}")
+    fun deleteRoboter(@Path("id") id: Int): Call<Void>
+
+
+    /**
      * GET-Methode um Routen abzurufen
      * @return ArrayList<Route>
      */
