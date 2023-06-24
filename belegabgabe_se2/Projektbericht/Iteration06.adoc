@@ -1,16 +1,21 @@
-== Iteration 06: {project-name} [JP]
+== Iteration 06: {project-name} (18.04.2023 - 02.05.2023) [JP]
 
 :docs: ../../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 
+=== Aufgaben
 Die zweite Iteration des neuen Semesters sollte einen besonderen Schwerpunkt auf die Anbindung des Servers legen. Dieser Aspekt hat die höchste Priorität und wird von der Größe her als besonders umfangreich eingeschätzt. Die gesamte Teamressource wird für diese Aufgabe benötigt. Darüber hinaus sind durch die Zusammenarbeit am Code erste Unstimmigkeiten und Probleme im gemeinsamen Repository aufgetreten, die dringend behoben werden müssen, um eine effektive Gruppenarbeit zu ermöglichen. Die Integration der Serveranbindung ist von entscheidender Bedeutung für die Verwirklichung der Projektidee. Ohne eine funktionierende Serveranbindung müssten Funktionen mehrfach bearbeitet werden, was ineffizient wäre. Diese Iteration markiert somit einen kritischen Punkt in der Entwicklung unseres Projekts und wird über die zukünftige Arbeit daran entscheiden.
 
 Des Weiteren ist es in diesem Semester notwendig, konstruktive Meetings mit dem Auftraggeber, Herrn Neugebauer, abzuhalten, um die Software weiterhin zielgerichtet und kundenorientiert zu entwickeln. Daher sollte in dieser Iteration das erste Meeting mit Herrn Neugebauer organisiert werden. Neben dem Treffen mit dem Auftraggeber ist auch ein Meeting mit unserem Coach, Herrn Ringel, erforderlich, um eventuell aufgetretene Probleme zu besprechen und klare Anweisungen in die richtige Richtung zu erhalten.
 
+
+=== Erreichtes
 Um den Fortschritt der Anwendungsentwicklung aufrechtzuerhalten, haben wir uns das Ziel gesetzt, die erste Implementierung der Karte voranzutreiben, an der zwischendurch gearbeitet werden kann. Dieser Ansatz erwies sich als sinnvoll, da nicht alle Teammitglieder gleichzeitig an den hochpriorisierten Aufgaben arbeiten konnten und so die Wartezeiten effektiv genutzt wurden. Dadurch konnten wir eine funktionierende Karte entwickeln, die in die Anwendung integriert werden konnte, und in späteren Iterationen weitere Funktionen erhalten wird. Auch die erste Verbindung mit dem Server war erfolgreich, und die Zusammenarbeit kann fortgesetzt werden, da das gemeinsame Repository wieder ordnungsgemäß funktioniert und die gemeinsame Arbeit am Code ermöglicht.
 
 Es traten jedoch Probleme beim Auto-Start von Spring auf dem Server und bei der Integration des Servers in das gemeinsame Repository auf, um die Zusammenarbeit zu ermöglichen. Diese Herausforderungen sollen jedoch in der nächsten Iteration angegangen werden, da bereits genügend Fortschritte in dieser Iteration erzielt wurden.
 
+
+=== Resultat der Iteration
 Trotz der aufgetretenen Probleme befindet sich das Projekt im zeitlichen Rahmen und erfüllt bereits erste gestellte Anforderungen. Die kontinuierliche Entwicklung in diesem Umfang trägt dazu bei, das Projekt erfolgreich voranzutreiben, und das Team ist zuversichtlich, das Projekt mit einem Fokus auf Kernfunktionalitäten erfolgreich abzuschließen. Der Projektstatus bleibt im grünen Bereich, und die nächste Iteration kann zuversichtlich gestartet werden.
 
 Durch die Einbeziehung von Begriffen und Theorien aus dem Open Unified Process für Softwareentwicklung haben wir einen professionellen Ansatz gewählt, der uns dabei unterstützt, den Entwicklungsprozess strukturiert und effizient zu gestalten.
