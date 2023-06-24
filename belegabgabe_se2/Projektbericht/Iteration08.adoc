@@ -6,7 +6,7 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 
 In der vierten Iteration dieses Semesters gab es vier Schwerpunkte: 
 ****
-* Das Umsetzen des Use-Cases UC02 "Roboter bearbeiten" (siehe https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/requirements/Use%20Case%2002%20-%20Roboter%20bearbeiten.adoc[UC02])
+* Das Umsetzen des Use Cases UC02 "Roboter bearbeiten" (siehe https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/requirements/Use%20Case%2002%20-%20Roboter%20bearbeiten.adoc[UC02])
 * Das Ausarbeiten der Modelle
 * Die "Follow-me"-Funktion sollte weiter zentriert werden
 * Meeting mit dem Kunden organisieren (Thema Simulation sowie Feedback zum aktuellen Stand)
@@ -20,7 +20,7 @@ Doch auch mit dem neuen Wissen gab es große Schwierigkeiten bei der Implementie
  
 === Ausarbeitung der Modelle
 
-Zum Überprüfen unserer Arbeit nutzten wir bisher die Modelle aus dem letzten Semester sowie ein neueres UML Diagramm.
+Zum Überprüfen unserer Arbeit nutzten wir bisher die Modelle aus dem letzten Semester sowie ein neueres UML-Diagramm.
 
 .UML-Diagramm
 
@@ -43,13 +43,13 @@ Text für die Bilder
 
 === Zentrieren der Follow-me Funktion
 
-Der letzte Schwerpunkt der Iteration war das Zentrieren der Follow-me Funktion. Gemeint ist hierbei, dass der Schwerpunkt in der Entwicklung bisher auf den Funktionen, die zur Implementierung der Follow-me Funktion nötig sind, lag. Nun waren diese in einem Zustand, in denen die Follow-me Funktion implementiert werden konnte. Das größte Problem hierbei waren die Permissions. Permissions legen fest, was eine App aufrufen darf und was nicht. Da die Follow-me Funktion zum einen GPS-Daten des Nutzers sowie Internetzugang erfordert, sind diese Permissions essenziell für die Nutzung. Diese wurden jedoch noch nicht wie gewünscht abgefragt. Zwar konnten diese in den Handy- bzw. Emulatoreinstellungen selbstständig festgelegt werden, jedoch war dies nur zum Testen annehmbar. Die Map funktionierte nun wie gewünscht, was manuelle Tests belegen konnten, aber es konnte bis zum Ende der Iteration keine Lösung für das Problem der Permissions gefunden werden, wobei es Teilerfolge gab. Auch hier waren wir uns sicher, dass wir kurz vor dem Durchbruch standen.
+Der letzte Schwerpunkt der Iteration war das Zentrieren der Follow-me Funktion. Gemeint ist hierbei, dass der Schwerpunkt in der Entwicklung bisher auf den Funktionen, die zur Implementierung der Follow-me Funktion nötig sind, lag. Nun waren diese in einem Zustand, in denen die Follow-me Funktion implementiert werden konnte. Das größte Problem hierbei waren die Permissions. Permissions legen fest, was eine App aufrufen darf und was nicht. Da die Follow-me Funktion zum einen GPS-Daten des Nutzers sowie Internetzugang erfordert, sind diese Permissions essenziell für die Nutzung. Diese wurden jedoch noch nicht wie gewünscht abgefragt. Zwar konnten diese in den Handy- bzw. Emulatoreinstellungen selbstständig festgelegt werden, jedoch war dies nur zum Testen annehmbar. Die Map funktionierte jetzt wie gewünscht, was manuelle Tests belegen konnten, aber es konnte bis zum Ende der Iteration keine Lösung für das Problem der Permissions gefunden werden, wobei es Teilerfolge gab. Auch hier waren wir uns sicher, dass wir kurz vor dem Durchbruch standen.
 
 === Planung des Meetings mit dem Kunden
 
-Es sollte ein Meeting mit dem Kunden, möglichst am Anfang der nächsten Iteration, geplant werdenn, um mit ihm über die Simulation reden zu können. Die Simulation ist hierbei unsere Art zu testen, da die Roboter, mit denen später gearbeitet werden sollen, noch nicht existieren. Zudem brauchten wir ein letztes mal Feedback des Kunden, ob die App sich in eine Richtung entwickelt, die ihm gefällt. Die Planung lief problemlos und das Team konnte sich schnell mit dem Kunden auf einen Termin einigen, der für beide Partein günstig lag. Im Punkto Anwesenheit wurde erstmal mit drei Personen geplant: Der Projektleitung sowie unserem Tester. Die anderen Gruppenmitgliedern war die Teilnahme freigestellt. Ebenso wurde angeboten, dass diese Fragen über die Projektleitung an den Kunden richten konnten, sollten sie keine Möglichkeit haben, dieses Meeting warzunehmen.
+Es sollte ein Meeting mit dem Kunden, möglichst am Anfang der nächsten Iteration, geplant werden, um mit ihm über die Simulation reden zu können. Die Simulation ist hierbei unsere Art zu testen, da die Roboter, mit denen später gearbeitet werden sollen, noch nicht existieren. Zudem brauchten wir ein letztes Mal Feedback des Kunden, ob die App sich in eine Richtung entwickelt, die ihm gefällt. Die Planung lief problemlos und das Team konnte sich schnell mit dem Kunden auf einen Termin einigen, der für beide Parteien günstig lag. Für die Anwesenheit wurde erstmal mit drei Personen geplant: der Projektleitung sowie unserem Tester. Die anderen Gruppenmitgliedern war die Teilnahme freigestellt. Ebenso wurde angeboten, dass diese Fragen über die Projektleitung an den Kunden richten konnten, sollten sie keine Möglichkeit haben, dieses Meeting wahrzunehmen.
 
-*Für einen detailierten Überblicken sehen Sie sich bitte den kompletten https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/project_management/iteration_plan_08.adoc[Iterationsplan 08] an.*
+*Für einen detaillierten Überblick sehen Sie sich bitte den kompletten https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/project_management/iteration_plan_08.adoc[Iterationsplan 08] an.*
 
 === Aktueller Stand Essence-Diagramm
 
