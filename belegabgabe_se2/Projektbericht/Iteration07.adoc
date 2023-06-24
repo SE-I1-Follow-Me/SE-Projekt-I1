@@ -1,6 +1,9 @@
-== Iteration 07: {project-name}
+== Iteration 07: {project-name} (02.05.2023 - 16.05.2023) [MN]
 
-Die siebte Iteration des Projekts begann am 02.05.2023 und endete am 16.05.2023. Während dieser Iteration wurden bedeutende Fortschritte gemacht und einige Schlüsselziele erreicht, trotz einiger Herausforderungen und unerwarteter Verzögerungen.
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
+Während dieser Iteration wurden bedeutende Fortschritte gemacht und einige Schlüsselziele erreicht, trotz einiger Herausforderungen und unerwarteter Verzögerungen.
 
 === Primäre Ziele
 
