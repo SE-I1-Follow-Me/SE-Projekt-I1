@@ -21,7 +21,11 @@ Trotz der aufgetretenen Probleme befindet sich das Projekt im zeitlichen Rahmen 
 Durch die Einbeziehung von Begriffen und Theorien aus dem Open Unified Process für Softwareentwicklung haben wir einen professionellen Ansatz gewählt, der uns dabei unterstützt, den Entwicklungsprozess strukturiert und effizient zu gestalten.
 
 
+=== Aktueller Stand Essence-Diagramm
 
+
+
+image::{docs}/project_management/images/essence_i4.png[]
 
 
 
