@@ -33,25 +33,25 @@ Nach der Installation können Sie die App wie folgt verwenden:
 
 [NOTE]
 ====
-Hinweis: Die Navigationsleiste dient als übergeordnetes Mittel um zwischen den Funktionen der Anwendung zu navigieren und ist immer sichtbar.
+Hinweis: Die Navigationsleiste dient als übergeordnetes Mittel, um zwischen den Funktionen der Anwendung zu navigieren und ist immer sichtbar.
 ====
 
-Durch einen Klick auf folgende Knöpfe, gelangen sie zu folgenden Funktionen:
+Durch einen Klick auf folgende Knöpfe gelangen Sie zu folgenden Funktionen:
 
 [frame="none", grid="none", rowheight=10]
 |===
 | |
-|1. "Add" lässt sie einen Roboter hinzufügen, siehe <<Roboter hinzufügen>>.
+|1. "Add" lässt Sie einen Roboter hinzufügen, siehe <<Roboter hinzufügen>>.
 |image:Images/Navigation_Follow-me_Add.png[50, 50]
 
-|2. "GPS" bringt sie zur Karte und der damit verbundenen Funktion: <<Route anzeigen>>.
+|2. "GPS" bringt Sie zur Karte und der damit verbundenen Funktion: <<Route anzeigen>>.
 |image:Images/Navigation_Follow-me_GPS.png[50, 50]
 
-|3. "Homescreen" bringt sie zur Liste ihrer Roboter. | image:Images/Navigation_Follow-me_Home.png[50, 50]
+|3. "Homescreen" bringt Sie zur Liste ihrer Roboter. | image:Images/Navigation_Follow-me_Home.png[50, 50]
 
-|4. "Alerts" bringt sie zu wichtigen Meldungen. |image:Images/Navigation_Follow-me_Alerts.png[50, 50]
+|4. "Alerts" bringt Sie zu wichtigen Meldungen. |image:Images/Navigation_Follow-me_Alerts.png[50, 50]
 
-|5. "Personal" bringt sie zu ihren angegebenen Daten.
+|5. "Personal" bringt Sie zu ihren angegebenen Daten.
 |image:Images/Navigation_Follow-me_Personal.png[50, 50]
 |===
 
@@ -68,12 +68,12 @@ Um einen Roboter hinzuzufügen, gehen Sie wie folgt vor:
 [frame="none", grid="none", rowheight=10]
 |===
 |  |
-|1. Tippen Sie auf das Hinzufügensymbol unten links auf der Startseite. | image:Images/Navigation_Follow-me_Add_Markup.png[150,150]
+|1. Tippen Sie auf das Hinzufügen-Symbol unten links auf der Startseite. | image:Images/Navigation_Follow-me_Add_Markup.png[150,150]
 
 |2. Ein Eingabefenster öffnet sich, geben Sie die gewünschte ID des Roboters ein.
 |image:Images/Follow-me_InputDialog.png[150,150]
 
-|3. Bestätigen sie ihre Eingabe mit "Ok".
+|3. Bestätigen Sie ihre Eingabe mit "Ok".
 |image:Images/Follow-me_InputDialog_Ok_Markup.png[150,150]
 
 
@@ -83,7 +83,7 @@ Um einen Roboter hinzuzufügen, gehen Sie wie folgt vor:
 
 [WARNING]
 ====
-Warnung: Falls die ID schon hinzugefügt wurde oder der Roboter nicht exisitert, dann gibt die Anwendung entsprechend Rückmeldung und fügt den Roboter nicht hinzu. 
+Warnung: Falls die ID schon hinzugefügt wurde oder der Roboter nicht existiert, dann gibt die Anwendung entsprechend Rückmeldung und fügt den Roboter nicht hinzu. 
 ====
 
 === Roboter entfernen
@@ -93,14 +93,14 @@ Warnung: Falls die ID schon hinzugefügt wurde oder der Roboter nicht exisitert,
 Hinweis: Um einen Roboter entfernen zu können, muss erst ein Roboter hinzugefügt werden. Der entfernte Roboter wird ausschließlich aus den im Moment verwendeten Robotern entfernt, jedoch nicht von den Anmeldedaten gelöscht.
 ====
 
-Um einen Roboter zu löschen, gehen sie wie folgt vor:
+Um einen Roboter zu löschen, gehen Sie wie folgt vor:
 
 [frame="none", grid="none"]
 |===
 |  |
 |1. Tippen Sie auf das ">" Symbol des zu entfernenden Roboters.| image:Images/Follow-me_Roboter_DeleteMarkup.png[150,150]
 
-|2. Das Symbol verändert sich, bestätigen sie den Vorgang in dem Sie es erneut andrücken.
+|2. Das Symbol verändert sich, bestätigen Sie den Vorgang, in dem Sie es erneut andrücken.
 |image:Images/Follow-me_Roboter_DeleteSecond_Markup.png[150,150]
 |===
 
@@ -110,18 +110,18 @@ Um einen Roboter zu löschen, gehen sie wie folgt vor:
 
 [NOTE]
 ====
-Hinweis: Nachdem Sie Roboter hinzugefügt haben, können sie ihren Follow-me Status ändern.
-Roboter die sie ausgewählt haben werden blau angezeigt, Roboter welche ihnen folgen werden [red]#rot# angezeigt, Roboter die sie markieren werden [blue]#blau# angezeigt.
+Hinweis: Nachdem Sie Roboter hinzugefügt haben, können Sie ihren Follow-me Status ändern.
+Roboter, die Sie ausgewählt haben, werden blau angezeigt. Roboter, welche ihnen folgen, werden [red]#rot# angezeigt. Roboter, die Sie markieren, werden [blue]#blau# angezeigt.
 ====
 
-Um Roboter folgen zu lassen, gehen sie wie folgt vor:
+Um Roboter folgen zu lassen, gehen Sie wie folgt vor:
 
 [frame="none", grid="none"]
 |===
 |  |
-|1. Wählen sie einen Roboter aus in dem sie auf ihn klicken.| image:Images/Follow-me_Roboter_picked.png[150,150]
+|1. Wählen Sie einen Roboter aus, in dem Sie auf ihn klicken.| image:Images/Follow-me_Roboter_picked.png[150,150]
 
-|2. Wenn sie alle Roboter die ihnen folgen sollen ausgewählt haben, drücken sie "Follow me".
+|2. Wenn Sie alle Roboter, die ihnen folgen sollen, ausgewählt haben, drücken Sie "Follow me".
 |image:Images/Follow-me_NavigationAndButtons_Markup.png[150,150]
 
 |3. Die Liste wird gefiltert und es werden Ihnen alle Roboter angezeigt, die Ihnen folgen. Zusätzlich den Robotern, die Sie eben ausgewählt haben.
@@ -130,7 +130,7 @@ Um Roboter folgen zu lassen, gehen sie wie folgt vor:
 
 [NOTE]
 ====
-Hinweis: Sie können sich jetzt durch erneutes drücken von "Follow Me" wieder alle Roboter anzeigen lassen.
+Hinweis: Sie können sich jetzt durch erneutes Drücken von "Follow Me" wieder alle Roboter anzeigen lassen.
 ====
 
 === Follow-me Funktion Beenden
@@ -140,20 +140,20 @@ Hinweis: Sie können sich jetzt durch erneutes drücken von "Follow Me" wieder a
 Hinweis: Um ausgewählte Roboter nicht länger folgen zu lassen, sollten Ihnen bereits Roboter folgen, also [red]#rot# markiert sein.
 ====
 
-Um Roboter nicht länger folgen zu lassen, gehen sie wie folgt vor:
+Um Roboter nicht länger folgen zu lassen, gehen Sie wie folgt vor:
 
 [frame="none", grid="none"]
 |===
 |  |
-|1. Öffnen sie die Liste der Roboter die ihnen folgen, in dem sie "Follow me" anklicken.| image:Images/Follow-me_NavigationAndButtons_Markup.png[150,150]
+|1. Öffnen Sie die Liste der Roboter, die ihnen folgen, in dem Sie "Follow me" anklicken.| image:Images/Follow-me_NavigationAndButtons_Markup.png[150,150]
 
 |2. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt.
 |image:Images/Follow-me_Roboter_following.png[150,150]
 
-|3. Wählen sie durch anklicken aus, welche Roboter ihnen nicht mehr folgen sollen. Die ausgewählten Roboter sind [blau]#blau# markiert.
+|3. Wählen Sie durch Anklicken aus, welche Roboter ihnen nicht mehr folgen sollen. Die ausgewählten Roboter sind [blau]#blau# markiert.
 |image:Images/Follow-me_Roboter_TwoPicked.png[150,150]
 
-| 4. Drücken sie "Beenden".
+| 4. Drücken Sie "Beenden".
 | image:Images/Follow-me_NavigationAndButtons_Markup_Beenden.png[150,150]
 
 | 5. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt. Exklusive der Roboter, die Sie eben ausgewählt haben.
@@ -162,7 +162,7 @@ Um Roboter nicht länger folgen zu lassen, gehen sie wie folgt vor:
 
 [NOTE]
 ====
-Hinweis: Sie können erkennen, ob ihre aktuelle Liste gefiltert wird, in dem sie darauf achten, ob "Follow me" rot hinterlegt ist.
+Hinweis: Sie können erkennen, ob ihre aktuelle Liste gefiltert wird, in dem Sie darauf achten, ob "Follow me" rot hinterlegt ist.
 ====
 
 
@@ -170,10 +170,10 @@ Hinweis: Sie können erkennen, ob ihre aktuelle Liste gefiltert wird, in dem sie
 
 [NOTE]
 ====
-Hinweis: Um den aktuellen Stand der Route sowie Ihren aktuellen Standort zu sehen, können sie sich die Route anzeigen lassen.
+Hinweis: Um den aktuellen Stand der Route sowie Ihren aktuellen Standort zu sehen, können Sie sich die Route anzeigen lassen.
 ====
 
-Um die Follow-me Funktion zu visualisieren, gehen sie wie folgt vor:
+Um die Follow-me Funktion zu visualisieren, gehen Sie wie folgt vor:
 
 [frame="none", grid="none"]
 |===
@@ -186,12 +186,12 @@ Um die Follow-me Funktion zu visualisieren, gehen sie wie folgt vor:
 
 [NOTE]
 ====
-Hinweis: Um die Karte zu verkleinern oder zu vergrößern können sie die Knöpfe (-) und (+) am unteren Rand der Karte nutzen.
+Hinweis: Um die Karte zu verkleinern oder zu vergrößern, können Sie die Knöpfe (-) und (+) am unteren Rand der Karte nutzen.
 ====
 
 
 == Schlusswort
 
-Das war eine kurze Einführung in die Verwendung Der Follow-me Android App. Wir hoffen, dass Sie die App genießen und von ihren Funktionen profitieren können.
+Das war eine kurze Einführung in die Verwendung der Follow-me Android App. Wir hoffen, dass Sie die App genießen und von ihren Funktionen profitieren können.
 
 Bei weiteren Fragen oder Anliegen wenden Sie sich bitte an unseren Kundensupport.
