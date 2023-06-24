@@ -1,24 +1,31 @@
-== Iteration 10 (13.06.-29.06.) {project-name} [LL]
+== Iteration 10 {project-name} (13.06.-29.06.) [LL]
 {localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
 
 In der 10. Iteration lag der Fokus hauptsächlich auf der Fertigstellung des Projektberichts, vor allem dessen Dokumentation. Der 2. Schwerpunkt lag auf der Vorbereitung des Deployments und der Übergabe des Projekts.
 
 === Deployment
-Am 29.06. wird die Kundenabnahme statt finden, deren Vorbereitung wir in dieser Iteration geplant haben. Die Kundenabnahme wird in der HTWD stattfinden.
+Am 29.06. wird die Kundenabnahme stattfinden, deren Vorbereitung wir in dieser Iteration geplant haben. Die Kundenabnahme wird in der HTWD stattfinden.
 Die erstellte Vorlage des Abnahmeprotokolls wird in dem Deployment Meeting abgearbeitet, das heißt die entsprechenden Funktionalitäten und Anforderungen werden von den anwesenden Teammitgliedern vorgestellt und durch den Auftraggeber im besten Fall abgenommen.
 
 === Dokumentation
-In Rahmen der Dokumentation wurde die Benutzeranleitung und die Betriebsanleitung von einem Teil unseres Teams ausgearbeitet.
-Des weitern wurden Anforderungsspezifikation und Entwicklerdokumentation ausgearbeitet. Jedes Teammitglied hat sich freiwillig gemeldet mind. einen Iterationsplan zu ergänzen und die Punkte, die noch notizartig sind auszuformulieren, was dem Management ein bisschen Last abnehmen konnte. Die Präsentation, Lizensauswahl und die Dokumentation des Softwaresystems wurden vom Proejktmanagement übernommen. Jedes Teammitglied hat außerdem noch eine eigene Reflexion geschrieben.
+In Rahmen der Dokumentation wurde die Benutzeranleitung und die Betriebsanleitung von Michael Novak, Jonas Pfeiffer ausgearbeitet.
+Die Anforderungsspezifikation und Entwicklerdokumentation wurden von Leon Lowa ausgearbeitet. Jedes Teammitglied hat sich freiwillig gemeldet mind. einen Iterationsplan zu ergänzen und die Punkte, die noch notizartig sind auszuformulieren, was dem Management ein bisschen Last abnehmen konnte. Die Präsentation, Lizensauswahl und die Dokumentation des Softwaresystems wurden von Magnus Andreas Böhne und Manuel Scheer übernommen. Jedes Teammitglied hat außerdem noch eine eigene Reflexion geschrieben.
 
 === Implementierung
 Mit dieser Iteration trat ein Implementierungsstopp in Kraft. Aufgrund dessen wurden keine neuen Funktionen in das System implementiert und der komplette Fokus wurde so auf den Abschluss des Projekts gelenkt. Es wurden nur noch ganz vereinzelt letzte Bugs gefixt.
 
 === Produktpräsentation
-Am 26.06. stellten Magnus Böhne und Manuel Scheer unser Projekt, in Form einer Präsentation, vor. Teilnehmer der Präsentation waren die Vortragenden, Kommilitonen und Herr Professor Anke sowie Herr Zirkelbach. Vorgestellt wurde die Software, zukünftig mögliche Erweiterungen, und die Kerngedanken des Projekts. Am Ende hatten die Teilnehmer noch die Möglichkeit Fragen zu stellen.
+Am 26.06. stellten Magnus Böhne und Manuel Scheer unser Projekt, in Form einer Präsentation, vor. Teilnehmer der Präsentation waren die Vortragenden, Kommilitonen und Herr Prof. Anke sowie Herr Zirkelbach. Vorgestellt wurde die Software, zukünftig mögliche Erweiterungen, und die Kerngedanken des Projekts. Am Ende hatten die Teilnehmer noch die Möglichkeit Fragen zu stellen.
+
+=== Aufgetretene Probleme
+
 
 === Essence-Navigator
 Aktueller Stand im Essence-Diagramm:
 image::essence_i7.png[]
+
+
 
