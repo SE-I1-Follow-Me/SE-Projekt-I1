@@ -113,8 +113,8 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 
 
 |Use-Case 07: Route speichern
-|Implementiert
-|-
+|Teilweise Implementiert
+|Ansätze in App und Server vorhanden, nicht Funktionsfähig
 
 |Use-Case 08: Route bearbeiten
 |Nicht Implementiert
