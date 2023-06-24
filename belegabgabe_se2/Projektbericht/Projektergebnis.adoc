@@ -50,7 +50,7 @@ include kommt hier hin
 === Manuel Scheer
 __Teamrollen: Stellvertretender Projektleiter, Entwicklung, Analyse, Entwürfe__
 
-include kommt hier hin
+include::Reflexion_Manuel.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 === Jonas Pfeiffer
 __Teamrollen: Entwicklung, Entwürfe__
