@@ -5,17 +5,17 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 == Softwaresystem
 
 === Motivation
-Auch wenn die Roboter aktuell noch nicht verfügbar sind müssen diese in Zukunft bedienbar sein. Eine Bedienung über eine App ist hierbei besonders lukrativ, da davon ausgegangen werden kann, dass alle potenziellen Endnutzer ein Handy für die Arbeit benötigen beziehungsweise besitzen. Gerade für Firmen, die mit den Fahrrobotern arbeiten möchten, ist eine App die beste Lösung, um dies in ihre Geschäftsprozesse zu integrieren. 
+Auch wenn die Roboter aktuell noch nicht verfügbar sind, müssen diese in Zukunft bedienbar sein. Eine Bedienung über eine App ist hierbei besonders lukrativ, da davon ausgegangen werden kann, dass alle potenziellen Endnutzer ein Handy für die Arbeit benötigen beziehungsweise besitzen. Gerade für Firmen, die mit den Fahrrobotern arbeiten möchten, ist eine App die beste Lösung, um dies in ihre Geschäftsprozesse zu integrieren. 
 
 Für weitere Informationen zur Motivation schauen Sie bitte in die https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/docs/requirements/vision.adoc[Vision]
 
 === Produktergebnis
-Das Produkt ist leicht weiterentwickelbar. Es wurde bereits zu Beginn des Projektes festgestellt, dass diese App nicht im Verlauf der beiden Semester fertig gestellt werden kann. Dies lag am beträchtlichen Umfang sowie der Größe des Projektteams. 
+Das Produkt ist leicht weiter entwickelbar. Es wurde bereits zu Beginn des Projektes festgestellt, dass diese App nicht im Verlauf der beiden Semester fertiggestellt werden kann. Dies lag am beträchtlichen Umfang sowie der Größe des Projektteams. 
 
 Die App kann im aktuellen Zustand folgende Features aufweisen: 
 
 * Abrufen der Daten vom Datenbankserver
-* Integrierte Karte (Streetview)
+* Integrierte Karte (Street View)
 * Aufnahme von Routen + GPS-Tracking
 * Darstellung der Roboter in einer Liste
 * Filterung der Liste
@@ -26,9 +26,9 @@ Das Projekt besteht neben der App auch noch aus einem Springboot Server, auf wel
 
 === Bewertung
 
-Ein Großteil der in Software Engineering I analysierten Hauptanforderungen (Use Cases) konnten teilweise oder vollständig implementiert werden. Das nicht implementieren von drei Use-Cases sowie die nur teilweise implementierten Use-Cases entstanden zum einen durch ihre geringere Priorisierung und zum anderen dadurch, dass diese Funktionen auf anderen Funktionen aufbauen. Aufgrund des strikten Zeitplanes wurden die Use-Cases mit hoher Priorität zuerst umgesetzt. 
+Ein Großteil der in Software Engineering I analysierten Hauptanforderungen (Use Cases) konnten teilweise oder vollständig implementiert werden. Das nicht implementieren von drei Use Cases sowie die nur teilweise implementierten Use Cases entstanden zum einen durch ihre geringere Priorisierung und zum anderen dadurch, dass diese Funktionen auf anderen Funktionen aufbauen. Aufgrund des strikten Zeitplanes wurden die Use Cases mit hoher Priorität zuerst umgesetzt. 
 
-.Endzustand des Projekts dargestellt anhand des Use-Case-Models; mit grauen Haken gekennzeichnete Use-Cases wurden teilweise implementiert
+.Endzustand des Projekts dargestellt anhand des Use-Case-Models; mit grauen Haken gekennzeichnete Use Cases wurden teilweise implementiert
 image::UC_Overview.png[]
 
 Für einen genauen Überblick über alle Anforderungen sehen Sie sich bitte das https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/belegabgabe_se2/abnahmeprotokoll/Abnahmeprotokoll.adoc[Abnahmeprotokoll] an.
@@ -37,7 +37,7 @@ Da die Übergabe an den Kunden erst nach Abgabe des Projektes erfolgt, können w
 
 === Fazit
 
-Das Projekt war eine sehr lehrreiche und intensive Erfahrung für alle Teammitglieder. Trotz entstandener Probleme war die Resonanz der sowohl der Teammitglieder als auch des Kunden überwiegend positiv. Das Projektteam ist stolz auf das Erreichte, auch wenn die App nicht fertig gestellt werden konnte. Da das Projekt so umfangreich war, konnten alle Teammitglieder viel lernen. 
+Das Projekt war eine sehr lehrreiche und intensive Erfahrung für alle Teammitglieder. Trotz entstandener Probleme war die Resonanz der sowohl der Teammitglieder als auch des Kunden überwiegend positiv. Das Projektteam ist stolz auf das Erreichte, auch wenn die App nicht fertiggestellt werden konnte. Da das Projekt so umfangreich war, konnten alle Teammitglieder viel lernen. 
 
 == Reflexionen der Teammitglieder
 
