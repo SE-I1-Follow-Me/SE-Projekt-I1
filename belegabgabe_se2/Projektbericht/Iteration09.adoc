@@ -1,4 +1,7 @@
-== Iteration 09: {Projektname}
+== Iteration 09: {project-name} (30.05.2023 - 13.06.2023) [MAB]
+
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
 
 Der Schwerpunkt der Iteration 09 war es allgemein das Projekt abzurunden und Kernfunktionalitäten von Usecases zu ermöglichen. Darunter zählt ein reibungsloser, in die App integrierter JPA Zugriff, wie auch die Funktionalität die Routen lokal mittels eines Autosyncs zu laden. Die Iteration ist geprägt von Meetings; ein Kunden-, ein Betreuer- und die iterativen Routine- und Coworking- Meetings. 
 
