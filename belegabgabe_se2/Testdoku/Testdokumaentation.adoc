@@ -5,7 +5,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Testobjekte
 
-Die wichtigsten Komponenten, die getestet wurden, sind das RoboterAPI-Interface und die HomeActivity-Klasse in der Android-Anwendung. Diese Testobjekte wurden mit Unit- und Integrationstests getestet, wobei die Hauptaufmerksamkeit auf der API und der Integration mit der Hauptaktivität lag. Zusätzlich haben wir unseren Testansatz stark auf die jeweiligen Use-Cases ausgerichtet. Bei der Implementierung jedes Use-Cases erstellten wir einen zugehörigen Testfall, der in der nachfolgenden Iteration ausgeführt wurde.
+Die wichtigsten Komponenten, die getestet wurden, sind das RoboterAPI-Interface und die HomeActivity-Klasse in der Android-Anwendung. Diese Testobjekte wurden mit Unit- und Integrationstests getestet, wobei die Hauptaufmerksamkeit auf der API und der Integration mit der Hauptaktivität lag. Zusätzlich haben wir unseren Testansatz stark auf die jeweiligen Use Cases ausgerichtet. Bei der Implementierung jedes Use Cases erstellten wir einen zugehörigen Testfall, der in der nachfolgenden Iteration ausgeführt wurde.
 
 === Testmethoden
 
@@ -17,7 +17,7 @@ Nach eingehender Überlegung haben wir beschlossen, Modultests selektiv zu verwe
 
 ==== Integrationstest
 
-In unserem Testprozess lag ein wesentlicher Schwerpunkt auf Integrationstests. Hierbei orientierten wir uns an den definierten Anwendungsfällen (Use-Cases), um die erfolgreiche Zusammenarbeit mehrerer Module sowie deren korrekte Synchronisation zu überprüfen. Besonders berücksichtigt wurde dabei die Zusammenarbeit zwischen der HomeActivity und dem RoboterAPI Service, die eine zentrale Rolle in unserer Anwendung spielt. Auch die Synchronisation mit der Retrofit-Bibliothek und den Datenstrukturen der Entity-Klassen wurden getestet. Diese Integrationstests sind entscheidend, um die korrekte Funktionalität unserer App zu gewährleisten, da sie die Interaktion zwischen den verschiedenen Modulen sicherstellen.
+In unserem Testprozess lag ein wesentlicher Schwerpunkt auf Integrationstests. Hierbei orientierten wir uns an den definierten Anwendungsfällen (Use Cases), um die erfolgreiche Zusammenarbeit mehrerer Module sowie deren korrekte Synchronisation zu überprüfen. Besonders berücksichtigt wurde dabei die Zusammenarbeit zwischen der HomeActivity und dem RoboterAPI Service, die eine zentrale Rolle in unserer Anwendung spielt. Auch die Synchronisation mit der Retrofit-Bibliothek und den Datenstrukturen der Entity-Klassen wurden getestet. Diese Integrationstests sind entscheidend, um die korrekte Funktionalität unserer App zu gewährleisten, da sie die Interaktion zwischen den verschiedenen Modulen sicherstellen.
 
 ==== Manuelle Tests
 
@@ -29,7 +29,7 @@ Im Laufe des Projekts haben wir in regelmäßigen, persönlichen Meetings unsere
 
 === Testdurchführungsplanung
 
-Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz entschieden, der eng mit der Implementierung der einzelnen Use-Cases verknüpft war. Für jeden Use-Case, der in einer Iteration entwickelt wurde, erstellten wir einen zugehörigen Testfall. Dieser Testfall wurde dann in der darauf folgenden Iteration durchgeführt. Diese Vorgehensweise ermöglichte es uns, Tests direkt mit den Entwicklungsschritten zu verknüpfen und eine kontinuierliche Überprüfung der implementierten Funktionalitäten zu gewährleisten. Dadurch konnten wir sicherstellen, dass jedes neue Feature nicht nur entsprechend den Anforderungen implementiert, sondern auch gründlich getestet und validiert wurde. Dieser Ansatz gewährleistete eine hohe Qualität und Zuverlässigkeit unserer Software, da jede neue Funktion vor ihrer endgültigen Implementierung einer gründlichen Prüfung unterzogen wurde.
+Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz entschieden, der eng mit der Implementierung der einzelnen Use Cases verknüpft war. Für jeden Use Case, der in einer Iteration entwickelt wurde, erstellten wir einen zugehörigen Testfall. Dieser Testfall wurde dann in der darauf folgenden Iteration durchgeführt. Diese Vorgehensweise ermöglichte es uns, Tests direkt mit den Entwicklungsschritten zu verknüpfen und eine kontinuierliche Überprüfung der implementierten Funktionalitäten zu gewährleisten. Dadurch konnten wir sicherstellen, dass jedes neue Feature nicht nur entsprechend den Anforderungen implementiert, sondern auch gründlich getestet und validiert wurde. Dieser Ansatz gewährleistete eine hohe Qualität und Zuverlässigkeit unserer Software, da jede neue Funktion vor ihrer endgültigen Implementierung einer gründlichen Prüfung unterzogen wurde.
 
 == Testen der nicht-funktionalen Anforderungen
 
@@ -40,7 +40,7 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 
 |NFAU-1: Auf Anglizismen sowie technische und informatische Fachbegriffe soll verzichtet werden.
 |Teilweise Erfüllt
-|ID und FollowMe unter umständen nicht sofort verständlich
+|ID und FollowMe unter Umständen nicht sofort verständlich
 
 |NFAU-2: Die Anwendung soll ohne technische Kenntnisse des Nutzers bedienbar sein.
 |Erfüllt
@@ -63,7 +63,7 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 |ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
 
-|NFAP-2: ewählte Aktionen der App sollen innerhalb von 1000 Millisekunden an den Server gesendet, verarbeitet und verifiziert werden.
+|NFAP-2: Gewählte Aktionen der App sollen innerhalb von 1000 Millisekunden an den Server gesendet, verarbeitet und verifiziert werden.
 |Erfüllt
 |ausgegangen wird dabei von angemessenen Hardwarekomponenten und einer stabilen Internetverbindung
 
@@ -93,42 +93,42 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 
 |Use Case 02: Roboter bearbeiten
 |Teilweise Implementiert
-|Wird ein Roboter hinzugefügt, welcher bereits in der Liste steht, wird dieser Überschrieben
+|Wird ein Roboter hinzugefügt, welcher bereits in der Liste steht, wird dieser überschrieben
 
-|Use-Case 03: Roboter löschen
+|Use Case 03: Roboter löschen
 |Implementiert
 |-
 
-|Use-Case 04: Follow-me Funktion starten
+|Use Case 04: Follow-me Funktion starten
 |Implementiert
 |-
 
-|Use-Case 05: Follow-me Funktion ausführen
+|Use Case 05: Follow-me Funktion ausführen
 |Implementiert
 |-
 
-|Use-Case 06: Follow-me Funktion beenden
+|Use Case 06: Follow-me Funktion beenden
 |Implementiert
 |-
 
 
-|Use-Case 07: Route speichern
+|Use Case 07: Route speichern
 |Teilweise Implementiert
-|Ansätze in App und Server vorhanden, nicht Funktionsfähig
+|Ansätze in App und Server vorhanden, nicht funktionsfähig
 
-|Use-Case 08: Route bearbeiten
+|Use Case 08: Route bearbeiten
 |Nicht Implementiert
 |-
 
-|Use-Case 09: Löschen einer Route
+|Use Case 09: Löschen einer Route
 |Nicht Implementiert
 |-
 
-|Use-Case 10: Ablaufen einer Route
+|Use Case 10: Ablaufen einer Route
 |Nicht Implementiert
 |-
 
-|Use-Case 11: Roboter warten
+|Use Case 11: Roboter warten
 |Nicht Implementiert
 |-
 |===
