@@ -92,8 +92,8 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 |-
 
 |Use Case 02: Roboter bearbeiten
-|Nicht Implementiert
-|-
+|Teilweise Implementiert
+|Wird ein Roboter hinzugefügt, welcher bereits in der Liste steht, wird dieser Überschrieben
 
 |Use-Case 03: Roboter löschen
 |Implementiert
@@ -138,9 +138,17 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 
 == Testfallbeschreibung & Testergebnisse
 
-include::{docs-test}/test_cases_UC01_Pilot_anmelden.adoc[]
+include::../../docs/test/Test_Case_UC01_Roboter_anlegen.adoc[]
 <<<
-include::{docs-test}/test_cases_UC02_Pilot_abmelden.adoc[]
+include::../../docs/test/Test_Case_UC02_Roboter_bearbeiten.adoc[]
+<<<
+include::../../docs/test/Test_Case_UC03_Roboter_löschen.adoc[]
+<<<
+include::../../docs/test/Test_Case_UC04_Follow_me_Funktion_starten.adoc[]
+<<<
+include::../../docs/test/Test_Case_UC05_Follow_me_Funktion_ausführen.adoc[]
+<<<
+include::../../docs/test/Test_Case_UC06_Follow_me_Funktion_beenden.adoc[]
 <<<
 
 

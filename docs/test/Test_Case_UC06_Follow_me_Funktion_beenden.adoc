@@ -1,0 +1,101 @@
+=== Test Case UC06 Follow-me Funktion beenden
+
+[%header, cols=5*]
+|===
+|TestID
+|Testart
+|Vorbedingung
+|Durchführung
+|Nachbedingung
+
+|1
+|Manuell, Positivtest
+|stabile Internetverbindung und mindestens ein Roboter im following zustand
+|Nutzer wählt einen folgenden Roboter aus und klickt auf Beenden
+|Der Roboter folgt nicht mehr
+
+|2
+|Manuell, Negativtest
+|stabile Internetverbindung, kein Roboter im following zustand und Follow me Filter nicht aktiv
+|Nutzer klickt auf Beenden
+|Es wird eine Fehlermeldung angezeigt
+
+|3
+|Manuell, Negativtest
+|stabile Internetverbindung, kein Roboter im following zustand und Follow me Filter aktiv
+|Nutzer klickt auf Beenden
+|Es wird eine Fehlermeldung angezeigt
+
+|4
+|Manuell, Negativtest
+|stabile Internetverbindung, mindestens ein Roboter und Follow me Filter nicht aktiv
+|Der Nutzer wählt den roboter aus und klickt beenden
+|Es wird eine Fehlermeldung angezeigt
+
+|===
+
+==== Durchführung Test Case
+
+.TestID 1
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Folgenden Roboter ausgewählt und beenden geklickt
+|Roboter folgt nicht mehr und der Status auf dem Server wird geändert
+| /
+| Erfolgreich
+
+|===
+
+.TID 2
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Beenden geklickt
+|Fehlermeldung wurde angezeigt
+| /
+| Erfolgreich
+
+|===
+
+.TID 3
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Beenden geklickt
+|Fehlermeldung wurde angezeigt
+| /
+| Erfolgreich
+
+|===
+
+.TID 4
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Roboter ausgewählt und beenden geklickt
+|Fehlermeldung wurde angezeigt
+|/
+| Erfolgreich
+
+|===

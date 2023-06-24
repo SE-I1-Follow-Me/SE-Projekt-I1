@@ -1,0 +1,105 @@
+=== Test Case UC03 Roboter entfernen/löschen
+
+[%header, cols=5*]
+|===
+|TestID
+|Testart
+|Vorbedingung
+|Durchführung
+|Nachbedingung
+
+|1
+|Manuell, Positivtest
+|stabile Internetverbindung und Nutzer kennt die zu entfernende ID
+|Der Nutzer klickt auf den Pfeil und innerhalb von 5s auf das Kreuz
+|Der Roboter wird nicht mehr in der HomeActivity angezeit
+
+|2
+|Manuell, Negativtest
+|stabile Internetverbindung
+|Der Nutzer klickt auf den Pfeil und nicht innerhalb von 5s auf das Kreuz
+|Der Roboter wird nicht aus der HomeActivity entfernt
+
+
+|3
+|Manuell, Positivtest
+|stabile Internetverbindung
+|Der Nutzer gibt eine vergbene ID ein und klickt auf Roboter löschen
+|Der Roboter mit der eingegebenen ID wird auf dem Server geslöscht.
+
+
+
+|4
+|Manuell, Negativtest
+|stabile Internetverbindung
+|Der Nutzer gibt eine nicht vergebene ID an und klickt auf Roboter löschen
+|Es wird eine Fehlermeldung angezeigt
+
+
+|===
+
+==== Durchführung Test Case
+
+.TestID 1
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Bei Roboter mit ID 1 wurde auf den Pfeil und innerhalb von 5s auf das Kreuz geklickt
+|Roboter mit ID 1 wird nicht mehr in der HomeActivity angezeigt
+| /
+| Erfolgreich
+
+|===
+
+.TID 2
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Bei Roboter mit ID 1 wurde auf den Pfeil und nicht innerhalb von 5s auf das Kreuz geklickt
+|Roboter wurde nicht entfernt und Kreuz-symbol wurde nach 5s wieder zu einem Pfeil
+| /
+| Erfolgreich
+
+|===
+
+.TID 3
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 8 (auf dem Server vorhanden)
+|Der Roboter mit der ID 8 wurde von dem Server gelöscht
+| /
+| Erfolgreich
+
+|===
+
+.TID 4
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 10 (nicht auf dem Server vorhanden)
+|Eine Fehlermeldung wird angezeigt und auf dem Server kein Roboter gelöscht
+|Fehlermeldung zeigt nur Server Error, nicht für Nutzer verständlich
+| Erfolgreich
+
+|===

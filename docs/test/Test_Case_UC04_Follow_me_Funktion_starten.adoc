@@ -1,0 +1,63 @@
+=== Test Case UC04 Follow-me Funktion starten
+
+[%header, cols=5*]
+|===
+|TestID
+|Testart
+|Vorbedingung
+|Durchführung
+|Nachbedingung
+
+|1
+|Manuell, Positivtest
+|stabile Internetverbindung und mindestens ein Roboter wurde der HomeActivity hinzugefügt
+|Nutzer wählt Roboter aus und klickt auf Follow me
+|Der Roboter ändert seinen status zu following und die angezeigte Liste wird nach folgenden Robotern gefiltert
+
+|2
+|Manuell, Negativtest
+|stabile Internetverbindung und mindestens ein Roboter wurde der HomeActivity hinzugefügt
+|Nutzer wählt keinen Roboter aus und klickt auf Follow me
+|Kein Roboter ändert seinen status und die liste wird nach folgenden Robotern gefiltert (in diesem fall Leer)
+
+|===
+
+==== Durchführung Test Case
+
+.TestID 1
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Der Roboter A1 wurde ausgewählt und Follow me geklickt
+|Roboter A1 wird auf dem Server als following angezeigt
+| /
+| Erfolgreich
+
+|Der Roboter A1 und Roboter A2 wurden ausgewählt und Follow me geklickt, zusätzlich wurden noch Roboter B1 und Roboter B2 hinzugefügt aber nicht ausgewählt
+|Roboter A1 und Roboter A2 werden auf dem Server als following angezeigt und es werden nur Roboter A1 und Roboter A2 angezeigt
+| /
+| Erfolgreich
+
+
+|===
+
+.TID 2
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Roboter B1 und Roboter B2 hinzugefügt aber nicht ausgewählt und Follow me geklickt
+|Die Roboter ändern nicht ihren status und die gefilterte Liste erscheint Leer
+|Da die Liste Leer erscheint könnte dies zu verwirrung führen, eventuell eine Meldung Implementieren
+| Erfolgreich
+
+|===

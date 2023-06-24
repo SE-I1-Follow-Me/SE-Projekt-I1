@@ -1,0 +1,36 @@
+=== Test Case UC04 Follow-me Funktion ausführen
+
+[%header, cols=5*]
+|===
+|TestID
+|Testart
+|Vorbedingung
+|Durchführung
+|Nachbedingung
+
+|1
+|Manuell, Positivtest
+|stabile Internetverbindung und Follow me wurde aktiviert
+|Der Nutzer klickt auf den roten Follow me Button
+|Die Liste zeigt wieder alle Roboter an, die folgenden rot hinterlegt
+
+|===
+
+==== Durchführung Test Case
+
+.TestID 1
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|Der Roboter A1 ist following und der Roboter A2 nicht. Roter Follow me Button geklickt
+|In der Home Activity werden wieder alle Roboter angezeigt, die folgenend rot hinterlegt
+| /
+| Erfolgreich
+
+|===
+

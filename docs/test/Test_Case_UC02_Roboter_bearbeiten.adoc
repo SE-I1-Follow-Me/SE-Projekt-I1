@@ -1,0 +1,3 @@
+=== Test Case UC02 Roboter bearbeiten
+
+das Feature wurde nicht Implementiert, aber eine Namensänderung ist durch überschreiben möglich. (Siehe UC01 Roboter anlegen/hinzufügen TestID 5 Ergebnis)

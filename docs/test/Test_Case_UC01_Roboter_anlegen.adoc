@@ -1,0 +1,126 @@
+=== Test Case UC01 Roboter anlegen/hinzufügen
+
+[%header, cols=5*]
+|===
+|TestID
+|Testart
+|Vorbedingung
+|Durchführung
+|Nachbedingung
+
+|1
+|Manuell, Positivtest
+|stabile Internetverbindung und Nutzer kennt die hinzuzufügende ID
+|Nutzer Klickt auf Roboter hinzufügen und gibt ID ein
+|Der Roboter wird in der HomeActivity angezeit
+
+|2
+|Manuell, Negativtest
+|stabile Internetverbindung
+|Nutzer Klickt auf Roboter Hinzufügen und gibt falsche ID ein
+|Es wird eine Fehlermeldung angezeigt und kein Roboter der HomeActivity hinzugefügt
+
+|3
+|Manuell, Negativtest
+|stabile Internetverbindung
+|Nutzergibt bereits hinzugefügte ID ein
+|Es wird eine Fehlermeldung angezeigt und der Roboter bleibt in der HomeActivity
+
+|4
+|Manuell, Positivtest
+|stabile Internetverbindung
+|Der Nutzer gibt eine nicht vergebene ID an, klickt auf Roboter anlegen und gibt einen Namen ein
+|Es wird ein Roboter mit dieser ID auf dem Server angelegt
+
+
+
+|5
+|Manuell, Negativtest
+|stabile Internetverbindung
+|Der Nutzer gibt eine vergebene ID an, klickt auf Roboter anlegen und gibt einen Namen ein
+|Es wird kein neuer Roboter auf dem Server angelegt
+
+
+|===
+
+==== Durchführung Test Case
+
+.TestID 1
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 1
+|Roboter mit ID 1 wird in HomeActivity angezeigt
+| /
+| Erfolgreich
+
+|===
+
+.TID 2
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 100 (nicht vergebene ID)
+|Kein weiterer Roboter wird angezeigt
+| /
+| Erfolgreich
+
+|===
+
+.TID 3
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 1 (bereits zuvor hinzugefügt)
+|Fehlermeldung erscheint und Roboter bleibt in der HomeActivity
+| /
+| Erfolgreich
+
+|===
+
+.TID 4
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 10 (ID 1-8 vergeben) Name: Roboter Test
+|Ein Roboter Roboter mit dem namen wurde auf dem Server angelegt, allerdings mit ID 9
+|Ziel: von ID zu einem extra Attribut namens Token umstellen, da ID vom server vergeben wird
+| Erfolgreich
+
+|===
+
+.TID 5
+
+[%header, cols=4*]
+|===
+|Eingegebene Werte
+|Ergebnis
+|Anmerkung
+|Akzeptanztest
+
+|ID 8 (bereits vergeben) Name: Roboter Test 2
+|Der Roboter mit ID 8 wurde auf dem Server überschrieben
+|Soll als möglichkeit der Namensänderung so bestehen bleiben
+| Erfolgreich
+
+|===
