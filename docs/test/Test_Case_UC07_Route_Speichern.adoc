@@ -1,0 +1,2 @@
+=== Test Case UC07 Route speichern
+Obwohl Anstrengungen unternommen wurden, um die Implementierung des Features voranzutreiben, konnte es aufgrund unvorhergesehener Schwierigkeiten nicht in einem Zustand erreicht werden, der eine Testdurchführung ermöglicht hätte. Trotz anfänglicher Fortschritte stießen wir auf Probleme, die die volle Implementierung des Features behinderten.
