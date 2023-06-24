@@ -1,5 +1,5 @@
-= Betriebsanleitung: FollowMe Android App
-Hier finden Sie eine Anleitung zur Installation des Servers und der FollowMe Android App
+= Betriebsanleitung: Follow-me Android App
+Hier finden Sie eine Anleitung zur Installation des Servers und der Follow-me Android App
 :toc:
 :toc-title: Inhaltsverzeichnis
 
@@ -89,7 +89,7 @@ Im Verzeichnis build/libs führen Sie den Befehl java -jar springboot.jar aus, u
 
 === Wartung
 
-Der Server benötigt wenig wartung, jedoch sollte sichergestellt werden, dass das Betriebssystem aktualisiert wird. Sobald die Anwendung installiert und eingerichtet ist, können Sie Roboter hinzufügen, deren Status überprüfen und steuern.
+Der Server benötigt wenig Wartung, jedoch sollte sichergestellt werden, dass das Betriebssystem aktualisiert wird. Sobald die Anwendung installiert und eingerichtet ist, können Sie Roboter hinzufügen, deren Status überprüfen und steuern.
 
 
 == App
