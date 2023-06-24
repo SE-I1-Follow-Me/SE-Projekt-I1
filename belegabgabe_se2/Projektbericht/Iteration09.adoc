@@ -1,5 +1,6 @@
 == Iteration 09: {project-name} (30.05.2023 - 13.06.2023) [MAB]
 
+
 :docs: ../../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 
@@ -24,6 +25,10 @@ Ein grundlegender Teil der Simulation besteht aus einer stabilen JPA- Verbindung
 Es war vorgesehen, die Spring RestAPI mit einer Spring Security Konfiguration abzusichern. Aus zeitlichen Gründen kann und wird dies nicht mehr verfolgt und voraussichtlich erreicht werden.  Die Prioritäten der Kern- UseCases sind höher gesetzt worden.
 
 
-:docs: ../../docs
-include::{docs}/_includes/default-attributes.inc.adoc[]
+
+=== Aktueller Stand Essence-Diagramm
+
+
+
+image::{docs}/project_management/images/essence_i7.PNG[]
 
