@@ -26,3 +26,9 @@ Die Meetings mit unserem Coach und Kunden erwiesen sich als produktiv und bereic
 Erfreulicherweise wurde die Einrichtung von GitHub Actions und Autostart erfolgreich umgesetzt, was einen signifikanten Beitrag zur Verbesserung unserer Entwicklungseffizienz leistet. Allerdings war die Einrichtung von Spring Boot Security eine größere Herausforderung als ursprünglich angenommen und konnte in dieser Iteration nicht abgeschlossen werden.
 
 Trotz der aufgetretenen Herausforderungen und unerwarteten Verzögerungen konnten wir wichtige Fortschritte erzielen und wichtige Ziele erreichen. Die kommenden Iterationen werden dazu genutzt, die ausstehenden Ziele anzugehen und die bestehenden Probleme zu lösen. Mit den bisher gemachten Erfahrungen und den gewonnenen Erkenntnissen ist das Team zuversichtlich, dass es die Herausforderungen meistern wird.
+
+=== Aktueller Stand Essence-Diagramm
+
+
+
+image::{docs}/project_management/images/essence_i7.PNG[]
