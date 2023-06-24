@@ -4,25 +4,25 @@
 :docs: ../../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 
-Der Schwerpunkt der Iteration 09 war es allgemein das Projekt abzurunden und Kernfunktionalitäten von Usecases zu ermöglichen. Darunter zählt ein reibungsloser, in die App integrierter JPA Zugriff, wie auch die Funktionalität die Routen lokal mittels eines Autosyncs zu laden. Die Iteration ist geprägt von Meetings; ein Kunden-, ein Betreuer- und die iterativen Routine- und Coworking- Meetings. 
+Der Schwerpunkt der Iteration 09 war es allgemein, das Projekt abzurunden und Kernfunktionalitäten von Use Cases zu ermöglichen. Darunter zählt ein reibungsloser, in die App integrierter JPA Zugriff, wie auch die Funktionalität die Routen lokal mittels eines Autosyncs zu laden. Die Iteration ist geprägt von Meetings; ein Kunden-, ein Coach- und die iterativen Routine- und Coworking- Meetings. 
 
 === Feedback und Akzeptanzmeeting
 
-Das erste wichtige Meeting hat an dem 02.06.23 stattgefunden. In diesem Meeting mit dem Kunden, ging es um die letzten Patches und um mögliche kleinere Verbesserungen, um die App den Vorstellungen gerechter zu lösen. An dem 06.06.23 war das Betreuermeeting, wo der Fokus mehr auf der Dokumentation und der Abschließung um das Projekt ging. Testing wurde auch besprochen, es werden die letztem Testfälle abgeschlossen und dokumentiert. In beiden Meetings wurde der Zustand des Projektes allgemein als gut eingestuft.
+Das erste wichtige Meeting hat an dem 02.06.23 stattgefunden. In diesem Meeting mit dem Kunden, ging es um die letzten Patches und um mögliche kleinere Verbesserungen, um die App den Vorstellungen gerechter zu lösen. An dem 06.06.23 war das Coach-Meeting, wo der Fokus mehr auf der Dokumentation und der Abschließung um das Projekt ging. Testing wurde auch besprochen, es werden die letzten Testfälle abgeschlossen und dokumentiert. In beiden Meetings wurde der Zustand des Projektes allgemein als gut eingestuft.
 
 
 === Routenspeicherung
 
-Es gibt ein altes SE- Projekt, welches sich nur mit dem Thema Routen und Routenspeicherung auseinandergesetzt hat. Nach einer Quellcode- Review, wurde festgestellt, dass dieser, mitsamt der Dokumentation für unsere Zwecke ungenügsam ist und als eher unbrauchbar einzustufen ist. Aufgrund dessen wurde entschieden, Komponenten mit der selben Idee des Autosyncs, aber als komplett neuen Code zu schreiben. Die Begründung war hierzu, dass der Aufwand das alte Projekt zu integrieren, höher ist, als es neu zu schreiben. Ein zusätzlicher Zeitschaden ist in beiden Fällen unausweichlich. Hürden, wie die Android Permissions, werden abgebaut.
+Es gibt ein altes SE-Projekt, welches sich nur mit dem Thema Routen und Routenspeicherung auseinandergesetzt hat. Nach einer Quellcode-Review, wurde festgestellt, dass dieser, mitsamt der Dokumentation für unsere Zwecke ungenügsam ist und als eher unbrauchbar einzustufen ist. Aufgrund dessen wurde entschieden, Komponenten mit derselben Idee des Autosyncs, aber als komplett neuen Code zu schreiben. Die Begründung war hierzu, dass der Aufwand, das alte Projekt zu integrieren, höher ist, als es neu zu schreiben. Ein zusätzlicher Zeitschaden ist in beiden Fällen unausweichlich. Hürden, wie die Android Permissions, werden abgebaut.
 
 
 === Vorbereitungen der Simulation
 
-Ein grundlegender Teil der Simulation besteht aus einer stabilen JPA- Verbindung, die in Teilen schon vorliegt. Aus dem jetzigen Projektstand war es ungewiss, ob es überhaupt zu einer Simulation kommen wird, man wollte zumindest den Ansatz in der App als separate Activity implementieren. Kleinere Anpassungen von dem Kunden, wie Filterung und Modi werden ebenfalls gelöst.
+Ein grundlegender Teil der Simulation besteht aus einer stabilen JPA-Verbindung, die in Teilen schon vorliegt. Aus dem jetzigen Projektstand war es ungewiss, ob es überhaupt zu einer Simulation kommen wird, man wollte zumindest den Ansatz in der App als separate Activity implementieren. Kleinere Anpassungen von dem Kunden, wie Filterung und Modi, werden ebenfalls gelöst.
 
 === Spring Security
 
-Es war vorgesehen, die Spring RestAPI mit einer Spring Security Konfiguration abzusichern. Aus zeitlichen Gründen kann und wird dies nicht mehr verfolgt und voraussichtlich erreicht werden.  Die Prioritäten der Kern- UseCases sind höher gesetzt worden.
+Es war vorgesehen, die Spring RestAPI mit einer Spring Security Konfiguration abzusichern. Aus zeitlichen Gründen kann und wird dies nicht mehr verfolgt und voraussichtlich erreicht werden. Die Prioritäten der Kern Use Cases sind höher gesetzt worden.
 
 
 
