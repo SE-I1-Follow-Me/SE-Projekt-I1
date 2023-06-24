@@ -25,7 +25,7 @@ Am 26.06. stellten Magnus Böhne und Manuel Scheer unser Projekt, in Form einer 
 
 === Aktueller Stand Essence-Diagramm
 
-image::{docs}/project_managment/images/essence_i7.PNG[]
+image::{docs}/project_management/images/essence_i7.PNG[]
 
 
 
