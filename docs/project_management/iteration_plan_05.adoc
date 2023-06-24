@@ -102,7 +102,7 @@ in nächste Iteration verschoben:
 Beurteilung im Vergleich zu den Bewertungskriterien::
 ****
 * UC01 (vorerst) lokal umgesetzt
-* Programmierteams wurden anhand der Kenntnisse gebildet (Dual Programing)
+* Programmierteams wurden anhand der Kenntnisse gebildet (Dual Programming)
 * Serveranbindung noch nicht möglich
 ****
 
