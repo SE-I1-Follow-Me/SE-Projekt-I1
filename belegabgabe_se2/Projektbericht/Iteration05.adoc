@@ -22,4 +22,8 @@ Das Ergebnis der ersten Iteration des zweiten Projektteils manifestierte sich in
 Diese Erfahrungen im Projektverlauf unterstreichen die Bedeutung eines strukturierten Vorgehens gemäß dem Open Unified Process (OpenUP) und verdeutlichen die Notwendigkeit, die Planung und Ressourcenallokation kontinuierlich anzupassen, um den Anforderungen des Projekts gerecht zu werden. Durch eine umsichtige Herangehensweise und die Berücksichtigung von Lessons Learned aus früheren Phasen kann das Team eine solide Basis für zukünftige Iterationen schaffen, um die angestrebte umfangreiche Anwendung mit integrierter Serverfunktionalität erfolgreich zu realisieren.
 
 
-// include::../../docs/project_management/images/essence_i4.png[]
+=== Aktueller Stand Essence-Diagramm
+
+
+
+image::{docs}/project_management/images/essence_i4.png[]
