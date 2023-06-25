@@ -2,7 +2,7 @@
 Leon Lowa <s83824@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
-
+<<<
 
 == Zweck
 Dieses Dokument soll künftige Entwickler bei der Weiterentwicklung des Systems unterstützen.
