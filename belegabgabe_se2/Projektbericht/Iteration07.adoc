@@ -30,5 +30,5 @@ Trotz der aufgetretenen Herausforderungen und unerwarteten Verzögerungen konnte
 === Aktueller Stand Essence-Diagramm
 
 
-
-image::{docs}/project_management/images/essence_i7.PNG[]
+.Essence-Diagramm nach der siebten Iteration
+image::essence_i7.PNG[]

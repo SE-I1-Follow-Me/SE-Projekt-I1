@@ -54,6 +54,6 @@ Es sollte ein Meeting mit dem Kunden, möglichst am Anfang der nächsten Iterati
 === Aktueller Stand Essence-Diagramm
 
 
-
-image::{docs}/project_management/images/essence_i7.PNG[]
+.Essence-Diagramm nach der achten Iteration
+image::essence_i7.PNG[]
 

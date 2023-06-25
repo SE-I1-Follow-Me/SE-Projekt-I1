@@ -24,8 +24,8 @@ Durch die Einbeziehung von Begriffen und Theorien aus dem Open Unified Process f
 === Aktueller Stand Essence-Diagramm
 
 
-
-image::{docs}/project_management/images/essence_i4.png[]
+.Essence-Diagramm nach der sechsten Iteration
+image::essence_i4.png[]
 
 
 

@@ -25,5 +25,5 @@ Diese Erfahrungen im Projektverlauf unterstreichen die Bedeutung eines strukturi
 === Aktueller Stand Essence-Diagramm
 
 
-
-image::{docs}/project_management/images/essence_i4.png[]
+.Essence-Diagramm nach der fünften Iteration
+image::essence_i4.png[]

@@ -29,6 +29,6 @@ Es war vorgesehen, die Spring RestAPI mit einer Spring Security Konfiguration ab
 === Aktueller Stand Essence-Diagramm
 
 
-
-image::{docs}/project_management/images/essence_i7.PNG[]
+.Essence-Diagramm nach der neunten Iteration
+image::essence_i7.PNG[]
 
