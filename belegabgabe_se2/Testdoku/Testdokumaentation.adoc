@@ -35,7 +35,7 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 :docs-test: {docs}/test
 :docs-development: {docs}/development
 
-
+<<<
 
 include::../_includes/default-attributes.inc.adoc[]
 == Testkonzept
@@ -67,6 +67,8 @@ Im Laufe des Projekts haben wir in regelmäßigen, persönlichen Meetings unsere
 === Testdurchführungsplanung
 
 Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz entschieden, der eng mit der Implementierung der einzelnen Use Cases verknüpft war. Für jeden Use Case, der in einer Iteration entwickelt wurde, erstellten wir einen zugehörigen Testfall. Dieser Testfall wurde dann in der darauf folgenden Iteration durchgeführt. Diese Vorgehensweise ermöglichte es uns, Tests direkt mit den Entwicklungsschritten zu verknüpfen und eine kontinuierliche Überprüfung der implementierten Funktionalitäten zu gewährleisten. Dadurch konnten wir sicherstellen, dass jedes neue Feature nicht nur entsprechend den Anforderungen implementiert, sondern auch gründlich getestet und validiert wurde. Dieser Ansatz gewährleistete eine hohe Qualität und Zuverlässigkeit unserer Software, da jede neue Funktion vor ihrer endgültigen Implementierung einer gründlichen Prüfung unterzogen wurde.
+
+<<<
 
 == Testen der nicht-funktionalen Anforderungen
 
@@ -170,7 +172,7 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 |-
 |===
 
-[.landscape]
+[.portrait]
 <<<
 
 == Testfallbeschreibung & Testergebnisse
@@ -178,6 +180,7 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 include::../../docs/test/Test_Case_UC01_Roboter_anlegen.adoc[]
 <<<
 include::../../docs/test/Test_Case_UC02_Roboter_bearbeiten.adoc[]
+
 <<<
 include::../../docs/test/Test_Case_UC03_Roboter_löschen.adoc[]
 <<<
