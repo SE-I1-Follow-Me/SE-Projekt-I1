@@ -47,11 +47,14 @@ Folgende Use Case wurden vollständig umgesetzt:
 
 |UC01: Roboter anlegen
 |Funktioniert vollständig, sowie Hinzufügen auf den Server für Test- und Demonstrationszwecke 
-|UC03: Roboter löschen | Roboter können aus der App gelöscht werden
+|UC03: Roboter löschen 
+|Roboter können aus der App gelöscht werden
 |UC04: Follow-me starten
 |vollständig Implementiert
-
-
+|UC05: Follow-me ausführen
+|vollständig Implementiert
+|UC06: Follow-me beenden 
+|vollständig Implementiert
 
 
 |===
@@ -60,8 +63,8 @@ Folgende Use Cases wurden nur unvollständig ausgearbeitet:
 |===
 |Use Case | Anmerkung
 | UC02: Roboter bearbeiten | Wird ein Roboter hinzugefügt, welcher bereits in der Liste steht, wird dieser Überschrieben
-| UC05: Follow-me ausführen | Die Route wird gezeichnet, jedoch konnte die Simulation nicht mehr durchgeführt werden, weshalb wir nicht garantieren können, dass das fetchen der GPS Daten wie gewünscht funktioniert
-| UC06: Follow-me beenden | Die Funktion kann wie vorgesehen beendet werden, jedoch ist auch hier die Simulation nicht umgesetzt worden (Siehe UC05)
+ 
+
 | UC07: Route speichern
 |Route kann gespeichert werden, Speicherung auf dem Server funktioniert noch nicht wie gewünscht
 | UC09: Route löschen | Keine Funktion im Interface, Serverseitig ist die Funktion gegeben
