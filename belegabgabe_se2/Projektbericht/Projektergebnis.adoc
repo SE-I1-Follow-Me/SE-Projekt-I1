@@ -69,4 +69,4 @@ include::../Reflexionen/Reflexion_Michael_Novak_s83875.adoc[]
 === Leon Lowa
 __Teamrollen: Entwicklung. Datenbankadministrator__
 
-include kommt hier hin
+include::../Reflexionen/Reflexion_Leon_Lowa_s83824.adoc[]
