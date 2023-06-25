@@ -10,7 +10,7 @@ Dieses Dokument soll künftige Entwickler bei der Weiterentwicklung des Systems 
 == Systemarchitektur
 Logische Sicht:
 
-image::Platzhalter
+image::logischeSicht.png[]
 
 Physische Sicht:
 
