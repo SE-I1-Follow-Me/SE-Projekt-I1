@@ -121,8 +121,8 @@ Bei der Testdurchführungsplanung haben wir uns für einen iterativen Ansatz ent
 |-
 
 |Use Case 09: Löschen einer Route
-|Nicht Implementiert
-|-
+|Teilweise Implementiert
+|Funktion ist Serverseitig gegeben
 
 |Use Case 10: Ablaufen einer Route
 |Nicht Implementiert
