@@ -77,17 +77,17 @@ Durch einen Klick auf folgende Knöpfe gelangen Sie zu folgenden Funktionen:
 |===
 | |
 |1. "Add" lässt Sie einen Roboter hinzufügen, siehe <<Roboter hinzufügen>>.
-|image:Images/Navigation_Follow-me_Add.png[50, 50]
+|image:Navigation_Follow-me_Add.png[50, 50]
 
 |2. "GPS" bringt Sie zur Karte und der damit verbundenen Funktion: <<Route anzeigen>>.
-|image:Images/Navigation_Follow-me_GPS.png[50, 50]
+|image:Navigation_Follow-me_GPS.png[50, 50]
 
-|3. "Homescreen" bringt Sie zur Liste ihrer Roboter. | image:Images/Navigation_Follow-me_Home.png[50, 50]
+|3. "Homescreen" bringt Sie zur Liste ihrer Roboter. | image:Navigation_Follow-me_Home.png[50, 50]
 
-|4. "Alerts" bringt Sie zu wichtigen Meldungen. |image:Images/Navigation_Follow-me_Alerts.png[50, 50]
+|4. "Alerts" bringt Sie zu wichtigen Meldungen. |image:Navigation_Follow-me_Alerts.png[50, 50]
 
 |5. "Personal" bringt Sie zu ihren angegebenen Daten.
-|image:Images/Navigation_Follow-me_Personal.png[50, 50]
+|image:Navigation_Follow-me_Personal.png[50, 50]
 |===
 
 
@@ -103,17 +103,17 @@ Um einen Roboter hinzuzufügen, gehen Sie wie folgt vor:
 [frame="none", grid="none", rowheight=10]
 |===
 |  |
-|1. Tippen Sie auf das Hinzufügen-Symbol unten links auf der Startseite. | image:Images/Navigation_Follow-me_Add_Markup.png[150,150]
+|1. Tippen Sie auf das Hinzufügen-Symbol unten links auf der Startseite. | image:Navigation_Follow-me_Add_Markup.png[150,150]
 
 |2. Ein Eingabefenster öffnet sich, geben Sie die gewünschte ID des Roboters ein.
-|image:Images/Follow-me_InputDialog.png[150,150]
+|image:Follow-me_InputDialog.png[150,150]
 
 |3. Bestätigen Sie ihre Eingabe mit "Ok".
-|image:Images/Follow-me_InputDialog_Ok_Markup.png[150,150]
+|image:Follow-me_InputDialog_Ok_Markup.png[150,150]
 
 
 |4. Der hinzugefügte Roboter wird im Homescreen angezeigt.
-|image:Images/Follow-me_Roboter.png[150,150]
+|image:Follow-me_Roboter.png[150,150]
 |===
 
 [WARNING]
@@ -133,10 +133,10 @@ Um einen Roboter zu löschen, gehen Sie wie folgt vor:
 [frame="none", grid="none"]
 |===
 |  |
-|1. Tippen Sie auf das ">" Symbol des zu entfernenden Roboters.| image:Images/Follow-me_Roboter_DeleteMarkup.png[150,150]
+|1. Tippen Sie auf das ">" Symbol des zu entfernenden Roboters.| image:Follow-me_Roboter_DeleteMarkup.png[150,150]
 
 |2. Das Symbol verändert sich, bestätigen Sie den Vorgang, in dem Sie es erneut andrücken.
-|image:Images/Follow-me_Roboter_DeleteSecond_Markup.png[150,150]
+|image:Follow-me_Roboter_DeleteSecond_Markup.png[150,150]
 |===
 
 <<<
@@ -154,13 +154,13 @@ Um Roboter folgen zu lassen, gehen Sie wie folgt vor:
 [frame="none", grid="none"]
 |===
 |  |
-|1. Wählen Sie einen Roboter aus, in dem Sie auf ihn klicken.| image:Images/Follow-me_Roboter_picked.png[150,150]
+|1. Wählen Sie einen Roboter aus, in dem Sie auf ihn klicken.| image:Follow-me_Roboter_picked.png[150,150]
 
 |2. Wenn Sie alle Roboter, die ihnen folgen sollen, ausgewählt haben, drücken Sie "Follow me".
-|image:Images/Follow-me_NavigationAndButtons_Markup.png[150,150]
+|image:Follow-me_NavigationAndButtons_Markup.png[150,150]
 
 |3. Die Liste wird gefiltert und es werden Ihnen alle Roboter angezeigt, die Ihnen folgen. Zusätzlich den Robotern, die Sie eben ausgewählt haben.
-|image:Images/Follow-me_Roboter_following.png[150,150]
+|image:Follow-me_Roboter_following.png[150,150]
 |===
 
 [NOTE]
@@ -180,16 +180,16 @@ Um Roboter nicht länger folgen zu lassen, gehen Sie wie folgt vor:
 [frame="none", grid="none"]
 |===
 |  |
-|1. Öffnen Sie die Liste der Roboter, die ihnen folgen, in dem Sie "Follow me" anklicken.| image:Images/Follow-me_NavigationAndButtons_Markup.png[150,150]
+|1. Öffnen Sie die Liste der Roboter, die ihnen folgen, in dem Sie "Follow me" anklicken.| image:Follow-me_NavigationAndButtons_Markup.png[150,150]
 
 |2. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt.
-|image:Images/Follow-me_Roboter_following.png[150,150]
+|image:Follow-me_Roboter_following.png[150,150]
 
 |3. Wählen Sie durch Anklicken aus, welche Roboter ihnen nicht mehr folgen sollen. Die ausgewählten Roboter sind [blau]#blau# markiert.
-|image:Images/Follow-me_Roboter_TwoPicked.png[150,150]
+|image:Follow-me_Roboter_TwoPicked.png[150,150]
 
 | 4. Drücken Sie "Beenden".
-| image:Images/Follow-me_NavigationAndButtons_Markup_Beenden.png[150,150]
+| image:Follow-me_NavigationAndButtons_Markup_Beenden.png[150,150]
 
 | 5. Die Liste der Roboter, welche Ihnen folgen, wird angezeigt. Exklusive der Roboter, die Sie eben ausgewählt haben.
 |
@@ -213,10 +213,10 @@ Um die Follow-me Funktion zu visualisieren, gehen Sie wie folgt vor:
 [frame="none", grid="none"]
 |===
 |  |
-|1. Tippen Sie auf das Nadelsymbol unten links in der Navigationsleiste.| image:Images/Navigation_Follow-me_GPS_Markup.png[150,150]
+|1. Tippen Sie auf das Nadelsymbol unten links in der Navigationsleiste.| image:Navigation_Follow-me_GPS_Markup.png[150,150]
 
 |2. Es wird eine Karte mit ihrer aktuellen Position (Nadel) sowie der Route angezeigt.
-| image:Images/Follow-me_GPS.png[150,150]
+| image:Follow-me_GPS.png[150,150]
 |===
 
 [NOTE]
