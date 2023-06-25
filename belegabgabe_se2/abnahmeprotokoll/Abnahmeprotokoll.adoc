@@ -63,8 +63,6 @@ Folgende Use Cases wurden nur unvollständig ausgearbeitet:
 |===
 |Use Case | Anmerkung
 | UC02: Roboter bearbeiten | Wird ein Roboter hinzugefügt, welcher bereits in der Liste steht, wird dieser Überschrieben
- 
-
 | UC07: Route speichern
 |Route kann gespeichert werden, Speicherung auf dem Server funktioniert noch nicht wie gewünscht
 | UC09: Route löschen | Keine Funktion im Interface, Serverseitig ist die Funktion gegeben
