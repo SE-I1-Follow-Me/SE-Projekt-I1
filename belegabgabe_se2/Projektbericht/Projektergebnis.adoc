@@ -39,6 +39,7 @@ Da die Übergabe an den Kunden erst nach Abgabe des Projektes erfolgt, können w
 
 Das Projekt war eine sehr lehrreiche und intensive Erfahrung für alle Teammitglieder. Trotz entstandener Probleme war die Resonanz der sowohl der Teammitglieder als auch des Kunden überwiegend positiv. Das Projektteam ist stolz auf das Erreichte, auch wenn die App nicht fertiggestellt werden konnte. Da das Projekt so umfangreich war, konnten alle Teammitglieder viel lernen. 
 
+<<<
 == Reflexionen der Teammitglieder
 
 === Magnus Andreas Böhne
@@ -46,22 +47,25 @@ __Teamrollen: Projektleiter, Serveradministrator, Architekt_
 
 include kommt hier hin
 
-
+<<<
 === Manuel Scheer
 __Teamrollen: Stellvertretender Projektleiter, Entwicklung, Analyse, Entwürfe__
 
 include::Reflexion_Manuel.adoc[lines=1..1;4..-1,leveloffset=+1]
 
+<<<
 === Jonas Pfeiffer
 __Teamrollen: Entwicklung, Entwürfe__
 
 include kommt hier hin
 
+<<<
 === Michael Novak
 __Teamrollen: Entwicklung, Analyse, Tester, Entwürfe__
 
 include kommt hier hin
 
+<<<
 === Leon Lowa
 __Teamrollen: Entwicklung. Datenbankadministrator__
 

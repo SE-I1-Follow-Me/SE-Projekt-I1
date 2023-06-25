@@ -35,13 +35,17 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 :docs-test: {docs}/test
 :docs-development: {docs}/development
 
-== Projektplanung
+
+<<<
+
+
+//= Projektplanung
 
 include::Projektplanung.adoc[lines=1..1;4..-1,leveloffset=+1]
-
+<<<
 
 == Projektdurchführung
-<<<
+
 include::Iteration05.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 <<<
