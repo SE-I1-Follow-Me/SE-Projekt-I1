@@ -141,12 +141,12 @@ Beispiel Produkt:
 | Bedarf | Priorität | Features | Release
 |Follow-me Funktion | sehr hoch |Der Nutzer kann einem oder mehreren Robotern den Befehl geben, ihm zu folgen. Dabei wird zudem die Route aufgezeichnet, welche im Anschluss gespeichert oder verworfen werden kann.| SS 2023
 | Route aufzeichnen | hoch | Route während der Follow-me Funktion aufzeichnen | SS 2023
-|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | SS 2023
+|Route an Server senden |hoch |Aufgenommene Route an den Server senden und auf diesem speichern | offen
 |Roboter hinzufügen |hoch |Speichern eines neuen Roboters | SS 2023
 |Route laden |mittel |Zuvor aufgenommene Route anzeigen | offen
 |Route bearbeiten | niedrig |Namen der Route ändern oder sie für andere Roboter zugänglich machen | offen
 |Route löschen | niedrig |Löschen einer zuvor aufgenommenen Route | offen
-|Roboter bearbeiten |niedrig |Namen des Roboters ändern | offen
+|Roboter bearbeiten |niedrig |Namen des Roboters ändern | SS 2023
 |Roboter Fahrkommandos |niedrig |Befehle, die das Ablaufen einer Route betreffen (beginnen, pausieren, beenden) | offen
 |Roboter löschen |niedrig |Roboter aus der Liste der gespeicherten Roboter entfernen | SS 2023
 |===
@@ -175,5 +175,5 @@ Beispiel Produkt:
 |Die App muss möglichst einfach und linear aufgebaut sein, damit sie für den Outdoorbereich geeignet ist | hoch | SS 2023
 |Das Speichern der Daten auf dem Server soll bei stabiler Internetverbindung nicht länger als 5 Sekunden dauern |niedrig | SS 2023
 |Im Falle eines Absturzes werden die vollständig aufgenommenen Daten gespeichert |niedrig | offen
-|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |sehr niedrig | SS 2023
+|Die App muss so entwickelt werden, dass eine Sprachauswahl möglich ist |sehr niedrig | offen
 |===
