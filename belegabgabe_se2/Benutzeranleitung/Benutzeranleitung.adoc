@@ -1,4 +1,39 @@
-= Benutzeranleitung: {project-name}
+// --- 1. Projektthema -------------------------
+= SE II - Benutzeranleitung: {project-name}
+// --- 2. Teammitglieder -----------------------
+Michael Novak <s83875@htw-dresden.de>; Magnus Andreas Böhne <s83812@htw-dresden.de>; Manuel Scheer <s83818@htw-dresden.de>; Leon Lowa <s83824@htw-dresden.de>; Jonas Pfeiffer <s83836@htw-dresden.de>
+// --- 3. Abgabedatum --------------------------
+26. Juni 2022
+// ---------------------------------------------
+:docs: ../../docs
+include::{docs}/_includes/default-attributes.inc.adoc[]
+
+// ---
+:doctype: book
+:toc:
+:toclevels: 2
+:toc-title: Inhaltsverzeichnis
+:sectnums:
+:icons: font
+//:source-highlighter: highlightjs
+:source-highlighter: rouge
+:rouge-style: github
+:xrefstyle: full
+:experimental:
+:chapter-signifier:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listing
+:!example-caption:
+:experimental:
+// Folders
+:imagesdir-reset: {imagesdir}
+:docs-test2: {docs}/test2
+:docs-requirements: {docs}/requirements
+:docs-project-management: {docs}/project_management
+:docs-architecture: {docs}/architecture
+:docs-test: {docs}/test
+:docs-development: {docs}/development
 
 Hier finden Sie eine detaillierte Anleitung zur Verwendung der Follow-me Android App
 
