@@ -192,4 +192,4 @@ include::../../docs/test/Test_Case_UC06_Follow_me_Funktion_beenden.adoc[]
 
 === Abnahmetest
 
-
+Der Abnahmetest ist im https://github.com/SE-I1-Follow-Me/SE-Projekt-I1/blob/main/belegabgabe_se2/abnahmeprotokoll/Abnahmeprotokoll.adoc[Abnahmeprotokoll] aufgeführt.
