@@ -50,11 +50,11 @@ Folgende Use Case wurden vollständig umgesetzt:
 |UC03: Roboter löschen 
 |Roboter können aus der App gelöscht werden
 |UC04: Follow-me starten
-|vollständig Implementiert
+|vollständig implementiert
 |UC05: Follow-me ausführen
-|vollständig Implementiert
+|vollständig implementiert
 |UC06: Follow-me beenden 
-|vollständig Implementiert
+|vollständig implementiert
 
 
 |===
