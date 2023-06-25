@@ -37,9 +37,10 @@ Die Entwicklung dieses Modells erwies sich als schwerer als gedacht, da unser Pr
 
 Zudem entschieden wir uns für die Entwicklung einer logischen Sicht.
 
-.image:Images/logische_Sicht.png
+.Logische Sicht
+image::../aktual_Anforderungen/domain_model_neu.png[]
 
-Text für die Bilder
+Das aktualisierte Domain Model wurde hierbei für die Logische Sicht genutzt.
 
 === Zentrieren der Follow-me Funktion
 
