@@ -2,7 +2,7 @@
 :docs: ../../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
 
-== Softwaresystem
+== Softwaresystem [MS]
 
 === Motivation
 Auch wenn die Roboter aktuell noch nicht verfügbar sind, müssen diese in Zukunft bedienbar sein. Eine Bedienung über eine App ist hierbei besonders lukrativ, da davon ausgegangen werden kann, dass alle potenziellen Endnutzer ein Handy für die Arbeit benötigen beziehungsweise besitzen. Gerade für Firmen, die mit den Fahrrobotern arbeiten möchten, ist eine App die beste Lösung, um dies in ihre Geschäftsprozesse zu integrieren. 
