@@ -43,9 +43,9 @@ Das Projekt war eine sehr lehrreiche und intensive Erfahrung für alle Teammitgl
 == Reflexionen der Teammitglieder
 
 === Magnus Andreas Böhne
-__Teamrollen: Projektleiter, Serveradministrator, Architekt_
+_Teamrollen: Projektleiter, Serveradministrator, Architekt_
 
-include kommt hier hin
+include::Reflexion_Magnus.adoc[]
 
 <<<
 === Manuel Scheer
