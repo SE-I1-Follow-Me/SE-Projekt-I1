@@ -1,4 +1,4 @@
-Im Modul Software Engineering hatte ich die Gelegenheit, an einem spannenden Projekt mitzuwirken und zwar der Entwicklung einer Android-App. Das Ziel bestand darin, den aktuellen Standort des Nutzers an die Roboter zu senden, damit diese ihm folgen können. In diesem Reflexionsbericht möchte ich meine Erfahrungen teilen und auf die Herausforderungen eingehen, mit denen ich im Verlauf dieses Projekts konfrontiert wurde.
+Im Modul Software Engineering hatte ich die Gelegenheit, an einem spannenden Projekt mitzuwirken, und zwar der Entwicklung einer Android-App. Das Ziel bestand darin, den aktuellen Standort des Nutzers an die Roboter zu senden, damit diese ihm folgen können. In diesem Reflexionsbericht möchte ich meine Erfahrungen teilen und auf die Herausforderungen eingehen, mit denen ich im Verlauf dieses Projekts konfrontiert wurde.
 
  
 
@@ -10,7 +10,7 @@ Eine der ersten Schwierigkeiten bestand darin, die Kommunikation zwischen der Ap
 
 
 
-Ich hatte vor nach meinem Studium einen Beruf im Bereich der Softwareentwicklung auszuüben. Durch die Vielzahl an Schwierigkeiten, hatte ich des Öfteren Zweifel an dieser Wahl. Allerdings, haben sich diese, nach Abschluss des Projekts, doch noch gelegt. Hinzu kam, dass ich in SE1 noch Co-Teammanager war und gleichzeitig die Implementierung machte. Das änderte sich aber in SE2, da hier ein neues Teammanagement gewählt wurde und mich damit entlastete. 
+Ich hatte vor, nach meinem Studium einen Beruf im Bereich der Softwareentwicklung auszuüben. Durch die Vielzahl an Schwierigkeiten hatte ich des Öfteren Zweifel an dieser Wahl. Allerdings, haben sich diese, nach Abschluss des Projekts, doch noch gelegt. Hinzu kam, dass ich in SE1 noch Co-Teammanager war und gleichzeitig die Implementierung machte. Das änderte sich aber in SE2, da hier ein neues Teammanagement gewählt wurde und mich damit entlastete. 
 
 Jetzt konnte ich den vollen Fokus auf die Implementierung setzten, was für einen freudigen Einstieg in den 2. Teil des Projekts sorgte. Leider bekam dieser Aufschwung von Freude schnell einen Dämpfer, mit der Aufgabe die Routenspeicherung zu implementieren.  Dies war mit Abstand das größte Hindernis, als auch der größte Zeitfresser. Auslöser war, dass der Code, von dem vorangegangen Projekt, bedauerlicherweise nicht nutzbar war. Dies lag an der nicht so nachvollziehbaren Softwaredokumentation, der anderen Programmiersprache, der veralteten Android Version und der Tatsache, dass die Server Anbindung sehr eigenartig war. 
 
