@@ -63,7 +63,7 @@ include kommt hier hin
 === Michael Novak
 __Teamrollen: Entwicklung, Analyse, Tester, Entwürfe__
 
-include kommt hier hin
+include::../Reflexionen/Reflexion_Michael_Novak_s83875.adoc[]
 
 <<<
 === Leon Lowa
